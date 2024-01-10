@@ -13,20 +13,20 @@ local theme = {}
 
 theme.font = "Noto Sans Kawi 12"
 
-theme.bg_normal = "#1793D0"
+theme.bg_normal = "#4f85f1"
 theme.bg_focus = "#98fb98"
 theme.bg_urgent = "#ff0000"
 theme.bg_minimize = "#444444"
 theme.bg_systray = theme.bg_normal
 
-theme.fg_normal = "#66FF00"
-theme.fg_focus = "#1793d0"
+theme.fg_normal = "#98fb98"
+theme.fg_focus = "#4f85f1"
 theme.fg_urgent = "#ffffff"
 theme.fg_minimize = "#ffffff"
 
 theme.useless_gap = dpi(0)
 theme.border_width = dpi(1)
-theme.border_normal = "#1793d0"
+theme.border_normal = "#4f85f1"
 theme.border_focus = "#66FF00"
 theme.border_marked = "#91231c"
 
