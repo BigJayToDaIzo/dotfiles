@@ -26,4 +26,17 @@ live_config_reload = true
 #decorations = "None"
 padding = { x = 5, y = 5 }
 #opacity = 1.0 <-- do not do this here (yet), your compositor should be handling this most likely.  You can tweak here later to really fine tune
-blur = true
+#blur = true  <-- your compositor will most likely handle this too
+[font]
+size = 12
+builtin_box_drawing = true
+
+
+[bell]
+animation = "Ease"
+duration = 100
+color = "#222222"
+#command
+#
+[selection]
+save_to_clipboard = true
