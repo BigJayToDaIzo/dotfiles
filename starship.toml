@@ -11,13 +11,10 @@ $git_branch\
 $git_status\
 [](fg:color_aqua bg:color_blue)\
 $c\
+$lua\
 $rust\
 $golang\
 $nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
 $python\
 [](fg:color_blue bg:color_bg3)\
 $docker_context\
@@ -68,7 +65,7 @@ RedHatEnterprise = "󱄛"
 [username]
 show_always = true
 style_user = "bg:color_orange fg:color_fg0"
-style_root = "bg:color_orange fg:color_fg0"
+style_root = "bg:color_red fg:color_blue"
 format = '[ $user ]($style)'
 
 [directory]
@@ -105,6 +102,8 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
 [lua]
 symbol = " "
+style = "bg:color_blue"
+format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 
 [rust]
 symbol = ""
