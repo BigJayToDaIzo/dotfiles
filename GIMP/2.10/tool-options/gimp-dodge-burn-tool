@@ -1,9 +1,0 @@
-# GIMP gimp-dodge-burn-tool options
-
-(foreground (color-rgb 0.26366251198465968 0.7142857142857143 0.26366251198465968))
-(brush "2. Hardness 100")
-(dynamics "Dynamics Off")
-(palette "Color History")
-(brush-size 51)
-
-# end of gimp-dodge-burn-tool options
