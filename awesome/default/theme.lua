@@ -11,7 +11,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font = "Noto Sans Kawi 12"
+theme.font = "Noto Sans Kawi 10"
 
 theme.bg_normal = "#4f85f1"
 theme.bg_focus = "#98fb98"
@@ -92,7 +92,6 @@ theme.titlebar_maximized_button_normal_inactive = themes_path .. "default/titleb
 theme.titlebar_maximized_button_focus_inactive = themes_path .. "default/titlebar/maximized_focus_inactive.png"
 theme.titlebar_maximized_button_normal_active = themes_path .. "default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active = themes_path .. "default/titlebar/maximized_focus_active.png"
-
 theme.wallpaper = "/home/jm/Pictures/wallpapers/ArchWaveGrey.png"
 
 -- You can use your own layout icons like this:
