@@ -190,9 +190,11 @@ screen.connect_signal("property::geometry", set_wallpaper)
 
 awful.screen.connect_for_each_screen(function(s)
 	-- Wallpaper
+	-- Here is our opportunity to spin up 3 different wallpapers, one per screen (or 2 or 6 UDOUBOOBOO)
 	set_wallpaper(s)
 
 	-- Each screen has its own tag table.
+	-- Here is our opportunity to deploy unique tab appearance/behavior unique to a screen
 	awful.tag({ "rice", "work", "play", "4" }, s, awful.layout.layouts[1])
 
 	-- Create a promptbox for each screen
@@ -242,8 +244,8 @@ awful.screen.connect_for_each_screen(function(s)
 		},
 		s.mytasklist, -- Middle widget
 		{ -- Right widgets
+			-- Basically I tweak my 'clickables' in the TRC
 			layout = wibox.layout.fixed.horizontal,
-			mykeyboardlayout,
 			wibox.widget.systray(),
 			mytextclock,
 			s.mylayoutbox,
@@ -263,6 +265,17 @@ root.buttons(gears.table.join(
 -- }}}
 
 -- {{{ Key bindings
+-- ### CRITICAL UNDERSTANDING UNLOCKED HERE ###
+-- ### THIS IS WHERE YOU 'UNSHEATH YOUR SAMURAI SWORD' or whatever you call the most important tool in your toolbox.
+-- ### Ya dig?  As soon as the lights are on, you can press POWER (my fancy word for Mod4) 1, 2, 3, or 4 to get 4 unique workspaces on
+-- ### your screen, with C-Mod jk/up / down,(but jk if you're a real) you move full control to another screen, from there ModPOWAH Enter for your terminal
+-- ### and MODPOWAH GOD MODE CAPITAL P FOR FKN POWAH ~preciousbroswerprobablyfirefox<enter> away from the most vast source of information in the known universe
+-- ### MUTHA FSKNKKN POWAH MODE YA FEEL ME?!
+--
+-- Yeah, that life changing moment when you realize the full control of your environment begins here <points down> OR up a lil bit if you'd rather tweak the bar at the top of each screen
+-- which, is a lower priority to me than flopping between browser, nvim and rest with as few keystrokes as possible so we can spend the vast majority if our favorite times to relax
+-- doing that instead. LMAO
+--
 globalkeys = gears.table.join(
 	awful.key({ modkey }, "s", hotkeys_popup.show_help, { description = "show help", group = "awesome" }),
 	awful.key({ modkey }, "Left", awful.tag.viewprev, { description = "view previous", group = "tag" }),
