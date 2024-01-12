@@ -43,3 +43,7 @@ export PROMPT_COMMAND="$PROMPT_COMMAND; _nvm_hook"
 
 
 eval "$(starship init zsh)"
+
+# Install Ruby Gems to ~/gems'
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
