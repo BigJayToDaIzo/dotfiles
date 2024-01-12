@@ -49,9 +49,7 @@ Feed it with the following example:
 = My knowledge base =
     * Tasks -- things to be done _yesterday_!!!
     * Project Gutenberg -- good books are power.
-    * Scratchpad -- various temporary stuff.
-```
-
+    * Scratchpad -- various temporary stuff. ```
 Place your cursor on `Tasks` and press Enter to create a link. Once pressed,
 `Tasks` will become `[[Tasks]]` -- a VimWiki link. Press Enter again to
 open it. Edit the file, save it, and then press Backspace to jump back to your
