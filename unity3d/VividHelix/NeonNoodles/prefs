@@ -1,0 +1,19 @@
+<unity_prefs version_major="1" version_minor="1">
+	<pref name="Screenmanager Fullscreen mode" type="int">1</pref>
+	<pref name="Screenmanager Fullscreen mode Default" type="int">1</pref>
+	<pref name="Screenmanager Resolution Height" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Height Default" type="int">1080</pref>
+	<pref name="Screenmanager Resolution Use Native" type="int">1</pref>
+	<pref name="Screenmanager Resolution Use Native Default" type="int">0</pref>
+	<pref name="Screenmanager Resolution Width" type="int">1920</pref>
+	<pref name="Screenmanager Resolution Width Default" type="int">1920</pref>
+	<pref name="Screenmanager Window Position X" type="int">0</pref>
+	<pref name="Screenmanager Window Position Y" type="int">0</pref>
+	<pref name="UnitySelectMonitor" type="int">0</pref>
+	<pref name="nn_keyboardLayout" type="int">0</pref>
+	<pref name="nn_levelSelected" type="int">0</pref>
+	<pref name="nn_vsyncCount" type="int">1</pref>
+	<pref name="unity.cloud_userid" type="string">NzY4N2I2MGJhOTViYTRkNDk5YWE3MjI0YTMxYzg2OTk=</pref>
+	<pref name="unity.player_session_count" type="string">NA==</pref>
+	<pref name="unity.player_sessionid" type="string">MjAzNzgxMjg1OTc5Nzg2NDA0Nw==</pref>
+</unity_prefs>

@@ -1,0 +1,6 @@
+Mono path[0] = '/home/jm/Downloads/Neon_Noodles_Cyberpunk_Kitchen_Automation_Linux-bADkARMA/neonnoodles_Data/Managed'
+Mono config path = '/home/jm/Downloads/Neon_Noodles_Cyberpunk_Kitchen_Automation_Linux-bADkARMA/neonnoodles_Data/MonoBleedingEdge/etc'
+Shutdown handler: initalize.
+Preloaded 'libEOSSDK-Linux-Shipping.so'
+Preloaded 'libsteam_api.so'
+Desktop is 0 x 0 @ 0 Hz
