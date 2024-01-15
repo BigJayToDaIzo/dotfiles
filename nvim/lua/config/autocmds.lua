@@ -17,3 +17,7 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.wo.conceallevel = 0
   end,
 })
+
+-- Fix autoformat absolutely WRECKING my Liquid
+vim.g.autoformat = false --globally
+vim.b.autoformat = false --buffer-local
