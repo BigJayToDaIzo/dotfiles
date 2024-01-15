@@ -25,9 +25,9 @@ blend_equation_advanced_coherent GL_NVX_blend_equation_advanced_multi_draw_buffe
 der_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_mesh_shader GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_primitive_shading_rate GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_representative_fragment_test GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_scissor_exclusive GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_par
 titioned GL_NV_shader_texture_footprint GL_NV_shading_rate_image GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_dirty_tile_map GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_uniform_buffer_std430_layout GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KH
 R_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 34337144
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 9132792
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.067 seconds
+- Completed reload, in  0.073 seconds
 Default vsync count 1
 requesting resize 1920 x 1080
 Using native desktop resolution 1920 x 1080
@@ -35,8 +35,8 @@ requesting fullscreen 1920 x 1080 at 0 Hz
 Desktop is 1920 x 1080 @ 60 Hz
 The referenced script (Unknown) on this Behaviour is missing!
 The referenced script on this Behaviour (Game Object 'LocalizationReloader') is missing!
-UnloadTime: 0.280880 ms
-Fallback handler could not load library /home/jm/Downloads/Neon_Noodles_Cyberpunk_Kitchen_Automation_Linux-bADkARMA/neonnoodles_Data/MonoBleedingEdge/x86_64/data-0x53bfd00.so
+UnloadTime: 0.316000 ms
+Fallback handler could not load library /home/jm/Downloads/Neon_Noodles_Cyberpunk_Kitchen_Automation_Linux-bADkARMA/neonnoodles_Data/MonoBleedingEdge/x86_64/data-0x3bb9b90.so
 Invalid level in histogram line: 17,600,2,1,nn_main_friedrice_02: "nn_main_friedrice_02"
 Invalid level in histogram line: 26,600,3,1,nn_main_friedrice_02: "nn_main_friedrice_02"
 Invalid level in histogram line: 19,600,4,1,nn_main_friedrice_02: "nn_main_friedrice_02"
@@ -84,5 +84,190 @@ Invalid level in histogram line: 7,800,12,4,nn_main_friedrice_02: "nn_main_fried
 Invalid level in histogram line: 4,800,13,4,nn_main_friedrice_02: "nn_main_friedrice_02"
 Invalid level in histogram line: 4,800,14,4,nn_main_friedrice_02: "nn_main_friedrice_02"
 Invalid level in histogram line: 1,800,16,4,nn_main_friedrice_02: "nn_main_friedrice_02"
-Executing Unity Signal Handler 
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
+
+NullReferenceException: Object reference not set to an instance of an object
+  at GameCore.UI.Companion.CompanionButton.FlickerToWhite () [0x00021] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.FlickerToWhiteOutline () [0x0000d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.HandleInput () [0x00160] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.UI.Companion.CompanionButtonContainer.Update () [0x0001d] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00010] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.Models.GameModel.SafeUpdate () [0x00064] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+  at GameCore.GameMain.Update () [0x00012] in <cc471ad30c3c4c7eaf845b575449299c>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+GameCore.GameMain:Update()
+HotReload:Update()
 
