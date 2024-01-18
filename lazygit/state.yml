@@ -2,6 +2,8 @@ lastupdatecheck: 0
 recentrepos:
 - /home/jm/Projects/personal/gandalfsquest
 startuppopupversion: 5
-customcommandshistory: []
+customcommandshistory:
+- q
+- close
 hidecommandlog: false
 ignorewhitespaceindiffview: false

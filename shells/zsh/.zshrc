@@ -42,13 +42,18 @@ export PROMPT_COMMAND="$PROMPT_COMMAND; _nvm_hook"
 
 eval "$(starship init zsh)"
 
-# Install Ruby Gems to ~/gems'
-# export GEM_HOME="$HOME/gems"
-# expor PATH="$HOME/gems/bin:$HOME/.local/share/gem/ruby/3.0.0/bin/jekyll:$PATH"
-
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Prompt Improvement Initiative
 
 [[ -r "$HOME/.rvm/scripts/completion" ]] && source "$HOME/.rvm/scripts/completion"
+
+
+
+# bun completions
+[ -s "/home/jm/.bun/_bun" ] && source "/home/jm/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
