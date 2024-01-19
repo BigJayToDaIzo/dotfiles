@@ -1,3 +1,4 @@
+set -U TERM xterm-256color
 set -U EDITOR nvim
 set -xg ARCHFLAGS "-arch x86_64"
 
@@ -28,4 +29,17 @@ set -xg PATH "$PATH:$RUBY_PATH"
 set -xg GEM_PATH "$HOME/.rvm/gems/ruby-3.2.2@global/"
 set -xg PATH "$PATH$GEM_PATH"
 
+# Tacklebox yo
+# PREPARE Tackle before taking off with your Tacklebox!
+# i.e. don't try to configure tackle below the line where you take off with
+# the tacklebox. kek
+
+set tacklebox_path ~/.config/fish/.tackle
+set tacklebox_modules virtualfish virtualhooks
+set tacklebox_plugins extract grc pip python up
+set tacklebox_theme entropy
+# NO mo tackle setup after this shipit dot gif
+source ~/.config/fish/.tacklebox/tacklebox.fish
+
+#
 # Prompt Improvement Initiative
