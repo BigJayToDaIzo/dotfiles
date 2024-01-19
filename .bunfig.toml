@@ -1,0 +1,26 @@
+#[preload]
+# scripts to run before 'bun run'-ing a file or script
+# preload = ["./preload.ts"]
+
+#[jsx]
+#
+#
+#[smol]
+#
+#[logLevel]
+#logLevel = "debug" # "debut" | "warn" | "error"
+#
+#[define]
+# Replace any usage of the "process.env.bagel" with the string 'lox'.
+# see docs
+#
+# [loader]
+# ".bagel" = "tsx"
+#
+# [test]
+# Test runner specs here
+#
+# [install]
+# bun install whatever configurations here
+#
+# 
