@@ -8,12 +8,17 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
-# bun
-set -g BUN_INSTALL "$HOME/.bun"
-set -g PATH "$PATH:$BUN_INSTALL/bin"
-#
 # remove superflous path repetition until I can find out where it's coming from
-set -e PATH[1 2]
+# we can clean this up eventually but it's behaving weirdly
+set -e PATH[11]
+set -e PATH[5]
+set -e PATH[1]
+
+# bun
+set BUN_INSTALL "$HOME/.bun"
+set PATH "$PATH:$BUN_INSTALL/bin"
+#
+
 # rvm
 # WHERE TF IS THIS ALL GETTING AUTOSET?!  AND WHY IS IT SETTING GEM PATH LIKE 3 FKN TIMES?
 # All this below seems to be handled by the plugins I've installed for each as uncommenting doubles all their paths.
