@@ -51,8 +51,8 @@ set fzf_fd_opts --hidden --max-depth 3
 
 # Fundle Plugin
 # Like Tacklebox, you must declare fundle plugins before you initalize
-fundle plugin 'edc/bass'
-fundle plugin 'tuvistavie/oh-my-fish-core'
+fundle plugin edc/bass
+fundle plugin tuvistavie/oh-my-fish-core
 # stage all plugins BEFORE init
 fundle init
 
@@ -61,9 +61,9 @@ fundle init
 source ~/.config/.bash_aliases # TODO:old bash trash to eventually clean up to abbreviations like those below it
 abbr -a gs lazygit
 abbr -a j z
+abbr -a skype snap run skype
 #
 #
 # PROMPT CONTROL
 ################
 starship init fish | source
-
