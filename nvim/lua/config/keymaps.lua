@@ -4,3 +4,5 @@
 --
 local discipline = require("craftzdog.discipline")
 discipline.cowboy()
+
+-- Custom keymaps for tmux plugins
