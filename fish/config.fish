@@ -5,7 +5,7 @@ set -xg ARCHFLAGS "-arch x86_64"
 set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    eval (zellij setup --generate-auto-start fish | string collect)
 end
 
 # remove superflous path repetition until I can find out where it's coming from
@@ -18,6 +18,9 @@ set -e PATH[1]
 set BUN_INSTALL "$HOME/.bun"
 set PATH "$PATH:$BUN_INSTALL/bin"
 #
+# cargo packages
+set CARGO_HOME "$HOME/.cargo/"
+set PATH "$PATH:$CARGO_HOME/bin"
 
 # rvm
 # WHERE TF IS THIS ALL GETTING AUTOSET?!  AND WHY IS IT SETTING GEM PATH LIKE 3 FKN TIMES?
