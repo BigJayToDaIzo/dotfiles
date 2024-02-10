@@ -1,12 +1,14 @@
 # ENVIRONMENT VARIABLE CONFIG
 #############################
-set -U EDITOR nvim
+set -U EDITOR helix
 set -xg ARCHFLAGS "-arch x86_64"
 set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
+set -U ZELLIJ_AUTO_ATTACH true
 
 if status is-interactive
-    eval (zellij setup --generate-auto-start fish | string collect)
+    eval "$(zellij setup --generate-auto-start fish)"
 end
+
 
 # remove superflous path repetition until I can find out where it's coming from
 # we can clean this up eventually but it's behaving weirdly
@@ -19,8 +21,8 @@ set BUN_INSTALL "$HOME/.bun"
 set PATH "$PATH:$BUN_INSTALL/bin"
 #
 # cargo packages
-set CARGO_HOME "$HOME/.cargo/"
-set PATH "$PATH:$CARGO_HOME/bin"
+# set CARGO_HOME "$HOME/.cargo/"
+# set PATH "$PATH:$CARGO_HOME/bin"
 
 # rvm
 # WHERE TF IS THIS ALL GETTING AUTOSET?!  AND WHY IS IT SETTING GEM PATH LIKE 3 FKN TIMES?
@@ -65,6 +67,7 @@ source ~/.config/.bash_aliases # TODO:old bash trash to eventually clean up to a
 abbr -a gs lazygit
 abbr -a j z
 abbr -a skype snap run skype
+abbr -a hx helix
 #
 #
 # PROMPT CONTROL
