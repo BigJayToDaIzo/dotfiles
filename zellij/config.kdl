@@ -1,8 +1,23 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
-keybinds {
+keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+        // Custom keybinds
+        bind "F1" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
+                floating true
+            };
+            SwitchToMode "Normal"
+        }
+        bind "Alt m" {
+            LaunchPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
+                in_place true
+                kiosk true
+            };
+            SwitchToMode "Normal"
+        }
+        // End Custom keybinds
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -359,7 +374,7 @@ copy_command "xclip -selection clipboard" // x11
 //   - system (default)
 //   - primary
 //
-copy_clipboard "primary"
+// copy_clipboard "primary"
 
 // Enable or disable automatic copy (and clear) of selection when releasing mouse
 // Default: true
@@ -369,7 +384,7 @@ copy_clipboard "primary"
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "helix"
+// scrollback_editor "helix"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)

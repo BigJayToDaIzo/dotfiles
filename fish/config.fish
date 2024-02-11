@@ -5,9 +5,6 @@ set -xg ARCHFLAGS "-arch x86_64"
 set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
 set -U ZELLIJ_AUTO_ATTACH true
 
-
-
-
 # remove superflous path repetition until I can find out where it's coming from
 # we can clean this up eventually but it's behaving weirdly
 set -e PATH[11]
@@ -69,6 +66,7 @@ abbr -a gs lazygit
 abbr -a j z
 abbr -a skype snap run skype
 abbr -a hx helix
+abbr -a za zellij a
 #
 #
 # PROMPT CONTROL
