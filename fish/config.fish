@@ -5,9 +5,7 @@ set -xg ARCHFLAGS "-arch x86_64"
 set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
 set -U ZELLIJ_AUTO_ATTACH true
 
-if status is-interactive
-    eval "$(zellij setup --generate-auto-start fish)"
-end
+
 
 
 # remove superflous path repetition until I can find out where it's coming from
@@ -21,9 +19,12 @@ set BUN_INSTALL "$HOME/.bun"
 set PATH "$PATH:$BUN_INSTALL/bin"
 #
 # cargo packages
-# set CARGO_HOME "$HOME/.cargo/"
-# set PATH "$PATH:$CARGO_HOME/bin"
+set CARGO_HOME "$HOME/.cargo/"
+set PATH "$PATH:$CARGO_HOME/bin"
 
+if status is-interactive
+    eval "$(zellij setup --generate-auto-start fish)"
+end
 # rvm
 # WHERE TF IS THIS ALL GETTING AUTOSET?!  AND WHY IS IT SETTING GEM PATH LIKE 3 FKN TIMES?
 # All this below seems to be handled by the plugins I've installed for each as uncommenting doubles all their paths.

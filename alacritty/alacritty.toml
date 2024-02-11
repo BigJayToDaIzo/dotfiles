@@ -16,7 +16,6 @@ live_config_reload = true
 # for any process spawned by Alacritty, including its shell.  Some 
 # entries may override variables set by alacritty itself.
 [env]
-# EDITOR = "nvim"  <--do not do this here, should likely be inhereted from your shell, just an example of the kinds of stuff you can set here
 #WINIT_X11_SCALE_FACTOR = "1.0"
 #
 #

@@ -1,6 +1,5 @@
 alias vi='nvim'
 alias t='task'
-alias vic='cd ~/.config && vi .'
 alias ls='eza --long --header --icons --git'
 alias lsc='eza --all --long --header --icons --git --git-ignore'
 alias cat='bat'
