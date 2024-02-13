@@ -1,8 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR EDITOR:helix
+SETUVAR --export GOBIN:/usr/local/go/bin
 SETUVAR TERM:xterm\x2d256color
-SETUVAR ZELLIJ_AUTO_ATTACH:true
 SETUVAR ZO_CMD:zo
 SETUVAR Z_CMD:z
 SETUVAR Z_DATA:/home/jm/\x2elocal/share/z/data

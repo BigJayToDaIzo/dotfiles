@@ -1,3 +1,11 @@
+ui {
+  pane_frames {
+    rounded_corners true
+}  
+}
+env {
+    RUST_BACKTRACE 1
+}
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds clear-defaults=true {
     normal {
@@ -94,24 +102,24 @@ keybinds clear-defaults=true {
         bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
         bind "d" { HalfPageScrollDown; }
         bind "u" { HalfPageScrollUp; }
-        // uncomment this and adjust key if using copy_on_select=false
-        // bind "Alt c" { Copy; }
+     // uncomment this and adjust key if using copy_on_select=false
+     // bind "Alt c" { Copy; }
     }
-    search {
-        bind "Ctrl s" { SwitchToMode "Normal"; }
-        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
-        bind "j" "Down" { ScrollDown; }
-        bind "k" "Up" { ScrollUp; }
-        bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
-        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
-        bind "d" { HalfPageScrollDown; }
-        bind "u" { HalfPageScrollUp; }
-        bind "n" { Search "down"; }
-        bind "p" { Search "up"; }
-        bind "c" { SearchToggleOption "CaseSensitivity"; }
-        bind "w" { SearchToggleOption "Wrap"; }
-        bind "o" { SearchToggleOption "WholeWord"; }
-    }
+    // search {
+    //     bind "Ctrl s" { SwitchToMode "Normal"; }
+    //     bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
+    //     bind "j" "Down" { ScrollDown; }
+    //     bind "k" "Up" { ScrollUp; }
+    //     bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
+    //     bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }
+    //     bind "d" { HalfPageScrollDown; }
+    //     bind "u" { HalfPageScrollUp; }
+    //     bind "n" { Search "down"; }
+    //     bind "p" { Search "up"; }
+    //     bind "c" { SearchToggleOption "CaseSensitivity"; }
+    //     bind "w" { SearchToggleOption "Wrap"; }
+    //     bind "o" { SearchToggleOption "WholeWord"; }
+    // }
     entersearch {
         bind "Ctrl c" "Esc" { SwitchToMode "Scroll"; }
         bind "Enter" { SwitchToMode "Search"; }
@@ -384,7 +392,7 @@ copy_command "xclip -selection clipboard" // x11
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-// scrollback_editor "helix"
+scrollback_editor "helix"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
