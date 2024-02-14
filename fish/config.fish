@@ -3,17 +3,18 @@
 #Why is this being injected in the path twice?  HOW is it being injected at all?
 # set -e PATH[1]
 if status is-login
+    # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
+    # Bun
     set -xg BUN_INSTALL $HOME/.bun
-    set -xg PATH $PATH $BUN_INSTALL/bin
-    #
-    # cargo packages
-    set -xg CARGO_HOME $HOME/.cargo/
-    set -xg PATH $PATH $CARGO_HOME/bin
+    # Cargo packages
+    set -xg CARGO_HOME $HOME/.cargo
     # Go
-    set -xg GOBIN /usr/local/go/bin
-    set -xg PATH $PATH $GOBIN
+    set -xg GOBIN /home/jm/go/bin
+    set -xg GOROOT /usr/local/go
+    # Append path
+    set -xg PATH $PATH $CARGO_HOME/bin $GOBIN $GOROOT $BUN_INSTALL/bin
 
     # PLUGIN CONFIG
     ###############
@@ -42,26 +43,25 @@ if status is-login
 
 end
 
-if not status is-login
-    eval "$(zellij setup --generate-auto-start fish)"
-end
+# if not status is-login
+#     eval "$(zellij setup --generate-auto-start fish)"
+# end
 
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
-# source ~/.config/.bash_aliases # TODO:old bash trash to eventually clean up to abbreviations like those below it
 abbr -a gs lazygit
 abbr -a j z
 abbr -a skype snap run skype
 abbr -a hx helix
-abbr -a za zellij a
 abbr -a lg lazygit
 abbr -a vi nvim
 abbr -a t task
-abbr -a ls eza --long --header --icons --git
-abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a cat bat
 abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
+abbr -a ls eza --long --header --icons --git
+abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a zls zellij ls
+abbr -a za zellij a
 
 # PROMPT CONTROL
 ################

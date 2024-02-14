@@ -4,11 +4,7 @@ theme = "darcula"
 line-number = "relative"
 cursorline = true
 cursorcolumn = true
-gutters = [
-  "diagnostics",
-  "line-numbers",
-  "diff"
-]
+gutters = ["diagnostics", "line-numbers", "diff"]
 rulers = [80, 120, 160]
 bufferline = "multiple"
 color-modes = true
@@ -19,8 +15,15 @@ hidden = false
 max-depth = 5
 
 [editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "read-only-indicator",
+  "file-modification-indicator",
+  "workspace-diagnostics",
+]
 center = ["version-control"]
-
 
 [editor.lsp]
 enable = true
@@ -40,3 +43,10 @@ skip-levels = 1
 [editor.soft-wrap]
 enable = true
 wrap-at-text-width = true
+
+[editor.whitespace.characters]
+# space = "·"
+nbsp = "⍽"
+tab = "→"
+newline = "⏎"
+tabpad = "·"  # Tabs will look like "→···" (depending on tab width)
