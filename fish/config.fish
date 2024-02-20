@@ -6,6 +6,7 @@ if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
+    set -xg EDITOR nvim
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages

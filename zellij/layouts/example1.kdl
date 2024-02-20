@@ -1,0 +1,12 @@
+layout {
+    pane // panes can be bare
+    pane command="htop" // panes can have arguments on the same line
+    pane {
+        // panes can have arguments inside child-braces
+        command "eza"
+        cwd "/"
+      }
+    pane command="ls" { // or a mixture of same-lined and child-braces arguments
+      cwd "/"
+    }
+  }

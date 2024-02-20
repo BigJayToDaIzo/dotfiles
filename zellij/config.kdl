@@ -11,21 +11,6 @@ keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
-        // Custom keybinds
-        bind "F1" {
-            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
-                floating true
-            };
-            SwitchToMode "Normal"
-        }
-        bind "Alt m" {
-            LaunchPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
-                in_place true
-                kiosk true
-            };
-            SwitchToMode "Normal"
-        }
-        // End Custom keybinds
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }
@@ -168,6 +153,27 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared_except "locked" {
+        // Custom keybinds
+        bind "F1" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
+                floating true
+            };
+            SwitchToMode "Normal"
+        }
+        bind "Alt m" {
+            LaunchPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
+                in_place true
+                kiosk true
+            };
+            SwitchToMode "Normal"
+        }
+        bind "Ctrl y" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
+                floating true
+                ignore_case true
+            }
+        }
+        // End Custom keybinds
         bind "Ctrl g" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
@@ -392,7 +398,7 @@ copy_command "xclip -selection clipboard" // x11
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "helix"
+// scrollback_editor "nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -403,7 +409,7 @@ scrollback_editor "helix"
 
 // The folder in which Zellij will look for layouts
 //
-// layout_dir "/path/to/my/layout_dir"
+layout_dir "/home/jm/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
 //
