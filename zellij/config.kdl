@@ -1,7 +1,8 @@
 ui {
   pane_frames {
     rounded_corners true
-}  
+}
+
 }
 env {
     RUST_BACKTRACE 1

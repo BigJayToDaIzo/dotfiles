@@ -6,10 +6,10 @@
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
-font_family      Hack Nerd Font Regular
-bold_font        Hack Nerd Font Bold
-italic_font      Hack Nerd Font Italic
-bold_italic_font auto
+# font_family      monospace
+# bold_font        auto
+# italic_font      auto
+# bold_italic_font auto
 
 #: You can specify different fonts for the bold/italic/bold-italic
 #: variants. To get a full list of supported fonts use the `kitty
@@ -182,7 +182,7 @@ font_size 14.0
 #: arrive at a pixel value. There must be four values corresponding to
 #: thin, normal, thick, and very thick lines.
 
-undercurl_style thin-dense
+undercurl_style thin-sparse
 
 #: The style with which undercurls are rendered. This option takes the
 #: form (thin|thick)-(sparse|dense). Thin and thick control the
@@ -407,7 +407,7 @@ undercurl_style thin-dense
 #: underline_hyperlinks option to control how hyperlinks (as opposed
 #: to plain text URLs) are displayed.
 
-url_excluded_characters
+# url_excluded_characters
 
 #: Additional characters to be disallowed from URLs, when detecting
 #: URLs under the mouse cursor. By default, all characters that are
@@ -423,7 +423,7 @@ url_excluded_characters
 #: When the mouse hovers over a terminal hyperlink, show the actual
 #: URL that will be activated when the hyperlink is clicked.
 
-underline_hyperlinks hover
+# underline_hyperlinks hover
 
 #: Control how hyperlinks are underlined. They can either be
 #: underlined on mouse hover, always (i.e. permanently underlined) or
@@ -714,7 +714,7 @@ underline_hyperlinks hover
 
 #: Terminal bell {{{
 
-enable_audio_bell yes
+enable_audio_bell no
 
 #: The audio bell. Useful to disable it in environments that require
 #: silence.
@@ -723,6 +723,7 @@ visual_bell_duration 0.2
 
 #: The visual bell duration (in seconds). Flash the screen when a bell
 #: occurs for the specified number of seconds. Set to zero to disable.
+
 visual_bell_color #242424
 
 #k: The color used by visual bell. Set to none will fall back to
@@ -870,7 +871,7 @@ bell_on_tab "🔔 "
 #: Fade the text in inactive windows by the specified amount (a number
 #: between zero and one, with zero being fully faded).
 
-hide_window_decorations no
+# hide_window_decorations no
 
 #: Hide the window decorations (title-bar and window borders) with
 #: yes. On macOS, titlebar-only and titlebar-and-corners can be used
@@ -1156,6 +1157,9 @@ hide_window_decorations no
 #: platform implements it, so use with care. Currently supported on
 #: macOS and KDE under X11.
 
+# TODO: Maybe set up waifu wallpaper folder and have it randomize them onto terminals as they are opened?
+# background_image none
+
 #: Path to a background image. Must be in PNG format.
 
 # background_image_layout tiled
@@ -1352,15 +1356,7 @@ shell /usr/bin/fish --interactive
 #: See rc_custom_auth <https://sw.kovidgoyal.net/kitty/remote-
 #: control/#rc-custom-auth> for details.
 
-##### CUSTOM KEYBINDS BEGIN HERE #####
-#
-#
-map ctrl+j kitten pass_keys.py bottom ctrl+j
-map ctrl+k kitten pass_keys.py top ctrl+k
-map ctrl+h kitten pass_keys.py left ctrl+h
-map ctrl+l kitten pass_keys.py right ctrl+l
-
-allow_remote_control yes
+# allow_remote_control no
 
 #: Allow other programs to control kitty. If you turn this on, other
 #: programs can control all aspects of kitty, including sending text
@@ -1389,7 +1385,7 @@ allow_remote_control yes
 #: yes
 #:     Remote control requests are always accepted.
 
-listen_on unix:@mykitty
+# listen_on none
 
 #: Listen to the specified socket for remote control connections. Note
 #: that this will apply to all kitty instances. It can be overridden
@@ -1497,7 +1493,7 @@ j
 #: remote machine to read/write to the local filesystem, without
 #: permission.
 
-allow_hyperlinks yes
+# allow_hyperlinks yes
 
 #: Process hyperlink escape sequences (OSC 8). If disabled OSC 8
 #: escape sequences are ignored. Otherwise they become clickable
@@ -1587,7 +1583,7 @@ allow_hyperlinks yes
 
 #: OS specific tweaks {{{
 
-wayland_titlebar_color system
+# wayland_titlebar_color system
 
 #: The color of the kitty window's titlebar on Wayland systems with
 #: client side window decorations such as GNOME. A value of system
@@ -2363,9 +2359,3 @@ wayland_titlebar_color system
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Chalkboard
-include current-theme.conf
-# END_KITTY_THEME

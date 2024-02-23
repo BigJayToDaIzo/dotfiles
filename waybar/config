@@ -1,30 +1,34 @@
 {
-    // "layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     "position": "bottom", // Waybar position (top|bottom|left|right)
-    "height": 20, // Waybar height (to be removed for auto height)
+    "height": 25, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    // "modules-left": ["sway/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    
+    //"modules-left": ["hyprland/workspaces", "sway/mode", "sway/scratchpad", "custom/media"],
+    "modules-left": ["hyprland/workspaces", "custom/media"],
     "modules-center": ["hyprland/window"],
     "modules-right": ["idle_inhibitor", "pulseaudio", "cpu", "memory", "temperature", "clock"],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": false,
+        "warp-on-scroll": false,
+        "format": "{icon}",
+        "format-icons": {
+            "1": "",
+            "2": "",
+            "3": "⏿",
+            "4": "󰙯",
+            "5": "",
+            "6": "",
+            "8": "",
+            "urgent": "",
+            "focused": "",
+            "default": ""
+        }
+    },
     "hyprland/window": {
         "max-length": 200,
         "separate-outputs": true
@@ -91,17 +95,17 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}%󰍛",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% "
     },
     "temperature": {
         // "thermal-zone": 2,
         // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
         "critical-threshold": 80,
-        // "format-critical": "{temperatureC}°C {icon}",
+        "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
@@ -129,7 +133,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        //"format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
