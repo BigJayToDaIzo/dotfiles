@@ -3,10 +3,6 @@ layout {
       pane command="btop"
       pane {
         focus true
-        command "task"
       }
     }
-  pane size=1 borderless=true {
-      plugin location="zellij:status-bar"
-  }
 }

@@ -1,0 +1,2822 @@
+[2024-02-28 08:49:17.816] [debug] Try expanding: $XDG_CONFIG_HOME/waybar/config
+[2024-02-28 08:49:17.816] [debug] Try expanding: $XDG_CONFIG_HOME/waybar/config.jsonc
+[2024-02-28 08:49:17.816] [debug] Try expanding: $HOME/.config/waybar/config
+[2024-02-28 08:49:17.816] [debug] Found config file: $HOME/.config/waybar/config
+[2024-02-28 08:49:17.816] [info] Using configuration file /home/jm/.config/waybar/config
+[2024-02-28 08:49:17.817] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2024-02-28 08:49:17.817] [debug] Try expanding: $XDG_CONFIG_HOME/waybar/style.css
+[2024-02-28 08:49:17.817] [debug] Try expanding: $HOME/.config/waybar/style.css
+[2024-02-28 08:49:17.817] [debug] Try expanding: $HOME/waybar/style.css
+[2024-02-28 08:49:17.817] [debug] Try expanding: /etc/xdg/waybar/style.css
+[2024-02-28 08:49:17.817] [debug] Try expanding: /usr/local/etc/xdg/waybar/style.css
+[2024-02-28 08:49:17.817] [debug] Found config file: /usr/local/etc/xdg/waybar/style.css
+[2024-02-28 08:49:17.817] [info] Using CSS file /usr/local/etc/xdg/waybar/style.css
+[2024-02-28 08:49:17.822] [debug] Output detection done: HDMI-A-1 (Dell Inc. DELL SE2417HG 7DWHJ6993BHI)
+[2024-02-28 08:49:17.823] [debug] window-rewrite is not defined or is not an object, using default rules.
+[2024-02-28 08:49:17.823] [info] Hyprland IPC starting
+[2024-02-28 08:49:17.826] [trace] Current monitor ID: 0
+[2024-02-28 08:49:17.826] [debug] Initializing workspaces
+[2024-02-28 08:49:17.827] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:17.827] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:17.827] [debug] Initializing persistent workspaces
+[2024-02-28 08:49:17.827] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:49:17.827] [trace] Creating persistent workspace: 1 on monitor HDMI-A-1
+[2024-02-28 08:49:17.827] [trace] Creating persistent workspace: 4 on monitor HDMI-A-1
+[2024-02-28 08:49:17.851] [debug] Output detection done: DP-2 (Dell Inc. Dell S2716DG #ASMtztw4YATd)
+[2024-02-28 08:49:17.852] [debug] window-rewrite is not defined or is not an object, using default rules.
+[2024-02-28 08:49:17.852] [trace] Current monitor ID: 1
+[2024-02-28 08:49:17.853] [debug] Initializing workspaces
+[2024-02-28 08:49:17.853] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:17.853] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:17.853] [debug] Initializing persistent workspaces
+[2024-02-28 08:49:17.853] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:49:17.855] [debug] Output detection done: DP-3 (LG Electronics 27GL850 005NTYTBY650)
+[2024-02-28 08:49:17.855] [debug] window-rewrite is not defined or is not an object, using default rules.
+[2024-02-28 08:49:17.855] [trace] Current monitor ID: 2
+[2024-02-28 08:49:17.855] [debug] Initializing workspaces
+[2024-02-28 08:49:17.855] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:17.855] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:17.855] [debug] Initializing persistent workspaces
+[2024-02-28 08:49:17.855] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:49:17.858] [debug] GTK widget tree:
+window#waybar.background.bottom.empty..mode-default.DP-3:dir(ltr)
+  decoration:dir(ltr)
+  box.horizontal:dir(ltr)
+    box.horizontal.modules-left:dir(ltr)
+      widget:dir(ltr)
+        box#workspaces.horizontal.module:dir(ltr)
+    box.horizontal.modules-center:dir(ltr)
+      widget:dir(ltr)
+        box.horizontal:dir(ltr)
+          image:dir(ltr)
+          label#window.module:dir(ltr)
+    box.horizontal.modules-right:dir(ltr)
+      widget:dir(ltr)
+        label#idle_inhibitor.module:dir(ltr)
+      widget:dir(ltr)
+        label#pulseaudio.module:dir(ltr)
+      widget:dir(ltr)
+        label#cpu.module:dir(ltr)
+      widget:dir(ltr)
+        label#memory.module:dir(ltr)
+      widget:dir(ltr)
+        label#temperature.module:dir(ltr)
+      widget:dir(ltr)
+        label#clock.module:dir(ltr)
+
+[2024-02-28 08:49:17.858] [debug] GTK widget tree:
+window#waybar.background.bottom.empty..mode-default.DP-2:dir(ltr)
+  decoration:dir(ltr)
+  box.horizontal:dir(ltr)
+    box.horizontal.modules-left:dir(ltr)
+      widget:dir(ltr)
+        box#workspaces.horizontal.module:dir(ltr)
+    box.horizontal.modules-center:dir(ltr)
+      widget:dir(ltr)
+        box.horizontal:dir(ltr)
+          image:dir(ltr)
+          label#window.module:dir(ltr)
+    box.horizontal.modules-right:dir(ltr)
+      widget:dir(ltr)
+        label#idle_inhibitor.module:dir(ltr)
+      widget:dir(ltr)
+        label#pulseaudio.module:dir(ltr)
+      widget:dir(ltr)
+        label#cpu.module:dir(ltr)
+      widget:dir(ltr)
+        label#memory.module:dir(ltr)
+      widget:dir(ltr)
+        label#temperature.module:dir(ltr)
+      widget:dir(ltr)
+        label#clock.module:dir(ltr)
+
+[2024-02-28 08:49:17.858] [debug] GTK widget tree:
+window#waybar.background.bottom.empty.HDMI-A-1..mode-default:dir(ltr)
+  decoration:dir(ltr)
+  box.horizontal:dir(ltr)
+    box.horizontal.modules-left:dir(ltr)
+      widget:dir(ltr)
+        box#workspaces.horizontal.module:dir(ltr)
+    box.horizontal.modules-center:dir(ltr)
+      widget:dir(ltr)
+        box.horizontal:dir(ltr)
+          image:dir(ltr)
+          label#window.module:dir(ltr)
+    box.horizontal.modules-right:dir(ltr)
+      widget:dir(ltr)
+        label#idle_inhibitor.module:dir(ltr)
+      widget:dir(ltr)
+        label#pulseaudio.module:dir(ltr)
+      widget:dir(ltr)
+        label#cpu.module:dir(ltr)
+      widget:dir(ltr)
+        label#memory.module:dir(ltr)
+      widget:dir(ltr)
+        label#temperature.module:dir(ltr)
+      widget:dir(ltr)
+        label#clock.module:dir(ltr)
+
+[2024-02-28 08:49:17.858] [debug] Creating workspace 1, persistent: false
+[2024-02-28 08:49:17.858] [debug] Creating workspace 1, persistent: true
+[2024-02-28 08:49:17.858] [debug] Creating workspace 4, persistent: true
+[2024-02-28 08:49:17.859] [trace] Getting active workspaces
+[2024-02-28 08:49:17.859] [trace] Updating workspace states
+[2024-02-28 08:49:17.859] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:17.859] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:17.859] [trace] Updating window count
+[2024-02-28 08:49:17.961] [debug] Removing workspace 1
+[2024-02-28 08:49:17.961] [debug] Removing workspace 4
+[2024-02-28 08:49:17.961] [debug] Creating workspace 8, persistent: false
+[2024-02-28 08:49:17.961] [trace] Getting active workspaces
+[2024-02-28 08:49:17.973] [trace] Updating workspace states
+[2024-02-28 08:49:17.973] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:17.973] [trace] Updating window count
+[2024-02-28 08:49:18.075] [debug] Removing workspace 1
+[2024-02-28 08:49:18.075] [debug] Removing workspace 4
+[2024-02-28 08:49:18.075] [debug] Creating workspace 5, persistent: false
+[2024-02-28 08:49:18.075] [trace] Getting active workspaces
+[2024-02-28 08:49:18.077] [trace] Updating workspace states
+[2024-02-28 08:49:18.077] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.077] [trace] Updating window count
+[2024-02-28 08:49:18.142] [debug] hyprland IPC received openlayer>>hyprpaper
+[2024-02-28 08:49:18.182] [info] Bar configured (width: 1920, height: 25) for output: HDMI-A-1
+[2024-02-28 08:49:18.182] [info] Bar configured (width: 2560, height: 25) for output: DP-2
+[2024-02-28 08:49:18.182] [info] Bar configured (width: 2560, height: 25) for output: DP-3
+[2024-02-28 08:49:18.184] [debug] hyprland IPC received openlayer>>waybar
+[2024-02-28 08:49:18.185] [debug] hyprland IPC received openlayer>>waybar
+[2024-02-28 08:49:18.186] [debug] hyprland IPC received openlayer>>waybar
+[2024-02-28 08:49:18.252] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:49:18.252] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:49:18.262] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:49:18.262] [trace] Getting active workspaces
+[2024-02-28 08:49:18.314] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:49:18.347] [trace] Updating workspace states
+[2024-02-28 08:49:18.347] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.347] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.347] [trace] Updating window count
+[2024-02-28 08:49:18.347] [trace] Getting active workspaces
+[2024-02-28 08:49:18.400] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:49:18.401] [trace] Updating workspace states
+[2024-02-28 08:49:18.401] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.401] [trace] Updating window count
+[2024-02-28 08:49:18.401] [trace] Getting active workspaces
+[2024-02-28 08:49:18.424] [trace] Updating workspace states
+[2024-02-28 08:49:18.424] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.424] [trace] Updating window count
+[2024-02-28 08:49:18.553] [trace] Adding solo class: kitty
+[2024-02-28 08:49:18.554] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:18.555] [debug] hyprland IPC received openwindow>>5572898c6780,5,kitty,fish
+[2024-02-28 08:49:18.555] [trace] Window opened: 5572898c6780,5,kitty,fish
+[2024-02-28 08:49:18.557] [trace] Window opened: 5572898c6780,5,kitty,fish
+[2024-02-28 08:49:18.557] [trace] Getting active workspaces
+[2024-02-28 08:49:18.559] [trace] Window opened: 5572898c6780,5,kitty,fish
+[2024-02-28 08:49:18.559] [trace] Updating workspace states
+[2024-02-28 08:49:18.559] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.559] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.559] [trace] Updating window count
+[2024-02-28 08:49:18.559] [trace] Getting active workspaces
+[2024-02-28 08:49:18.559] [trace] Updating workspace states
+[2024-02-28 08:49:18.559] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.559] [trace] Updating window count
+[2024-02-28 08:49:18.559] [trace] Getting active workspaces
+[2024-02-28 08:49:18.560] [trace] Updating workspace states
+[2024-02-28 08:49:18.560] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.560] [trace] Updating window count
+[2024-02-28 08:49:18.560] [trace] Getting active workspaces
+[2024-02-28 08:49:18.560] [debug] hyprland IPC received openlayer>>hyprpaper
+[2024-02-28 08:49:18.561] [trace] Updating workspace states
+[2024-02-28 08:49:18.561] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.561] [trace] Updating window count
+[2024-02-28 08:49:18.561] [debug] hyprland IPC received openlayer>>hyprpaper
+[2024-02-28 08:49:18.562] [debug] hyprland IPC received createworkspace>>special:magic
+[2024-02-28 08:49:18.562] [debug] Workspace created: special:magic
+[2024-02-28 08:49:18.563] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:18.563] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:18.563] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:18.563] [debug] Workspace created: special:magic
+[2024-02-28 08:49:18.563] [trace] Getting active workspaces
+[2024-02-28 08:49:18.564] [trace] Updating workspace states
+[2024-02-28 08:49:18.564] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.564] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:18.564] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:18.564] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:18.564] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.564] [debug] Workspace created: special:magic
+[2024-02-28 08:49:18.564] [trace] Updating window count
+[2024-02-28 08:49:18.564] [trace] Getting active workspaces
+[2024-02-28 08:49:18.566] [trace] Updating workspace states
+[2024-02-28 08:49:18.566] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.566] [trace] Updating window count
+[2024-02-28 08:49:18.566] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:18.566] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:18.566] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:18.566] [trace] Getting active workspaces
+[2024-02-28 08:49:18.567] [trace] Updating workspace states
+[2024-02-28 08:49:18.567] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.567] [trace] Updating window count
+[2024-02-28 08:49:18.567] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:49:18.570] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:18.571] [debug] hyprland IPC received openwindow>>5572898cc380,special:magic silent,kitty,fish
+[2024-02-28 08:49:18.571] [trace] Window opened: 5572898cc380,special:magic silent,kitty,fish
+[2024-02-28 08:49:18.572] [trace] Window opened: 5572898cc380,special:magic silent,kitty,fish
+[2024-02-28 08:49:18.572] [trace] Window opened: 5572898cc380,special:magic silent,kitty,fish
+[2024-02-28 08:49:18.572] [trace] Getting active workspaces
+[2024-02-28 08:49:18.573] [trace] Updating workspace states
+[2024-02-28 08:49:18.573] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.573] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.573] [trace] Updating window count
+[2024-02-28 08:49:18.573] [trace] Getting active workspaces
+[2024-02-28 08:49:18.573] [trace] Updating workspace states
+[2024-02-28 08:49:18.573] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.573] [trace] Updating window count
+[2024-02-28 08:49:18.573] [trace] Getting active workspaces
+[2024-02-28 08:49:18.573] [trace] Updating workspace states
+[2024-02-28 08:49:18.573] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.573] [trace] Updating window count
+[2024-02-28 08:49:18.574] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:49:18.584] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:18.585] [debug] hyprland IPC received openwindow>>5572898cd970,1 silent,kitty,btop
+[2024-02-28 08:49:18.585] [trace] Window opened: 5572898cd970,1 silent,kitty,btop
+[2024-02-28 08:49:18.586] [trace] Window opened: 5572898cd970,1 silent,kitty,btop
+[2024-02-28 08:49:18.586] [trace] Window opened: 5572898cd970,1 silent,kitty,btop
+[2024-02-28 08:49:18.586] [trace] Getting active workspaces
+[2024-02-28 08:49:18.586] [trace] Updating workspace states
+[2024-02-28 08:49:18.586] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.586] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.586] [trace] Updating window count
+[2024-02-28 08:49:18.586] [trace] Getting active workspaces
+[2024-02-28 08:49:18.587] [trace] Updating workspace states
+[2024-02-28 08:49:18.587] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.587] [trace] Updating window count
+[2024-02-28 08:49:18.587] [trace] Getting active workspaces
+[2024-02-28 08:49:18.587] [trace] Updating workspace states
+[2024-02-28 08:49:18.587] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.587] [trace] Updating window count
+[2024-02-28 08:49:18.587] [trace] Getting active workspaces
+[2024-02-28 08:49:18.587] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:49:18.587] [trace] Updating workspace states
+[2024-02-28 08:49:18.587] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.587] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.587] [trace] Updating window count
+[2024-02-28 08:49:18.588] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:18.591] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:18.592] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:18.595] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:18.596] [debug] hyprland IPC received openwindow>>5572898dac50,1 silent,kitty,task
+[2024-02-28 08:49:18.596] [trace] Window opened: 5572898dac50,1 silent,kitty,task
+[2024-02-28 08:49:18.596] [trace] Window opened: 5572898dac50,1 silent,kitty,task
+[2024-02-28 08:49:18.596] [trace] Getting active workspaces
+[2024-02-28 08:49:18.596] [trace] Window opened: 5572898dac50,1 silent,kitty,task
+[2024-02-28 08:49:18.597] [trace] Updating workspace states
+[2024-02-28 08:49:18.597] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.597] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.597] [trace] Updating window count
+[2024-02-28 08:49:18.597] [trace] Getting active workspaces
+[2024-02-28 08:49:18.597] [trace] Updating workspace states
+[2024-02-28 08:49:18.597] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.597] [trace] Updating window count
+[2024-02-28 08:49:18.597] [trace] Getting active workspaces
+[2024-02-28 08:49:18.597] [trace] Updating workspace states
+[2024-02-28 08:49:18.597] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.597] [trace] Updating window count
+[2024-02-28 08:49:18.597] [trace] Getting active workspaces
+[2024-02-28 08:49:18.597] [trace] Updating workspace states
+[2024-02-28 08:49:18.597] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.597] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.597] [trace] Updating window count
+[2024-02-28 08:49:18.598] [debug] hyprland IPC received closewindow>>5572898dac50
+[2024-02-28 08:49:18.598] [trace] Window closed: 5572898dac50
+[2024-02-28 08:49:18.598] [trace] Getting active workspaces
+[2024-02-28 08:49:18.598] [trace] Updating workspace states
+[2024-02-28 08:49:18.598] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.598] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.598] [trace] Updating window count
+[2024-02-28 08:49:18.598] [trace] Window closed: 5572898dac50
+[2024-02-28 08:49:18.598] [trace] Getting active workspaces
+[2024-02-28 08:49:18.599] [trace] Window closed: 5572898dac50
+[2024-02-28 08:49:18.600] [trace] Updating workspace states
+[2024-02-28 08:49:18.600] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.600] [trace] Updating window count
+[2024-02-28 08:49:18.600] [trace] Getting active workspaces
+[2024-02-28 08:49:18.600] [trace] Updating workspace states
+[2024-02-28 08:49:18.600] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.600] [trace] Updating window count
+[2024-02-28 08:49:18.601] [debug] hyprland IPC received windowtitle>>5572898cc380
+[2024-02-28 08:49:18.642] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:18.653] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:18.654] [debug] hyprland IPC received openwindow>>55728a91c420,8 silent,firefox,Mozilla Firefox
+[2024-02-28 08:49:18.654] [trace] Window opened: 55728a91c420,8 silent,firefox,Mozilla Firefox
+[2024-02-28 08:49:18.654] [trace] Window opened: 55728a91c420,8 silent,firefox,Mozilla Firefox
+[2024-02-28 08:49:18.654] [trace] Getting active workspaces
+[2024-02-28 08:49:18.654] [trace] Window opened: 55728a91c420,8 silent,firefox,Mozilla Firefox
+[2024-02-28 08:49:18.655] [trace] Updating workspace states
+[2024-02-28 08:49:18.655] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.655] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.655] [trace] Updating window count
+[2024-02-28 08:49:18.655] [trace] Getting active workspaces
+[2024-02-28 08:49:18.656] [trace] Updating workspace states
+[2024-02-28 08:49:18.656] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.656] [trace] Updating window count
+[2024-02-28 08:49:18.656] [trace] Getting active workspaces
+[2024-02-28 08:49:18.656] [trace] Updating workspace states
+[2024-02-28 08:49:18.656] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.656] [trace] Updating window count
+[2024-02-28 08:49:18.656] [trace] Getting active workspaces
+[2024-02-28 08:49:18.656] [trace] Updating workspace states
+[2024-02-28 08:49:18.656] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.656] [trace] Updating window count
+[2024-02-28 08:49:18.930] [debug] hyprland IPC received windowtitle>>55728a91c420
+[2024-02-28 08:49:18.993] [debug] hyprland IPC received createworkspace>>4
+[2024-02-28 08:49:18.993] [debug] Workspace created: 4
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace -98
+[2024-02-28 08:49:18.997] [debug] Workspace created: 4
+[2024-02-28 08:49:18.997] [debug] Creating workspace 4, persistent: true
+[2024-02-28 08:49:18.997] [trace] Getting active workspaces
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:18.997] [trace] Extending orphans with workspace -98
+[2024-02-28 08:49:18.997] [trace] Updating workspace states
+[2024-02-28 08:49:18.997] [debug] Workspace created: 4
+[2024-02-28 08:49:18.997] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:18.997] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:18.997] [trace] Updating window count
+[2024-02-28 08:49:18.997] [trace] Getting active workspaces
+[2024-02-28 08:49:18.998] [trace] Extending orphans with workspace 1
+[2024-02-28 08:49:18.998] [trace] Extending orphans with workspace 8
+[2024-02-28 08:49:18.998] [trace] Extending orphans with workspace 5
+[2024-02-28 08:49:18.998] [trace] Extending orphans with workspace -98
+[2024-02-28 08:49:18.998] [trace] Updating workspace states
+[2024-02-28 08:49:18.998] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:18.998] [trace] Updating window count
+[2024-02-28 08:49:18.998] [trace] Getting active workspaces
+[2024-02-28 08:49:18.999] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:18.999] [trace] Updating workspace states
+[2024-02-28 08:49:18.999] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:18.999] [trace] Updating window count
+[2024-02-28 08:49:19.009] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:19.010] [debug] hyprland IPC received openwindow>>55728a945fd0,4 silent,discord,Discord Updater
+[2024-02-28 08:49:19.010] [trace] Window opened: 55728a945fd0,4 silent,discord,Discord Updater
+[2024-02-28 08:49:19.011] [trace] Window opened: 55728a945fd0,4 silent,discord,Discord Updater
+[2024-02-28 08:49:19.011] [trace] Getting active workspaces
+[2024-02-28 08:49:19.011] [trace] Window opened: 55728a945fd0,4 silent,discord,Discord Updater
+[2024-02-28 08:49:19.011] [trace] Updating workspace states
+[2024-02-28 08:49:19.011] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:19.011] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:19.011] [trace] Updating window count
+[2024-02-28 08:49:19.011] [trace] Getting active workspaces
+[2024-02-28 08:49:19.011] [trace] Updating workspace states
+[2024-02-28 08:49:19.011] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:19.011] [trace] Updating window count
+[2024-02-28 08:49:19.011] [trace] Getting active workspaces
+[2024-02-28 08:49:19.012] [trace] Updating workspace states
+[2024-02-28 08:49:19.012] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:19.012] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:19.012] [trace] Updating window count
+[2024-02-28 08:49:19.012] [trace] Getting active workspaces
+[2024-02-28 08:49:19.012] [debug] hyprland IPC received urgent>>55728a945fd0
+[2024-02-28 08:49:19.013] [trace] Updating workspace states
+[2024-02-28 08:49:19.013] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:19.013] [trace] Updating window count
+[2024-02-28 08:49:19.013] [trace] Getting active workspaces
+[2024-02-28 08:49:19.013] [trace] Updating workspace states
+[2024-02-28 08:49:19.013] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:19.013] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:19.014] [trace] Updating window count
+[2024-02-28 08:49:19.014] [trace] Getting active workspaces
+[2024-02-28 08:49:19.014] [trace] Updating workspace states
+[2024-02-28 08:49:19.014] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:19.014] [trace] Updating window count
+[2024-02-28 08:49:19.014] [trace] Getting active workspaces
+[2024-02-28 08:49:19.015] [debug] hyprland IPC received urgent>>55728a945fd0
+[2024-02-28 08:49:19.017] [trace] Updating workspace states
+[2024-02-28 08:49:19.017] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:19.017] [trace] Updating window count
+[2024-02-28 08:49:19.018] [trace] Getting active workspaces
+[2024-02-28 08:49:19.022] [trace] Updating workspace states
+[2024-02-28 08:49:19.022] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:19.022] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:19.022] [trace] Updating window count
+[2024-02-28 08:49:19.022] [trace] Getting active workspaces
+[2024-02-28 08:49:19.022] [trace] Updating workspace states
+[2024-02-28 08:49:19.022] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:19.022] [trace] Updating window count
+[2024-02-28 08:49:19.022] [trace] Getting active workspaces
+[2024-02-28 08:49:19.022] [trace] Updating workspace states
+[2024-02-28 08:49:19.022] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:19.022] [trace] Updating window count
+[2024-02-28 08:49:20.792] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:20.799] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:20.801] [debug] hyprland IPC received openwindow>>55728a94a8d0,4 silent,discord,Discord
+[2024-02-28 08:49:20.801] [trace] Window opened: 55728a94a8d0,4 silent,discord,Discord
+[2024-02-28 08:49:20.801] [trace] Window opened: 55728a94a8d0,4 silent,discord,Discord
+[2024-02-28 08:49:20.801] [trace] Getting active workspaces
+[2024-02-28 08:49:20.801] [trace] Window opened: 55728a94a8d0,4 silent,discord,Discord
+[2024-02-28 08:49:20.801] [trace] Updating workspace states
+[2024-02-28 08:49:20.801] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:20.801] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:20.801] [trace] Updating window count
+[2024-02-28 08:49:20.801] [trace] Getting active workspaces
+[2024-02-28 08:49:20.801] [trace] Updating workspace states
+[2024-02-28 08:49:20.801] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:20.801] [trace] Updating window count
+[2024-02-28 08:49:20.801] [trace] Getting active workspaces
+[2024-02-28 08:49:20.801] [trace] Updating workspace states
+[2024-02-28 08:49:20.801] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:20.801] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:20.801] [trace] Updating window count
+[2024-02-28 08:49:20.802] [trace] Getting active workspaces
+[2024-02-28 08:49:20.802] [trace] Updating workspace states
+[2024-02-28 08:49:20.802] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:20.802] [trace] Updating window count
+[2024-02-28 08:49:20.802] [debug] hyprland IPC received urgent>>55728a94a8d0
+[2024-02-28 08:49:20.803] [trace] Getting active workspaces
+[2024-02-28 08:49:20.803] [trace] Updating workspace states
+[2024-02-28 08:49:20.803] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:20.803] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:20.803] [trace] Updating window count
+[2024-02-28 08:49:20.803] [trace] Getting active workspaces
+[2024-02-28 08:49:20.804] [trace] Updating workspace states
+[2024-02-28 08:49:20.804] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:20.804] [trace] Updating window count
+[2024-02-28 08:49:20.804] [trace] Getting active workspaces
+[2024-02-28 08:49:20.804] [trace] Updating workspace states
+[2024-02-28 08:49:20.804] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:20.804] [trace] Updating window count
+[2024-02-28 08:49:20.833] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:49:20.835] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:49:20.887] [debug] hyprland IPC received closewindow>>55728a945fd0
+[2024-02-28 08:49:20.887] [trace] Window closed: 55728a945fd0
+[2024-02-28 08:49:20.888] [trace] Getting active workspaces
+[2024-02-28 08:49:20.888] [trace] Updating workspace states
+[2024-02-28 08:49:20.888] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:20.888] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:20.888] [trace] Updating window count
+[2024-02-28 08:49:20.889] [trace] Window closed: 55728a945fd0
+[2024-02-28 08:49:20.889] [trace] Getting active workspaces
+[2024-02-28 08:49:20.889] [trace] Updating workspace states
+[2024-02-28 08:49:20.889] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:20.889] [trace] Updating window count
+[2024-02-28 08:49:20.894] [trace] Window closed: 55728a945fd0
+[2024-02-28 08:49:20.895] [trace] Getting active workspaces
+[2024-02-28 08:49:20.895] [trace] Updating workspace states
+[2024-02-28 08:49:20.895] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:20.895] [trace] Updating window count
+[2024-02-28 08:49:21.729] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:49:21.730] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:49:21.926] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:49:21.927] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:49:54.523] [debug] hyprland IPC received focusedmon>>HDMI-A-1,1
+[2024-02-28 08:49:54.523] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:49:54.529] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:49:54.529] [trace] Getting active workspaces
+[2024-02-28 08:49:54.541] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:49:54.546] [trace] Updating workspace states
+[2024-02-28 08:49:54.546] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:54.546] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:54.546] [trace] Updating window count
+[2024-02-28 08:49:54.546] [trace] Getting active workspaces
+[2024-02-28 08:49:54.557] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:54.558] [trace] Updating workspace states
+[2024-02-28 08:49:54.558] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:54.558] [trace] Updating window count
+[2024-02-28 08:49:54.558] [trace] Getting active workspaces
+[2024-02-28 08:49:54.561] [trace] Updating workspace states
+[2024-02-28 08:49:54.561] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:54.561] [trace] Updating window count
+[2024-02-28 08:49:54.571] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:49:54.572] [debug] hyprland IPC received workspace>>4
+[2024-02-28 08:49:54.572] [trace] Getting active workspaces
+[2024-02-28 08:49:54.573] [trace] Updating workspace states
+[2024-02-28 08:49:54.573] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:54.573] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:54.573] [trace] Updating window count
+[2024-02-28 08:49:54.573] [trace] Getting active workspaces
+[2024-02-28 08:49:54.575] [trace] Updating workspace states
+[2024-02-28 08:49:54.575] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:54.575] [trace] Updating window count
+[2024-02-28 08:49:54.575] [trace] Getting active workspaces
+[2024-02-28 08:49:54.577] [trace] Updating workspace states
+[2024-02-28 08:49:54.577] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:54.577] [trace] Updating window count
+[2024-02-28 08:49:55.588] [debug] hyprland IPC received activewindow>>discord,Friends - Discord
+[2024-02-28 08:49:55.593] [trace] Adding solo class: discord
+[2024-02-28 08:49:55.635] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:49:56.621] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:49:56.623] [trace] Removing solo class: discord
+[2024-02-28 08:49:56.623] [trace] Adding solo class: kitty
+[2024-02-28 08:49:56.630] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:49:56.631] [debug] hyprland IPC received workspace>>1
+[2024-02-28 08:49:56.631] [trace] Getting active workspaces
+[2024-02-28 08:49:56.633] [trace] Updating workspace states
+[2024-02-28 08:49:56.633] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:56.633] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:56.633] [trace] Updating window count
+[2024-02-28 08:49:56.633] [trace] Getting active workspaces
+[2024-02-28 08:49:56.633] [trace] Updating workspace states
+[2024-02-28 08:49:56.633] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:56.633] [trace] Updating window count
+[2024-02-28 08:49:56.633] [trace] Getting active workspaces
+[2024-02-28 08:49:56.633] [trace] Updating workspace states
+[2024-02-28 08:49:56.633] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:56.633] [trace] Updating window count
+[2024-02-28 08:49:58.040] [debug] hyprland IPC received activewindow>>discord,Friends - Discord
+[2024-02-28 08:49:58.044] [trace] Removing solo class: kitty
+[2024-02-28 08:49:58.044] [trace] Adding solo class: discord
+[2024-02-28 08:49:58.050] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:49:58.051] [debug] hyprland IPC received workspace>>4
+[2024-02-28 08:49:58.051] [trace] Getting active workspaces
+[2024-02-28 08:49:58.053] [trace] Updating workspace states
+[2024-02-28 08:49:58.053] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:58.053] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:58.053] [trace] Updating window count
+[2024-02-28 08:49:58.053] [trace] Getting active workspaces
+[2024-02-28 08:49:58.053] [trace] Updating workspace states
+[2024-02-28 08:49:58.053] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:58.053] [trace] Updating window count
+[2024-02-28 08:49:58.053] [trace] Getting active workspaces
+[2024-02-28 08:49:58.053] [trace] Updating workspace states
+[2024-02-28 08:49:58.053] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:58.053] [trace] Updating window count
+[2024-02-28 08:49:58.932] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:49:58.936] [trace] Removing solo class: discord
+[2024-02-28 08:49:58.936] [trace] Adding solo class: kitty
+[2024-02-28 08:49:58.946] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:49:58.947] [debug] hyprland IPC received workspace>>1
+[2024-02-28 08:49:58.947] [trace] Getting active workspaces
+[2024-02-28 08:49:58.948] [trace] Updating workspace states
+[2024-02-28 08:49:58.948] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:58.948] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:58.948] [trace] Updating window count
+[2024-02-28 08:49:58.948] [trace] Getting active workspaces
+[2024-02-28 08:49:58.952] [trace] Updating workspace states
+[2024-02-28 08:49:58.952] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:58.952] [trace] Updating window count
+[2024-02-28 08:49:58.952] [trace] Getting active workspaces
+[2024-02-28 08:49:58.952] [trace] Updating workspace states
+[2024-02-28 08:49:58.952] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:58.952] [trace] Updating window count
+[2024-02-28 08:49:59.364] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:49:59.364] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:49:59.364] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:49:59.364] [trace] Getting active workspaces
+[2024-02-28 08:49:59.368] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:49:59.368] [trace] Updating workspace states
+[2024-02-28 08:49:59.368] [trace] Selecting icon for workspace 1
+[2024-02-28 08:49:59.368] [trace] Selecting icon for workspace 4
+[2024-02-28 08:49:59.368] [trace] Updating window count
+[2024-02-28 08:49:59.368] [trace] Getting active workspaces
+[2024-02-28 08:49:59.368] [trace] Updating workspace states
+[2024-02-28 08:49:59.368] [trace] Selecting icon for workspace 8
+[2024-02-28 08:49:59.368] [trace] Updating window count
+[2024-02-28 08:49:59.368] [trace] Getting active workspaces
+[2024-02-28 08:49:59.369] [trace] Updating workspace states
+[2024-02-28 08:49:59.369] [trace] Selecting icon for workspace 5
+[2024-02-28 08:49:59.369] [trace] Updating window count
+[2024-02-28 08:49:59.369] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:49:59.385] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:50:01.908] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:50:01.909] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:50:01.922] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:50:18.991] [debug] hyprland IPC received focusedmon>>HDMI-A-1,1
+[2024-02-28 08:50:18.991] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:50:18.996] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:50:18.996] [trace] Getting active workspaces
+[2024-02-28 08:50:19.006] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:50:19.011] [trace] Updating workspace states
+[2024-02-28 08:50:19.011] [trace] Selecting icon for workspace 1
+[2024-02-28 08:50:19.011] [trace] Selecting icon for workspace 4
+[2024-02-28 08:50:19.011] [trace] Updating window count
+[2024-02-28 08:50:19.011] [trace] Getting active workspaces
+[2024-02-28 08:50:19.036] [debug] hyprland IPC received activewindow>>discord,Friends - Discord
+[2024-02-28 08:50:19.039] [trace] Updating workspace states
+[2024-02-28 08:50:19.039] [trace] Selecting icon for workspace 8
+[2024-02-28 08:50:19.040] [trace] Updating window count
+[2024-02-28 08:50:19.040] [trace] Getting active workspaces
+[2024-02-28 08:50:19.041] [trace] Updating workspace states
+[2024-02-28 08:50:19.041] [trace] Selecting icon for workspace 5
+[2024-02-28 08:50:19.041] [trace] Updating window count
+[2024-02-28 08:50:19.042] [trace] Removing solo class: kitty
+[2024-02-28 08:50:19.042] [trace] Adding solo class: discord
+[2024-02-28 08:50:19.057] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:50:19.058] [debug] hyprland IPC received workspace>>4
+[2024-02-28 08:50:19.058] [trace] Getting active workspaces
+[2024-02-28 08:50:19.059] [debug] hyprland IPC received activewindow>>discord,Friends - Discord
+[2024-02-28 08:50:19.062] [trace] Updating workspace states
+[2024-02-28 08:50:19.062] [trace] Selecting icon for workspace 1
+[2024-02-28 08:50:19.063] [trace] Selecting icon for workspace 4
+[2024-02-28 08:50:19.063] [trace] Updating window count
+[2024-02-28 08:50:19.063] [trace] Getting active workspaces
+[2024-02-28 08:50:19.063] [trace] Updating workspace states
+[2024-02-28 08:50:19.063] [trace] Selecting icon for workspace 8
+[2024-02-28 08:50:19.063] [trace] Updating window count
+[2024-02-28 08:50:19.063] [trace] Getting active workspaces
+[2024-02-28 08:50:19.063] [trace] Updating workspace states
+[2024-02-28 08:50:19.063] [trace] Selecting icon for workspace 5
+[2024-02-28 08:50:19.063] [trace] Updating window count
+[2024-02-28 08:50:19.071] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:50:20.764] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:50:20.765] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:50:20.766] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 08:50:20.772] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:50:20.773] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 08:50:20.782] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:50:26.566] [debug] hyprland IPC received openwindow>>55728b688aa0,4,,
+[2024-02-28 08:50:26.566] [trace] Window opened: 55728b688aa0,4,,
+[2024-02-28 08:50:26.568] [trace] Window opened: 55728b688aa0,4,,
+[2024-02-28 08:50:26.568] [trace] Getting active workspaces
+[2024-02-28 08:50:26.568] [trace] Window opened: 55728b688aa0,4,,
+[2024-02-28 08:50:26.569] [trace] Updating workspace states
+[2024-02-28 08:50:26.569] [trace] Selecting icon for workspace 1
+[2024-02-28 08:50:26.569] [trace] Selecting icon for workspace 4
+[2024-02-28 08:50:26.569] [trace] Updating window count
+[2024-02-28 08:50:26.569] [trace] Getting active workspaces
+[2024-02-28 08:50:26.569] [trace] Updating workspace states
+[2024-02-28 08:50:26.569] [trace] Selecting icon for workspace 8
+[2024-02-28 08:50:26.569] [trace] Updating window count
+[2024-02-28 08:50:26.569] [trace] Getting active workspaces
+[2024-02-28 08:50:26.569] [trace] Updating workspace states
+[2024-02-28 08:50:26.569] [trace] Selecting icon for workspace 5
+[2024-02-28 08:50:26.569] [trace] Updating window count
+[2024-02-28 08:50:26.569] [trace] Getting active workspaces
+[2024-02-28 08:50:26.569] [trace] Updating workspace states
+[2024-02-28 08:50:26.569] [trace] Selecting icon for workspace 1
+[2024-02-28 08:50:26.569] [trace] Selecting icon for workspace 4
+[2024-02-28 08:50:26.569] [trace] Updating window count
+[2024-02-28 08:50:28.185] [debug] hyprland IPC received closewindow>>55728b688aa0
+[2024-02-28 08:50:28.185] [trace] Window closed: 55728b688aa0
+[2024-02-28 08:50:28.185] [trace] Getting active workspaces
+[2024-02-28 08:50:28.186] [trace] Updating workspace states
+[2024-02-28 08:50:28.186] [trace] Selecting icon for workspace 1
+[2024-02-28 08:50:28.186] [trace] Selecting icon for workspace 4
+[2024-02-28 08:50:28.186] [trace] Updating window count
+[2024-02-28 08:50:28.186] [trace] Window closed: 55728b688aa0
+[2024-02-28 08:50:28.187] [trace] Getting active workspaces
+[2024-02-28 08:50:28.187] [trace] Updating workspace states
+[2024-02-28 08:50:28.187] [trace] Selecting icon for workspace 8
+[2024-02-28 08:50:28.187] [trace] Updating window count
+[2024-02-28 08:50:28.192] [trace] Window closed: 55728b688aa0
+[2024-02-28 08:50:28.194] [trace] Getting active workspaces
+[2024-02-28 08:50:28.198] [trace] Updating workspace states
+[2024-02-28 08:50:28.198] [trace] Selecting icon for workspace 5
+[2024-02-28 08:50:28.198] [trace] Updating window count
+[2024-02-28 08:51:21.393] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:51:21.418] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:51:21.419] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:51:21.419] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:51:21.422] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:51:21.422] [trace] Getting active workspaces
+[2024-02-28 08:51:21.422] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:51:21.422] [trace] Updating workspace states
+[2024-02-28 08:51:21.422] [trace] Selecting icon for workspace 1
+[2024-02-28 08:51:21.422] [trace] Selecting icon for workspace 4
+[2024-02-28 08:51:21.422] [trace] Updating window count
+[2024-02-28 08:51:21.422] [trace] Getting active workspaces
+[2024-02-28 08:51:21.422] [trace] Updating workspace states
+[2024-02-28 08:51:21.422] [trace] Selecting icon for workspace 8
+[2024-02-28 08:51:21.422] [trace] Updating window count
+[2024-02-28 08:51:21.422] [trace] Getting active workspaces
+[2024-02-28 08:51:21.423] [trace] Updating workspace states
+[2024-02-28 08:51:21.423] [trace] Selecting icon for workspace 5
+[2024-02-28 08:51:21.423] [trace] Updating window count
+[2024-02-28 08:52:02.116] [debug] hyprland IPC received focusedmon>>DP-2,8
+[2024-02-28 08:52:02.116] [trace] Monitor focused: DP-2,8
+[2024-02-28 08:52:02.118] [trace] Monitor focused: DP-2,8
+[2024-02-28 08:52:02.119] [trace] Getting active workspaces
+[2024-02-28 08:52:02.119] [trace] Monitor focused: DP-2,8
+[2024-02-28 08:52:02.119] [trace] Updating workspace states
+[2024-02-28 08:52:02.119] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:02.119] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:02.120] [trace] Updating window count
+[2024-02-28 08:52:02.120] [trace] Getting active workspaces
+[2024-02-28 08:52:02.120] [trace] Updating workspace states
+[2024-02-28 08:52:02.120] [trace] Selecting icon for workspace 8
+[2024-02-28 08:52:02.120] [trace] Updating window count
+[2024-02-28 08:52:02.120] [trace] Getting active workspaces
+[2024-02-28 08:52:02.120] [trace] Updating workspace states
+[2024-02-28 08:52:02.120] [trace] Selecting icon for workspace 5
+[2024-02-28 08:52:02.120] [trace] Updating window count
+[2024-02-28 08:52:02.126] [debug] hyprland IPC received activewindow>>firefox,Restore Session — Mozilla Firefox
+[2024-02-28 08:52:02.169] [trace] Adding solo class: firefox
+[2024-02-28 08:52:02.171] [debug] hyprland IPC received activewindowv2>>55728a91c420
+[2024-02-28 08:52:04.426] [debug] hyprland IPC received windowtitle>>55728a91c420
+[2024-02-28 08:52:04.428] [debug] hyprland IPC received activewindow>>firefox,New Tab — Mozilla Firefox
+[2024-02-28 08:52:04.442] [debug] hyprland IPC received activewindowv2>>55728a91c420
+[2024-02-28 08:52:05.123] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:52:05.123] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:52:05.124] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:52:05.124] [trace] Getting active workspaces
+[2024-02-28 08:52:05.126] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:52:05.135] [trace] Updating workspace states
+[2024-02-28 08:52:05.135] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:05.135] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:05.135] [trace] Updating window count
+[2024-02-28 08:52:05.135] [trace] Getting active workspaces
+[2024-02-28 08:52:05.152] [trace] Updating workspace states
+[2024-02-28 08:52:05.152] [trace] Selecting icon for workspace 8
+[2024-02-28 08:52:05.152] [trace] Updating window count
+[2024-02-28 08:52:05.152] [trace] Getting active workspaces
+[2024-02-28 08:52:05.153] [trace] Updating workspace states
+[2024-02-28 08:52:05.153] [trace] Selecting icon for workspace 5
+[2024-02-28 08:52:05.153] [trace] Updating window count
+[2024-02-28 08:52:05.153] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:52:05.191] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:52:05.852] [debug] hyprland IPC received focusedmon>>HDMI-A-1,4
+[2024-02-28 08:52:05.852] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:52:05.859] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:52:05.859] [trace] Getting active workspaces
+[2024-02-28 08:52:05.863] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:52:05.864] [trace] Updating workspace states
+[2024-02-28 08:52:05.864] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:05.864] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:05.864] [trace] Updating window count
+[2024-02-28 08:52:05.864] [trace] Getting active workspaces
+[2024-02-28 08:52:05.868] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 08:52:05.872] [trace] Updating workspace states
+[2024-02-28 08:52:05.872] [trace] Selecting icon for workspace 8
+[2024-02-28 08:52:05.872] [trace] Updating window count
+[2024-02-28 08:52:05.872] [trace] Getting active workspaces
+[2024-02-28 08:52:05.893] [trace] Updating workspace states
+[2024-02-28 08:52:05.893] [trace] Selecting icon for workspace 5
+[2024-02-28 08:52:05.893] [trace] Updating window count
+[2024-02-28 08:52:05.905] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:52:13.965] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:52:13.966] [debug] hyprland IPC received activewindow>>discord,#hyprland-issues | Hyprland Cathedral - Discord
+[2024-02-28 08:52:13.973] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:52:13.974] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:52:13.975] [debug] hyprland IPC received activewindow>>discord,#hyprland-issues | Hyprland Cathedral - Discord
+[2024-02-28 08:52:13.982] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:52:52.303] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:52:52.303] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:52:52.303] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:52:52.303] [trace] Getting active workspaces
+[2024-02-28 08:52:52.306] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:52:52.306] [trace] Updating workspace states
+[2024-02-28 08:52:52.306] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:52.306] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:52.306] [trace] Updating window count
+[2024-02-28 08:52:52.306] [trace] Getting active workspaces
+[2024-02-28 08:52:52.306] [trace] Updating workspace states
+[2024-02-28 08:52:52.306] [trace] Selecting icon for workspace 8
+[2024-02-28 08:52:52.306] [trace] Updating window count
+[2024-02-28 08:52:52.306] [trace] Getting active workspaces
+[2024-02-28 08:52:52.307] [trace] Updating workspace states
+[2024-02-28 08:52:52.307] [trace] Selecting icon for workspace 5
+[2024-02-28 08:52:52.307] [trace] Updating window count
+[2024-02-28 08:52:52.307] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:52:52.309] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:52:54.449] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:52:54.458] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:52:54.459] [debug] hyprland IPC received openwindow>>55728a135600,1 silent,kitty,fish
+[2024-02-28 08:52:54.459] [trace] Window opened: 55728a135600,1 silent,kitty,fish
+[2024-02-28 08:52:54.459] [trace] Window opened: 55728a135600,1 silent,kitty,fish
+[2024-02-28 08:52:54.459] [trace] Getting active workspaces
+[2024-02-28 08:52:54.459] [trace] Window opened: 55728a135600,1 silent,kitty,fish
+[2024-02-28 08:52:54.459] [trace] Updating workspace states
+[2024-02-28 08:52:54.459] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:54.459] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:54.459] [trace] Updating window count
+[2024-02-28 08:52:54.459] [trace] Getting active workspaces
+[2024-02-28 08:52:54.460] [trace] Updating workspace states
+[2024-02-28 08:52:54.460] [trace] Selecting icon for workspace 8
+[2024-02-28 08:52:54.460] [trace] Updating window count
+[2024-02-28 08:52:54.460] [trace] Getting active workspaces
+[2024-02-28 08:52:54.460] [trace] Updating workspace states
+[2024-02-28 08:52:54.460] [trace] Selecting icon for workspace 5
+[2024-02-28 08:52:54.460] [trace] Updating window count
+[2024-02-28 08:52:54.460] [trace] Getting active workspaces
+[2024-02-28 08:52:54.460] [trace] Updating workspace states
+[2024-02-28 08:52:54.460] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:54.460] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:54.460] [trace] Updating window count
+[2024-02-28 08:52:54.782] [debug] hyprland IPC received windowtitle>>55728a135600
+[2024-02-28 08:52:57.931] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:52:57.940] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:52:57.941] [debug] hyprland IPC received openwindow>>55728a13b9c0,1 silent,kitty,fish
+[2024-02-28 08:52:57.941] [trace] Window opened: 55728a13b9c0,1 silent,kitty,fish
+[2024-02-28 08:52:57.942] [trace] Window opened: 55728a13b9c0,1 silent,kitty,fish
+[2024-02-28 08:52:57.942] [trace] Getting active workspaces
+[2024-02-28 08:52:57.942] [trace] Window opened: 55728a13b9c0,1 silent,kitty,fish
+[2024-02-28 08:52:57.942] [trace] Updating workspace states
+[2024-02-28 08:52:57.942] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:57.942] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:57.942] [trace] Updating window count
+[2024-02-28 08:52:57.942] [trace] Getting active workspaces
+[2024-02-28 08:52:57.942] [trace] Updating workspace states
+[2024-02-28 08:52:57.942] [trace] Selecting icon for workspace 8
+[2024-02-28 08:52:57.942] [trace] Updating window count
+[2024-02-28 08:52:57.942] [trace] Getting active workspaces
+[2024-02-28 08:52:57.942] [trace] Updating workspace states
+[2024-02-28 08:52:57.942] [trace] Selecting icon for workspace 1
+[2024-02-28 08:52:57.942] [trace] Selecting icon for workspace 4
+[2024-02-28 08:52:57.942] [trace] Updating window count
+[2024-02-28 08:52:57.942] [trace] Getting active workspaces
+[2024-02-28 08:52:57.943] [trace] Updating workspace states
+[2024-02-28 08:52:57.943] [trace] Selecting icon for workspace 5
+[2024-02-28 08:52:57.943] [trace] Updating window count
+[2024-02-28 08:52:58.272] [debug] hyprland IPC received windowtitle>>55728a13b9c0
+[2024-02-28 08:53:00.928] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:53:00.937] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:00.938] [debug] hyprland IPC received openwindow>>55728a144c40,1 silent,kitty,fish
+[2024-02-28 08:53:00.938] [trace] Window opened: 55728a144c40,1 silent,kitty,fish
+[2024-02-28 08:53:00.938] [trace] Window opened: 55728a144c40,1 silent,kitty,fish
+[2024-02-28 08:53:00.938] [trace] Getting active workspaces
+[2024-02-28 08:53:00.938] [trace] Window opened: 55728a144c40,1 silent,kitty,fish
+[2024-02-28 08:53:00.938] [trace] Updating workspace states
+[2024-02-28 08:53:00.938] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:00.938] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:00.938] [trace] Updating window count
+[2024-02-28 08:53:00.938] [trace] Getting active workspaces
+[2024-02-28 08:53:00.939] [trace] Updating workspace states
+[2024-02-28 08:53:00.939] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:00.939] [trace] Updating window count
+[2024-02-28 08:53:00.939] [trace] Getting active workspaces
+[2024-02-28 08:53:00.939] [trace] Updating workspace states
+[2024-02-28 08:53:00.939] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:00.939] [trace] Updating window count
+[2024-02-28 08:53:00.939] [trace] Getting active workspaces
+[2024-02-28 08:53:00.939] [trace] Updating workspace states
+[2024-02-28 08:53:00.939] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:00.939] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:00.939] [trace] Updating window count
+[2024-02-28 08:53:01.265] [debug] hyprland IPC received windowtitle>>55728a144c40
+[2024-02-28 08:53:04.732] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:53:04.742] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:04.743] [debug] hyprland IPC received openwindow>>55728a14f8f0,1 silent,kitty,fish
+[2024-02-28 08:53:04.743] [trace] Window opened: 55728a14f8f0,1 silent,kitty,fish
+[2024-02-28 08:53:04.743] [trace] Window opened: 55728a14f8f0,1 silent,kitty,fish
+[2024-02-28 08:53:04.743] [trace] Getting active workspaces
+[2024-02-28 08:53:04.744] [trace] Window opened: 55728a14f8f0,1 silent,kitty,fish
+[2024-02-28 08:53:04.744] [trace] Updating workspace states
+[2024-02-28 08:53:04.744] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:04.744] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:04.744] [trace] Updating window count
+[2024-02-28 08:53:04.744] [trace] Getting active workspaces
+[2024-02-28 08:53:04.744] [trace] Updating workspace states
+[2024-02-28 08:53:04.744] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:04.744] [trace] Updating window count
+[2024-02-28 08:53:04.744] [trace] Getting active workspaces
+[2024-02-28 08:53:04.744] [trace] Updating workspace states
+[2024-02-28 08:53:04.744] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:04.744] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:04.744] [trace] Updating window count
+[2024-02-28 08:53:04.744] [trace] Getting active workspaces
+[2024-02-28 08:53:04.745] [trace] Updating workspace states
+[2024-02-28 08:53:04.745] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:04.745] [trace] Updating window count
+[2024-02-28 08:53:05.070] [debug] hyprland IPC received windowtitle>>55728a14f8f0
+[2024-02-28 08:53:07.091] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:53:07.092] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:53:07.097] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:07.098] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:53:07.099] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:07.104] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:10.103] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:53:10.104] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:53:10.116] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:13.515] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:53:13.516] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:13.527] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:14.834] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:14.843] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:14.845] [debug] hyprland IPC received openwindow>>55728a15aa00,1 silent,kitty,fish
+[2024-02-28 08:53:14.845] [trace] Window opened: 55728a15aa00,1 silent,kitty,fish
+[2024-02-28 08:53:14.845] [trace] Window opened: 55728a15aa00,1 silent,kitty,fish
+[2024-02-28 08:53:14.845] [trace] Getting active workspaces
+[2024-02-28 08:53:14.845] [trace] Window opened: 55728a15aa00,1 silent,kitty,fish
+[2024-02-28 08:53:14.845] [trace] Updating workspace states
+[2024-02-28 08:53:14.845] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:14.845] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:14.845] [trace] Updating window count
+[2024-02-28 08:53:14.845] [trace] Getting active workspaces
+[2024-02-28 08:53:14.845] [trace] Updating workspace states
+[2024-02-28 08:53:14.845] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:14.845] [trace] Updating window count
+[2024-02-28 08:53:14.845] [trace] Getting active workspaces
+[2024-02-28 08:53:14.846] [trace] Updating workspace states
+[2024-02-28 08:53:14.846] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:14.846] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:14.846] [trace] Updating window count
+[2024-02-28 08:53:14.846] [trace] Getting active workspaces
+[2024-02-28 08:53:14.846] [trace] Updating workspace states
+[2024-02-28 08:53:14.846] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:14.846] [trace] Updating window count
+[2024-02-28 08:53:15.174] [debug] hyprland IPC received windowtitle>>55728a15aa00
+[2024-02-28 08:53:15.314] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:15.325] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:15.326] [debug] hyprland IPC received openwindow>>55728a166a60,1 silent,kitty,fish
+[2024-02-28 08:53:15.326] [trace] Window opened: 55728a166a60,1 silent,kitty,fish
+[2024-02-28 08:53:15.326] [trace] Window opened: 55728a166a60,1 silent,kitty,fish
+[2024-02-28 08:53:15.326] [trace] Getting active workspaces
+[2024-02-28 08:53:15.327] [trace] Window opened: 55728a166a60,1 silent,kitty,fish
+[2024-02-28 08:53:15.327] [trace] Updating workspace states
+[2024-02-28 08:53:15.327] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:15.327] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:15.327] [trace] Updating window count
+[2024-02-28 08:53:15.327] [trace] Getting active workspaces
+[2024-02-28 08:53:15.327] [trace] Updating workspace states
+[2024-02-28 08:53:15.327] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:15.327] [trace] Updating window count
+[2024-02-28 08:53:15.327] [trace] Getting active workspaces
+[2024-02-28 08:53:15.327] [trace] Updating workspace states
+[2024-02-28 08:53:15.327] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:15.327] [trace] Updating window count
+[2024-02-28 08:53:15.327] [trace] Getting active workspaces
+[2024-02-28 08:53:15.327] [trace] Updating workspace states
+[2024-02-28 08:53:15.327] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:15.327] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:15.327] [trace] Updating window count
+[2024-02-28 08:53:15.649] [debug] hyprland IPC received windowtitle>>55728a166a60
+[2024-02-28 08:53:15.885] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:15.896] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:15.897] [debug] hyprland IPC received openwindow>>55728a1746a0,1 silent,kitty,fish
+[2024-02-28 08:53:15.897] [trace] Window opened: 55728a1746a0,1 silent,kitty,fish
+[2024-02-28 08:53:15.897] [trace] Window opened: 55728a1746a0,1 silent,kitty,fish
+[2024-02-28 08:53:15.897] [trace] Getting active workspaces
+[2024-02-28 08:53:15.897] [trace] Window opened: 55728a1746a0,1 silent,kitty,fish
+[2024-02-28 08:53:15.897] [trace] Updating workspace states
+[2024-02-28 08:53:15.897] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:15.897] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:15.897] [trace] Updating window count
+[2024-02-28 08:53:15.897] [trace] Getting active workspaces
+[2024-02-28 08:53:15.898] [trace] Updating workspace states
+[2024-02-28 08:53:15.898] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:15.898] [trace] Updating window count
+[2024-02-28 08:53:15.898] [trace] Getting active workspaces
+[2024-02-28 08:53:15.898] [trace] Updating workspace states
+[2024-02-28 08:53:15.898] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:15.898] [trace] Updating window count
+[2024-02-28 08:53:15.898] [trace] Getting active workspaces
+[2024-02-28 08:53:15.898] [trace] Updating workspace states
+[2024-02-28 08:53:15.898] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:15.898] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:15.898] [trace] Updating window count
+[2024-02-28 08:53:16.218] [debug] hyprland IPC received windowtitle>>55728a1746a0
+[2024-02-28 08:53:16.311] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:16.324] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:53:16.325] [debug] hyprland IPC received openwindow>>55728a180150,1 silent,kitty,fish
+[2024-02-28 08:53:16.325] [trace] Window opened: 55728a180150,1 silent,kitty,fish
+[2024-02-28 08:53:16.325] [trace] Window opened: 55728a180150,1 silent,kitty,fish
+[2024-02-28 08:53:16.325] [trace] Getting active workspaces
+[2024-02-28 08:53:16.325] [trace] Window opened: 55728a180150,1 silent,kitty,fish
+[2024-02-28 08:53:16.325] [trace] Updating workspace states
+[2024-02-28 08:53:16.325] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:16.325] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:16.325] [trace] Updating window count
+[2024-02-28 08:53:16.325] [trace] Getting active workspaces
+[2024-02-28 08:53:16.326] [trace] Updating workspace states
+[2024-02-28 08:53:16.326] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:16.326] [trace] Updating window count
+[2024-02-28 08:53:16.326] [trace] Getting active workspaces
+[2024-02-28 08:53:16.326] [trace] Updating workspace states
+[2024-02-28 08:53:16.326] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:16.326] [trace] Updating window count
+[2024-02-28 08:53:16.326] [trace] Getting active workspaces
+[2024-02-28 08:53:16.326] [trace] Updating workspace states
+[2024-02-28 08:53:16.326] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:16.326] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:16.326] [trace] Updating window count
+[2024-02-28 08:53:16.646] [debug] hyprland IPC received windowtitle>>55728a180150
+[2024-02-28 08:53:17.263] [debug] hyprland IPC received closewindow>>5572898c6780
+[2024-02-28 08:53:17.263] [trace] Window closed: 5572898c6780
+[2024-02-28 08:53:17.265] [trace] Getting active workspaces
+[2024-02-28 08:53:17.265] [trace] Updating workspace states
+[2024-02-28 08:53:17.265] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:17.265] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:17.265] [trace] Updating window count
+[2024-02-28 08:53:17.266] [trace] Window closed: 5572898c6780
+[2024-02-28 08:53:17.266] [trace] Getting active workspaces
+[2024-02-28 08:53:17.266] [trace] Updating workspace states
+[2024-02-28 08:53:17.266] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:17.266] [trace] Updating window count
+[2024-02-28 08:53:17.268] [trace] Window closed: 5572898c6780
+[2024-02-28 08:53:17.268] [trace] Getting active workspaces
+[2024-02-28 08:53:17.269] [trace] Updating workspace states
+[2024-02-28 08:53:17.269] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:17.269] [trace] Updating window count
+[2024-02-28 08:53:17.269] [trace] Removing solo class: kitty
+[2024-02-28 08:53:17.270] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 08:53:17.273] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 08:53:18.285] [debug] hyprland IPC received openwindow>>5572898c6780,1 silent,kitty,fish
+[2024-02-28 08:53:18.285] [trace] Window opened: 5572898c6780,1 silent,kitty,fish
+[2024-02-28 08:53:18.286] [trace] Window opened: 5572898c6780,1 silent,kitty,fish
+[2024-02-28 08:53:18.286] [trace] Getting active workspaces
+[2024-02-28 08:53:18.287] [trace] Updating workspace states
+[2024-02-28 08:53:18.287] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:18.287] [trace] Window opened: 5572898c6780,1 silent,kitty,fish
+[2024-02-28 08:53:18.287] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:18.287] [trace] Updating window count
+[2024-02-28 08:53:18.287] [trace] Getting active workspaces
+[2024-02-28 08:53:18.287] [trace] Updating workspace states
+[2024-02-28 08:53:18.287] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:18.287] [trace] Updating window count
+[2024-02-28 08:53:18.287] [trace] Getting active workspaces
+[2024-02-28 08:53:18.288] [trace] Updating workspace states
+[2024-02-28 08:53:18.288] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:18.288] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:18.288] [trace] Updating window count
+[2024-02-28 08:53:18.288] [trace] Getting active workspaces
+[2024-02-28 08:53:18.288] [trace] Updating workspace states
+[2024-02-28 08:53:18.288] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:18.288] [trace] Updating window count
+[2024-02-28 08:53:18.626] [debug] hyprland IPC received windowtitle>>5572898c6780
+[2024-02-28 08:53:19.073] [debug] hyprland IPC received openwindow>>55728a18cfd0,1 silent,kitty,fish
+[2024-02-28 08:53:19.073] [trace] Window opened: 55728a18cfd0,1 silent,kitty,fish
+[2024-02-28 08:53:19.074] [trace] Window opened: 55728a18cfd0,1 silent,kitty,fish
+[2024-02-28 08:53:19.074] [trace] Getting active workspaces
+[2024-02-28 08:53:19.075] [trace] Window opened: 55728a18cfd0,1 silent,kitty,fish
+[2024-02-28 08:53:19.075] [trace] Updating workspace states
+[2024-02-28 08:53:19.075] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.075] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.075] [trace] Updating window count
+[2024-02-28 08:53:19.075] [trace] Getting active workspaces
+[2024-02-28 08:53:19.075] [trace] Updating workspace states
+[2024-02-28 08:53:19.075] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:19.075] [trace] Updating window count
+[2024-02-28 08:53:19.075] [trace] Getting active workspaces
+[2024-02-28 08:53:19.076] [trace] Updating workspace states
+[2024-02-28 08:53:19.076] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.076] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.076] [trace] Updating window count
+[2024-02-28 08:53:19.076] [trace] Getting active workspaces
+[2024-02-28 08:53:19.076] [trace] Updating workspace states
+[2024-02-28 08:53:19.076] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:19.076] [trace] Updating window count
+[2024-02-28 08:53:19.256] [debug] hyprland IPC received openwindow>>55728a1925f0,1 silent,kitty,fish
+[2024-02-28 08:53:19.256] [trace] Window opened: 55728a1925f0,1 silent,kitty,fish
+[2024-02-28 08:53:19.257] [trace] Window opened: 55728a1925f0,1 silent,kitty,fish
+[2024-02-28 08:53:19.257] [trace] Getting active workspaces
+[2024-02-28 08:53:19.257] [trace] Window opened: 55728a1925f0,1 silent,kitty,fish
+[2024-02-28 08:53:19.258] [trace] Updating workspace states
+[2024-02-28 08:53:19.258] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.258] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.258] [trace] Updating window count
+[2024-02-28 08:53:19.258] [trace] Getting active workspaces
+[2024-02-28 08:53:19.259] [trace] Updating workspace states
+[2024-02-28 08:53:19.259] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:19.259] [trace] Updating window count
+[2024-02-28 08:53:19.259] [trace] Getting active workspaces
+[2024-02-28 08:53:19.259] [trace] Updating workspace states
+[2024-02-28 08:53:19.259] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:19.259] [trace] Updating window count
+[2024-02-28 08:53:19.259] [trace] Getting active workspaces
+[2024-02-28 08:53:19.261] [trace] Updating workspace states
+[2024-02-28 08:53:19.261] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.261] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.261] [trace] Updating window count
+[2024-02-28 08:53:19.399] [debug] hyprland IPC received windowtitle>>55728a18cfd0
+[2024-02-28 08:53:19.465] [debug] hyprland IPC received openwindow>>55728a19e800,1 silent,kitty,fish
+[2024-02-28 08:53:19.465] [trace] Window opened: 55728a19e800,1 silent,kitty,fish
+[2024-02-28 08:53:19.466] [trace] Window opened: 55728a19e800,1 silent,kitty,fish
+[2024-02-28 08:53:19.466] [trace] Getting active workspaces
+[2024-02-28 08:53:19.466] [trace] Window opened: 55728a19e800,1 silent,kitty,fish
+[2024-02-28 08:53:19.466] [trace] Updating workspace states
+[2024-02-28 08:53:19.466] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.466] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.466] [trace] Updating window count
+[2024-02-28 08:53:19.466] [trace] Getting active workspaces
+[2024-02-28 08:53:19.467] [trace] Updating workspace states
+[2024-02-28 08:53:19.467] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:19.467] [trace] Updating window count
+[2024-02-28 08:53:19.467] [trace] Getting active workspaces
+[2024-02-28 08:53:19.467] [trace] Updating workspace states
+[2024-02-28 08:53:19.467] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.467] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.467] [trace] Updating window count
+[2024-02-28 08:53:19.467] [trace] Getting active workspaces
+[2024-02-28 08:53:19.467] [trace] Updating workspace states
+[2024-02-28 08:53:19.467] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:19.467] [trace] Updating window count
+[2024-02-28 08:53:19.584] [debug] hyprland IPC received openwindow>>55728a1ae010,1 silent,kitty,fish
+[2024-02-28 08:53:19.584] [trace] Window opened: 55728a1ae010,1 silent,kitty,fish
+[2024-02-28 08:53:19.586] [trace] Window opened: 55728a1ae010,1 silent,kitty,fish
+[2024-02-28 08:53:19.586] [trace] Getting active workspaces
+[2024-02-28 08:53:19.589] [trace] Window opened: 55728a1ae010,1 silent,kitty,fish
+[2024-02-28 08:53:19.590] [trace] Updating workspace states
+[2024-02-28 08:53:19.590] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.590] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.590] [trace] Updating window count
+[2024-02-28 08:53:19.590] [trace] Getting active workspaces
+[2024-02-28 08:53:19.590] [trace] Updating workspace states
+[2024-02-28 08:53:19.590] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:19.590] [trace] Updating window count
+[2024-02-28 08:53:19.590] [trace] Getting active workspaces
+[2024-02-28 08:53:19.590] [trace] Updating workspace states
+[2024-02-28 08:53:19.590] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:19.590] [trace] Updating window count
+[2024-02-28 08:53:19.590] [trace] Getting active workspaces
+[2024-02-28 08:53:19.591] [debug] hyprland IPC received windowtitle>>55728a1925f0
+[2024-02-28 08:53:19.592] [trace] Updating workspace states
+[2024-02-28 08:53:19.592] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.592] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.592] [trace] Updating window count
+[2024-02-28 08:53:19.740] [debug] hyprland IPC received windowtitle>>55728a19e800
+[2024-02-28 08:53:19.759] [debug] hyprland IPC received openwindow>>55728a1b5f10,1 silent,kitty,fish
+[2024-02-28 08:53:19.759] [trace] Window opened: 55728a1b5f10,1 silent,kitty,fish
+[2024-02-28 08:53:19.760] [trace] Window opened: 55728a1b5f10,1 silent,kitty,fish
+[2024-02-28 08:53:19.760] [trace] Getting active workspaces
+[2024-02-28 08:53:19.760] [trace] Window opened: 55728a1b5f10,1 silent,kitty,fish
+[2024-02-28 08:53:19.760] [trace] Updating workspace states
+[2024-02-28 08:53:19.761] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.761] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.761] [trace] Updating window count
+[2024-02-28 08:53:19.761] [trace] Getting active workspaces
+[2024-02-28 08:53:19.761] [trace] Updating workspace states
+[2024-02-28 08:53:19.761] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:19.761] [trace] Updating window count
+[2024-02-28 08:53:19.761] [trace] Getting active workspaces
+[2024-02-28 08:53:19.761] [trace] Updating workspace states
+[2024-02-28 08:53:19.761] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:19.761] [trace] Updating window count
+[2024-02-28 08:53:19.761] [trace] Getting active workspaces
+[2024-02-28 08:53:19.761] [trace] Updating workspace states
+[2024-02-28 08:53:19.761] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:19.761] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:19.761] [trace] Updating window count
+[2024-02-28 08:53:19.912] [debug] hyprland IPC received windowtitle>>55728a1ae010
+[2024-02-28 08:53:20.086] [debug] hyprland IPC received windowtitle>>55728a1b5f10
+[2024-02-28 08:53:20.619] [debug] hyprland IPC received openwindow>>55728a1ca5c0,1 silent,kitty,fish
+[2024-02-28 08:53:20.619] [trace] Window opened: 55728a1ca5c0,1 silent,kitty,fish
+[2024-02-28 08:53:20.621] [trace] Window opened: 55728a1ca5c0,1 silent,kitty,fish
+[2024-02-28 08:53:20.621] [trace] Getting active workspaces
+[2024-02-28 08:53:20.621] [trace] Window opened: 55728a1ca5c0,1 silent,kitty,fish
+[2024-02-28 08:53:20.621] [trace] Updating workspace states
+[2024-02-28 08:53:20.621] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:20.621] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:20.621] [trace] Updating window count
+[2024-02-28 08:53:20.621] [trace] Getting active workspaces
+[2024-02-28 08:53:20.621] [trace] Updating workspace states
+[2024-02-28 08:53:20.621] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:20.621] [trace] Updating window count
+[2024-02-28 08:53:20.621] [trace] Getting active workspaces
+[2024-02-28 08:53:20.622] [trace] Updating workspace states
+[2024-02-28 08:53:20.622] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:20.622] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:20.622] [trace] Updating window count
+[2024-02-28 08:53:20.622] [trace] Getting active workspaces
+[2024-02-28 08:53:20.622] [trace] Updating workspace states
+[2024-02-28 08:53:20.622] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:20.622] [trace] Updating window count
+[2024-02-28 08:53:20.957] [debug] hyprland IPC received windowtitle>>55728a1ca5c0
+[2024-02-28 08:53:22.098] [debug] hyprland IPC received focusedmon>>DP-2,8
+[2024-02-28 08:53:22.098] [trace] Monitor focused: DP-2,8
+[2024-02-28 08:53:22.100] [trace] Monitor focused: DP-2,8
+[2024-02-28 08:53:22.100] [trace] Getting active workspaces
+[2024-02-28 08:53:22.100] [trace] Monitor focused: DP-2,8
+[2024-02-28 08:53:22.101] [trace] Updating workspace states
+[2024-02-28 08:53:22.101] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:22.101] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:22.101] [trace] Updating window count
+[2024-02-28 08:53:22.101] [trace] Getting active workspaces
+[2024-02-28 08:53:22.101] [trace] Updating workspace states
+[2024-02-28 08:53:22.101] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:22.101] [trace] Updating window count
+[2024-02-28 08:53:22.101] [trace] Getting active workspaces
+[2024-02-28 08:53:22.101] [trace] Updating workspace states
+[2024-02-28 08:53:22.101] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:22.101] [trace] Updating window count
+[2024-02-28 08:53:22.103] [debug] hyprland IPC received activewindow>>firefox,New Tab — Mozilla Firefox
+[2024-02-28 08:53:22.121] [debug] hyprland IPC received activewindowv2>>55728a91c420
+[2024-02-28 08:53:23.014] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:53:23.014] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:53:23.015] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:53:23.015] [trace] Getting active workspaces
+[2024-02-28 08:53:23.015] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:53:23.015] [trace] Updating workspace states
+[2024-02-28 08:53:23.015] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:23.015] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:23.015] [trace] Updating window count
+[2024-02-28 08:53:23.015] [trace] Getting active workspaces
+[2024-02-28 08:53:23.015] [trace] Updating workspace states
+[2024-02-28 08:53:23.015] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:23.015] [trace] Updating window count
+[2024-02-28 08:53:23.015] [trace] Getting active workspaces
+[2024-02-28 08:53:23.015] [trace] Updating workspace states
+[2024-02-28 08:53:23.015] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:23.015] [trace] Updating window count
+[2024-02-28 08:53:27.105] [debug] hyprland IPC received activewindow>>firefox,New Tab — Mozilla Firefox
+[2024-02-28 08:53:27.115] [debug] hyprland IPC received activewindowv2>>55728a91c420
+[2024-02-28 08:53:27.116] [debug] hyprland IPC received openwindow>>55728a1dc060,1 silent,kitty,fish
+[2024-02-28 08:53:27.116] [trace] Window opened: 55728a1dc060,1 silent,kitty,fish
+[2024-02-28 08:53:27.117] [trace] Window opened: 55728a1dc060,1 silent,kitty,fish
+[2024-02-28 08:53:27.117] [trace] Getting active workspaces
+[2024-02-28 08:53:27.117] [trace] Window opened: 55728a1dc060,1 silent,kitty,fish
+[2024-02-28 08:53:27.117] [trace] Updating workspace states
+[2024-02-28 08:53:27.117] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:27.117] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:27.117] [trace] Updating window count
+[2024-02-28 08:53:27.117] [trace] Getting active workspaces
+[2024-02-28 08:53:27.117] [trace] Updating workspace states
+[2024-02-28 08:53:27.117] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:27.117] [trace] Updating window count
+[2024-02-28 08:53:27.117] [trace] Getting active workspaces
+[2024-02-28 08:53:27.117] [trace] Updating workspace states
+[2024-02-28 08:53:27.117] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:27.117] [trace] Updating window count
+[2024-02-28 08:53:27.117] [trace] Getting active workspaces
+[2024-02-28 08:53:27.118] [trace] Updating workspace states
+[2024-02-28 08:53:27.118] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:27.118] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:27.118] [trace] Updating window count
+[2024-02-28 08:53:27.429] [debug] hyprland IPC received windowtitle>>55728a1dc060
+[2024-02-28 08:53:34.221] [debug] hyprland IPC received focusedmon>>HDMI-A-1,4
+[2024-02-28 08:53:34.221] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:53:34.231] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:53:34.231] [trace] Getting active workspaces
+[2024-02-28 08:53:34.231] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:53:34.231] [trace] Updating workspace states
+[2024-02-28 08:53:34.231] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:34.231] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:34.231] [trace] Updating window count
+[2024-02-28 08:53:34.231] [trace] Getting active workspaces
+[2024-02-28 08:53:34.232] [trace] Updating workspace states
+[2024-02-28 08:53:34.232] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:34.232] [trace] Updating window count
+[2024-02-28 08:53:34.232] [trace] Getting active workspaces
+[2024-02-28 08:53:34.232] [trace] Updating workspace states
+[2024-02-28 08:53:34.232] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:34.232] [trace] Updating window count
+[2024-02-28 08:53:34.232] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:53:34.234] [trace] Removing solo class: discord
+[2024-02-28 08:53:34.274] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:34.275] [debug] hyprland IPC received workspace>>1
+[2024-02-28 08:53:34.289] [trace] Getting active workspaces
+[2024-02-28 08:53:34.290] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:53:34.295] [trace] Updating workspace states
+[2024-02-28 08:53:34.295] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:34.296] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:34.296] [trace] Updating window count
+[2024-02-28 08:53:34.296] [trace] Getting active workspaces
+[2024-02-28 08:53:34.310] [trace] Updating workspace states
+[2024-02-28 08:53:34.310] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:34.310] [trace] Updating window count
+[2024-02-28 08:53:34.310] [trace] Getting active workspaces
+[2024-02-28 08:53:34.325] [trace] Updating workspace states
+[2024-02-28 08:53:34.325] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:34.325] [trace] Updating window count
+[2024-02-28 08:53:34.354] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:39.719] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:53:39.720] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:39.721] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:53:39.732] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:53:39.733] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:39.737] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:42.067] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:53:42.068] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:53:42.082] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:44.266] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:53:44.267] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:53:44.275] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:44.276] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:53:44.277] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:44.281] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:44.875] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:53:44.876] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:53:44.886] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:53:45.854] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:45.864] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:53:45.882] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:45.890] [debug] hyprland IPC received activewindowv2>>55728a166a60
+[2024-02-28 08:53:45.938] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:45.950] [debug] hyprland IPC received activewindowv2>>55728a14f8f0
+[2024-02-28 08:53:46.019] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:46.031] [debug] hyprland IPC received activewindowv2>>55728a144c40
+[2024-02-28 08:53:46.130] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:46.137] [debug] hyprland IPC received activewindowv2>>55728a135600
+[2024-02-28 08:53:46.207] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:46.214] [debug] hyprland IPC received activewindowv2>>55728a1925f0
+[2024-02-28 08:53:46.234] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:46.241] [debug] hyprland IPC received activewindowv2>>55728a1ae010
+[2024-02-28 08:53:46.262] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:53:46.262] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:53:46.265] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:53:46.265] [trace] Getting active workspaces
+[2024-02-28 08:53:46.265] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:53:46.265] [trace] Updating workspace states
+[2024-02-28 08:53:46.265] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:46.265] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:46.265] [trace] Updating window count
+[2024-02-28 08:53:46.265] [trace] Getting active workspaces
+[2024-02-28 08:53:46.265] [trace] Updating workspace states
+[2024-02-28 08:53:46.265] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:46.265] [trace] Updating window count
+[2024-02-28 08:53:46.265] [trace] Getting active workspaces
+[2024-02-28 08:53:46.265] [trace] Updating workspace states
+[2024-02-28 08:53:46.265] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:46.266] [trace] Updating window count
+[2024-02-28 08:53:47.577] [debug] hyprland IPC received closewindow>>55728a1ae010
+[2024-02-28 08:53:47.577] [trace] Window closed: 55728a1ae010
+[2024-02-28 08:53:47.583] [trace] Getting active workspaces
+[2024-02-28 08:53:47.583] [trace] Updating workspace states
+[2024-02-28 08:53:47.583] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:47.583] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:47.583] [trace] Updating window count
+[2024-02-28 08:53:47.663] [trace] Window closed: 55728a1ae010
+[2024-02-28 08:53:47.706] [trace] Getting active workspaces
+[2024-02-28 08:53:47.717] [trace] Updating workspace states
+[2024-02-28 08:53:47.717] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:47.718] [trace] Updating window count
+[2024-02-28 08:53:47.735] [trace] Window closed: 55728a1ae010
+[2024-02-28 08:53:47.749] [trace] Getting active workspaces
+[2024-02-28 08:53:47.775] [trace] Updating workspace states
+[2024-02-28 08:53:47.775] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:47.775] [trace] Updating window count
+[2024-02-28 08:53:47.776] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 08:53:47.783] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 08:53:49.554] [debug] hyprland IPC received focusedmon>>HDMI-A-1,1
+[2024-02-28 08:53:49.554] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:53:49.557] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:53:49.557] [trace] Getting active workspaces
+[2024-02-28 08:53:49.557] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:53:49.557] [trace] Updating workspace states
+[2024-02-28 08:53:49.557] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:49.557] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:49.557] [trace] Updating window count
+[2024-02-28 08:53:49.557] [trace] Getting active workspaces
+[2024-02-28 08:53:49.557] [trace] Updating workspace states
+[2024-02-28 08:53:49.557] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:49.557] [trace] Updating window count
+[2024-02-28 08:53:49.557] [trace] Getting active workspaces
+[2024-02-28 08:53:49.557] [trace] Updating workspace states
+[2024-02-28 08:53:49.557] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:49.557] [trace] Updating window count
+[2024-02-28 08:53:49.558] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:49.568] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:53:49.569] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:49.575] [debug] hyprland IPC received activewindowv2>>55728a19e800
+[2024-02-28 08:53:49.579] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:49.591] [debug] hyprland IPC received activewindowv2>>55728a1925f0
+[2024-02-28 08:53:49.622] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:49.631] [debug] hyprland IPC received activewindowv2>>55728a135600
+[2024-02-28 08:53:49.698] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:49.709] [debug] hyprland IPC received activewindowv2>>55728a1925f0
+[2024-02-28 08:53:50.269] [debug] hyprland IPC received closewindow>>55728a1925f0
+[2024-02-28 08:53:50.270] [trace] Window closed: 55728a1925f0
+[2024-02-28 08:53:50.272] [trace] Getting active workspaces
+[2024-02-28 08:53:50.272] [trace] Updating workspace states
+[2024-02-28 08:53:50.272] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:50.272] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:50.272] [trace] Updating window count
+[2024-02-28 08:53:50.274] [trace] Window closed: 55728a1925f0
+[2024-02-28 08:53:50.274] [trace] Getting active workspaces
+[2024-02-28 08:53:50.276] [trace] Updating workspace states
+[2024-02-28 08:53:50.276] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:50.276] [trace] Updating window count
+[2024-02-28 08:53:50.329] [trace] Window closed: 55728a1925f0
+[2024-02-28 08:53:50.332] [trace] Getting active workspaces
+[2024-02-28 08:53:50.403] [trace] Updating workspace states
+[2024-02-28 08:53:50.403] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:50.403] [trace] Updating window count
+[2024-02-28 08:53:50.433] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:50.464] [debug] hyprland IPC received activewindowv2>>55728a19e800
+[2024-02-28 08:53:50.568] [debug] hyprland IPC received closewindow>>55728a19e800
+[2024-02-28 08:53:50.568] [trace] Window closed: 55728a19e800
+[2024-02-28 08:53:50.569] [trace] Getting active workspaces
+[2024-02-28 08:53:50.614] [trace] Updating workspace states
+[2024-02-28 08:53:50.614] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:50.614] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:50.614] [trace] Updating window count
+[2024-02-28 08:53:50.634] [trace] Window closed: 55728a19e800
+[2024-02-28 08:53:50.634] [trace] Getting active workspaces
+[2024-02-28 08:53:50.635] [trace] Updating workspace states
+[2024-02-28 08:53:50.635] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:50.635] [trace] Updating window count
+[2024-02-28 08:53:50.639] [trace] Window closed: 55728a19e800
+[2024-02-28 08:53:50.650] [trace] Getting active workspaces
+[2024-02-28 08:53:50.661] [trace] Updating workspace states
+[2024-02-28 08:53:50.661] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:50.661] [trace] Updating window count
+[2024-02-28 08:53:50.664] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:50.669] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:53:50.670] [debug] hyprland IPC received windowtitle>>55728a1b5f10
+[2024-02-28 08:53:50.671] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:53:50.677] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:53:50.678] [debug] hyprland IPC received windowtitle>>55728a1b5f10
+[2024-02-28 08:53:50.679] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:50.684] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:53:53.018] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:53.028] [debug] hyprland IPC received activewindowv2>>55728a18cfd0
+[2024-02-28 08:53:53.162] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:53.172] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:53:54.614] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:54.623] [debug] hyprland IPC received activewindowv2>>55728a1dc060
+[2024-02-28 08:53:56.255] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:56.268] [debug] hyprland IPC received activewindowv2>>55728a18cfd0
+[2024-02-28 08:53:58.458] [debug] hyprland IPC received closewindow>>55728a18cfd0
+[2024-02-28 08:53:58.458] [trace] Window closed: 55728a18cfd0
+[2024-02-28 08:53:58.464] [trace] Getting active workspaces
+[2024-02-28 08:53:58.498] [trace] Updating workspace states
+[2024-02-28 08:53:58.498] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:58.498] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:58.498] [trace] Updating window count
+[2024-02-28 08:53:58.529] [trace] Window closed: 55728a18cfd0
+[2024-02-28 08:53:58.560] [trace] Getting active workspaces
+[2024-02-28 08:53:58.606] [trace] Updating workspace states
+[2024-02-28 08:53:58.606] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:58.606] [trace] Updating window count
+[2024-02-28 08:53:58.623] [trace] Window closed: 55728a18cfd0
+[2024-02-28 08:53:58.623] [trace] Getting active workspaces
+[2024-02-28 08:53:58.625] [trace] Updating workspace states
+[2024-02-28 08:53:58.625] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:58.625] [trace] Updating window count
+[2024-02-28 08:53:58.628] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:58.634] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:53:58.967] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:58.974] [debug] hyprland IPC received activewindowv2>>55728a135600
+[2024-02-28 08:53:59.476] [debug] hyprland IPC received closewindow>>55728a135600
+[2024-02-28 08:53:59.476] [trace] Window closed: 55728a135600
+[2024-02-28 08:53:59.478] [trace] Getting active workspaces
+[2024-02-28 08:53:59.526] [trace] Updating workspace states
+[2024-02-28 08:53:59.526] [trace] Selecting icon for workspace 1
+[2024-02-28 08:53:59.526] [trace] Selecting icon for workspace 4
+[2024-02-28 08:53:59.526] [trace] Updating window count
+[2024-02-28 08:53:59.540] [trace] Window closed: 55728a135600
+[2024-02-28 08:53:59.559] [trace] Getting active workspaces
+[2024-02-28 08:53:59.569] [trace] Updating workspace states
+[2024-02-28 08:53:59.569] [trace] Selecting icon for workspace 8
+[2024-02-28 08:53:59.569] [trace] Updating window count
+[2024-02-28 08:53:59.569] [trace] Window closed: 55728a135600
+[2024-02-28 08:53:59.576] [trace] Getting active workspaces
+[2024-02-28 08:53:59.608] [trace] Updating workspace states
+[2024-02-28 08:53:59.608] [trace] Selecting icon for workspace 5
+[2024-02-28 08:53:59.608] [trace] Updating window count
+[2024-02-28 08:53:59.611] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:59.614] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:53:59.650] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:53:59.655] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:53:59.858] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:53:59.864] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:00.239] [debug] hyprland IPC received windowtitle>>55728a1ca5c0
+[2024-02-28 08:54:00.240] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:54:00.245] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:00.250] [debug] hyprland IPC received windowtitle>>55728a1ca5c0
+[2024-02-28 08:54:00.251] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:00.255] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:00.566] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:00.573] [debug] hyprland IPC received activewindowv2>>55728a1dc060
+[2024-02-28 08:54:01.200] [debug] hyprland IPC received closewindow>>55728a1dc060
+[2024-02-28 08:54:01.200] [trace] Window closed: 55728a1dc060
+[2024-02-28 08:54:01.202] [trace] Getting active workspaces
+[2024-02-28 08:54:01.202] [trace] Updating workspace states
+[2024-02-28 08:54:01.202] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:01.202] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:01.202] [trace] Updating window count
+[2024-02-28 08:54:01.203] [trace] Window closed: 55728a1dc060
+[2024-02-28 08:54:01.204] [trace] Getting active workspaces
+[2024-02-28 08:54:01.204] [trace] Updating workspace states
+[2024-02-28 08:54:01.204] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:01.204] [trace] Updating window count
+[2024-02-28 08:54:01.205] [trace] Window closed: 55728a1dc060
+[2024-02-28 08:54:01.209] [trace] Getting active workspaces
+[2024-02-28 08:54:01.213] [trace] Updating workspace states
+[2024-02-28 08:54:01.213] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:01.213] [trace] Updating window count
+[2024-02-28 08:54:01.214] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:01.224] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:54:01.486] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:01.493] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:01.627] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:01.633] [debug] hyprland IPC received activewindowv2>>5572898c6780
+[2024-02-28 08:54:02.088] [debug] hyprland IPC received closewindow>>5572898c6780
+[2024-02-28 08:54:02.088] [trace] Window closed: 5572898c6780
+[2024-02-28 08:54:02.090] [trace] Getting active workspaces
+[2024-02-28 08:54:02.091] [trace] Updating workspace states
+[2024-02-28 08:54:02.091] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:02.091] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:02.091] [trace] Updating window count
+[2024-02-28 08:54:02.092] [trace] Window closed: 5572898c6780
+[2024-02-28 08:54:02.092] [trace] Getting active workspaces
+[2024-02-28 08:54:02.092] [trace] Updating workspace states
+[2024-02-28 08:54:02.092] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:02.092] [trace] Updating window count
+[2024-02-28 08:54:02.102] [trace] Window closed: 5572898c6780
+[2024-02-28 08:54:02.120] [trace] Getting active workspaces
+[2024-02-28 08:54:02.142] [trace] Updating workspace states
+[2024-02-28 08:54:02.142] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:02.142] [trace] Updating window count
+[2024-02-28 08:54:02.153] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:02.205] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:02.426] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:02.431] [debug] hyprland IPC received activewindowv2>>55728a13b9c0
+[2024-02-28 08:54:02.790] [debug] hyprland IPC received closewindow>>55728a13b9c0
+[2024-02-28 08:54:02.790] [trace] Window closed: 55728a13b9c0
+[2024-02-28 08:54:02.791] [trace] Getting active workspaces
+[2024-02-28 08:54:02.792] [trace] Updating workspace states
+[2024-02-28 08:54:02.792] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:02.792] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:02.792] [trace] Updating window count
+[2024-02-28 08:54:02.797] [trace] Window closed: 55728a13b9c0
+[2024-02-28 08:54:02.803] [trace] Getting active workspaces
+[2024-02-28 08:54:02.825] [trace] Updating workspace states
+[2024-02-28 08:54:02.825] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:02.825] [trace] Updating window count
+[2024-02-28 08:54:02.846] [trace] Window closed: 55728a13b9c0
+[2024-02-28 08:54:02.848] [trace] Getting active workspaces
+[2024-02-28 08:54:02.849] [trace] Updating workspace states
+[2024-02-28 08:54:02.849] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:02.849] [trace] Updating window count
+[2024-02-28 08:54:02.853] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:02.880] [debug] hyprland IPC received activewindowv2>>55728a144c40
+[2024-02-28 08:54:03.266] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:03.271] [debug] hyprland IPC received activewindowv2>>55728a15aa00
+[2024-02-28 08:54:03.617] [debug] hyprland IPC received closewindow>>55728a15aa00
+[2024-02-28 08:54:03.617] [trace] Window closed: 55728a15aa00
+[2024-02-28 08:54:03.618] [trace] Getting active workspaces
+[2024-02-28 08:54:03.619] [trace] Updating workspace states
+[2024-02-28 08:54:03.619] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:03.620] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:03.620] [trace] Updating window count
+[2024-02-28 08:54:03.620] [trace] Window closed: 55728a15aa00
+[2024-02-28 08:54:03.621] [trace] Getting active workspaces
+[2024-02-28 08:54:03.621] [trace] Updating workspace states
+[2024-02-28 08:54:03.621] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:03.621] [trace] Updating window count
+[2024-02-28 08:54:03.623] [trace] Window closed: 55728a15aa00
+[2024-02-28 08:54:03.631] [trace] Getting active workspaces
+[2024-02-28 08:54:03.638] [trace] Updating workspace states
+[2024-02-28 08:54:03.638] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:03.638] [trace] Updating window count
+[2024-02-28 08:54:03.643] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:03.669] [debug] hyprland IPC received activewindowv2>>55728a166a60
+[2024-02-28 08:54:04.317] [debug] hyprland IPC received closewindow>>55728a166a60
+[2024-02-28 08:54:04.317] [trace] Window closed: 55728a166a60
+[2024-02-28 08:54:04.318] [trace] Getting active workspaces
+[2024-02-28 08:54:04.319] [trace] Updating workspace states
+[2024-02-28 08:54:04.319] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:04.319] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:04.319] [trace] Updating window count
+[2024-02-28 08:54:04.319] [trace] Window closed: 55728a166a60
+[2024-02-28 08:54:04.320] [trace] Getting active workspaces
+[2024-02-28 08:54:04.320] [trace] Updating workspace states
+[2024-02-28 08:54:04.320] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:04.320] [trace] Updating window count
+[2024-02-28 08:54:04.321] [trace] Window closed: 55728a166a60
+[2024-02-28 08:54:04.331] [trace] Getting active workspaces
+[2024-02-28 08:54:04.363] [trace] Updating workspace states
+[2024-02-28 08:54:04.363] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:04.363] [trace] Updating window count
+[2024-02-28 08:54:04.379] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:04.428] [debug] hyprland IPC received activewindowv2>>55728a1746a0
+[2024-02-28 08:54:04.969] [debug] hyprland IPC received closewindow>>55728a1746a0
+[2024-02-28 08:54:04.969] [trace] Window closed: 55728a1746a0
+[2024-02-28 08:54:04.971] [trace] Getting active workspaces
+[2024-02-28 08:54:04.971] [trace] Updating workspace states
+[2024-02-28 08:54:04.971] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:04.971] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:04.971] [trace] Updating window count
+[2024-02-28 08:54:04.972] [trace] Window closed: 55728a1746a0
+[2024-02-28 08:54:04.973] [trace] Getting active workspaces
+[2024-02-28 08:54:04.973] [trace] Updating workspace states
+[2024-02-28 08:54:04.973] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:04.973] [trace] Updating window count
+[2024-02-28 08:54:04.975] [trace] Window closed: 55728a1746a0
+[2024-02-28 08:54:04.976] [trace] Getting active workspaces
+[2024-02-28 08:54:04.986] [trace] Updating workspace states
+[2024-02-28 08:54:04.986] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:04.986] [trace] Updating window count
+[2024-02-28 08:54:04.990] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:05.011] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:05.376] [debug] hyprland IPC received windowtitle>>55728a180150
+[2024-02-28 08:54:05.377] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:54:05.381] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:05.384] [debug] hyprland IPC received windowtitle>>55728a180150
+[2024-02-28 08:54:05.385] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:05.389] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:05.842] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:05.847] [debug] hyprland IPC received activewindowv2>>55728a144c40
+[2024-02-28 08:54:06.384] [debug] hyprland IPC received closewindow>>55728a144c40
+[2024-02-28 08:54:06.384] [trace] Window closed: 55728a144c40
+[2024-02-28 08:54:06.385] [trace] Getting active workspaces
+[2024-02-28 08:54:06.386] [trace] Updating workspace states
+[2024-02-28 08:54:06.386] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:06.386] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:06.386] [trace] Updating window count
+[2024-02-28 08:54:06.387] [trace] Window closed: 55728a144c40
+[2024-02-28 08:54:06.388] [trace] Getting active workspaces
+[2024-02-28 08:54:06.388] [trace] Updating workspace states
+[2024-02-28 08:54:06.388] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:06.388] [trace] Updating window count
+[2024-02-28 08:54:06.394] [trace] Window closed: 55728a144c40
+[2024-02-28 08:54:06.398] [trace] Getting active workspaces
+[2024-02-28 08:54:06.433] [trace] Updating workspace states
+[2024-02-28 08:54:06.433] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:06.433] [trace] Updating window count
+[2024-02-28 08:54:06.441] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:06.514] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:06.516] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:06.521] [debug] hyprland IPC received activewindowv2>>55728a14f8f0
+[2024-02-28 08:54:06.973] [debug] hyprland IPC received closewindow>>55728a14f8f0
+[2024-02-28 08:54:06.973] [trace] Window closed: 55728a14f8f0
+[2024-02-28 08:54:06.974] [trace] Getting active workspaces
+[2024-02-28 08:54:06.990] [trace] Updating workspace states
+[2024-02-28 08:54:06.990] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:06.990] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:06.990] [trace] Updating window count
+[2024-02-28 08:54:06.990] [trace] Window closed: 55728a14f8f0
+[2024-02-28 08:54:06.990] [trace] Getting active workspaces
+[2024-02-28 08:54:06.992] [trace] Updating workspace states
+[2024-02-28 08:54:06.992] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:06.992] [trace] Updating window count
+[2024-02-28 08:54:06.999] [trace] Window closed: 55728a14f8f0
+[2024-02-28 08:54:07.005] [trace] Getting active workspaces
+[2024-02-28 08:54:07.006] [trace] Updating workspace states
+[2024-02-28 08:54:07.006] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:07.006] [trace] Updating window count
+[2024-02-28 08:54:07.007] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:07.010] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:07.575] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:07.580] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:07.975] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:07.979] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:54:11.155] [debug] hyprland IPC received windowtitle>>55728a1b5f10
+[2024-02-28 08:54:11.156] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:11.163] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:54:12.608] [debug] hyprland IPC received windowtitle>>55728a1b5f10
+[2024-02-28 08:54:12.609] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:54:12.620] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:54:12.621] [debug] hyprland IPC received windowtitle>>55728a1b5f10
+[2024-02-28 08:54:12.622] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:12.626] [debug] hyprland IPC received activewindowv2>>55728a1b5f10
+[2024-02-28 08:54:16.223] [debug] hyprland IPC received closewindow>>55728a1b5f10
+[2024-02-28 08:54:16.223] [trace] Window closed: 55728a1b5f10
+[2024-02-28 08:54:16.226] [trace] Getting active workspaces
+[2024-02-28 08:54:16.258] [trace] Updating workspace states
+[2024-02-28 08:54:16.258] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:16.258] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:16.258] [trace] Updating window count
+[2024-02-28 08:54:16.263] [trace] Window closed: 55728a1b5f10
+[2024-02-28 08:54:16.263] [trace] Getting active workspaces
+[2024-02-28 08:54:16.263] [trace] Updating workspace states
+[2024-02-28 08:54:16.263] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:16.263] [trace] Updating window count
+[2024-02-28 08:54:16.272] [trace] Window closed: 55728a1b5f10
+[2024-02-28 08:54:16.280] [trace] Getting active workspaces
+[2024-02-28 08:54:16.286] [trace] Updating workspace states
+[2024-02-28 08:54:16.286] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:16.286] [trace] Updating window count
+[2024-02-28 08:54:16.287] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:16.318] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:19.922] [debug] hyprland IPC received windowtitle>>55728a1ca5c0
+[2024-02-28 08:54:19.924] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:19.933] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:21.029] [debug] hyprland IPC received windowtitle>>55728a1ca5c0
+[2024-02-28 08:54:21.030] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:54:21.041] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:21.042] [debug] hyprland IPC received windowtitle>>55728a1ca5c0
+[2024-02-28 08:54:21.043] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:21.051] [debug] hyprland IPC received activewindowv2>>55728a1ca5c0
+[2024-02-28 08:54:21.836] [debug] hyprland IPC received closewindow>>55728a1ca5c0
+[2024-02-28 08:54:21.836] [trace] Window closed: 55728a1ca5c0
+[2024-02-28 08:54:21.837] [trace] Getting active workspaces
+[2024-02-28 08:54:21.838] [trace] Updating workspace states
+[2024-02-28 08:54:21.838] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:21.838] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:21.838] [trace] Updating window count
+[2024-02-28 08:54:21.839] [trace] Window closed: 55728a1ca5c0
+[2024-02-28 08:54:21.839] [trace] Getting active workspaces
+[2024-02-28 08:54:21.839] [trace] Updating workspace states
+[2024-02-28 08:54:21.839] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:21.839] [trace] Updating window count
+[2024-02-28 08:54:21.840] [trace] Window closed: 55728a1ca5c0
+[2024-02-28 08:54:21.849] [trace] Getting active workspaces
+[2024-02-28 08:54:21.893] [trace] Updating workspace states
+[2024-02-28 08:54:21.893] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:21.893] [trace] Updating window count
+[2024-02-28 08:54:21.925] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:54:21.941] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:54:22.762] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:22.770] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:23.606] [debug] hyprland IPC received windowtitle>>55728a180150
+[2024-02-28 08:54:23.607] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:23.614] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:24.924] [debug] hyprland IPC received windowtitle>>55728a180150
+[2024-02-28 08:54:24.925] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:54:24.937] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:24.939] [debug] hyprland IPC received windowtitle>>55728a180150
+[2024-02-28 08:54:24.940] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:24.948] [debug] hyprland IPC received activewindowv2>>55728a180150
+[2024-02-28 08:54:25.756] [debug] hyprland IPC received closewindow>>55728a180150
+[2024-02-28 08:54:25.756] [trace] Window closed: 55728a180150
+[2024-02-28 08:54:25.760] [trace] Getting active workspaces
+[2024-02-28 08:54:25.780] [trace] Updating workspace states
+[2024-02-28 08:54:25.780] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:25.780] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:25.780] [trace] Updating window count
+[2024-02-28 08:54:25.791] [trace] Window closed: 55728a180150
+[2024-02-28 08:54:25.791] [trace] Adding solo class: kitty
+[2024-02-28 08:54:25.798] [trace] Getting active workspaces
+[2024-02-28 08:54:25.811] [trace] Updating workspace states
+[2024-02-28 08:54:25.811] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:25.811] [trace] Updating window count
+[2024-02-28 08:54:25.824] [trace] Window closed: 55728a180150
+[2024-02-28 08:54:25.835] [trace] Getting active workspaces
+[2024-02-28 08:54:25.839] [trace] Updating workspace states
+[2024-02-28 08:54:25.839] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:25.839] [trace] Updating window count
+[2024-02-28 08:54:25.840] [debug] hyprland IPC received activewindow>>kitty,btop
+[2024-02-28 08:54:25.852] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:54:27.946] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:54:27.947] [debug] hyprland IPC received activewindow>>kitty,kitten
+[2024-02-28 08:54:27.959] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:54:27.960] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:54:27.961] [debug] hyprland IPC received activewindow>>kitty,Close OS window
+[2024-02-28 08:54:27.966] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:54:29.282] [debug] hyprland IPC received closewindow>>5572898cd970
+[2024-02-28 08:54:29.282] [trace] Window closed: 5572898cd970
+[2024-02-28 08:54:29.284] [trace] Getting active workspaces
+[2024-02-28 08:54:29.285] [trace] Updating workspace states
+[2024-02-28 08:54:29.285] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:29.286] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:29.286] [trace] Updating window count
+[2024-02-28 08:54:29.286] [trace] Window closed: 5572898cd970
+[2024-02-28 08:54:29.286] [trace] Removing solo class: kitty
+[2024-02-28 08:54:29.286] [trace] Getting active workspaces
+[2024-02-28 08:54:29.293] [trace] Updating workspace states
+[2024-02-28 08:54:29.293] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:29.293] [trace] Updating window count
+[2024-02-28 08:54:29.293] [trace] Window closed: 5572898cd970
+[2024-02-28 08:54:29.296] [trace] Getting active workspaces
+[2024-02-28 08:54:29.297] [trace] Updating workspace states
+[2024-02-28 08:54:29.297] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:29.297] [trace] Updating window count
+[2024-02-28 08:54:29.299] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 08:54:29.307] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 08:54:30.002] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:54:30.002] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:54:30.002] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:54:30.002] [trace] Getting active workspaces
+[2024-02-28 08:54:30.002] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:54:30.002] [trace] Updating workspace states
+[2024-02-28 08:54:30.002] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:30.002] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:30.002] [trace] Updating window count
+[2024-02-28 08:54:30.002] [trace] Getting active workspaces
+[2024-02-28 08:54:30.003] [trace] Updating workspace states
+[2024-02-28 08:54:30.003] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:30.003] [trace] Updating window count
+[2024-02-28 08:54:30.003] [trace] Getting active workspaces
+[2024-02-28 08:54:30.003] [trace] Updating workspace states
+[2024-02-28 08:54:30.003] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:30.003] [trace] Updating window count
+[2024-02-28 08:54:31.275] [debug] hyprland IPC received openwindow>>5572898cd970,1 silent,kitty,fish
+[2024-02-28 08:54:31.275] [trace] Window opened: 5572898cd970,1 silent,kitty,fish
+[2024-02-28 08:54:31.276] [trace] Window opened: 5572898cd970,1 silent,kitty,fish
+[2024-02-28 08:54:31.276] [trace] Getting active workspaces
+[2024-02-28 08:54:31.276] [trace] Window opened: 5572898cd970,1 silent,kitty,fish
+[2024-02-28 08:54:31.276] [trace] Updating workspace states
+[2024-02-28 08:54:31.276] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:31.276] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:31.276] [trace] Updating window count
+[2024-02-28 08:54:31.276] [trace] Getting active workspaces
+[2024-02-28 08:54:31.277] [trace] Updating workspace states
+[2024-02-28 08:54:31.277] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:31.277] [trace] Updating window count
+[2024-02-28 08:54:31.277] [trace] Getting active workspaces
+[2024-02-28 08:54:31.277] [trace] Updating workspace states
+[2024-02-28 08:54:31.277] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:31.277] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:31.277] [trace] Updating window count
+[2024-02-28 08:54:31.277] [trace] Getting active workspaces
+[2024-02-28 08:54:31.277] [trace] Updating workspace states
+[2024-02-28 08:54:31.277] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:31.277] [trace] Updating window count
+[2024-02-28 08:54:31.612] [debug] hyprland IPC received windowtitle>>5572898cd970
+[2024-02-28 08:54:35.611] [debug] hyprland IPC received openwindow>>55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:35.611] [trace] Window opened: 55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:35.612] [trace] Window opened: 55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:35.612] [trace] Getting active workspaces
+[2024-02-28 08:54:35.614] [trace] Window opened: 55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:35.614] [trace] Updating workspace states
+[2024-02-28 08:54:35.614] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:35.614] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:35.614] [trace] Updating window count
+[2024-02-28 08:54:35.614] [trace] Getting active workspaces
+[2024-02-28 08:54:35.614] [trace] Updating workspace states
+[2024-02-28 08:54:35.614] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:35.614] [trace] Updating window count
+[2024-02-28 08:54:35.614] [trace] Getting active workspaces
+[2024-02-28 08:54:35.614] [trace] Updating workspace states
+[2024-02-28 08:54:35.614] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:35.614] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:35.614] [trace] Updating window count
+[2024-02-28 08:54:35.614] [trace] Getting active workspaces
+[2024-02-28 08:54:35.614] [trace] Updating workspace states
+[2024-02-28 08:54:35.614] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:35.614] [trace] Updating window count
+[2024-02-28 08:54:35.948] [debug] hyprland IPC received windowtitle>>55728a15c390
+[2024-02-28 08:54:38.657] [debug] hyprland IPC received openwindow>>5572898c66e0,1 silent,kitty,fish
+[2024-02-28 08:54:38.657] [trace] Window opened: 5572898c66e0,1 silent,kitty,fish
+[2024-02-28 08:54:38.658] [trace] Window opened: 5572898c66e0,1 silent,kitty,fish
+[2024-02-28 08:54:38.658] [trace] Getting active workspaces
+[2024-02-28 08:54:38.659] [trace] Window opened: 5572898c66e0,1 silent,kitty,fish
+[2024-02-28 08:54:38.659] [trace] Updating workspace states
+[2024-02-28 08:54:38.659] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:38.660] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:38.660] [trace] Updating window count
+[2024-02-28 08:54:38.660] [trace] Getting active workspaces
+[2024-02-28 08:54:38.660] [trace] Updating workspace states
+[2024-02-28 08:54:38.660] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:38.660] [trace] Updating window count
+[2024-02-28 08:54:38.660] [trace] Getting active workspaces
+[2024-02-28 08:54:38.660] [trace] Updating workspace states
+[2024-02-28 08:54:38.660] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:38.660] [trace] Updating window count
+[2024-02-28 08:54:38.660] [trace] Getting active workspaces
+[2024-02-28 08:54:38.660] [trace] Updating workspace states
+[2024-02-28 08:54:38.660] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:38.660] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:38.660] [trace] Updating window count
+[2024-02-28 08:54:38.854] [debug] hyprland IPC received openwindow>>55728a1b01d0,1 silent,kitty,fish
+[2024-02-28 08:54:38.854] [trace] Window opened: 55728a1b01d0,1 silent,kitty,fish
+[2024-02-28 08:54:38.854] [trace] Window opened: 55728a1b01d0,1 silent,kitty,fish
+[2024-02-28 08:54:38.854] [trace] Getting active workspaces
+[2024-02-28 08:54:38.854] [trace] Window opened: 55728a1b01d0,1 silent,kitty,fish
+[2024-02-28 08:54:38.855] [trace] Updating workspace states
+[2024-02-28 08:54:38.855] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:38.855] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:38.855] [trace] Updating window count
+[2024-02-28 08:54:38.855] [trace] Getting active workspaces
+[2024-02-28 08:54:38.856] [trace] Updating workspace states
+[2024-02-28 08:54:38.856] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:38.856] [trace] Updating window count
+[2024-02-28 08:54:38.856] [trace] Getting active workspaces
+[2024-02-28 08:54:38.856] [trace] Updating workspace states
+[2024-02-28 08:54:38.856] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:38.856] [trace] Updating window count
+[2024-02-28 08:54:38.856] [trace] Getting active workspaces
+[2024-02-28 08:54:38.856] [trace] Updating workspace states
+[2024-02-28 08:54:38.856] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:38.856] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:38.856] [trace] Updating window count
+[2024-02-28 08:54:38.995] [debug] hyprland IPC received windowtitle>>5572898c66e0
+[2024-02-28 08:54:39.190] [debug] hyprland IPC received windowtitle>>55728a1b01d0
+[2024-02-28 08:54:42.722] [debug] hyprland IPC received focusedmon>>HDMI-A-1,1
+[2024-02-28 08:54:42.722] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:54:42.723] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:54:42.723] [trace] Getting active workspaces
+[2024-02-28 08:54:42.724] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:54:42.724] [trace] Updating workspace states
+[2024-02-28 08:54:42.724] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:42.724] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:42.724] [trace] Updating window count
+[2024-02-28 08:54:42.724] [trace] Getting active workspaces
+[2024-02-28 08:54:42.724] [trace] Updating workspace states
+[2024-02-28 08:54:42.724] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:42.725] [trace] Updating window count
+[2024-02-28 08:54:42.725] [trace] Getting active workspaces
+[2024-02-28 08:54:42.725] [trace] Updating workspace states
+[2024-02-28 08:54:42.725] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:42.725] [trace] Updating window count
+[2024-02-28 08:54:42.726] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:42.730] [debug] hyprland IPC received activewindowv2>>55728a15c390
+[2024-02-28 08:54:42.910] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:42.915] [debug] hyprland IPC received activewindowv2>>5572898cd970
+[2024-02-28 08:54:44.088] [debug] hyprland IPC received closewindow>>5572898cd970
+[2024-02-28 08:54:44.088] [trace] Window closed: 5572898cd970
+[2024-02-28 08:54:44.092] [trace] Getting active workspaces
+[2024-02-28 08:54:44.122] [trace] Updating workspace states
+[2024-02-28 08:54:44.122] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:44.122] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:44.122] [trace] Updating window count
+[2024-02-28 08:54:44.137] [trace] Window closed: 5572898cd970
+[2024-02-28 08:54:44.159] [trace] Getting active workspaces
+[2024-02-28 08:54:44.192] [trace] Updating workspace states
+[2024-02-28 08:54:44.192] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:44.192] [trace] Updating window count
+[2024-02-28 08:54:44.202] [trace] Window closed: 5572898cd970
+[2024-02-28 08:54:44.203] [trace] Getting active workspaces
+[2024-02-28 08:54:44.203] [trace] Updating workspace states
+[2024-02-28 08:54:44.203] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:44.203] [trace] Updating window count
+[2024-02-28 08:54:44.204] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:44.208] [debug] hyprland IPC received activewindowv2>>55728a15c390
+[2024-02-28 08:54:44.380] [debug] hyprland IPC received closewindow>>55728a15c390
+[2024-02-28 08:54:44.380] [trace] Window closed: 55728a15c390
+[2024-02-28 08:54:44.381] [trace] Getting active workspaces
+[2024-02-28 08:54:44.381] [trace] Updating workspace states
+[2024-02-28 08:54:44.381] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:44.381] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:44.381] [trace] Updating window count
+[2024-02-28 08:54:44.382] [trace] Window closed: 55728a15c390
+[2024-02-28 08:54:44.382] [trace] Getting active workspaces
+[2024-02-28 08:54:44.383] [trace] Updating workspace states
+[2024-02-28 08:54:44.383] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:44.383] [trace] Updating window count
+[2024-02-28 08:54:44.384] [trace] Window closed: 55728a15c390
+[2024-02-28 08:54:44.385] [trace] Getting active workspaces
+[2024-02-28 08:54:44.389] [trace] Updating workspace states
+[2024-02-28 08:54:44.389] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:44.389] [trace] Updating window count
+[2024-02-28 08:54:44.390] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:44.396] [debug] hyprland IPC received activewindowv2>>5572898c66e0
+[2024-02-28 08:54:44.670] [debug] hyprland IPC received closewindow>>5572898c66e0
+[2024-02-28 08:54:44.670] [trace] Window closed: 5572898c66e0
+[2024-02-28 08:54:44.671] [trace] Getting active workspaces
+[2024-02-28 08:54:44.671] [trace] Updating workspace states
+[2024-02-28 08:54:44.671] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:44.671] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:44.671] [trace] Updating window count
+[2024-02-28 08:54:44.672] [trace] Window closed: 5572898c66e0
+[2024-02-28 08:54:44.672] [trace] Adding solo class: kitty
+[2024-02-28 08:54:44.672] [trace] Getting active workspaces
+[2024-02-28 08:54:44.673] [trace] Updating workspace states
+[2024-02-28 08:54:44.673] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:44.673] [trace] Updating window count
+[2024-02-28 08:54:44.674] [trace] Window closed: 5572898c66e0
+[2024-02-28 08:54:44.675] [trace] Getting active workspaces
+[2024-02-28 08:54:44.676] [trace] Updating workspace states
+[2024-02-28 08:54:44.676] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:44.676] [trace] Updating window count
+[2024-02-28 08:54:44.676] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:44.680] [debug] hyprland IPC received activewindowv2>>55728a1b01d0
+[2024-02-28 08:54:45.125] [debug] hyprland IPC received closewindow>>55728a1b01d0
+[2024-02-28 08:54:45.125] [trace] Window closed: 55728a1b01d0
+[2024-02-28 08:54:45.126] [trace] Getting active workspaces
+[2024-02-28 08:54:45.126] [trace] Updating workspace states
+[2024-02-28 08:54:45.126] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:45.126] [trace] Window closed: 55728a1b01d0
+[2024-02-28 08:54:45.126] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:45.126] [trace] Updating window count
+[2024-02-28 08:54:45.126] [trace] Removing solo class: kitty
+[2024-02-28 08:54:45.127] [trace] Getting active workspaces
+[2024-02-28 08:54:45.127] [trace] Window closed: 55728a1b01d0
+[2024-02-28 08:54:45.127] [trace] Updating workspace states
+[2024-02-28 08:54:45.127] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:45.127] [trace] Updating window count
+[2024-02-28 08:54:45.128] [trace] Getting active workspaces
+[2024-02-28 08:54:45.128] [trace] Updating workspace states
+[2024-02-28 08:54:45.128] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:45.128] [trace] Updating window count
+[2024-02-28 08:54:45.129] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 08:54:45.132] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 08:54:45.538] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:54:45.538] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:54:45.540] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:54:45.540] [trace] Getting active workspaces
+[2024-02-28 08:54:45.540] [trace] Updating workspace states
+[2024-02-28 08:54:45.540] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:45.540] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:54:45.540] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:45.540] [trace] Updating window count
+[2024-02-28 08:54:45.541] [trace] Getting active workspaces
+[2024-02-28 08:54:45.541] [trace] Updating workspace states
+[2024-02-28 08:54:45.541] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:45.541] [trace] Updating window count
+[2024-02-28 08:54:45.541] [trace] Getting active workspaces
+[2024-02-28 08:54:45.541] [trace] Updating workspace states
+[2024-02-28 08:54:45.541] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:45.541] [trace] Updating window count
+[2024-02-28 08:54:48.406] [debug] hyprland IPC received openwindow>>55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:48.406] [trace] Window opened: 55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:48.406] [trace] Window opened: 55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:48.406] [trace] Getting active workspaces
+[2024-02-28 08:54:48.407] [trace] Window opened: 55728a15c390,1 silent,kitty,fish
+[2024-02-28 08:54:48.407] [trace] Updating workspace states
+[2024-02-28 08:54:48.407] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:48.407] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:48.407] [trace] Updating window count
+[2024-02-28 08:54:48.407] [trace] Getting active workspaces
+[2024-02-28 08:54:48.407] [trace] Updating workspace states
+[2024-02-28 08:54:48.407] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:48.407] [trace] Updating window count
+[2024-02-28 08:54:48.407] [trace] Getting active workspaces
+[2024-02-28 08:54:48.408] [trace] Updating workspace states
+[2024-02-28 08:54:48.408] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:48.408] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:48.408] [trace] Updating window count
+[2024-02-28 08:54:48.408] [trace] Getting active workspaces
+[2024-02-28 08:54:48.408] [trace] Updating workspace states
+[2024-02-28 08:54:48.408] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:48.408] [trace] Updating window count
+[2024-02-28 08:54:48.745] [debug] hyprland IPC received windowtitle>>55728a15c390
+[2024-02-28 08:54:52.351] [debug] hyprland IPC received focusedmon>>HDMI-A-1,1
+[2024-02-28 08:54:52.351] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:54:52.358] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:54:52.358] [trace] Getting active workspaces
+[2024-02-28 08:54:52.359] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:54:52.359] [trace] Updating workspace states
+[2024-02-28 08:54:52.359] [trace] Selecting icon for workspace 1
+[2024-02-28 08:54:52.359] [trace] Selecting icon for workspace 4
+[2024-02-28 08:54:52.359] [trace] Updating window count
+[2024-02-28 08:54:52.359] [trace] Getting active workspaces
+[2024-02-28 08:54:52.359] [trace] Updating workspace states
+[2024-02-28 08:54:52.359] [trace] Selecting icon for workspace 8
+[2024-02-28 08:54:52.359] [trace] Updating window count
+[2024-02-28 08:54:52.359] [trace] Getting active workspaces
+[2024-02-28 08:54:52.359] [trace] Updating workspace states
+[2024-02-28 08:54:52.359] [trace] Selecting icon for workspace 5
+[2024-02-28 08:54:52.359] [trace] Updating window count
+[2024-02-28 08:54:52.360] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:54:52.363] [trace] Adding solo class: kitty
+[2024-02-28 08:54:52.365] [debug] hyprland IPC received activewindowv2>>55728a15c390
+[2024-02-28 08:54:54.905] [debug] hyprland IPC received windowtitle>>55728a15c390
+[2024-02-28 08:54:54.906] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:54:54.920] [debug] hyprland IPC received activewindowv2>>55728a15c390
+[2024-02-28 08:55:33.036] [debug] hyprland IPC received activelayout>>power-button,English (US)
+[2024-02-28 08:55:33.037] [debug] hyprland IPC received activelayout>>power-button,English (US)
+[2024-02-28 08:55:33.039] [debug] hyprland IPC received activelayout>>power-button-1,English (US)
+[2024-02-28 08:55:33.040] [debug] hyprland IPC received activelayout>>power-button-1,English (US)
+[2024-02-28 08:55:33.041] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-1,English (US)
+[2024-02-28 08:55:33.043] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-1,English (US)
+[2024-02-28 08:55:33.044] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-consumer-control,English (US)
+[2024-02-28 08:55:33.045] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-consumer-control,English (US)
+[2024-02-28 08:55:33.047] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3,English (US)
+[2024-02-28 08:55:33.048] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3,English (US)
+[2024-02-28 08:55:33.049] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-1,English (US)
+[2024-02-28 08:55:33.050] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-1,English (US)
+[2024-02-28 08:55:33.052] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-consumer-control,English (US)
+[2024-02-28 08:55:33.053] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-consumer-control,English (US)
+[2024-02-28 08:55:33.054] [debug] hyprland IPC received activelayout>>steelseries--steelseries-arctis-7-consumer-control,English (US)
+[2024-02-28 08:55:33.055] [debug] hyprland IPC received activelayout>>steelseries--steelseries-arctis-7-consumer-control,English (US)
+[2024-02-28 08:55:33.086] [debug] hyprland IPC received configreloaded>>
+[2024-02-28 08:55:33.086] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 08:55:33.096] [debug] Initializing workspaces
+[2024-02-28 08:55:33.096] [trace] Extending orphans with workspace 8
+[2024-02-28 08:55:33.096] [trace] Extending orphans with workspace 5
+[2024-02-28 08:55:33.096] [trace] Extending orphans with workspace -98
+[2024-02-28 08:55:33.096] [debug] Initializing persistent workspaces
+[2024-02-28 08:55:33.096] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:55:33.097] [trace] Creating persistent workspace: 1 on monitor HDMI-A-1
+[2024-02-28 08:55:33.097] [trace] Creating persistent workspace: 4 on monitor HDMI-A-1
+[2024-02-28 08:55:33.097] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 08:55:33.097] [debug] Initializing workspaces
+[2024-02-28 08:55:33.097] [trace] Extending orphans with workspace 1
+[2024-02-28 08:55:33.098] [trace] Extending orphans with workspace 5
+[2024-02-28 08:55:33.098] [trace] Extending orphans with workspace -98
+[2024-02-28 08:55:33.098] [trace] Extending orphans with workspace 4
+[2024-02-28 08:55:33.098] [debug] Initializing persistent workspaces
+[2024-02-28 08:55:33.098] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:55:33.098] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 08:55:33.098] [debug] Initializing workspaces
+[2024-02-28 08:55:33.099] [trace] Extending orphans with workspace 1
+[2024-02-28 08:55:33.099] [trace] Extending orphans with workspace 8
+[2024-02-28 08:55:33.099] [trace] Extending orphans with workspace -98
+[2024-02-28 08:55:33.099] [trace] Extending orphans with workspace 4
+[2024-02-28 08:55:33.099] [debug] Initializing persistent workspaces
+[2024-02-28 08:55:33.099] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:55:33.103] [debug] Removing workspace 1
+[2024-02-28 08:55:33.103] [trace] Not removing persistent workspace 1
+[2024-02-28 08:55:33.103] [debug] Removing workspace 4
+[2024-02-28 08:55:33.103] [trace] Not removing persistent workspace 4
+[2024-02-28 08:55:33.103] [debug] Creating workspace 1, persistent: false
+[2024-02-28 08:55:33.103] [debug] Creating workspace 4, persistent: false
+[2024-02-28 08:55:33.103] [debug] Creating workspace 1, persistent: true
+[2024-02-28 08:55:33.103] [debug] Creating workspace 4, persistent: true
+[2024-02-28 08:55:33.103] [trace] Getting active workspaces
+[2024-02-28 08:55:33.104] [trace] Updating workspace states
+[2024-02-28 08:55:33.104] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:33.104] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:33.104] [trace] Updating window count
+[2024-02-28 08:55:33.104] [trace] Getting active workspaces
+[2024-02-28 08:55:33.104] [trace] Updating workspace states
+[2024-02-28 08:55:33.104] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:33.104] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:33.104] [trace] Updating window count
+[2024-02-28 08:55:33.104] [debug] Removing workspace 8
+[2024-02-28 08:55:33.104] [debug] Removing workspace 1
+[2024-02-28 08:55:33.104] [debug] Removing workspace 4
+[2024-02-28 08:55:33.104] [debug] Creating workspace 8, persistent: false
+[2024-02-28 08:55:33.104] [trace] Getting active workspaces
+[2024-02-28 08:55:33.105] [trace] Updating workspace states
+[2024-02-28 08:55:33.105] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:33.105] [trace] Updating window count
+[2024-02-28 08:55:33.105] [trace] Getting active workspaces
+[2024-02-28 08:55:33.105] [trace] Updating workspace states
+[2024-02-28 08:55:33.105] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:33.105] [trace] Updating window count
+[2024-02-28 08:55:33.105] [debug] Removing workspace 5
+[2024-02-28 08:55:33.105] [debug] Removing workspace 1
+[2024-02-28 08:55:33.105] [debug] Removing workspace 4
+[2024-02-28 08:55:33.105] [debug] Creating workspace 5, persistent: false
+[2024-02-28 08:55:33.105] [trace] Getting active workspaces
+[2024-02-28 08:55:33.105] [trace] Updating workspace states
+[2024-02-28 08:55:33.105] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:33.105] [trace] Updating window count
+[2024-02-28 08:55:33.105] [trace] Getting active workspaces
+[2024-02-28 08:55:33.106] [trace] Updating workspace states
+[2024-02-28 08:55:33.106] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:33.106] [trace] Updating window count
+[2024-02-28 08:55:35.796] [debug] hyprland IPC received windowtitle>>55728a15c390
+[2024-02-28 08:55:35.797] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:55:35.801] [debug] hyprland IPC received activewindowv2>>55728a15c390
+[2024-02-28 08:55:38.507] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:55:38.509] [trace] Removing solo class: kitty
+[2024-02-28 08:55:38.515] [debug] hyprland IPC received activewindowv2>>55728960f7c0
+[2024-02-28 08:55:38.516] [debug] hyprland IPC received openwindow>>55728960f7c0,1,kitty,fish
+[2024-02-28 08:55:38.516] [trace] Window opened: 55728960f7c0,1,kitty,fish
+[2024-02-28 08:55:38.516] [trace] Window opened: 55728960f7c0,1,kitty,fish
+[2024-02-28 08:55:38.516] [trace] Getting active workspaces
+[2024-02-28 08:55:38.516] [trace] Window opened: 55728960f7c0,1,kitty,fish
+[2024-02-28 08:55:38.516] [trace] Updating workspace states
+[2024-02-28 08:55:38.516] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:38.516] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:38.516] [trace] Updating window count
+[2024-02-28 08:55:38.516] [trace] Getting active workspaces
+[2024-02-28 08:55:38.516] [trace] Updating workspace states
+[2024-02-28 08:55:38.516] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:38.516] [trace] Updating window count
+[2024-02-28 08:55:38.516] [trace] Getting active workspaces
+[2024-02-28 08:55:38.517] [trace] Updating workspace states
+[2024-02-28 08:55:38.517] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:38.517] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:38.517] [trace] Updating window count
+[2024-02-28 08:55:38.517] [trace] Getting active workspaces
+[2024-02-28 08:55:38.517] [trace] Updating workspace states
+[2024-02-28 08:55:38.517] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:38.517] [trace] Updating window count
+[2024-02-28 08:55:38.842] [debug] hyprland IPC received windowtitle>>55728960f7c0
+[2024-02-28 08:55:38.843] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:55:38.846] [debug] hyprland IPC received activewindowv2>>55728960f7c0
+[2024-02-28 08:55:39.704] [debug] hyprland IPC received closewindow>>55728960f7c0
+[2024-02-28 08:55:39.704] [trace] Window closed: 55728960f7c0
+[2024-02-28 08:55:39.706] [trace] Getting active workspaces
+[2024-02-28 08:55:39.706] [trace] Updating workspace states
+[2024-02-28 08:55:39.706] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:39.706] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:39.706] [trace] Updating window count
+[2024-02-28 08:55:39.707] [trace] Window closed: 55728960f7c0
+[2024-02-28 08:55:39.707] [trace] Adding solo class: kitty
+[2024-02-28 08:55:39.709] [trace] Getting active workspaces
+[2024-02-28 08:55:39.709] [trace] Window closed: 55728960f7c0
+[2024-02-28 08:55:39.712] [trace] Updating workspace states
+[2024-02-28 08:55:39.712] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:39.712] [trace] Updating window count
+[2024-02-28 08:55:39.712] [trace] Getting active workspaces
+[2024-02-28 08:55:39.715] [trace] Updating workspace states
+[2024-02-28 08:55:39.715] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:39.716] [trace] Updating window count
+[2024-02-28 08:55:39.716] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:55:39.720] [debug] hyprland IPC received activewindowv2>>55728a15c390
+[2024-02-28 08:55:39.907] [debug] hyprland IPC received closewindow>>55728a15c390
+[2024-02-28 08:55:39.907] [trace] Window closed: 55728a15c390
+[2024-02-28 08:55:39.909] [trace] Getting active workspaces
+[2024-02-28 08:55:39.909] [trace] Updating workspace states
+[2024-02-28 08:55:39.909] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:39.909] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:39.909] [trace] Updating window count
+[2024-02-28 08:55:39.909] [trace] Window closed: 55728a15c390
+[2024-02-28 08:55:39.909] [trace] Removing solo class: kitty
+[2024-02-28 08:55:39.909] [trace] Getting active workspaces
+[2024-02-28 08:55:39.910] [trace] Updating workspace states
+[2024-02-28 08:55:39.910] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:39.910] [trace] Updating window count
+[2024-02-28 08:55:39.910] [trace] Window closed: 55728a15c390
+[2024-02-28 08:55:39.911] [trace] Getting active workspaces
+[2024-02-28 08:55:39.911] [trace] Updating workspace states
+[2024-02-28 08:55:39.911] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:39.911] [trace] Updating window count
+[2024-02-28 08:55:39.912] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 08:55:39.915] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 08:55:42.542] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:55:42.542] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:55:42.549] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:55:42.549] [trace] Getting active workspaces
+[2024-02-28 08:55:42.549] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:55:42.549] [trace] Updating workspace states
+[2024-02-28 08:55:42.549] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:42.549] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:42.549] [trace] Updating window count
+[2024-02-28 08:55:42.549] [trace] Getting active workspaces
+[2024-02-28 08:55:42.550] [trace] Updating workspace states
+[2024-02-28 08:55:42.550] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:42.550] [trace] Updating window count
+[2024-02-28 08:55:42.550] [trace] Getting active workspaces
+[2024-02-28 08:55:42.550] [trace] Updating workspace states
+[2024-02-28 08:55:42.550] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:42.550] [trace] Updating window count
+[2024-02-28 08:55:43.474] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:55:43.477] [trace] Adding solo class: kitty
+[2024-02-28 08:55:43.479] [debug] hyprland IPC received activewindowv2>>55728960f7c0
+[2024-02-28 08:55:43.480] [debug] hyprland IPC received openwindow>>55728960f7c0,5,kitty,fish
+[2024-02-28 08:55:43.480] [trace] Window opened: 55728960f7c0,5,kitty,fish
+[2024-02-28 08:55:43.480] [trace] Window opened: 55728960f7c0,5,kitty,fish
+[2024-02-28 08:55:43.480] [trace] Getting active workspaces
+[2024-02-28 08:55:43.480] [trace] Window opened: 55728960f7c0,5,kitty,fish
+[2024-02-28 08:55:43.480] [trace] Updating workspace states
+[2024-02-28 08:55:43.480] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:43.480] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:43.480] [trace] Updating window count
+[2024-02-28 08:55:43.480] [trace] Getting active workspaces
+[2024-02-28 08:55:43.480] [trace] Updating workspace states
+[2024-02-28 08:55:43.480] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:43.480] [trace] Updating window count
+[2024-02-28 08:55:43.480] [trace] Getting active workspaces
+[2024-02-28 08:55:43.481] [trace] Updating workspace states
+[2024-02-28 08:55:43.481] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:43.481] [trace] Updating window count
+[2024-02-28 08:55:43.481] [trace] Getting active workspaces
+[2024-02-28 08:55:43.481] [trace] Updating workspace states
+[2024-02-28 08:55:43.481] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:43.481] [trace] Updating window count
+[2024-02-28 08:55:43.811] [debug] hyprland IPC received windowtitle>>55728960f7c0
+[2024-02-28 08:55:43.812] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:55:43.816] [debug] hyprland IPC received activewindowv2>>55728960f7c0
+[2024-02-28 08:55:49.345] [debug] hyprland IPC received closewindow>>55728960f7c0
+[2024-02-28 08:55:49.345] [trace] Window closed: 55728960f7c0
+[2024-02-28 08:55:49.348] [trace] Getting active workspaces
+[2024-02-28 08:55:49.348] [trace] Updating workspace states
+[2024-02-28 08:55:49.348] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:49.348] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:49.348] [trace] Updating window count
+[2024-02-28 08:55:49.349] [trace] Window closed: 55728960f7c0
+[2024-02-28 08:55:49.349] [trace] Getting active workspaces
+[2024-02-28 08:55:49.350] [trace] Updating workspace states
+[2024-02-28 08:55:49.350] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:49.350] [trace] Updating window count
+[2024-02-28 08:55:49.353] [trace] Window closed: 55728960f7c0
+[2024-02-28 08:55:49.355] [trace] Getting active workspaces
+[2024-02-28 08:55:49.356] [trace] Updating workspace states
+[2024-02-28 08:55:49.356] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:49.356] [trace] Updating window count
+[2024-02-28 08:55:49.356] [trace] Removing solo class: kitty
+[2024-02-28 08:55:49.357] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 08:55:49.364] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 08:55:52.891] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:55:52.895] [trace] Adding solo class: kitty
+[2024-02-28 08:55:52.896] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 08:55:52.897] [debug] hyprland IPC received openwindow>>55728a1921f0,5,kitty,fish
+[2024-02-28 08:55:52.897] [trace] Window opened: 55728a1921f0,5,kitty,fish
+[2024-02-28 08:55:52.897] [trace] Window opened: 55728a1921f0,5,kitty,fish
+[2024-02-28 08:55:52.897] [trace] Getting active workspaces
+[2024-02-28 08:55:52.897] [trace] Window opened: 55728a1921f0,5,kitty,fish
+[2024-02-28 08:55:52.898] [trace] Updating workspace states
+[2024-02-28 08:55:52.898] [trace] Selecting icon for workspace 1
+[2024-02-28 08:55:52.898] [trace] Selecting icon for workspace 4
+[2024-02-28 08:55:52.898] [trace] Updating window count
+[2024-02-28 08:55:52.898] [trace] Getting active workspaces
+[2024-02-28 08:55:52.898] [trace] Updating workspace states
+[2024-02-28 08:55:52.898] [trace] Selecting icon for workspace 8
+[2024-02-28 08:55:52.898] [trace] Updating window count
+[2024-02-28 08:55:52.898] [trace] Getting active workspaces
+[2024-02-28 08:55:52.898] [trace] Updating workspace states
+[2024-02-28 08:55:52.898] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:52.898] [trace] Updating window count
+[2024-02-28 08:55:52.898] [trace] Getting active workspaces
+[2024-02-28 08:55:52.899] [trace] Updating workspace states
+[2024-02-28 08:55:52.899] [trace] Selecting icon for workspace 5
+[2024-02-28 08:55:52.899] [trace] Updating window count
+[2024-02-28 08:55:53.226] [debug] hyprland IPC received windowtitle>>55728a1921f0
+[2024-02-28 08:55:53.227] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:55:53.231] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 08:55:54.130] [debug] hyprland IPC received windowtitle>>55728a1921f0
+[2024-02-28 08:55:54.131] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:55:54.135] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 08:56:40.108] [debug] hyprland IPC received activelayout>>power-button,English (US)
+[2024-02-28 08:56:40.110] [debug] hyprland IPC received activelayout>>power-button,English (US)
+[2024-02-28 08:56:40.111] [debug] hyprland IPC received activelayout>>power-button-1,English (US)
+[2024-02-28 08:56:40.112] [debug] hyprland IPC received activelayout>>power-button-1,English (US)
+[2024-02-28 08:56:40.114] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-1,English (US)
+[2024-02-28 08:56:40.115] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-1,English (US)
+[2024-02-28 08:56:40.116] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-consumer-control,English (US)
+[2024-02-28 08:56:40.117] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-consumer-control,English (US)
+[2024-02-28 08:56:40.119] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3,English (US)
+[2024-02-28 08:56:40.120] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3,English (US)
+[2024-02-28 08:56:40.121] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-1,English (US)
+[2024-02-28 08:56:40.122] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-1,English (US)
+[2024-02-28 08:56:40.124] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-consumer-control,English (US)
+[2024-02-28 08:56:40.125] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-consumer-control,English (US)
+[2024-02-28 08:56:40.126] [debug] hyprland IPC received activelayout>>steelseries--steelseries-arctis-7-consumer-control,English (US)
+[2024-02-28 08:56:40.128] [debug] hyprland IPC received activelayout>>steelseries--steelseries-arctis-7-consumer-control,English (US)
+[2024-02-28 08:56:40.181] [debug] hyprland IPC received configreloaded>>
+[2024-02-28 08:56:40.181] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 08:56:40.196] [debug] Initializing workspaces
+[2024-02-28 08:56:40.197] [trace] Extending orphans with workspace 8
+[2024-02-28 08:56:40.197] [trace] Extending orphans with workspace 5
+[2024-02-28 08:56:40.197] [trace] Extending orphans with workspace -98
+[2024-02-28 08:56:40.197] [debug] Initializing persistent workspaces
+[2024-02-28 08:56:40.197] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:56:40.197] [trace] Creating persistent workspace: 1 on monitor HDMI-A-1
+[2024-02-28 08:56:40.197] [trace] Creating persistent workspace: 4 on monitor HDMI-A-1
+[2024-02-28 08:56:40.197] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 08:56:40.197] [debug] Initializing workspaces
+[2024-02-28 08:56:40.197] [debug] Removing workspace 1
+[2024-02-28 08:56:40.197] [trace] Not removing persistent workspace 1
+[2024-02-28 08:56:40.197] [debug] Removing workspace 4
+[2024-02-28 08:56:40.197] [trace] Not removing persistent workspace 4
+[2024-02-28 08:56:40.197] [debug] Creating workspace 1, persistent: false
+[2024-02-28 08:56:40.197] [debug] Creating workspace 4, persistent: false
+[2024-02-28 08:56:40.197] [debug] Creating workspace 1, persistent: true
+[2024-02-28 08:56:40.197] [debug] Creating workspace 4, persistent: true
+[2024-02-28 08:56:40.198] [trace] Getting active workspaces
+[2024-02-28 08:56:40.198] [trace] Extending orphans with workspace 1
+[2024-02-28 08:56:40.198] [trace] Extending orphans with workspace 5
+[2024-02-28 08:56:40.198] [trace] Extending orphans with workspace -98
+[2024-02-28 08:56:40.198] [trace] Extending orphans with workspace 4
+[2024-02-28 08:56:40.198] [debug] Initializing persistent workspaces
+[2024-02-28 08:56:40.198] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:56:40.200] [trace] Updating workspace states
+[2024-02-28 08:56:40.200] [trace] Selecting icon for workspace 1
+[2024-02-28 08:56:40.200] [trace] Selecting icon for workspace 4
+[2024-02-28 08:56:40.200] [trace] Updating window count
+[2024-02-28 08:56:40.200] [trace] Getting active workspaces
+[2024-02-28 08:56:40.200] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 08:56:40.200] [debug] Initializing workspaces
+[2024-02-28 08:56:40.200] [trace] Updating workspace states
+[2024-02-28 08:56:40.200] [trace] Selecting icon for workspace 1
+[2024-02-28 08:56:40.200] [trace] Selecting icon for workspace 4
+[2024-02-28 08:56:40.200] [trace] Updating window count
+[2024-02-28 08:56:40.200] [debug] Removing workspace 8
+[2024-02-28 08:56:40.200] [debug] Removing workspace 1
+[2024-02-28 08:56:40.200] [debug] Removing workspace 4
+[2024-02-28 08:56:40.200] [debug] Creating workspace 8, persistent: false
+[2024-02-28 08:56:40.200] [trace] Getting active workspaces
+[2024-02-28 08:56:40.200] [trace] Extending orphans with workspace 1
+[2024-02-28 08:56:40.200] [trace] Extending orphans with workspace 8
+[2024-02-28 08:56:40.200] [trace] Extending orphans with workspace -98
+[2024-02-28 08:56:40.200] [trace] Extending orphans with workspace 4
+[2024-02-28 08:56:40.200] [debug] Initializing persistent workspaces
+[2024-02-28 08:56:40.200] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 08:56:40.201] [trace] Updating workspace states
+[2024-02-28 08:56:40.201] [trace] Selecting icon for workspace 8
+[2024-02-28 08:56:40.201] [trace] Updating window count
+[2024-02-28 08:56:40.201] [trace] Getting active workspaces
+[2024-02-28 08:56:40.201] [trace] Updating workspace states
+[2024-02-28 08:56:40.201] [trace] Selecting icon for workspace 8
+[2024-02-28 08:56:40.201] [trace] Updating window count
+[2024-02-28 08:56:40.201] [debug] Removing workspace 5
+[2024-02-28 08:56:40.201] [debug] Removing workspace 1
+[2024-02-28 08:56:40.201] [debug] Removing workspace 4
+[2024-02-28 08:56:40.201] [debug] Creating workspace 5, persistent: false
+[2024-02-28 08:56:40.201] [trace] Getting active workspaces
+[2024-02-28 08:56:40.204] [trace] Updating workspace states
+[2024-02-28 08:56:40.204] [trace] Selecting icon for workspace 5
+[2024-02-28 08:56:40.204] [trace] Updating window count
+[2024-02-28 08:56:40.204] [trace] Getting active workspaces
+[2024-02-28 08:56:40.204] [trace] Updating workspace states
+[2024-02-28 08:56:40.204] [trace] Selecting icon for workspace 5
+[2024-02-28 08:56:40.204] [trace] Updating window count
+[2024-02-28 08:56:42.433] [debug] hyprland IPC received focusedmon>>HDMI-A-1,1
+[2024-02-28 08:56:42.433] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:56:42.439] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:56:42.439] [trace] Getting active workspaces
+[2024-02-28 08:56:42.439] [trace] Monitor focused: HDMI-A-1,1
+[2024-02-28 08:56:42.439] [trace] Updating workspace states
+[2024-02-28 08:56:42.439] [trace] Selecting icon for workspace 1
+[2024-02-28 08:56:42.439] [trace] Selecting icon for workspace 4
+[2024-02-28 08:56:42.439] [trace] Updating window count
+[2024-02-28 08:56:42.439] [trace] Getting active workspaces
+[2024-02-28 08:56:42.440] [trace] Updating workspace states
+[2024-02-28 08:56:42.440] [trace] Selecting icon for workspace 8
+[2024-02-28 08:56:42.440] [trace] Updating window count
+[2024-02-28 08:56:42.440] [trace] Getting active workspaces
+[2024-02-28 08:56:42.440] [trace] Updating workspace states
+[2024-02-28 08:56:42.440] [trace] Selecting icon for workspace 5
+[2024-02-28 08:56:42.440] [trace] Updating window count
+[2024-02-28 08:56:42.440] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:56:42.441] [debug] hyprland IPC received activewindow>>discord,#hyprland-issues | Hyprland Cathedral - Discord
+[2024-02-28 08:56:42.480] [trace] Adding solo class: discord
+[2024-02-28 08:56:42.491] [debug] hyprland IPC received workspace>>4
+[2024-02-28 08:56:42.491] [trace] Getting active workspaces
+[2024-02-28 08:56:42.492] [debug] hyprland IPC received activewindow>>discord,#hyprland-issues | Hyprland Cathedral - Discord
+[2024-02-28 08:56:42.495] [trace] Updating workspace states
+[2024-02-28 08:56:42.495] [trace] Selecting icon for workspace 1
+[2024-02-28 08:56:42.495] [trace] Selecting icon for workspace 4
+[2024-02-28 08:56:42.495] [trace] Updating window count
+[2024-02-28 08:56:42.495] [trace] Getting active workspaces
+[2024-02-28 08:56:42.496] [trace] Updating workspace states
+[2024-02-28 08:56:42.496] [trace] Selecting icon for workspace 8
+[2024-02-28 08:56:42.496] [trace] Updating window count
+[2024-02-28 08:56:42.496] [trace] Getting active workspaces
+[2024-02-28 08:56:42.496] [trace] Updating workspace states
+[2024-02-28 08:56:42.496] [trace] Selecting icon for workspace 5
+[2024-02-28 08:56:42.496] [trace] Updating window count
+[2024-02-28 08:56:42.508] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:57:37.312] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 08:57:37.321] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:57:37.322] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:57:37.323] [debug] hyprland IPC received windowtitle>>55728a94a8d0
+[2024-02-28 08:57:37.324] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 08:57:37.331] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:59:08.154] [debug] hyprland IPC received openwindow>>55728a1d2710,4,,
+[2024-02-28 08:59:08.154] [trace] Window opened: 55728a1d2710,4,,
+[2024-02-28 08:59:08.155] [trace] Window opened: 55728a1d2710,4,,
+[2024-02-28 08:59:08.156] [trace] Getting active workspaces
+[2024-02-28 08:59:08.156] [trace] Window opened: 55728a1d2710,4,,
+[2024-02-28 08:59:08.156] [trace] Updating workspace states
+[2024-02-28 08:59:08.156] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:08.156] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:08.156] [trace] Updating window count
+[2024-02-28 08:59:08.156] [trace] Getting active workspaces
+[2024-02-28 08:59:08.156] [trace] Updating workspace states
+[2024-02-28 08:59:08.156] [trace] Selecting icon for workspace 8
+[2024-02-28 08:59:08.156] [trace] Updating window count
+[2024-02-28 08:59:08.156] [trace] Getting active workspaces
+[2024-02-28 08:59:08.156] [trace] Updating workspace states
+[2024-02-28 08:59:08.156] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:08.156] [trace] Updating window count
+[2024-02-28 08:59:08.156] [trace] Getting active workspaces
+[2024-02-28 08:59:08.157] [trace] Updating workspace states
+[2024-02-28 08:59:08.157] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:08.157] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:08.157] [trace] Updating window count
+[2024-02-28 08:59:08.497] [debug] hyprland IPC received closewindow>>55728a1d2710
+[2024-02-28 08:59:08.497] [trace] Window closed: 55728a1d2710
+[2024-02-28 08:59:08.497] [trace] Getting active workspaces
+[2024-02-28 08:59:08.498] [trace] Updating workspace states
+[2024-02-28 08:59:08.498] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:08.498] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:08.498] [trace] Updating window count
+[2024-02-28 08:59:08.498] [trace] Window closed: 55728a1d2710
+[2024-02-28 08:59:08.498] [trace] Getting active workspaces
+[2024-02-28 08:59:08.498] [trace] Updating workspace states
+[2024-02-28 08:59:08.498] [trace] Selecting icon for workspace 8
+[2024-02-28 08:59:08.498] [trace] Updating window count
+[2024-02-28 08:59:08.502] [trace] Window closed: 55728a1d2710
+[2024-02-28 08:59:08.502] [trace] Getting active workspaces
+[2024-02-28 08:59:08.503] [trace] Updating workspace states
+[2024-02-28 08:59:08.503] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:08.503] [trace] Updating window count
+[2024-02-28 08:59:26.807] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:59:26.807] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:59:26.808] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:59:26.808] [trace] Getting active workspaces
+[2024-02-28 08:59:26.811] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:59:26.817] [trace] Updating workspace states
+[2024-02-28 08:59:26.817] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:26.817] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:26.817] [trace] Updating window count
+[2024-02-28 08:59:26.817] [trace] Getting active workspaces
+[2024-02-28 08:59:26.818] [trace] Updating workspace states
+[2024-02-28 08:59:26.818] [trace] Selecting icon for workspace 8
+[2024-02-28 08:59:26.818] [trace] Updating window count
+[2024-02-28 08:59:26.818] [trace] Getting active workspaces
+[2024-02-28 08:59:26.818] [trace] Updating workspace states
+[2024-02-28 08:59:26.818] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:26.818] [trace] Updating window count
+[2024-02-28 08:59:26.819] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:59:26.840] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 08:59:28.871] [debug] hyprland IPC received focusedmon>>HDMI-A-1,4
+[2024-02-28 08:59:28.871] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:59:28.877] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:59:28.877] [trace] Getting active workspaces
+[2024-02-28 08:59:28.877] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 08:59:28.877] [trace] Updating workspace states
+[2024-02-28 08:59:28.877] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:28.878] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:28.878] [trace] Updating window count
+[2024-02-28 08:59:28.878] [trace] Getting active workspaces
+[2024-02-28 08:59:28.878] [trace] Updating workspace states
+[2024-02-28 08:59:28.878] [trace] Selecting icon for workspace 8
+[2024-02-28 08:59:28.878] [trace] Updating window count
+[2024-02-28 08:59:28.878] [trace] Getting active workspaces
+[2024-02-28 08:59:28.878] [trace] Updating workspace states
+[2024-02-28 08:59:28.878] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:28.878] [trace] Updating window count
+[2024-02-28 08:59:28.879] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 08:59:28.880] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 08:59:41.183] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 08:59:41.183] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:59:41.184] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:59:41.184] [trace] Getting active workspaces
+[2024-02-28 08:59:41.188] [trace] Monitor focused: DP-3,5
+[2024-02-28 08:59:41.188] [trace] Updating workspace states
+[2024-02-28 08:59:41.188] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:41.188] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:41.188] [trace] Updating window count
+[2024-02-28 08:59:41.188] [trace] Getting active workspaces
+[2024-02-28 08:59:41.194] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 08:59:41.196] [trace] Updating workspace states
+[2024-02-28 08:59:41.196] [trace] Selecting icon for workspace 8
+[2024-02-28 08:59:41.196] [trace] Updating window count
+[2024-02-28 08:59:41.196] [trace] Getting active workspaces
+[2024-02-28 08:59:41.197] [trace] Updating workspace states
+[2024-02-28 08:59:41.197] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:41.197] [trace] Updating window count
+[2024-02-28 08:59:41.208] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 08:59:50.315] [debug] hyprland IPC received activewindow>>kitty,fish
+[2024-02-28 08:59:50.323] [trace] Removing solo class: kitty
+[2024-02-28 08:59:50.324] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 08:59:50.325] [debug] hyprland IPC received openwindow>>55728a1d2710,5,kitty,fish
+[2024-02-28 08:59:50.325] [trace] Window opened: 55728a1d2710,5,kitty,fish
+[2024-02-28 08:59:50.325] [trace] Window opened: 55728a1d2710,5,kitty,fish
+[2024-02-28 08:59:50.325] [trace] Getting active workspaces
+[2024-02-28 08:59:50.325] [trace] Window opened: 55728a1d2710,5,kitty,fish
+[2024-02-28 08:59:50.325] [trace] Updating workspace states
+[2024-02-28 08:59:50.325] [trace] Selecting icon for workspace 1
+[2024-02-28 08:59:50.325] [trace] Selecting icon for workspace 4
+[2024-02-28 08:59:50.325] [trace] Updating window count
+[2024-02-28 08:59:50.325] [trace] Getting active workspaces
+[2024-02-28 08:59:50.326] [trace] Updating workspace states
+[2024-02-28 08:59:50.326] [trace] Selecting icon for workspace 8
+[2024-02-28 08:59:50.326] [trace] Updating window count
+[2024-02-28 08:59:50.326] [trace] Getting active workspaces
+[2024-02-28 08:59:50.327] [trace] Updating workspace states
+[2024-02-28 08:59:50.327] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:50.327] [trace] Updating window count
+[2024-02-28 08:59:50.327] [trace] Getting active workspaces
+[2024-02-28 08:59:50.328] [trace] Updating workspace states
+[2024-02-28 08:59:50.328] [trace] Selecting icon for workspace 5
+[2024-02-28 08:59:50.328] [trace] Updating window count
+[2024-02-28 08:59:50.654] [debug] hyprland IPC received windowtitle>>55728a1d2710
+[2024-02-28 08:59:50.655] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:59:50.660] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 08:59:53.163] [debug] hyprland IPC received windowtitle>>55728a1d2710
+[2024-02-28 08:59:53.165] [debug] hyprland IPC received activewindow>>kitty,neofetch ~
+[2024-02-28 08:59:53.169] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 08:59:53.603] [debug] hyprland IPC received windowtitle>>55728a1d2710
+[2024-02-28 08:59:53.604] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 08:59:53.609] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:00:04.065] [debug] hyprland IPC received openlayer>>selection
+[2024-02-28 09:00:04.075] [debug] hyprland IPC received openlayer>>selection
+[2024-02-28 09:00:04.079] [debug] hyprland IPC received openlayer>>selection
+[2024-02-28 09:00:08.117] [debug] hyprland IPC received closelayer>>selection
+[2024-02-28 09:00:08.120] [debug] hyprland IPC received closelayer>>selection
+[2024-02-28 09:00:08.122] [debug] hyprland IPC received closelayer>>selection
+[2024-02-28 09:00:08.123] [debug] hyprland IPC received activewindow>>,
+[2024-02-28 09:00:08.146] [debug] hyprland IPC received activewindowv2>>,
+[2024-02-28 09:00:08.147] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:00:08.155] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:00:08.210] [debug] hyprland IPC received activewindow>>swappy,swappy
+[2024-02-28 09:00:08.218] [debug] hyprland IPC received activewindowv2>>55728a1a5680
+[2024-02-28 09:00:08.219] [debug] hyprland IPC received openwindow>>55728a1a5680,5,swappy,swappy
+[2024-02-28 09:00:08.219] [trace] Window opened: 55728a1a5680,5,swappy,swappy
+[2024-02-28 09:00:08.220] [trace] Window opened: 55728a1a5680,5,swappy,swappy
+[2024-02-28 09:00:08.220] [trace] Getting active workspaces
+[2024-02-28 09:00:08.222] [trace] Window opened: 55728a1a5680,5,swappy,swappy
+[2024-02-28 09:00:08.222] [trace] Updating workspace states
+[2024-02-28 09:00:08.222] [trace] Selecting icon for workspace 1
+[2024-02-28 09:00:08.222] [trace] Selecting icon for workspace 4
+[2024-02-28 09:00:08.222] [trace] Updating window count
+[2024-02-28 09:00:08.222] [trace] Getting active workspaces
+[2024-02-28 09:00:08.222] [trace] Updating workspace states
+[2024-02-28 09:00:08.222] [trace] Selecting icon for workspace 8
+[2024-02-28 09:00:08.222] [trace] Updating window count
+[2024-02-28 09:00:08.222] [trace] Getting active workspaces
+[2024-02-28 09:00:08.223] [trace] Updating workspace states
+[2024-02-28 09:00:08.223] [trace] Selecting icon for workspace 5
+[2024-02-28 09:00:08.223] [trace] Updating window count
+[2024-02-28 09:00:08.223] [trace] Getting active workspaces
+[2024-02-28 09:00:08.224] [trace] Updating workspace states
+[2024-02-28 09:00:08.224] [trace] Selecting icon for workspace 5
+[2024-02-28 09:00:08.224] [trace] Updating window count
+[2024-02-28 09:00:12.035] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:00:12.048] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:00:12.097] [debug] hyprland IPC received focusedmon>>HDMI-A-1,4
+[2024-02-28 09:00:12.097] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:00:12.100] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:00:12.100] [trace] Getting active workspaces
+[2024-02-28 09:00:12.100] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:00:12.100] [trace] Updating workspace states
+[2024-02-28 09:00:12.100] [trace] Selecting icon for workspace 1
+[2024-02-28 09:00:12.100] [trace] Selecting icon for workspace 4
+[2024-02-28 09:00:12.100] [trace] Updating window count
+[2024-02-28 09:00:12.100] [trace] Getting active workspaces
+[2024-02-28 09:00:12.101] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 09:00:12.103] [trace] Updating workspace states
+[2024-02-28 09:00:12.103] [trace] Selecting icon for workspace 8
+[2024-02-28 09:00:12.103] [trace] Updating window count
+[2024-02-28 09:00:12.103] [trace] Getting active workspaces
+[2024-02-28 09:00:12.104] [trace] Updating workspace states
+[2024-02-28 09:00:12.104] [trace] Selecting icon for workspace 5
+[2024-02-28 09:00:12.104] [trace] Updating window count
+[2024-02-28 09:00:12.134] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 09:01:08.069] [debug] hyprland IPC received urgent>>55728a91c420
+[2024-02-28 09:01:08.080] [trace] Getting active workspaces
+[2024-02-28 09:01:08.091] [trace] Updating workspace states
+[2024-02-28 09:01:08.091] [trace] Selecting icon for workspace 1
+[2024-02-28 09:01:08.091] [trace] Selecting icon for workspace 4
+[2024-02-28 09:01:08.091] [trace] Updating window count
+[2024-02-28 09:01:08.091] [trace] Getting active workspaces
+[2024-02-28 09:01:08.093] [trace] Updating workspace states
+[2024-02-28 09:01:08.093] [trace] Selecting icon for workspace 8
+[2024-02-28 09:01:08.093] [trace] Updating window count
+[2024-02-28 09:01:08.094] [trace] Getting active workspaces
+[2024-02-28 09:01:08.095] [debug] hyprland IPC received windowtitle>>55728a91c420
+[2024-02-28 09:01:08.096] [trace] Updating workspace states
+[2024-02-28 09:01:08.096] [trace] Selecting icon for workspace 5
+[2024-02-28 09:01:08.096] [trace] Updating window count
+[2024-02-28 09:01:09.139] [debug] hyprland IPC received windowtitle>>55728a91c420
+[2024-02-28 09:01:51.696] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 09:01:51.696] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:01:51.702] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:01:51.702] [trace] Getting active workspaces
+[2024-02-28 09:01:51.708] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:01:51.708] [trace] Updating workspace states
+[2024-02-28 09:01:51.708] [trace] Selecting icon for workspace 1
+[2024-02-28 09:01:51.708] [trace] Selecting icon for workspace 4
+[2024-02-28 09:01:51.708] [trace] Updating window count
+[2024-02-28 09:01:51.708] [trace] Getting active workspaces
+[2024-02-28 09:01:51.708] [trace] Updating workspace states
+[2024-02-28 09:01:51.708] [trace] Selecting icon for workspace 8
+[2024-02-28 09:01:51.708] [trace] Updating window count
+[2024-02-28 09:01:51.708] [trace] Getting active workspaces
+[2024-02-28 09:01:51.709] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:01:51.711] [trace] Updating workspace states
+[2024-02-28 09:01:51.711] [trace] Selecting icon for workspace 5
+[2024-02-28 09:01:51.711] [trace] Updating window count
+[2024-02-28 09:01:51.725] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:01:51.795] [debug] hyprland IPC received activewindow>>swappy,swappy
+[2024-02-28 09:01:51.822] [debug] hyprland IPC received activewindowv2>>55728a1a5680
+[2024-02-28 09:01:52.002] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:01:52.022] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:01:53.042] [debug] hyprland IPC received activewindow>>swappy,swappy
+[2024-02-28 09:01:53.054] [debug] hyprland IPC received activewindowv2>>55728a1a5680
+[2024-02-28 09:01:54.600] [debug] hyprland IPC received closewindow>>55728a1a5680
+[2024-02-28 09:01:54.600] [trace] Window closed: 55728a1a5680
+[2024-02-28 09:01:54.603] [trace] Getting active workspaces
+[2024-02-28 09:01:54.606] [trace] Updating workspace states
+[2024-02-28 09:01:54.606] [trace] Selecting icon for workspace 1
+[2024-02-28 09:01:54.606] [trace] Selecting icon for workspace 4
+[2024-02-28 09:01:54.606] [trace] Updating window count
+[2024-02-28 09:01:54.606] [trace] Window closed: 55728a1a5680
+[2024-02-28 09:01:54.608] [trace] Getting active workspaces
+[2024-02-28 09:01:54.608] [trace] Updating workspace states
+[2024-02-28 09:01:54.608] [trace] Selecting icon for workspace 8
+[2024-02-28 09:01:54.608] [trace] Updating window count
+[2024-02-28 09:01:54.613] [trace] Window closed: 55728a1a5680
+[2024-02-28 09:01:54.614] [trace] Getting active workspaces
+[2024-02-28 09:01:54.614] [trace] Updating workspace states
+[2024-02-28 09:01:54.614] [trace] Selecting icon for workspace 5
+[2024-02-28 09:01:54.614] [trace] Updating window count
+[2024-02-28 09:01:54.616] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:01:54.626] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:01:54.763] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 09:01:54.775] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 09:01:54.897] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:01:54.911] [debug] hyprland IPC received activewindowv2>>55728a1d2710
+[2024-02-28 09:01:55.881] [debug] hyprland IPC received closewindow>>55728a1d2710
+[2024-02-28 09:01:55.881] [trace] Window closed: 55728a1d2710
+[2024-02-28 09:01:55.882] [trace] Getting active workspaces
+[2024-02-28 09:01:55.882] [trace] Updating workspace states
+[2024-02-28 09:01:55.882] [trace] Selecting icon for workspace 1
+[2024-02-28 09:01:55.882] [trace] Selecting icon for workspace 4
+[2024-02-28 09:01:55.882] [trace] Updating window count
+[2024-02-28 09:01:55.889] [trace] Window closed: 55728a1d2710
+[2024-02-28 09:01:55.894] [trace] Getting active workspaces
+[2024-02-28 09:01:55.907] [trace] Updating workspace states
+[2024-02-28 09:01:55.907] [trace] Selecting icon for workspace 8
+[2024-02-28 09:01:55.907] [trace] Updating window count
+[2024-02-28 09:01:55.922] [trace] Window closed: 55728a1d2710
+[2024-02-28 09:01:55.922] [trace] Getting active workspaces
+[2024-02-28 09:01:55.936] [trace] Updating workspace states
+[2024-02-28 09:01:55.936] [trace] Selecting icon for workspace 5
+[2024-02-28 09:01:55.936] [trace] Updating window count
+[2024-02-28 09:01:55.961] [trace] Adding solo class: kitty
+[2024-02-28 09:01:55.962] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 09:01:55.974] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 09:02:19.415] [debug] hyprland IPC received focusedmon>>HDMI-A-1,4
+[2024-02-28 09:02:19.415] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:02:19.418] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:02:19.418] [trace] Getting active workspaces
+[2024-02-28 09:02:19.419] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:02:19.419] [trace] Updating workspace states
+[2024-02-28 09:02:19.419] [trace] Selecting icon for workspace 1
+[2024-02-28 09:02:19.419] [trace] Selecting icon for workspace 4
+[2024-02-28 09:02:19.419] [trace] Updating window count
+[2024-02-28 09:02:19.419] [trace] Getting active workspaces
+[2024-02-28 09:02:19.419] [trace] Updating workspace states
+[2024-02-28 09:02:19.419] [trace] Selecting icon for workspace 8
+[2024-02-28 09:02:19.419] [trace] Updating window count
+[2024-02-28 09:02:19.419] [trace] Getting active workspaces
+[2024-02-28 09:02:19.419] [trace] Updating workspace states
+[2024-02-28 09:02:19.419] [trace] Selecting icon for workspace 5
+[2024-02-28 09:02:19.419] [trace] Updating window count
+[2024-02-28 09:02:19.420] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 09:02:19.450] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 09:03:32.069] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 09:03:32.069] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:03:32.070] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:03:32.070] [trace] Getting active workspaces
+[2024-02-28 09:03:32.073] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:03:32.073] [trace] Updating workspace states
+[2024-02-28 09:03:32.073] [trace] Selecting icon for workspace 1
+[2024-02-28 09:03:32.073] [trace] Selecting icon for workspace 4
+[2024-02-28 09:03:32.073] [trace] Updating window count
+[2024-02-28 09:03:32.073] [trace] Getting active workspaces
+[2024-02-28 09:03:32.078] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 09:03:32.079] [trace] Updating workspace states
+[2024-02-28 09:03:32.079] [trace] Selecting icon for workspace 8
+[2024-02-28 09:03:32.079] [trace] Updating window count
+[2024-02-28 09:03:32.079] [trace] Getting active workspaces
+[2024-02-28 09:03:32.079] [trace] Updating workspace states
+[2024-02-28 09:03:32.079] [trace] Selecting icon for workspace 5
+[2024-02-28 09:03:32.079] [trace] Updating window count
+[2024-02-28 09:03:32.094] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 09:04:30.105] [debug] hyprland IPC received focusedmon>>HDMI-A-1,4
+[2024-02-28 09:04:30.105] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:04:30.108] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:04:30.108] [trace] Getting active workspaces
+[2024-02-28 09:04:30.108] [trace] Monitor focused: HDMI-A-1,4
+[2024-02-28 09:04:30.109] [trace] Updating workspace states
+[2024-02-28 09:04:30.109] [trace] Selecting icon for workspace 1
+[2024-02-28 09:04:30.109] [trace] Selecting icon for workspace 4
+[2024-02-28 09:04:30.109] [trace] Updating window count
+[2024-02-28 09:04:30.109] [trace] Getting active workspaces
+[2024-02-28 09:04:30.115] [debug] hyprland IPC received activewindow>>discord,#hyprland-general | Hyprland Cathedral - Discord
+[2024-02-28 09:04:30.117] [trace] Updating workspace states
+[2024-02-28 09:04:30.117] [trace] Selecting icon for workspace 8
+[2024-02-28 09:04:30.117] [trace] Updating window count
+[2024-02-28 09:04:30.117] [trace] Getting active workspaces
+[2024-02-28 09:04:30.120] [trace] Updating workspace states
+[2024-02-28 09:04:30.120] [trace] Selecting icon for workspace 5
+[2024-02-28 09:04:30.120] [trace] Updating window count
+[2024-02-28 09:04:30.139] [debug] hyprland IPC received activewindowv2>>55728a94a8d0
+[2024-02-28 09:07:14.210] [debug] hyprland IPC received focusedmon>>DP-3,5
+[2024-02-28 09:07:14.210] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:07:14.218] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:07:14.218] [trace] Getting active workspaces
+[2024-02-28 09:07:14.219] [trace] Monitor focused: DP-3,5
+[2024-02-28 09:07:14.219] [trace] Updating workspace states
+[2024-02-28 09:07:14.219] [trace] Selecting icon for workspace 1
+[2024-02-28 09:07:14.219] [trace] Selecting icon for workspace 4
+[2024-02-28 09:07:14.219] [trace] Updating window count
+[2024-02-28 09:07:14.219] [trace] Getting active workspaces
+[2024-02-28 09:07:14.219] [trace] Updating workspace states
+[2024-02-28 09:07:14.219] [trace] Selecting icon for workspace 8
+[2024-02-28 09:07:14.220] [trace] Updating window count
+[2024-02-28 09:07:14.220] [trace] Getting active workspaces
+[2024-02-28 09:07:14.220] [trace] Updating workspace states
+[2024-02-28 09:07:14.220] [trace] Selecting icon for workspace 5
+[2024-02-28 09:07:14.220] [trace] Updating window count
+[2024-02-28 09:07:14.220] [debug] hyprland IPC received activewindow>>kitty,nvim .config/hypr/ex ~
+[2024-02-28 09:07:14.237] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 09:07:22.168] [debug] hyprland IPC received windowtitle>>55728a1921f0
+[2024-02-28 09:07:22.169] [debug] hyprland IPC received activewindow>>kitty,~
+[2024-02-28 09:07:22.179] [debug] hyprland IPC received activewindowv2>>55728a1921f0
+[2024-02-28 09:07:22.337] [debug] hyprland IPC received activelayout>>power-button,English (US)
+[2024-02-28 09:07:22.338] [debug] hyprland IPC received activelayout>>power-button,English (US)
+[2024-02-28 09:07:22.340] [debug] hyprland IPC received activelayout>>power-button-1,English (US)
+[2024-02-28 09:07:22.341] [debug] hyprland IPC received activelayout>>power-button-1,English (US)
+[2024-02-28 09:07:22.342] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-1,English (US)
+[2024-02-28 09:07:22.343] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-1,English (US)
+[2024-02-28 09:07:22.345] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-consumer-control,English (US)
+[2024-02-28 09:07:22.346] [debug] hyprland IPC received activelayout>>usb-gaming-mouse-consumer-control,English (US)
+[2024-02-28 09:07:22.347] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3,English (US)
+[2024-02-28 09:07:22.349] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3,English (US)
+[2024-02-28 09:07:22.350] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-1,English (US)
+[2024-02-28 09:07:22.351] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-1,English (US)
+[2024-02-28 09:07:22.353] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-consumer-control,English (US)
+[2024-02-28 09:07:22.354] [debug] hyprland IPC received activelayout>>steelseries-steelseries-apex-3-consumer-control,English (US)
+[2024-02-28 09:07:22.355] [debug] hyprland IPC received activelayout>>steelseries--steelseries-arctis-7-consumer-control,English (US)
+[2024-02-28 09:07:22.356] [debug] hyprland IPC received activelayout>>steelseries--steelseries-arctis-7-consumer-control,English (US)
+[2024-02-28 09:07:22.408] [debug] hyprland IPC received configreloaded>>
+[2024-02-28 09:07:22.408] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 09:07:22.425] [debug] Initializing workspaces
+[2024-02-28 09:07:22.425] [trace] Extending orphans with workspace 8
+[2024-02-28 09:07:22.425] [trace] Extending orphans with workspace 5
+[2024-02-28 09:07:22.425] [trace] Extending orphans with workspace -98
+[2024-02-28 09:07:22.425] [debug] Initializing persistent workspaces
+[2024-02-28 09:07:22.425] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 09:07:22.425] [trace] Creating persistent workspace: 1 on monitor HDMI-A-1
+[2024-02-28 09:07:22.425] [trace] Creating persistent workspace: 4 on monitor HDMI-A-1
+[2024-02-28 09:07:22.427] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 09:07:22.427] [debug] Removing workspace 1
+[2024-02-28 09:07:22.427] [trace] Not removing persistent workspace 1
+[2024-02-28 09:07:22.427] [debug] Removing workspace 4
+[2024-02-28 09:07:22.427] [trace] Not removing persistent workspace 4
+[2024-02-28 09:07:22.427] [debug] Creating workspace 1, persistent: false
+[2024-02-28 09:07:22.427] [debug] Creating workspace 4, persistent: false
+[2024-02-28 09:07:22.427] [debug] Creating workspace 1, persistent: true
+[2024-02-28 09:07:22.427] [debug] Creating workspace 4, persistent: true
+[2024-02-28 09:07:22.427] [trace] Getting active workspaces
+[2024-02-28 09:07:22.427] [debug] Initializing workspaces
+[2024-02-28 09:07:22.428] [trace] Updating workspace states
+[2024-02-28 09:07:22.428] [trace] Selecting icon for workspace 1
+[2024-02-28 09:07:22.428] [trace] Selecting icon for workspace 4
+[2024-02-28 09:07:22.428] [trace] Updating window count
+[2024-02-28 09:07:22.428] [trace] Getting active workspaces
+[2024-02-28 09:07:22.428] [trace] Extending orphans with workspace 1
+[2024-02-28 09:07:22.428] [trace] Updating workspace states
+[2024-02-28 09:07:22.428] [trace] Selecting icon for workspace 1
+[2024-02-28 09:07:22.428] [trace] Extending orphans with workspace 5
+[2024-02-28 09:07:22.428] [trace] Selecting icon for workspace 4
+[2024-02-28 09:07:22.428] [trace] Extending orphans with workspace -98
+[2024-02-28 09:07:22.428] [trace] Updating window count
+[2024-02-28 09:07:22.428] [trace] Extending orphans with workspace 4
+[2024-02-28 09:07:22.428] [debug] Initializing persistent workspaces
+[2024-02-28 09:07:22.428] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 09:07:22.430] [info] Hyprland config reloaded, reinitializing hyprland/workspaces module...
+[2024-02-28 09:07:22.430] [debug] Removing workspace 8
+[2024-02-28 09:07:22.430] [debug] Removing workspace 1
+[2024-02-28 09:07:22.430] [debug] Removing workspace 4
+[2024-02-28 09:07:22.430] [debug] Creating workspace 8, persistent: false
+[2024-02-28 09:07:22.430] [debug] Initializing workspaces
+[2024-02-28 09:07:22.431] [trace] Getting active workspaces
+[2024-02-28 09:07:22.433] [trace] Updating workspace states
+[2024-02-28 09:07:22.433] [trace] Selecting icon for workspace 8
+[2024-02-28 09:07:22.433] [trace] Updating window count
+[2024-02-28 09:07:22.433] [trace] Getting active workspaces
+[2024-02-28 09:07:22.433] [trace] Extending orphans with workspace 1
+[2024-02-28 09:07:22.433] [trace] Extending orphans with workspace 8
+[2024-02-28 09:07:22.433] [trace] Extending orphans with workspace -98
+[2024-02-28 09:07:22.433] [trace] Extending orphans with workspace 4
+[2024-02-28 09:07:22.433] [debug] Initializing persistent workspaces
+[2024-02-28 09:07:22.433] [info] Loading persistent workspaces from Hyprland workspace rules
+[2024-02-28 09:07:22.433] [trace] Updating workspace states
+[2024-02-28 09:07:22.433] [trace] Selecting icon for workspace 8
+[2024-02-28 09:07:22.433] [trace] Updating window count
+[2024-02-28 09:07:22.434] [debug] Removing workspace 5
+[2024-02-28 09:07:22.434] [debug] Removing workspace 1
+[2024-02-28 09:07:22.434] [debug] Removing workspace 4
+[2024-02-28 09:07:22.434] [debug] Creating workspace 5, persistent: false
+[2024-02-28 09:07:22.434] [trace] Getting active workspaces
+[2024-02-28 09:07:22.435] [trace] Updating workspace states
+[2024-02-28 09:07:22.435] [trace] Selecting icon for workspace 5
+[2024-02-28 09:07:22.435] [trace] Updating window count
+[2024-02-28 09:07:22.435] [trace] Getting active workspaces
+[2024-02-28 09:07:22.435] [trace] Updating workspace states
+[2024-02-28 09:07:22.435] [trace] Selecting icon for workspace 5
+[2024-02-28 09:07:22.435] [trace] Updating window count
