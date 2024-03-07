@@ -1,6 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/jm/.config
+- /home/jm/.config/nvim-kickstart
+- /home/jm/Projects/personal/learn/golang/go_tutorials/udemy_max
 - /home/jm/Projects/personal/learn/golang/go_tutorials/gotour
 - /home/jm/Projects/personal/learn/rust/rust_book_brown_edu/binary_clock
 - /home/jm/Projects/personal/gandalfsquest
@@ -8,6 +10,7 @@ recentrepos:
 - /home/jm/Projects/personal/learn/nextjs/nextjs-dashboard
 startuppopupversion: 5
 customcommandshistory:
+- w
 - close
 - q
 hidecommandlog: false

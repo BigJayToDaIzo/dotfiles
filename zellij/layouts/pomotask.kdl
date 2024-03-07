@@ -1,0 +1,28 @@
+layout {
+    pane split_direction="vertical"{
+        pane {
+            pane split_direction="horizontal"{
+                pane size="37%"{
+                    command "tomatoshell"
+                    args "-n" "6" "-f"
+                    start_suspended true
+                }
+                pane {
+                    command "cmatrix"
+                    args "-b"
+                    start_suspended false
+                }
+            }
+        }
+        pane size="65%"{
+            command "task"
+            args "project:Kickstart"
+            start_suspended false
+            focus true
+        }
+    }
+    pane size=2 borderless=true { 
+        plugin location="zellij:status-bar" 
+    }
+
+}

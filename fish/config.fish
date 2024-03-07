@@ -5,17 +5,15 @@
 if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
+    set -xg NVIM_APPNAME nvim-kickstart 
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR nvim
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages
     set -xg CARGO_HOME $HOME/.cargo
-    # Go
-    set -xg GOBIN /home/jm/go/bin
-    set -xg GOROOT /usr/local/go
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $GOBIN $GOROOT $BUN_INSTALL/bin
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin
 
     # PLUGIN CONFIG
     ###############
@@ -47,15 +45,26 @@ end
 # if not status is-login
 #     eval "$(zellij setup --generate-auto-start fish)"
 # end
+function nvim_configs_plz
+    cd ~/.config/nvim-kickstart
+    nvim init.lua
+end
+function update_system_plz
+    sudo reflector --sort rate -l 5 --save /etc/pacman.d/mirrorlist
+    echo fastest mirrors updated!
+    yay -Syyu --aur --devel
+    sudo pacman -Syu
+end
 
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
+abbr -a update update_system_plz
 abbr -a gs lazygit
-abbr -a j z
 abbr -a skype snap run skype
 abbr -a hx helix
 abbr -a lg lazygit
 abbr -a vi nvim
+abbr -a vic nvim_configs_plz
 abbr -a t task
 abbr -a cat bat
 abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
