@@ -10,8 +10,8 @@ recentrepos:
 - /home/jm/Projects/personal/learn/nextjs/nextjs-dashboard
 startuppopupversion: 5
 customcommandshistory:
-- w
-- close
 - q
+- close
+- w
 hidecommandlog: false
 ignorewhitespaceindiffview: false
