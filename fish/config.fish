@@ -5,15 +5,17 @@
 if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
-    set -xg NVIM_APPNAME nvim-kickstart 
+    set -xg NVIM_APPNAME nvim-kickstart
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR nvim
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages
     set -xg CARGO_HOME $HOME/.cargo
+    # Go shits
+    set -xg GOPATH $HOME/go
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin
 
     # PLUGIN CONFIG
     ###############
@@ -28,7 +30,7 @@ if status is-login
     # NO mo tackle setup after this shipit dot gif
     source ~/.config/fish/.tacklebox/tacklebox.fish
 
-    #FZF tweaks go here 
+    #FZF tweaks go here
     set -xg fzf_preview_dir_cmd eza --all --color=always
     set -xg fzf_diff_highlighter delta --paging=never --width=40
     set -xg fzf_fd_opts --hidden --max-depth 3

@@ -27,3 +27,6 @@ github-copilot
 nvim-kickstart
 vlc
 QtProject.conf
+systemd/user
+tmux/plugins/tmux-continuum/
+tmux/plugins/tmux-resurrect/
