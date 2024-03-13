@@ -5,7 +5,7 @@
 if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
-    set -xg NVIM_APPNAME nvim-kickstart
+    # set -xg NVIM_APPNAME nvim-kickstart
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR nvim
     # Bun
@@ -48,32 +48,57 @@ end
 #     eval "$(zellij setup --generate-auto-start fish)"
 # end
 function nvim_configs_plz
-    cd ~/.config/nvim-kickstart
+    z kickstart
     nvim init.lua
 end
+function configs_plz
+    z .config
+    nvim
+end
+function projects_plz
+    z Projects
+    nvim
+end
+
 function update_system_plz
     sudo reflector --sort rate -l 5 --save /etc/pacman.d/mirrorlist
     echo fastest mirrors updated!
     yay -Syyu --aur --devel
     sudo pacman -Syu
 end
+# Figure out how to make-session without attachingnvim_configs_pz
+# Figure out how to make these functions lay in the terminals and
+# run their appropriate programs
+#
+function attach_tmux_nvim_config_plz
+    tmux new-session -A -s NvimConfig nvim_configs_plz
+end
+
+function attach_tmux_configs_plz
+    tmux new-session -A -s Configs configs_plz
+end
+function attach_tmux_projects_plz
+    tmux new-session -A -s Projects projects_plz
+end
 
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
-abbr -a update update_system_plz
-abbr -a gs lazygit
-abbr -a skype snap run skype
+abbr -a cat bat
 abbr -a hx helix
 abbr -a lg lazygit
-abbr -a vi nvim
-abbr -a vic nvim_configs_plz
-abbr -a t task
-abbr -a cat bat
-abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
-abbr -a zls zellij ls
+abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
+abbr -a skype snap run skype
+abbr -a t task
+abbr -a tmp attach_tmux_projects_plz
+abbr -a tmc attach_tmux_configs_plz
+abbr -a tmcn attach_tmux_nvim_config_plz
+abbr -a update update_system_plz
+abbr -a vi nvim
+abbr -a vic nvim_configs_plz
 abbr -a za zellij a
+abbr -a zls zellij ls
 
 # PROMPT CONTROL
 ################
