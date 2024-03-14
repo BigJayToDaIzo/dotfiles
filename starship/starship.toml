@@ -1,6 +1,12 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = '$os$env_var$hostname$all$sudo$character'
+format = """$os\
+	$env_var\
+	$hostname\
+	$all\
+	$sudo\
+	$character
+"""
 
 add_newline = false
 
@@ -62,44 +68,41 @@ format = '[\[$symbol($version)\]](package_fg)'
 
 [dart]
 format = '[\[$symbol($version)\]](package_fg)'
-# Finish refactoring rest to include brackets in style
 [deno]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [directory]
-truncation_length = 2
 style = 'directory_fg'
 read_only = ' '
 read_only_style = 'char_poobie_fg'
 home_symbol = ' '
 
 [docker_context]
-format = '\[[$symbol$context](package_fg)\]'
+format = '[\[$symbol$context\]](package_fg)'
 
 [dotnet]
-format = '\[[$symbol($version)(🎯 $tfm)](package_fg)\]'
+format = '[\[$symbol($version)(🎯 $tfm)\]](package_fg)'
 
 [elixir]
-format = '\[[$symbol($version \(OTP $otp_version\))](package_fg)\]'
+format = '[\[$symbol($version \(OTP $otp_version\))\]](package_fg)'
 
 [elm]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [env_var.USER]
-default = 'unknown'
 format = '[$env_value@](user_fg)'
 
 [erlang]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [fennel]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [fossil_branch]
-format = '\[[$symbol$branch](package_fg)\]'
+format = '[\[$symbol$branch\]](package_fg)'
 
 [gcloud]
-format = '\[[$symbol$account(@$domain)(\($region\))](package_fg)\]'
+format = '[\[$symbol$account(@$domain)(\($region\))\]](package_fg)'
 
 [git_branch]
 symbol = ' '
@@ -114,73 +117,74 @@ format = '([\[](time_fg)[+$added](char_success_fg)[-$deleted](time_fg)[\]  ](
 
 [git_status]
 conflicted = '󱃟 '
-stashed = '󰘓'
+stashed = '󰘓 '
 format = '([\[$all_status$ahead_behind\]](clock_fg))'
 
-
 [gradle]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [guix_shell]
-format = '\[[$symbol](package_fg)\]'
+format = '[\[$symbol]\](package_fg)'
 
 [haskell]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [haxe]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [helm]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [hg_branch]
-format = '\[[$symbol$branch](package_fg)\]'
+format = '[\[$symbol$branch\]](package_fg)'
 
 [hostname]
 ssh_only = false
 ssh_symbol = '󰣀 '
 format = '[$hostname($ssh_symbol)󱝆 ](user_fg)'
 
-
 [java]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [julia]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [kotlin]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [kubernetes]
-symbol = ' '
-format = '\[[$symbol$context( \($namespace\))](package_fg)\]'
+format = '[\[$symbol$context( \($namespace\))\]](package_fg)'
 
 [lua]
-format = '\[[$symbol($version)](package_fg)\]'
+symbol = ' '
+format = '[\[$symbol($version)\]](package_fg)'
 
+# Implement into prompt?
 [memory_usage]
-format = '\[$symbol[$ram( | $swap)]($style)\]'
+threshold = 50
+disabled = false
+format = '[  $ram( | $swap)](char_poobie_fg)'
 
 [meson]
-format = '\[[$symbol$project](package_fg)\]'
+format = '[\[$symbol$project\]](package_fg)'
 
 [nim]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [nix_shell]
-format = '\[[$symbol$state( \($name\))](package_fg)\]'
+format = '[\[$symbol$state( \($name\))\]](package_fg)'
 
 [nodejs]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [ocaml]
-format = '\[[$symbol($version)(\($switch_indicator$switch_name\))](package_fg)\]'
+format = '[\[$symbol($version)(\($switch_indicator$switch_name\))\]](package_fg)'
 
 [opa]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [openstack]
-format = '\[[$symbol$cloud(\($project\))](package_fg)\]'
+format = '[\[$symbol$cloud(\($project\))\]](package_fg)'
 
 [os]
 disabled = false
@@ -191,70 +195,66 @@ format = '[$symbol](iced_out_os)'
 Arch = ' '
 
 [package]
-symbol = '󰏗 '
-format = '\[[$symbol$version](package_fg)\]'
+format = '[\[󰏗 $version\]](package_fg)'
 
 [perl]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [php]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [pijul_channel]
-format = '\[[$symbol$channel](package_fg)\]'
+format = '[\[$symbol$channel\]](package_fg)'
 
 [pulumi]
-format = '\[[$symbol$stack](package_fg)\]'
+format = '[\[$symbol$stack\]](package_fg)'
 
 [purescript]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [python]
-format = '\[[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))](package_fg)\]'
+format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](package_fg)'
 
 [raku]
-format = '\[[$symbol($version-$vm_version)](package_fg)\]'
+format = '[\[$symbol($version-$vm_version)\]](package_fg)'
 
 [red]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [ruby]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [rust]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [scala]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [spack]
-format = '\[[$symbol$environment](package_fg)\]'
-
+format = '[\[$symbol$environment\]](package_fg)'
 
 [sudo]
 disabled = false
-symbol = ' '
 format = '[󰒃 ](char_poobie_fg)'
 
 [swift]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [terraform]
-format = '\[[$symbol$workspace](package_fg)\]'
+format = '[\[$symbol$workspace\]](package_fg)'
 
 [time]
 disabled = false
 format = '[[󰥔 ](clock_fg)$time ](time_fg)'
 
-
 [vagrant]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [vlang]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [zig]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
 
 [solidity]
-format = '\[[$symbol($version)](package_fg)\]'
+format = '[\[$symbol($version)\]](package_fg)'
