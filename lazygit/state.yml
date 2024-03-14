@@ -1,8 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/jm/.config
-- /home/jm/Projects/personal/learn/golang/go_tutorials/udemy_max
 - /home/jm/.config/nvim-kickstart
+- /home/jm/Projects/personal/learn/golang/go_tutorials/udemy_max
 - /home/jm/.local/share/nvim-kickstart/lazy/toggleterm.nvim
 - /home/jm/Projects/personal/learn/golang/go_tutorials/gotour
 - /home/jm/Projects/personal/learn/rust/rust_book_brown_edu/binary_clock
