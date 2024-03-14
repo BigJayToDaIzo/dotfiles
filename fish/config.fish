@@ -44,9 +44,6 @@ if status is-login
 
 end
 
-# if not status is-login
-#     eval "$(zellij setup --generate-auto-start fish)"
-# end
 function nvim_configs_plz
     z kickstart
     nvim init.lua
