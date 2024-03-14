@@ -27,7 +27,7 @@ time_fg = '#fcf77c'
 char_success_fg = '#07be61'
 char_poobie_fg = '#be0c07'
 directory_fg = '#f089fc'
-package_fg = '#133ea0'
+package_fg = '#09ecf8'
 iced_out_os = '#09ecf8'
 
 
@@ -188,7 +188,6 @@ format = '[\[$symbol$cloud(\($project\))\]](package_fg)'
 
 [os]
 disabled = false
-style = 'bold cyan'
 format = '[$symbol](iced_out_os)'
 
 [os.symbols]
