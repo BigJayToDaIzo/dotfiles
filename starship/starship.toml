@@ -77,7 +77,7 @@ format = '\[[$symbol($version)]($style)\]'
 [env_var.USER]
 default = 'unknown'
 style = 'bold blue'
-format = '[$env_value]($style)'
+format = '[$env_value@]($style)'
 
 [erlang]
 format = '\[[$symbol($version)]($style)\]'
@@ -92,9 +92,22 @@ format = '\[[$symbol$branch]($style)\]'
 format = '\[[$symbol$account(@$domain)(\($region\))]($style)\]'
 
 [git_branch]
+style = 'purple'
+symbol = ' '
 format = '\[[$symbol$branch]($style)\]'
 
+[git_commit]
+tag_symbol = ' '
+
+[git_metrics]
+disabled = false
+format = '([󱇬$added]($added_style))([󱘹$deleted]($deleted_style))'
+
 [git_status]
+style = 'bold purple'
+conflicted = '󱃟 '
+stashed = '󰘓'
+
 format = '([\[$all_status$ahead_behind\]]($style))'
 
 [golang]

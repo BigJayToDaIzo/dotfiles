@@ -30,3 +30,4 @@ QtProject.conf
 systemd/user
 tmux/plugins/tmux-continuum/
 tmux/plugins/tmux-resurrect/
+nvim/lazy-lock.json
