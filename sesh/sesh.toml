@@ -1,0 +1,22 @@
+default_startup_script = "~/.config/sesh/scripts/default.sh"
+
+# Basic Overall Dotfiles repo management
+[[startup_scripts]]
+session_path = "~/.config"
+script_path = "~/.config/sesh/scripts/dotfiles.sh"
+
+# Sesh configuration session
+[[startup_scripts]]
+session_path = "~/.config/sesh"
+script_path = "~/.config/sesh/scripts/sesh.sh"
+
+# Udemy Go course session
+[[startup_scripts]]
+session_path = "~/Projects/personal/learn/golang/go_tutorials/udemy_max"
+script_path = "~/.config/sesh/scripts/goproj.sh"
+
+# What other sessions?
+# Nvim Config
+# Home
+# Rooty-toot-toot'n Root mgmt?
+# KEEP IDEAS COMING THIS SHIB IS EASY AS HEK
