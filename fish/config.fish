@@ -44,19 +44,6 @@ if status is-login
 
 end
 
-function nvim_configs_plz
-    z kickstart
-    nvim init.lua
-end
-function configs_plz
-    z .config
-    nvim
-end
-function projects_plz
-    z Projects
-    nvim
-end
-
 function update_system_plz
     sudo reflector --sort rate -l 5 --save /etc/pacman.d/mirrorlist
     echo fastest mirrors updated!
@@ -67,33 +54,18 @@ end
 # Figure out how to make these functions lay in the terminals and
 # run their appropriate programs
 #
-function attach_tmux_nvim_config_plz
-    tmux new-session -A -s NvimConfig nvim_configs_plz
-end
-
-function attach_tmux_configs_plz
-    tmux new-session -A -s Configs configs_plz
-end
-function attach_tmux_projects_plz
-    tmux new-session -A -s Projects projects_plz
-end
-
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
 abbr -a cat bat
-abbr -a hx helix
 abbr -a lg lazygit
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
+abbr -a sc 'sesh connect $(sesh list | fzf)'
 abbr -a skype snap run skype
 abbr -a t task
-abbr -a tmp attach_tmux_projects_plz
-abbr -a tmc attach_tmux_configs_plz
-abbr -a tmcn attach_tmux_nvim_config_plz
 abbr -a update update_system_plz
 abbr -a vi nvim
-abbr -a vic nvim_configs_plz
 abbr -a za zellij a
 abbr -a zls zellij ls
 

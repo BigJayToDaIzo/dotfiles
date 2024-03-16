@@ -31,3 +31,5 @@ systemd/user
 tmux/plugins/tmux-continuum/
 tmux/plugins/tmux-resurrect/
 nvim/lazy-lock.json
+cef_user_data
+unity3d/Freehold Games/CavesOfQud

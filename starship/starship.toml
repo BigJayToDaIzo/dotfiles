@@ -27,13 +27,14 @@ time_fg = '#fcf77c'
 char_success_fg = '#07be61'
 char_poobie_fg = '#be0c07'
 directory_fg = '#f089fc'
-package_fg = '#09ecf8'
+package_fg = '#0000ff'
+package_bg = '#727f72'
 iced_out_os = '#09ecf8'
 
 
 [golang]
 symbol = ' '
-format = '[\[$symbol($version)\]](package_fg)'
+format = '[\[$symbol($version)\]](fg:package_fg)'
 
 [aws]
 format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](package_fg)'
