@@ -117,7 +117,6 @@ format = '([\[](time_fg)[+$added](char_success_fg)[-$deleted](time_fg)[\]  ](
 
 [git_status]
 conflicted = '󱃟 '
-stashed = '󰘓 '
 format = '([\[$all_status$ahead_behind\]](clock_fg))'
 
 [gradle]
