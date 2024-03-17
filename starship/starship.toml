@@ -49,7 +49,7 @@ format = '[\[$symbol($version(-$name))\]](package_fg)'
 format = '[\[$symbol($version)\]](package_fg)'
 
 [cmd_duration]
-format = '[\[⏲ $duration\]](time_fg)'
+format = '[\[󱎫 $duration\]](time_fg)'
 
 [container]
 symbol = '󰏗'
@@ -114,10 +114,16 @@ tag_symbol = ' '
 
 [git_metrics]
 disabled = false
-format = '([\[](time_fg)[+$added](char_success_fg)[-$deleted](time_fg)[\]  ](time_fg))'
+# format = '([\[](time_fg)[+$added](char_success_fg)[-$deleted](time_fg)[\]  ](time_fg))'
+format = '(([ \[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
 
 [git_status]
 conflicted = '󱃟 '
+modified = '‼'
+stashed = '󰘓'
+untracked = '󰡯'
+staged = ''
+
 format = '([\[$all_status$ahead_behind\]](clock_fg))'
 
 [gradle]
@@ -212,6 +218,7 @@ format = '[\[$symbol$stack\]](package_fg)'
 format = '[\[$symbol($version)\]](package_fg)'
 
 [python]
+symbol = ' '
 format = '[\[${symbol}${pyenv_prefix}(${version})(\($virtualenv\))\]](package_fg)'
 
 [raku]

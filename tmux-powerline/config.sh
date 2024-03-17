@@ -10,7 +10,7 @@
 	export TMUX_POWERLINE_PATCHED_FONT_IN_USE="true"
 
 	# The theme to use.
-	export TMUX_POWERLINE_THEME="default"
+	export TMUX_POWERLINE_THEME="super_dank_af_theme"
 	# Overlay directory to look for themes. There you can put your own themes outside the repo. Fallback will still be the "themes" directory in the repo.
 	export TMUX_POWERLINE_DIR_USER_THEMES="${XDG_CONFIG_HOME:-$HOME/.config}/tmux-powerline/themes"
 	# Overlay directory to look for segments. There you can put your own segments outside the repo. Fallback will still be the "segments" directory in the repo.
@@ -31,7 +31,7 @@
 	export TMUX_POWERLINE_STATUS_RIGHT_LENGTH="90"
 
 	# The separator to use between windows on the status bar.
-	export TMUX_POWERLINE_WINDOW_STATUS_SEPARATOR=""
+	export TMUX_POWERLINE_WINDOW_STATUS_SEPARATOR=""
 
 	# Uncomment these if you want to enable tmux bindings for muting (hiding) one of the status bars.
 	# E.g. this example binding would mute the left status bar when pressing <prefix> followed by Ctrl-[
@@ -48,10 +48,10 @@
 	export TMUX_POWERLINE_SEG_AIR_JSON="jq"
 	# Your location
 	# Latitude and Longitude:
-	TMUX_POWERLINE_SEG_AIR_LAT=""
-	TMUX_POWERLINE_SEG_AIR_LON=""
+	TMUX_POWERLINE_SEG_AIR_LAT="38"
+	TMUX_POWERLINE_SEG_AIR_LON="-89"
 	# Your Open Weather API Key:
-	TMUX_POWERLINE_SEG_AIR_OPEN_WEATHER_API_KEY=""
+	TMUX_POWERLINE_SEG_AIR_OPEN_WEATHER_API_KEY="8469514405392165c5a28a74ff41cb34"
 # }
 
 # battery.sh {
@@ -63,7 +63,7 @@
 
 # date.sh {
 	# date(1) format for the date. If you don't, for some reason, like ISO 8601 format you might want to have "%D" or "%m/%d/%Y".
-	export TMUX_POWERLINE_SEG_DATE_FORMAT="%F"
+	export TMUX_POWERLINE_SEG_DATE_FORMAT="%m/%d"
 # }
 
 # disk_usage.sh {
@@ -147,22 +147,23 @@
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_AND_PREFIX_MODE_ENABLED="true"
 	# Normal mode text & color overrides. Defaults to "normal" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_MODE_TEXT="normal"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_MODE_TEXT_COLOR=""
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_MODE_TEXT_COLOR="green"
 	# Prefix mode text & color overrides. Defaults to "prefix" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_PREFIX_MODE_TEXT="prefix"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_PREFIX_MODE_TEXT_COLOR=""
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_PREFIX_MODE_TEXT_COLOR="yellow"
 	# Whether the mouse mode section should be enabled. Should be {"true, "false"}.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_ENABLED="true"
 	# Mouse mode text & color overrides. Defaults to "mouse" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_TEXT="mouse"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_TEXT_COLOR=""
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_TEXT_COLOR="green"
 	# Whether the copy mode section should be enabled. Should be {"true, "false"}.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_ENABLED="true"
 	# Copy mode text & color overrides. Defaults to "copy" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_TEXT="copy"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_TEXT_COLOR=""
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_TEXT_COLOR="red"
 	# Separator text override. Defaults to " • ".
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_SEPARATOR_TEXT=" • "
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_SEPARATOR_TEXT="⊙ "
+
 # }
 
 # now_playing.sh {
@@ -223,10 +224,10 @@
 
 # time.sh {
 	# date(1) format for the time. Americans might want to have "%I:%M %p".
-	export TMUX_POWERLINE_SEG_TIME_FORMAT="%H:%M"
+	export TMUX_POWERLINE_SEG_TIME_FORMAT="%H:%M 󰃰 "
 	# Change this to display a different timezone than the system default.
 	# Use TZ Identifier like "America/Los_Angeles"
-	export TMUX_POWERLINE_SEG_TIME_TZ=""
+	export TMUX_POWERLINE_SEG_TIME_TZ="America/Chicago"
 # }
 
 # tmux_mem_cpu_load.sh {
@@ -255,7 +256,7 @@
 	# The data provider to use. Currently only "yahoo" is supported.
 	export TMUX_POWERLINE_SEG_WEATHER_DATA_PROVIDER="yrno"
 	# What unit to use. Can be any of {c,f,k}.
-	export TMUX_POWERLINE_SEG_WEATHER_UNIT="c"
+	export TMUX_POWERLINE_SEG_WEATHER_UNIT="f"
 	# How often to update the weather in seconds.
 	export TMUX_POWERLINE_SEG_WEATHER_UPDATE_PERIOD="600"
 	# Name of GNU grep binary if in PATH, or path to it.
@@ -264,8 +265,8 @@
 	export TMUX_POWERLINE_SEG_WEATHER_JSON="jq"
 	# Your location
 	# Latitude and Longtitude for use with yr.no
-	TMUX_POWERLINE_SEG_WEATHER_LAT=""
-	TMUX_POWERLINE_SEG_WEATHER_LON=""
+	TMUX_POWERLINE_SEG_WEATHER_LAT="38"
+	TMUX_POWERLINE_SEG_WEATHER_LON="-89"
 # }
 
 # xkb_layout.sh {

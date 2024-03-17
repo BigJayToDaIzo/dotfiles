@@ -20,6 +20,21 @@ script_path = "~/.config/sesh/scripts/goproj.sh"
 session_path = "~/.config/tmux"
 script_path = "~/.config/sesh/scripts/tmux.sh"
 
+# Tmux POWERLINE session
+[[startup_scripts]]
+session_path = "~/.config/tmux-powerline"
+script_path = "~/.config/sesh/scripts/tmux_powerline.sh"
+
+# Starship configuration session
+[[startup_scripts]]
+session_path = "~/.config/starship"
+script_path = "~/.config/sesh/scripts/starship.sh"
+
+# Starship configuration session
+[[startup_scripts]]
+session_path = "~/.config/alacritty"
+script_path = "~/.config/sesh/scripts/alacritty.sh"
+
 # What other sessions?
 # Nvim Config
 # Home

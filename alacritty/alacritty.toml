@@ -5,11 +5,7 @@
 #]
 #
 shell = { program = '/usr/bin/fish' }
-# shell = { program = '/usr/bin/tmux' }
 live_config_reload = true
-#
-#
-#
 #
 # ENV Table Settings
 # All key-value pars in this section will be added as environment vars
@@ -18,8 +14,6 @@ live_config_reload = true
 [env]
 #WINIT_X11_SCALE_FACTOR = "1.0"
 #
-#
-
 # WINDOW settings
 [window]
 #dimensions = { columns = <integer>, lines = <integer> }
@@ -28,10 +22,9 @@ padding = { x = 5, y = 5 }
 #opacity = 1.0 <-- do not do this here (yet), your compositor should be handling this most likely.  You can tweak here later to really fine tune
 #blur = true  <-- your compositor will most likely handle this too
 [font]
-normal = { family = "LiterationMono Nerd Font Propo" }
-size = 13
+normal = { family = "0xProto Nerd Font" }
+size = 16
 # builtin_box_drawing = true
-
 
 [bell]
 animation = "Ease"
