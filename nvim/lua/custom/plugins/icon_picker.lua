@@ -35,7 +35,7 @@ return {
 		)
 		vim.keymap.set(
 			"i",
-			"<C-i>",
+			"<C-z>",
 			"<cmd>IconPickerInsert<cr>",
 			{ noremap = true, silent = true, desc = "[I]nsert Icon" }
 		)
