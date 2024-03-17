@@ -1,7 +1,5 @@
 -- Begin vim global and local options
-
--- Set <space> as the leader key
--- See `:help mapleader`
+-- Set <space> as the leader key see `:help mapleader`
 -- Set all global options before loading any plugins
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
@@ -39,6 +37,12 @@ vim.opt.clipboard = "unnamedplus"
 -- Enable break indent
 vim.opt.breakindent = true
 
+-- Customize tab stuffs
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
+-- vim.bo.softabstop = 2
+
 -- Save undo history
 vim.opt.undofile = true
 
@@ -65,9 +69,6 @@ vim.opt.listchars = { tab = "󰌒 ", trail = "·", nbsp = "␣" }
 
 -- Preview substitutions live, as you type!
 vim.opt.inccommand = "split"
-
--- Show which line your cursor is on
-vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 3

@@ -15,6 +15,11 @@ script_path = "~/.config/sesh/scripts/sesh.sh"
 session_path = "~/Projects/personal/learn/golang/go_tutorials/udemy_max"
 script_path = "~/.config/sesh/scripts/goproj.sh"
 
+# Tmux configuration session
+[[startup_scripts]]
+session_path = "~/.config/tmux"
+script_path = "~/.config/sesh/scripts/tmux.sh"
+
 # What other sessions?
 # Nvim Config
 # Home
