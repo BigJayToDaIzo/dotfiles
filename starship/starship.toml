@@ -1,24 +1,15 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = """$os\
-	$env_var\
-	$hostname\
-	$all\
-	$sudo\
-	$character
+format = """
+$os$env_var$hostname$directory$all$cmd_duration$fill$time
+$sudo$status$character
 """
+
+# Must add ALL the package possiblities by hand because $all is forcing a newline
 
 add_newline = false
 
 palette = 'super_dank_af'
-
-[character]
-success_symbol = '[ ](char_success_fg)'
-error_symbol = '[ ](char_poobie_fg)'
-vimcmd_symbol = '[ ](time_fg)'
-vimcmd_replace_one_symbol = '[ ](time_fg)'
-vimcmd_replace_symbol = '[ ](char_poobie_fg)'
-vimcmd_visual_symbol = '[ ](user_fg)'
 
 [palettes.super_dank_af]
 user_fg = '#bc33d8'
@@ -31,10 +22,83 @@ package_fg = '#0000ff'
 package_bg = '#727f72'
 iced_out_os = '#09ecf8'
 
+# Less neon color palette
+[palettes.super_dank_mellow]
 
-[golang]
-symbol = ' '
-format = '[\[$symbol($version)\]](fg:package_fg)'
+[character]
+success_symbol = '[ ](char_success_fg)'
+error_symbol = '[ ](char_poobie_fg)'
+vimcmd_symbol = '[ ](time_fg)'
+vimcmd_replace_one_symbol = '[ ](time_fg)'
+vimcmd_replace_symbol = '[ ](char_poobie_fg)'
+vimcmd_visual_symbol = '[ ](user_fg)'
+
+[cmd_duration]
+format = '[\[󱎫 $duration\]](time_fg)'
+
+[directory]
+style = 'directory_fg'
+read_only = ' '
+read_only_style = 'char_poobie_fg'
+home_symbol = ' '
+
+[env_var.USER]
+format = '[$env_value@](user_fg)'
+
+[fill]
+symbol = ' '
+
+[git_branch]
+symbol = ' '
+format = '[ \[$symbol$branch\]](char_success_fg)'
+
+[git_commit]
+tag_symbol = ' '
+
+[git_metrics]
+disabled = false
+format = '(([ \[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
+
+[git_status]
+conflicted = '󱃟 '
+stashed = '󰘓'
+untracked = '󰡯'
+format = '([\[$all_status$ahead_behind\]](clock_fg))'
+
+[hostname]
+ssh_only = false
+ssh_symbol = '󰣀 '
+format = '[$hostname($ssh_symbol)󱝆 ](user_fg)'
+
+[line_break]
+disabled = true
+
+[memory_usage]
+threshold = 50
+disabled = false
+format = '[  $ram( | $swap)](char_poobie_fg)'
+
+[os]
+disabled = false
+format = '[$symbol](iced_out_os)'
+
+[os.symbols]
+Arch = ' '
+NixOS = ' '
+Ubuntu = ' '
+Windows = ' '
+
+[sudo]
+disabled = false
+format = '[󰒃 ](char_poobie_fg)'
+
+[status]
+disabled = false
+format = '[\[$status\]](char_poobie_fg)'
+
+[time]
+disabled = false
+format = '[[󰥔 ](clock_fg)$time ](time_fg)'
 
 [aws]
 format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](package_fg)'
@@ -48,9 +112,6 @@ format = '[\[$symbol($version(-$name))\]](package_fg)'
 
 [cmake]
 format = '[\[$symbol($version)\]](package_fg)'
-
-[cmd_duration]
-format = '[\[󱎫 $duration\]](time_fg)'
 
 [container]
 symbol = '󰏗'
@@ -74,12 +135,6 @@ format = '[\[$symbol($version)\]](package_fg)'
 [deno]
 format = '[\[$symbol($version)\]](package_fg)'
 
-[directory]
-style = 'directory_fg'
-read_only = ' '
-read_only_style = 'char_poobie_fg'
-home_symbol = ' '
-
 [docker_context]
 format = '[\[$symbol$context\]](package_fg)'
 
@@ -91,9 +146,6 @@ format = '[\[$symbol($version \(OTP $otp_version\))\]](package_fg)'
 
 [elm]
 format = '[\[$symbol($version)\]](package_fg)'
-
-[env_var.USER]
-format = '[$env_value@](user_fg)'
 
 [erlang]
 format = '[\[$symbol($version)\]](package_fg)'
@@ -107,22 +159,9 @@ format = '[\[$symbol$branch\]](package_fg)'
 [gcloud]
 format = '[\[$symbol$account(@$domain)(\($region\))\]](package_fg)'
 
-[git_branch]
-symbol = ' '
-format = '[ \[$symbol$branch\]](char_success_fg)'
-
-[git_commit]
-tag_symbol = ' '
-
-[git_metrics]
-disabled = false
-format = '(([ \[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
-
-[git_status]
-conflicted = '󱃟 '
-stashed = '󰘓'
-untracked = '󰡯'
-format = '([\[$all_status$ahead_behind\]](clock_fg))'
+[golang]
+symbol = ' '
+format = '[\[$symbol($version)\]](fg:package_fg)'
 
 [gradle]
 format = '[\[$symbol($version)\]](package_fg)'
@@ -142,11 +181,6 @@ format = '[\[$symbol($version)\]](package_fg)'
 [hg_branch]
 format = '[\[$symbol$branch\]](package_fg)'
 
-[hostname]
-ssh_only = false
-ssh_symbol = '󰣀 '
-format = '[$hostname($ssh_symbol)󱝆 ](user_fg)'
-
 [java]
 format = '[\[$symbol($version)\]](package_fg)'
 
@@ -162,12 +196,6 @@ format = '[\[$symbol$context( \($namespace\))\]](package_fg)'
 [lua]
 symbol = ' '
 format = '[\[$symbol($version)\]](package_fg)'
-
-# Implement into prompt?
-[memory_usage]
-threshold = 50
-disabled = false
-format = '[  $ram( | $swap)](char_poobie_fg)'
 
 [meson]
 format = '[\[$symbol$project\]](package_fg)'
@@ -189,16 +217,6 @@ format = '[\[$symbol($version)\]](package_fg)'
 
 [openstack]
 format = '[\[$symbol$cloud(\($project\))\]](package_fg)'
-
-[os]
-disabled = false
-format = '[$symbol](iced_out_os)'
-
-[os.symbols]
-Arch = ' '
-NixOS = ' '
-Ubuntu = ' '
-Windows = ' '
 
 [package]
 format = '[\[󰏗 $version\]](package_fg)'
@@ -237,26 +255,17 @@ format = '[\[$symbol($version)\]](package_fg)'
 [scala]
 format = '[\[$symbol($version)\]](package_fg)'
 
+[solidity]
+format = '[\[$symbol($version)\]](package_fg)'
+
 [spack]
 format = '[\[$symbol$environment\]](package_fg)'
-
-[sudo]
-disabled = false
-format = '[󰒃 ](char_poobie_fg)'
 
 [swift]
 format = '[\[$symbol($version)\]](package_fg)'
 
-[status]
-disabled = false
-format = '[\[$status\]](char_poobie_fg)'
-
 [terraform]
 format = '[\[$symbol$workspace\]](package_fg)'
-
-[time]
-disabled = false
-format = '[[󰥔 ](clock_fg)$time ](time_fg)'
 
 [vagrant]
 format = '[\[$symbol($version)\]](package_fg)'
@@ -265,7 +274,4 @@ format = '[\[$symbol($version)\]](package_fg)'
 format = '[\[$symbol($version)\]](package_fg)'
 
 [zig]
-format = '[\[$symbol($version)\]](package_fg)'
-
-[solidity]
 format = '[\[$symbol($version)\]](package_fg)'
