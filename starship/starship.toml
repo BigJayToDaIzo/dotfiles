@@ -160,7 +160,7 @@ format = '[\[$symbol$branch\]](package_fg)'
 format = '[\[$symbol$account(@$domain)(\($region\))\]](package_fg)'
 
 [golang]
-symbol = ' '
+symbol = ' '
 format = '[\[$symbol($version)\]](fg:package_fg)'
 
 [gradle]
