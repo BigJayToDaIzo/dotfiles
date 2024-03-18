@@ -5,7 +5,7 @@
 
 # General {
 	# Show which segment fails and its exit code.
-	export TMUX_POWERLINE_DEBUG_MODE_ENABLED="false"
+	export TMUX_POWERLINE_DEBUG_MODE_ENABLED="true"
 	# Use patched font symbols.
 	export TMUX_POWERLINE_PATCHED_FONT_IN_USE="true"
 
@@ -26,9 +26,9 @@
 	export TMUX_POWERLINE_STATUS_JUSTIFICATION="centre"
 
 	# The maximum length of the left status bar.
-	export TMUX_POWERLINE_STATUS_LEFT_LENGTH="60"
+	export TMUX_POWERLINE_STATUS_LEFT_LENGTH="90"
 	# The maximum length of the right status bar.
-	export TMUX_POWERLINE_STATUS_RIGHT_LENGTH="90"
+	export TMUX_POWERLINE_STATUS_RIGHT_LENGTH="60"
 
 	# The separator to use between windows on the status bar.
 	export TMUX_POWERLINE_WINDOW_STATUS_SEPARATOR=""
@@ -147,22 +147,22 @@
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_AND_PREFIX_MODE_ENABLED="true"
 	# Normal mode text & color overrides. Defaults to "normal" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_MODE_TEXT="normal"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_MODE_TEXT_COLOR="green"
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_NORMAL_MODE_TEXT_COLOR="black"
 	# Prefix mode text & color overrides. Defaults to "prefix" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_PREFIX_MODE_TEXT="prefix"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_PREFIX_MODE_TEXT_COLOR="yellow"
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_PREFIX_MODE_TEXT_COLOR="#07be61"
 	# Whether the mouse mode section should be enabled. Should be {"true, "false"}.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_ENABLED="true"
 	# Mouse mode text & color overrides. Defaults to "mouse" & the segment foreground color set in the theme used.
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_TEXT="mouse"
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_TEXT="󰍽"
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_MOUSE_MODE_TEXT_COLOR="green"
 	# Whether the copy mode section should be enabled. Should be {"true, "false"}.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_ENABLED="true"
 	# Copy mode text & color overrides. Defaults to "copy" & the segment foreground color set in the theme used.
 	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_TEXT="copy"
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_TEXT_COLOR="red"
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_COPY_MODE_TEXT_COLOR="#be0c07"
 	# Separator text override. Defaults to " • ".
-	export TMUX_POWERLINE_SEG_MODE_INDICATOR_SEPARATOR_TEXT="⊙ "
+	export TMUX_POWERLINE_SEG_MODE_INDICATOR_SEPARATOR_TEXT=""
 
 # }
 
@@ -265,11 +265,11 @@
 	export TMUX_POWERLINE_SEG_WEATHER_JSON="jq"
 	# Your location
 	# Latitude and Longtitude for use with yr.no
-	TMUX_POWERLINE_SEG_WEATHER_LAT="38"
-	TMUX_POWERLINE_SEG_WEATHER_LON="-89"
+	TMUX_POWERLINE_SEG_WEATHER_LAT="38.81"
+	TMUX_POWERLINE_SEG_WEATHER_LON="-89.95"
 # }
 
 # xkb_layout.sh {
 	# Keyboard icon
-	export TMUX_POWERLINE_SEG_XKB_LAYOUT_ICON="⌨ "
+	export TMUX_POWERLINE_SEG_XKB_LAYOUT_ICON="⌨  "
 # }

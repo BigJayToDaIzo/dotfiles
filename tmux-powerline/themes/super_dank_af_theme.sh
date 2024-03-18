@@ -84,8 +84,9 @@ fi
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-		"mode_indicator 165 0" \
-		"tmux_session_info 148 234" \
+		"mode_indicator #ffa75d 0" \
+		"tmux_session_info #87c1ff 234" \
+		"pwd #09ecf8 234" \
 		# "hostname 33 0" \
 		#"ifstat 30 255" \
 		#"ifstat_sys 30 255" \
@@ -102,7 +103,6 @@ fi
 if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
 		#"earthquake 3 0" \
-		"pwd 89 211" \
 		#"macos_notification_count 29 255" \
 		#"mailcount 9 255" \
 		# "now_playing 234 37" \
@@ -111,12 +111,13 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 		#"tmux_mem_cpu_load 234 136" \
 		# "battery 137 127" \
 		# "air ${TMUX_POWERLINE_SEG_AIR_COLOR} 255" \
-		"weather 37 255" \
+		"air #09ecf8 234" \
+		"weather #87c1ff 234" \
 		#"rainbarf 0 ${TMUX_POWERLINE_DEFAULT_FOREGROUND_COLOR}" \
 		#"xkb_layout 125 117" \
-		"date_day 235 136" \
-		"date 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
-		"time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+		"date_day #ffa75d 234" \
+		"date #ffa75d 234 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
+		"time #ffa75d 234 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 		#"utc_time 235 136 ${TMUX_POWERLINE_SEPARATOR_LEFT_THIN}" \
 	)
 fi

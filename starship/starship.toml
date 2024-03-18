@@ -10,7 +10,7 @@ format = """$os\
 
 add_newline = false
 
-palette = 'custom_dank_af'
+palette = 'super_dank_af'
 
 [character]
 success_symbol = '[ ](char_success_fg)'
@@ -20,7 +20,7 @@ vimcmd_replace_one_symbol = '[ ](time_fg)'
 vimcmd_replace_symbol = '[ ](char_poobie_fg)'
 vimcmd_visual_symbol = '[ ](user_fg)'
 
-[palettes.custom_dank_af]
+[palettes.super_dank_af]
 user_fg = '#bc33d8'
 clock_fg = '#ffa75d'
 time_fg = '#fcf77c'
@@ -43,6 +43,7 @@ format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](package_fg)'
 format = '[\[$symbol($version)]\]](package_fg)'
 
 [c]
+symbol = '𝗖'
 format = '[\[$symbol($version(-$name))\]](package_fg)'
 
 [cmake]
@@ -69,6 +70,7 @@ format = '[\[$symbol($version)\]](package_fg)'
 
 [dart]
 format = '[\[$symbol($version)\]](package_fg)'
+
 [deno]
 format = '[\[$symbol($version)\]](package_fg)'
 
@@ -114,16 +116,12 @@ tag_symbol = ' '
 
 [git_metrics]
 disabled = false
-# format = '([\[](time_fg)[+$added](char_success_fg)[-$deleted](time_fg)[\]  ](time_fg))'
 format = '(([ \[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
 
 [git_status]
 conflicted = '󱃟 '
-modified = '‼'
 stashed = '󰘓'
 untracked = '󰡯'
-staged = ''
-
 format = '([\[$all_status$ahead_behind\]](clock_fg))'
 
 [gradle]
@@ -198,6 +196,9 @@ format = '[$symbol](iced_out_os)'
 
 [os.symbols]
 Arch = ' '
+NixOS = ' '
+Ubuntu = ' '
+Windows = ' '
 
 [package]
 format = '[\[󰏗 $version\]](package_fg)'
@@ -245,6 +246,10 @@ format = '[󰒃 ](char_poobie_fg)'
 
 [swift]
 format = '[\[$symbol($version)\]](package_fg)'
+
+[status]
+disabled = false
+format = '[\[$status\]](char_poobie_fg)'
 
 [terraform]
 format = '[\[$symbol$workspace\]](package_fg)'
