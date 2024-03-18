@@ -23,8 +23,9 @@ return {
 					lsp_doc_border = false,
 				},
 				cmdline = {
-					-- enabled = true,
-					-- view = "cmdline_popup",
+					enabled = true,
+					-- view = "cmdline",
+					-- view = "cmdline_popup", -- default
 					opts = {},
 				},
 			})

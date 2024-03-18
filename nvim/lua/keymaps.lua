@@ -10,6 +10,16 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 -- turn off Ctrl-Z quit cuz I hate it
 vim.keymap.set("n", "<C-z>", "<Nop>")
 
+-- Folke Noice keymaps <leader>n on which-key
+vim.keymap.set("n", "<leader>nh", "<cmd>Noice<cr>", { desc = "[N]oice [H]isory" })
+vim.keymap.set("n", "<leader>nl", "<cmd>Noice last<cr>", { desc = "[N]oice [L]ast" })
+vim.keymap.set("n", "<leader>nd", "<cmd>Noice dismiss<cr>", { desc = "[N]oice [D]ismiss" })
+vim.keymap.set("n", "<leader>nr", "<cmd>Noice errors<cr>", { desc = "[N]oice [E]rrors" })
+vim.keymap.set("n", "<leader>nx", "<cmd>Noice disable<cr>", { desc = "[N]oice Di[X]able" })
+vim.keymap.set("n", "<leader>ne", "<cmd>Noice enable<cr>", { desc = "[N]oice [E]nable" })
+vim.keymap.set("n", "<leader>ns", "<cmd>Noice stats<cr>", { desc = "[N]oice [S]tats" })
+vim.keymap.set("n", "<leader>nt", "<cmd>Noice telescope<cr>", { desc = "[N]oice [ ]" })
+
 -- Buffer based keymaps
 vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]uffer" })
 vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]uffer" })
