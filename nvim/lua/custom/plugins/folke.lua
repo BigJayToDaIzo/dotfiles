@@ -4,7 +4,15 @@ return {
 		event = "VeryLazy",
 		dependencies = {
 			"MunifTanjim/nui.nvim",
-			"rcarriga/nvim-notify",
+			{
+				"rcarriga/nvim-notify",
+				config = function()
+					require("notify").setup({
+						timeout = 2500,
+						render = "compact",
+					})
+				end,
+			},
 			"hrsh7th/nvim-cmp",
 		},
 		config = function()

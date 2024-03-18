@@ -22,11 +22,38 @@ return {
 
 				lualine_b = {
 					{
+						"progress",
+						icon = { "󰹹", align = "right" },
+					},
+					{
+						"location",
+						icon = { "󰍎", align = "right" },
+					},
+					{
 						"diagnostics",
 						icon = " ",
 						sources = { "nvim_workspace_diagnostic", "coc" },
 						symbols = { error = " ", warn = " ", info = " ", hint = "🖕" },
 					},
+				},
+
+				lualine_c = {
+					"searchcount",
+					"selectioncount",
+				},
+
+				lualine_x = {},
+
+				lualine_y = {
+					{ "branch", icon = "" },
+					{
+						"diff",
+						icon = " ",
+						symbols = { added = "󰐖 ", modified = "󰦓 ", removed = "󱂥 " },
+					},
+				},
+
+				lualine_z = {
 					{
 						"filename",
 						newfile_status = true,
@@ -38,47 +65,19 @@ return {
 							newfile = " ",
 						},
 					},
-					{
-						"diff",
-						icon = " ",
-						symbols = { added = "󰐖 ", modified = "󰦓 ", removed = "󱂥 " },
-					},
-					{ "branch", icon = "" },
-				},
-
-				lualine_c = {
-					"searchcount",
-					"selectioncount",
-				},
-
-				lualine_x = {},
-
-				lualine_y = {
-					"copilot",
-					"filetype",
-					{
-						"progress",
-						icon = { "󰹹", align = "right" },
-					},
-					{
-						"location",
-						icon = { "󰍎", align = "right" },
-					},
-				},
-				lualine_z = {
-					{
-						"datetime",
-						icon = { "󱛡 ", align = "right" },
-					},
+					-- {
+					-- 	"datetime",
+					-- 	icon = { "󱛡 ", align = "right" },
+					-- },
 				},
 			},
 			inactive_sections = {
-				lualine_a = { "filename" },
+				lualine_a = { "location" },
 				lualine_b = {},
 				lualine_c = {},
 				lualine_x = {},
 				lualine_y = {},
-				lualine_z = { "location" },
+				lualine_z = { "filename" },
 			},
 			-- Unlikely to need most people confuse buffers and tabs
 			-- Tabs are window arrangements, not buffer organizers
