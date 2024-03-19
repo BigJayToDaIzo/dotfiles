@@ -5,9 +5,10 @@
 if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
-    # set -xg NVIM_APPNAME nvim-kickstart
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR nvim
+    set -xg MANPAGER "less -R --use-color -Dd+c -Du+b"
+    set -xg MANROFFOPT "-c"
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages
@@ -49,6 +50,8 @@ function update_system_plz
     echo fastest mirrors updated!
     yay -Syyu --aur --devel
     sudo pacman -Syu
+    yay -Rns $(yay -Qtdq)
+    yay -Scc
 end
 # Figure out how to make-session without attachingnvim_configs_pz
 # Figure out how to make these functions lay in the terminals and
