@@ -46,12 +46,9 @@ if status is-login
 end
 
 function update_system_plz
-    sudo reflector --sort rate -l 5 --save /etc/pacman.d/mirrorlist
-    echo fastest mirrors updated!
-    yay -Syyu --aur --devel
-    sudo pacman -Syu
-    yay -Rns $(yay -Qtdq)
-    yay -Scc
+    yay
+    yay -Yc
+    yes | yay -Sc
 end
 # Figure out how to make-session without attachingnvim_configs_pz
 # Figure out how to make these functions lay in the terminals and
@@ -65,6 +62,7 @@ abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
 abbr -a sc 'sesh connect $(sesh list | fzf)'
+abbr -a sup update_system_plz
 abbr -a skype snap run skype
 abbr -a t task
 abbr -a update update_system_plz
