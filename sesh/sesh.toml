@@ -1,19 +1,20 @@
 default_startup_script = "~/.config/sesh/scripts/dotfiles.sh"
 
+# Alacritty configuration session
+[[startup_scripts]]
+session_path = "~/.config/alacritty"
+script_path = "~/.config/sesh/scripts/alacritty.sh"
+
 # Basic Overall Dotfiles repo management
 [[startup_scripts]]
 session_path = "~/.config"
 script_path = "~/.config/sesh/scripts/dotfiles.sh"
 
-# Sesh configuration session
+# Fish configuration session
 [[startup_scripts]]
-session_path = "~/.config/sesh"
-script_path = "~/.config/sesh/scripts/sesh.sh"
+session_path = "~/.config/fish"
+script_path = "~/.config/sesh/scripts/fish.sh"
 
-# Udemy Go course session
-[[startup_scripts]]
-session_path = "~/Projects/personal/learn/golang/go_tutorials/udemy_max"
-script_path = "~/.config/sesh/scripts/goproj.sh"
 
 # Tmux configuration session
 [[startup_scripts]]
@@ -25,18 +26,21 @@ script_path = "~/.config/sesh/scripts/tmux.sh"
 session_path = "~/.config/tmux-powerline"
 script_path = "~/.config/sesh/scripts/tmux_powerline.sh"
 
+# Sesh configuration session
+[[startup_scripts]]
+session_path = "~/.config/sesh"
+script_path = "~/.config/sesh/scripts/sesh.sh"
+
 # Starship configuration session
 [[startup_scripts]]
 session_path = "~/.config/starship"
 script_path = "~/.config/sesh/scripts/starship.sh"
 
-# Starship configuration session
+# Udemy Go course session
 [[startup_scripts]]
-session_path = "~/.config/alacritty"
-script_path = "~/.config/sesh/scripts/alacritty.sh"
+session_path = "~/Projects/personal/learn/golang/go_tutorials/udemy_max"
+script_path = "~/.config/sesh/scripts/goproj.sh"
 
 # What other sessions?
 # Nvim Config
-# Home
-# Rooty-toot-toot'n Root mgmt?
 # KEEP IDEAS COMING THIS SHIB IS EASY AS HEK

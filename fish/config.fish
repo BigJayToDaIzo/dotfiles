@@ -50,9 +50,15 @@ function update_system_plz
     yay -Yc
     yes | yay -Sc
 end
-# Figure out how to make-session without attachingnvim_configs_pz
-# Figure out how to make these functions lay in the terminals and
-# run their appropriate programs
+
+function yy
+    set tmp (mktemp -t "yazi-cwd.XXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
+end
 #
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
@@ -67,6 +73,7 @@ abbr -a skype snap run skype
 abbr -a t task
 abbr -a update update_system_plz
 abbr -a vi nvim
+abbr -a yazi yy
 abbr -a za zellij a
 abbr -a zls zellij ls
 
