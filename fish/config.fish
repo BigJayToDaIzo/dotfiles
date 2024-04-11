@@ -9,6 +9,7 @@ if status is-login
     set -xg EDITOR nvim
     set -xg MANPAGER "less -R --use-color -Dd+c -Du+b"
     set -xg MANROFFOPT "-c"
+    set -xg ELECTRON_OZONE_PLATFORM "wayland"
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages
@@ -45,14 +46,15 @@ if status is-login
 
 end
 
-function update_system_plz
-    yay
-    yay -Yc
-    yes | yay -Sc
+
+function yy
+    set tmp (mktemp -t "yazi-cwd.XXXXX")
+    yazi $argv --cwd-file="$tmp"
+    if set cwd (cat -- "$tmp"); and [ -n "$cwd" ]; and [ "$cwd" != "$PWD" ]
+        cd -- "$cwd"
+    end
+    rm -f -- "$tmp"
 end
-# Figure out how to make-session without attachingnvim_configs_pz
-# Figure out how to make these functions lay in the terminals and
-# run their appropriate programs
 #
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
@@ -62,11 +64,12 @@ abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
 abbr -a sc 'sesh connect $(sesh list | fzf)'
-abbr -a sup update_system_plz
+abbr -a sup yay -Syu
 abbr -a skype snap run skype
 abbr -a t task
 abbr -a update update_system_plz
 abbr -a vi nvim
+abbr -a yazi yy
 abbr -a za zellij a
 abbr -a zls zellij ls
 
