@@ -68,7 +68,6 @@ abbr -a sc 'sesh connect $(sesh list | fzf)'
 abbr -a sup yay -Syu
 abbr -a skype snap run skype
 abbr -a t task
-abbr -a update update_system_plz
 abbr -a vi nvim
 abbr -a yazi yy
 abbr -a za zellij a
