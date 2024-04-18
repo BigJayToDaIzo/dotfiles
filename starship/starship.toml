@@ -38,7 +38,7 @@ format = '[\[󱎫 $duration\]](time_fg)'
 
 [directory]
 style = 'directory_fg'
-read_only = ' '
+read_only = ' '
 read_only_style = 'char_poobie_fg'
 home_symbol = ' '
 
