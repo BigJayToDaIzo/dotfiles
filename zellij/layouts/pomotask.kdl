@@ -1,5 +1,12 @@
-layout {
-    pane split_direction="vertical"{
+layout { 
+        floating_panes hide_floating_panes=true {
+            pane {
+                command "task"
+                args "sync"
+                close_on_exit true
+            }
+        }
+        pane split_direction="vertical"  {
         pane {
             pane split_direction="horizontal"{
                 pane size="45%"{
@@ -10,13 +17,11 @@ layout {
                 pane {
                     command "cmatrix"
                     args "-b"
-                    start_suspended true
                 }
             }
         }
         pane size="65%" {
             command "task"
-            args "project:Kickstart"
             focus true
         }
     }
