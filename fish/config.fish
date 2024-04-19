@@ -67,7 +67,8 @@ abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
 abbr -a sc 'sesh connect $(sesh list | fzf)'
 abbr -a sup yay -Syu
 abbr -a skype snap run skype
-abbr -a t task
+abbr -a t 'clear && task'
+abbr -a ta task
 abbr -a vi nvim
 abbr -a yazi yy
 abbr -a za zellij a
