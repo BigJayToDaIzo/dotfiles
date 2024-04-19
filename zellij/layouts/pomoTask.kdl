@@ -1,0 +1,37 @@
+layout {
+  pane split_direction="vertical" {
+    pane size="35%" {
+      pane {
+        command "cbonsai"
+        borderless true
+        args "-li"
+      }
+      pane {
+        command "asciiquarium"
+        name "Jaws, Willy, Flipper, Nemo & Gang"
+      }
+      pane size=4 { // pomotimer
+        name "🍅 Pomo F'SHOmo 🍅"
+        command "tomatoshell"
+        args "-n" "6" "-p" "p"
+        start_suspended true
+      } 
+    }
+    // stacked panes go here
+    pane {
+      pane stacked=true {
+        pane borderless=true { // watch sync
+          size 1
+          command "watch"
+          args "-c" "-d" "-n" "600" "task" "sync"
+        }
+        pane expanded=true { // task warrior
+          name "Git'r Dun!"
+          focus true
+          command "task"
+        }
+      }
+    }
+
+  }
+}

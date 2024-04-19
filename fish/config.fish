@@ -1,7 +1,5 @@
 # ENVIRONMENT VARIABLE CONFIG
 #############################
-#Why is this being injected in the path twice?  HOW is it being injected at all?
-# set -e PATH[1]
 if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"
@@ -10,6 +8,7 @@ if status is-login
     set -xg MANPAGER "less -R --use-color -Dd+c -Du+b"
     set -xg MANROFFOPT "-c"
     set -xg ELECTRON_OZONE_PLATFORM "wayland"
+    set -xg LOCALSCRIPTS ~/.local/scripts/
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages
@@ -17,7 +16,7 @@ if status is-login
     # Go shits
     set -xg GOPATH $HOME/go
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LOCALSCRIPTS
 
     # PLUGIN CONFIG
     ###############

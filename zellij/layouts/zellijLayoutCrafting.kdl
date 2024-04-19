@@ -1,0 +1,17 @@
+layout {
+  pane split_direction="horizontal" {
+    pane {
+      size "75%"
+      focus true
+      borderless true
+      cwd "~/.config/zellij/layouts"
+      command "nvim"
+    }
+    pane {
+      cwd "~/.config/zellij/layouts"
+    }
+    pane size=1 borderless=true {
+        plugin location="zellij:status-bar"
+    }
+  }
+}

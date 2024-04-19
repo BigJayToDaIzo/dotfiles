@@ -5,7 +5,7 @@ layout {
       size "70%"
       focus true
       name "neovim"
-      cwd "/home/jm/.config/nvim-kickstart"
+      cwd "/home/jm/.config/nvim"
       edit "init.lua"
 
     }
