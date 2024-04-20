@@ -94,25 +94,33 @@ keybinds clear-defaults=true {
         bind "Enter" { SwitchToMode "Search"; }
     }
     renametab {
-        bind "Esc" { UndoRenameTab; SwitchToMode "Locked"; }
+        bind "Esc" "Enter" { UndoRenameTab; SwitchToMode "Locked"; }
     }
     renamepane {
-        bind "Esc" { UndoRenamePane; SwitchToMode "Locked"; }
+        bind "Esc" "Enter" { UndoRenamePane; SwitchToMode "Locked"; }
     }
     session {
         bind "w" {
             LaunchOrFocusPlugin "zellij:session-manager" {
                 floating true
                 move_to_focused_tab true
-                bind "Ctrl c" { CloseTab; SwitchToMode "Locked"; }
             };
             SwitchToMode "Locked"
         }
         bind "d" { Detach; }
     }
     shared_except "locked" {
-        bind "Ctrl Space" { SwitchToMode "Locked"; }
-        bind "Esc" { SwitchToMode "Locked"; }
+        bind "Enter" "Esc" "Ctrl Space" { SwitchToMode "Locked"; }
+        bind "q" { Quit; }
+        bind "Alt n" { NewPane; }
+        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
+        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
+        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt =" "Alt +" { Resize "Increase"; }
+        bind "Alt -" { Resize "Decrease"; }
+        bind "Alt [" { PreviousSwapLayout; }
+        bind "Alt ]" { NextSwapLayout; }
         bind "k" {
             SwitchToMode "Locked";
             LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
@@ -147,20 +155,8 @@ keybinds clear-defaults=true {
                 "move pane back"        "h + p"
                 "session mgr"           "o + w"
                 "detatch session"       "o + d"
-            
-
             }
         }
-        bind "q" { Quit; }
-        bind "Alt n" { NewPane; }
-        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
-        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
-        bind "Alt =" "Alt +" { Resize "Increase"; }
-        bind "Alt -" { Resize "Decrease"; }
-        bind "Alt [" { PreviousSwapLayout; }
-        bind "Alt ]" { NextSwapLayout; }
     }
 }
 plugins {
@@ -176,7 +172,6 @@ plugins {
         cwd "/"
     }
 }
-
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // Options:
