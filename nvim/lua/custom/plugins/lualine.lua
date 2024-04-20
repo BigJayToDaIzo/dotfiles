@@ -89,7 +89,6 @@ return {
 				"neo-tree",
 				"nvim-dap-ui",
 				"symbols-outline",
-				"toggleterm",
 				"trouble",
 			},
 		})

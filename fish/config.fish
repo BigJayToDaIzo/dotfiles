@@ -55,6 +55,10 @@ function yy
     rm -f -- "$tmp"
 end
 
+function zs
+    command zellij -l $argv[1] -s $argv[1]
+end
+
 #
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################

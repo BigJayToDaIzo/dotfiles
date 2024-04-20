@@ -104,6 +104,7 @@ keybinds clear-defaults=true {
             LaunchOrFocusPlugin "zellij:session-manager" {
                 floating true
                 move_to_focused_tab true
+                bind "Ctrl c" { CloseTab; SwitchToMode "Locked"; }
             };
             SwitchToMode "Locked"
         }
@@ -111,7 +112,7 @@ keybinds clear-defaults=true {
     }
     shared_except "locked" {
         bind "Ctrl Space" { SwitchToMode "Locked"; }
-        bind "Enter" "Esc" { SwitchToMode "Locked"; }
+        bind "Esc" { SwitchToMode "Locked"; }
         bind "k" {
             SwitchToMode "Locked";
             LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
@@ -272,7 +273,7 @@ themes {
 // Default: "default"
 theme "everforest-dark"
 //
-// default_layout "compact"
+default_layout "welcome"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal

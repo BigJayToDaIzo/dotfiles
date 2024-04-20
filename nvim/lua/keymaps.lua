@@ -29,7 +29,7 @@ vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
 vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
 vim.keymap.set("n", "<M-l>", "<cmd>BufferLineMoveNext<cr>")
 
--- folke/todo-comments.nvim uses <leader>t* maps to operate
+-- folke/todo-comments.nvim uses <leader>o* maps to operate
 vim.keymap.set("n", "<leader>ox", "<cmd>TodoTrouble<CR>", { desc = "Toggle T[o]do Tr[x]uble" })
 vim.keymap.set("n", "<leader>ot", "<cmd>TodoTelescope<CR>", { desc = "Open T[o]do [T]elescope" })
 vim.keymap.set("n", "<leader>o[", function()
@@ -38,9 +38,6 @@ end, { desc = "Go to previous T[o]do" })
 vim.keymap.set("n", "<leader>o]", function()
 	require("todo-comments").jump_next()
 end, { desc = "Go to next T[o]do" })
-
--- Toggleterm kemaps
-vim.keymap.set("n", "<leader>tv", ":ToggleTerm size=35 direction=vertical<CR>", { desc = "Open [V]ertical terminal" })
 
 -- folke/trouble.vim uses <leader>x* maps to operate
 vim.keymap.set("n", "<leader>xx", function()
@@ -65,7 +62,6 @@ end, { desc = "Toggle [T]rouble [R]eferences" })
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
--- vim.keymap.set("n", "<leader>e", "<cmd>Tfm<CR>", { desc = "Toggle N[e]otree" })
 vim.keymap.set("n", "<M-Space>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey menu" })
 --Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
