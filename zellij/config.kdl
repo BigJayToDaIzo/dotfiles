@@ -112,11 +112,12 @@ keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Ctrl Space" { SwitchToMode "Locked"; }
         bind "Enter" "Esc" { SwitchToMode "Locked"; }
-        bind "Ctrl f" {
+        bind "k" {
             SwitchToMode "Locked";
             LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
                 floating true
                 "LOAD_ZELLIJ_BINDINGS" "false"
+                "show keybinds (this)"  "k"
                 "toggle lock"           "Ctrl Space"
                 "change panes locked"   "Alt-hjkl"
                 "change panes"          "p + hjkl"
