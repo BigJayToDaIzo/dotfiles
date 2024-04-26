@@ -1,0 +1,26 @@
+layout {
+  pane split_direction="vertical" {
+    pane size="30%"{
+      pane {
+        command "cbonsai"
+        borderless true
+        args "-li"
+      }
+      pane { // pomotimer
+        name "🍅 Pomo F'SHOmo 🍅"
+        command "tomatoshell"
+        args "-n" "6" "-p" "p"
+        start_suspended true
+      } 
+    }
+    // stacked panes go here
+    pane {
+      command "sh"
+      args "/home/jm/.local/scripts/wttrIn.sh"
+    }
+
+  }
+  binds {
+    // bind here to fire imsnifs weather plugin
+  }
+}

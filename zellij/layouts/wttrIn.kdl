@@ -1,0 +1,6 @@
+layout {
+  pane {
+    command "sh"
+    args "/home/jm/.local/scripts/wttrIn.sh"
+  }
+}
