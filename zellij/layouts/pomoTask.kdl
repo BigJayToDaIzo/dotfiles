@@ -34,11 +34,15 @@ layout {
         mode_prompt "#[fg=#333333,bg=green]  {name} "
         mode_default_to_mode "locked"
 
+        tab_normal   "#[fg=#6C7086] {index}::{name} "
+        tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
+        tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
 
-        
+        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+        tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
 
-        tab_normal   "#[fg=#6c7086] {name} "
-        tab_active   "#[fg=#89b4fa,bold,italic] {name} "
+        tab_separator "#[fg=#89B4FA]❯"
 
         command_git_branch_command     "git rev-parse --abbrev-ref head"
         command_git_branch_format      "#[fg=blue] {stdout} "
@@ -51,7 +55,7 @@ layout {
       }
     }
   }
-  tab{
+  tab name="Task Warrior" focus=true {
     pane split_direction="vertical" {
       pane size="35%" {
         pane {
@@ -59,9 +63,10 @@ layout {
           borderless true
           args "-li"
         }
-        pane {
-          command "asciiquarium"
-          name "Jaws, Willy, Flipper, Nemo & Gang"
+        pane size="30%"{
+          command "peaclock"
+          args "--config-dir" "/home/jm/.config/.peaclock"
+          name ""
         }
         pane size=4 { // pomotimer
           name "🍅 Pomo F'SHOmo 🍅"
@@ -87,5 +92,23 @@ layout {
       }
 
     }
+  }
+  tab name="Weather Station" hide_floating_panes=true {
+    pane {
+      focus true
+      name "☔ or 🌞❓"
+      command "sh"
+      args "/home/jm/.local/scripts/wttrIn.sh"
+    }
+    floating_panes {
+      pane {
+        name "Hourly Forecast"
+        height "50%"
+        plugin location="file:/home/jm/.config/zellij/plugins/weather-pal.wasm"
+      }
+    }
+  }
+  tab name="Aquarium" {
+    pane command="asciiquarium"
   }
 }

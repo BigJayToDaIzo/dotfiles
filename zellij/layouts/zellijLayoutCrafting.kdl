@@ -34,11 +34,15 @@ layout {
         mode_prompt "#[fg=#333333,bg=green]  {name} "
         mode_default_to_mode "locked"
 
+        tab_normal   "#[fg=#6C7086] {index}::{name} "
+        tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
+        tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
 
-        
+        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+        tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
 
-        tab_normal   "#[fg=#6c7086] {name} "
-        tab_active   "#[fg=#89b4fa,bold,italic] {name} "
+        tab_separator "#[fg=#89B4FA]❯"
 
         command_git_branch_command     "git rev-parse --abbrev-ref head"
         command_git_branch_format      "#[fg=blue] {stdout} "
@@ -46,8 +50,8 @@ layout {
         command_git_branch_rendermode  "static"
 
         datetime        "#[fg=#89b4fa,bold] {format} "
-        datetime_format "%a, %d %b %y %h:%m"
-        datetime_timezone "america/chicago"
+        datetime_format "%A, %d %b %Y %H:%M"
+        datetime_timezone "America/Chicago"
       }
     }
   }

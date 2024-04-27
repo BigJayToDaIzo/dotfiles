@@ -34,11 +34,15 @@ layout {
         mode_prompt "#[fg=#333333,bg=green]  {name} "
         mode_default_to_mode "locked"
 
+        tab_normal   "#[fg=#6C7086] {index}::{name} "
+        tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
+        tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
 
-        
+        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+        tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
 
-        tab_normal   "#[fg=#6c7086] {name} "
-        tab_active   "#[fg=#89b4fa,bold,italic] {name} "
+        tab_separator "#[fg=#89B4FA]❯"
 
         command_git_branch_command     "git rev-parse --abbrev-ref head"
         command_git_branch_format      "#[fg=blue] {stdout} "
@@ -51,30 +55,24 @@ layout {
       }
     }
   }
-  tab {
-    pane split_direction="vertical" {
+  tab cwd="/home/jm/Projects/bfs/weather-pal" {
+        pane split_direction="vertical" {
       pane {
         close_on_exit false
-        cwd "/home/jm/Projects/bfs/weather-pal"
         command "nvim"
         args "src/main.rs"
       }
       pane size="30%"{
         pane {
-          cwd "/home/jm/Projects/bfs/weather-pal"
           edit "Cargo.toml" 
         }
         pane stacked=true {
           pane size="10%" command="bash" name="COMPILE AND RELOAD PLUGIN" {
-            cwd "/home/jm/Projects/bfs/weather-pal"
             args "-c" "watchexec 'cargo build && zellij action start-or-reload-plugin file:target/wasm32-wasi/debug/weather-pal.wasm'"
           }
           pane expanded=true {
-            cwd "/home/jm/Projects/bfs/weather-pal"
-            plugin location="file:target/wasm32-wasi/debug/weather-pal.wasm" {
-              config_key "config_value"
-              print_config true
-            }
+            plugin location="file:target/wasm32-wasi/debug/weather-pal.wasm"
+            
           }
         }
       }
