@@ -1,37 +1,91 @@
 layout {
-  pane split_direction="vertical" {
-    pane size="35%" {
-      pane {
-        command "cbonsai"
-        borderless true
-        args "-li"
-      }
-      pane {
-        command "asciiquarium"
-        name "Jaws, Willy, Flipper, Nemo & Gang"
-      }
-      pane size=4 { // pomotimer
-        name "🍅 Pomo F'SHOmo 🍅"
-        command "tomatoshell"
-        args "-n" "6" "-p" "p"
-        start_suspended true
-      } 
-    }
-    // stacked panes go here
-    pane {
-      pane stacked=true {
-        pane borderless=true { // watch sync
-          size 1
-          command "watch"
-          args "-c" "-d" "-n" "600" "task" "sync"
-        }
-        pane expanded=true { // task warrior
-          name "Git'r Dun!"
-          focus true
-          command "task"
-        }
-      }
-    }
+  default_tab_template {
+    children
+    pane size=1 borderless=true {
+      plugin location="file:/home/jm/.config/zellij/plugins/zjstatus.wasm" {
+        format_left   "{mode} #[fg=#89b4fa,bold]{session}"
+        format_center "{tabs}"
+        format_right  "{command_git_branch} {datetime}{notifications}"
+        format_space  ""
 
+        border_enabled  "false"
+        border_char     "─"
+        border_format   "#[fg=#6c7086]{char}"
+        border_position "top"
+        
+        notification_format_unread           "#[fg=#89b4fa,bg=#181825,blink]  #[fg=#89b4fa,bg=#181825] {message} "
+        notification_format_no_notifications "#[fg=#89b4fa,bg=#181825,dim]   "
+        notification_show_interval           "10"
+
+        hide_frame_for_single_pane "true"
+
+        mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
+        mode_locked "#[bg=#CF142B]  LOCKED "
+        mode_session "#[fg=#333333,bg=green] 🖳 {name} "
+        mode_resize "#[fg=#333333,bg=#FF6700]  {name} "
+        mode_pane "#[fg=#333333,bg=green]  {name} "
+        mode_tab "#[fg=#333333,bg=green] ⭾ {name} "
+        mode_scroll "#[fg=#333333,bg=green] 󰭜 {name} "
+        mode_enter_search "#[fg=#333333,bg=green]  {name} "
+        mode_search "#[fg=#333333,bg=green]  {name} "
+        mode_rename_tab "#[fg=#333333,bg=#FF6700] ⭾ {name} "
+        mode_rename_pane "#[fg=#333333,bg=#FF6700]  {name} "
+        mode_move "#[fg=#333333,bg=green]  {name} "
+        mode_prompt "#[fg=#333333,bg=green]  {name} "
+        mode_default_to_mode "locked"
+
+
+        
+
+        tab_normal   "#[fg=#6c7086] {name} "
+        tab_active   "#[fg=#89b4fa,bold,italic] {name} "
+
+        command_git_branch_command     "git rev-parse --abbrev-ref head"
+        command_git_branch_format      "#[fg=blue] {stdout} "
+        command_git_branch_interval    "10"
+        command_git_branch_rendermode  "static"
+
+        datetime        "#[fg=#89b4fa,bold] {format} "
+        datetime_format "%A, %d %b %Y %H:%M"
+        datetime_timezone "America/Chicago"
+      }
+    }
+  }
+  tab{
+    pane split_direction="vertical" {
+      pane size="35%" {
+        pane {
+          command "cbonsai"
+          borderless true
+          args "-li"
+        }
+        pane {
+          command "asciiquarium"
+          name "Jaws, Willy, Flipper, Nemo & Gang"
+        }
+        pane size=4 { // pomotimer
+          name "🍅 Pomo F'SHOmo 🍅"
+          command "tomatoshell"
+          args "-n" "6" "-p" "p"
+          start_suspended true
+        } 
+      }
+      // stacked panes go here
+      pane {
+        pane stacked=true {
+          pane borderless=true { // watch sync
+            size 1
+            command "watch"
+            args "-c" "-d" "-n" "600" "task" "sync"
+          }
+          pane expanded=true { // task warrior
+            name "Git'r Dun!"
+            focus true
+            command "task"
+          }
+        }
+      }
+
+    }
   }
 }

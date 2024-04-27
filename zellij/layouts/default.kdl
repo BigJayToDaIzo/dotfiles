@@ -2,10 +2,10 @@ layout {
   default_tab_template {
     children
     pane size=1 borderless=true {
-      plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
-        format_left   "#[fg=#89b4fa,bold]{session} {mode}"
+      plugin location="file:/home/jm/.config/zellij/plugins/zjstatus.wasm" {
+        format_left   "{mode} #[fg=#89b4fa,bold]{session}"
         format_center "{tabs}"
-        format_right  "{notifications} {command_git_branch} {datetime}"
+        format_right  "{command_git_branch} {datetime}{notifications}"
         format_space  ""
 
         border_enabled  "false"
@@ -19,19 +19,19 @@ layout {
 
         hide_frame_for_single_pane "true"
 
-        mode_normal  "#[fg=#cf142b,bg=green]  unlocked "
-        mode_locked "#[bg=#cf142b]  locked "
-        mode_session "#[bg=green] 🖳 {name} "
-        mode_resize "#[bg=#ff6700]  {name} "
-        mode_pane "#[bg=green]  {name} "
-        mode_tab "#[bg=green] ⭾ {name} "
-        mode_scroll "#[bg=green] 󰭜 {name} "
-        mode_enter_search "#[bg=green]  {name} "
-        mode_search "#[bg=green]  {name} "
-        mode_rename_tab "#[bg=green] ⭾ {name} "
-        mode_rename_pane "#[bg=green]  {name} "
-        mode_move "#[bg=green]  {name} "
-        mode_prompt "#[bg=green]  {name} "
+        mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
+        mode_locked "#[bg=#CF142B]  LOCKED "
+        mode_session "#[fg=#333333,bg=green] 🖳 {name} "
+        mode_resize "#[fg=#333333,bg=#FF6700]  {name} "
+        mode_pane "#[fg=#333333,bg=green]  {name} "
+        mode_tab "#[fg=#333333,bg=green] ⭾ {name} "
+        mode_scroll "#[fg=#333333,bg=green] 󰭜 {name} "
+        mode_enter_search "#[fg=#333333,bg=green]  {name} "
+        mode_search "#[fg=#333333,bg=green]  {name} "
+        mode_rename_tab "#[fg=#333333,bg=#FF6700] ⭾ {name} "
+        mode_rename_pane "#[fg=#333333,bg=#FF6700]  {name} "
+        mode_move "#[fg=#333333,bg=green]  {name} "
+        mode_prompt "#[fg=#333333,bg=green]  {name} "
         mode_default_to_mode "locked"
 
 
@@ -46,8 +46,8 @@ layout {
         command_git_branch_rendermode  "static"
 
         datetime        "#[fg=#89b4fa,bold] {format} "
-        datetime_format "%a, %d %b %y %h:%m"
-        datetime_timezone "us/central"
+        datetime_format "%A, %d %b %Y %H:%M"
+        datetime_timezone "America/Chicago"
       }
     }
   }

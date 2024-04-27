@@ -55,9 +55,6 @@ function yy
     rm -f -- "$tmp"
 end
 
-function zs
-    command zellij -l $argv[1] -s $argv[1]
-end
 
 #
 # ALIAS / ABBREVIATIONS transition away from alias
@@ -75,7 +72,14 @@ abbr -a ta task
 abbr -a vi nvim
 abbr -a yazi yy
 abbr -a za zellij a
+function zd
+    command zellij delete-session $argv[1] --force
+end
+abbr -a zda zellij delete-all-sessions --force
 abbr -a zls zellij ls
+function zs
+    command zellij -l $argv[1] -s $argv[1]
+end
 
 # PROMPT CONTROL
 ################

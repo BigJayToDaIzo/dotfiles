@@ -1,7 +1,7 @@
 lastupdatecheck: 1713623700
 recentrepos:
-- /home/jm/.local/scripts
 - /home/jm/.config
+- /home/jm/.local/scripts
 - /home/jm/Projects/personal/learn/golang/go_tutorials/udemy_max
 - /home/jm/.local/share/nvim-kickstart/lazy/toggleterm.nvim
 - /home/jm/Projects/personal/learn/golang/go_tutorials/gotour
