@@ -1,0 +1,80 @@
+layout {
+    pane split_direction="vertical" {
+        pane {
+            close_on_exit false
+            cwd "/home/jm/Projects/bfs/weather-pal"
+            command "nvim"
+            args "src/main.rs"
+        }
+        pane size="30%"{
+            pane {
+                cwd "/home/jm/Projects/bfs/weather-pal"
+                edit "Cargo.toml" 
+            }
+            pane stacked=true {
+                pane size="10%" command="bash" name="COMPILE AND RELOAD PLUGIN" {
+                    cwd "/home/jm/Projects/bfs/weather-pal"
+                    // args "-c" "cargo build && zellij action start-or-reload-plugin file:target/wasm32-wasi/debug/weather-pal.wasm"
+                    // if you have "watchexec" installed, you can comment the above line and uncomment the below one to build + reload the plugin on fs changes
+                    args "-c" "watchexec 'cargo build && zellij action start-or-reload-plugin file:target/wasm32-wasi/debug/weather-pal.wasm'"
+                }
+                pane expanded=true {
+                    cwd "/home/jm/Projects/bfs/weather-pal"
+                    plugin location="file:target/wasm32-wasi/debug/weather-pal.wasm" {
+                        config_key "config_value"
+                        print_config true
+                    }
+                }
+            }
+        }
+    }
+    pane size=1 borderless=true {
+        plugin location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm" {
+            format_left   "#[fg=#89B4FA,bold]{session} {mode}"
+            format_center "{tabs}"
+            format_right  "{notifications} {command_git_branch} {datetime}"
+            format_space  ""
+
+            border_enabled  "false"
+            border_char     "─"
+            border_format   "#[fg=#6C7086]{char}"
+            border_position "top"
+            
+            notification_format_unread           "#[fg=#89B4FA,bg=#181825,blink]  #[fg=#89B4FA,bg=#181825] {message} "
+            notification_format_no_notifications "#[fg=#89B4FA,bg=#181825,dim]   "
+            notification_show_interval           "10"
+
+            hide_frame_for_single_pane "true"
+
+            mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
+            mode_locked "#[bg=#CF142B]  LOCKED "
+            mode_session "#[bg=green] 🖳 {name} "
+            mode_resize "#[bg=#FF6700]  {name} "
+            mode_pane "#[bg=green]  {name} "
+            mode_tab "#[bg=green] ⭾ {name} "
+            mode_scroll "#[bg=green] 󰭜 {name} "
+            mode_enter_search "#[bg=green]  {name} "
+            mode_search "#[bg=green]  {name} "
+            mode_rename_tab "#[bg=green] ⭾ {name} "
+            mode_rename_pane "#[bg=green]  {name} "
+            mode_move "#[bg=green]  {name} "
+            mode_prompt "#[bg=green]  {name} "
+            mode_default_to_mode "locked"
+
+
+            
+
+            tab_normal   "#[fg=#6C7086] {name} "
+            tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+
+            command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
+            command_git_branch_format      "#[fg=blue] {stdout} "
+            command_git_branch_interval    "10"
+            command_git_branch_rendermode  "static"
+
+            datetime        "#[fg=#89B4FA,bold] {format} "
+            datetime_format "%A, %d %b %Y %H:%M"
+            datetime_timezone "US/Central"
+        }
+    }
+}
