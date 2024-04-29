@@ -2,7 +2,7 @@ layout {
   default_tab_template {
     children
     pane size=1 borderless=true {
-      plugin location="file:/home/jm/.config/zellij/plugins/zjstatus.wasm" {
+      plugin location="https://github.com/dj95/zjstatus/releases/download/v0.14.1-rc1/zjstatus.wasm" {
         format_left   "{mode} #[fg=#89b4fa,bold]{session}"
         format_center "{tabs}"
         format_right  "{command_git_branch} {datetime}{notifications}"
@@ -56,18 +56,23 @@ layout {
     }
   }
   tab name="3 Day Forecast" hide_floating_panes=true {
-    floating_panes {
-      pane {
-        name "Hourly Forecast"
-        height "50%"
-        plugin location="file:/home/jm/.config/zellij/plugins/weather-pal.wasm"
-      }
-    }
     pane {
       focus true
       name "☔ or 🌞❓"
       command "sh"
       args "/home/jm/.local/scripts/wttrIn.sh"
+    }
+  }
+}
+keybinds{
+  locked {
+    bind "Alt o" { 
+      LaunchOrFocusPlugin "file:/home/jm/.config/zellij/plugins/weather-pal.wasm" {
+        floating true
+      } 
+    }
+    bind "Alt o" {
+      ToggleFloatingPanes;
     }
   }
 }

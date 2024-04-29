@@ -55,7 +55,7 @@ layout {
       }
     }
   }
-  tab {
+  tab name="Overview" {
     pane split_direction="horizontal" {
       pane {
         size "75%"
@@ -66,6 +66,35 @@ layout {
       }
       pane {
         cwd "~/.config"
+      }
+    }
+  }
+  tab name="Neovim" {
+    pane split_direction="horizontal" {
+      pane {
+        size "75%"
+        focus true
+        borderless true
+        cwd "~/.config/nvim/"
+        command "yazi"
+      }
+      pane {
+        cwd "~/.config/nvim/"
+      }
+    }
+  }
+  tab name="FishShell" {
+    pane split_direction="horizontal" {
+      pane {
+        size "75%"
+        focus true
+        borderless true
+        cwd "~/.config/fish/"
+        command "nvim"
+        args "config.fish"
+      }
+      pane {
+        cwd "~/.config/fish/"
       }
     }
   }
