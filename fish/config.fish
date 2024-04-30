@@ -62,7 +62,7 @@ end
 abbr -a cat bat
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
-abbr -a peaclock peaclock --config-dir ~/.config/.peaclock
+abbr -a peaclock peaclock --config-dir ~/.config/peaclock
 abbr -a sup yay -Syu
 abbr -a skype snap run skype
 abbr -a t 'clear && task'

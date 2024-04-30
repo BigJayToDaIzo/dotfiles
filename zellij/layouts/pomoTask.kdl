@@ -65,7 +65,7 @@ layout {
         }
         pane size="30%"{
           command "peaclock"
-          args "--config-dir" "/home/jm/.config/.peaclock"
+          args "--config-dir" "/home/jm/.config/peaclock"
           name ""
         }
         pane size=4 { // pomotimer
