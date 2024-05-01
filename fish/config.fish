@@ -55,6 +55,11 @@ function yy
     rm -f -- "$tmp"
 end
 
+function sup
+    yay -Syu
+    cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
+end
+
 
 #
 # ALIAS / ABBREVIATIONS transition away from alias
@@ -63,7 +68,6 @@ abbr -a cat bat
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/peaclock
-abbr -a sup yay -Syu
 abbr -a skype snap run skype
 abbr -a t 'clear && task'
 abbr -a ta task

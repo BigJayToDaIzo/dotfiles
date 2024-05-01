@@ -2,7 +2,7 @@ layout {
   default_tab_template {
     children
     pane size=1 borderless=true {
-      plugin location="http://github.com/dj95/zjstatus/releases/download/v0.14.0/zjstatus.wasm" {
+      plugin location="https://github.com/dj95/zjstatus/releases/download/v0.14.1-rc1/zjstatus.wasm" {
         format_left   "{mode} #[fg=#89b4fa,bold]{session}"
         format_center "{tabs}"
         format_right  "{command_git_branch} {datetime}{notifications}"
@@ -55,105 +55,22 @@ layout {
       }
     }
   }
-  tab name="Overview" focus=true cwd="~/.config/" {
-    pane split_direction="horizontal" {
-      pane {
-        size "75%"
+  tab name="Go Develop" cwd="~/Projects/personal/learn/golang" {
+    pane split_direction="vertical" {
+      pane size="75%"  {
         focus true
         borderless true
         command "nvim"
       }
-      pane 
-    }
-  }
-  tab name="Neovim" cwd="~/.config/nvim" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-        args "init.lua"
+      pane split_direction="horizontal"{
+        pane { 
+          command "air" 
+        } 
+        pane stacked=true {
+          pane expanded=true
+          pane
+        }
       }
-      pane 
     }
-  }
-  tab name="Fish Shell" cwd="~/.config/fish" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-        args "config.fish"
-      }
-      pane 
-    }
-  }
-  tab name="Hyprland" cwd="~/.config/hypr" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-        args "hyprland.conf"
-      }
-      pane 
-    }
-  }
-  tab name="Kitty" cwd="~/.config/kitty" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-        args "kitty.conf"
-      }
-      pane 
-    }
-  }
-  tab name="Starship" cwd="~/.config/starship" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-        args "starship.toml"
-      }
-      pane 
-    }
-  }
-  tab name="Waybar" cwd="~/.config/waybar" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-        args "config"
-      }
-      pane 
-    }
-  }
-  tab name="Yazi" cwd="~/.config/yazi" {
-    pane split_direction="horizontal" {
-      pane {
-        start_suspended true
-        size "75%"
-        focus true
-        borderless true
-        command "nvim"
-      }
-      pane 
-    }
-  }
+  }  
 }
