@@ -105,7 +105,7 @@ layout {
       pane 
     }
   }
-  tab name="Kitty" cwd="~/.config/kitty" {
+  tab name="Wezterm" cwd="~/.config/wezterm" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -113,7 +113,7 @@ layout {
         focus true
         borderless true
         command "nvim"
-        args "kitty.conf"
+        args "wezterm.lua"
       }
       pane 
     }

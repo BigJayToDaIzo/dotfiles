@@ -26,49 +26,49 @@ iced_out_os = '#09ecf8'
 [palettes.super_dank_mellow]
 
 [character]
-success_symbol = '[ ](char_success_fg)'
-error_symbol = '[ ](char_poobie_fg)'
-vimcmd_symbol = '[ ](time_fg)'
-vimcmd_replace_one_symbol = '[ ](time_fg)'
-vimcmd_replace_symbol = '[ ](char_poobie_fg)'
-vimcmd_visual_symbol = '[ ](user_fg)'
+success_symbol = '[󱞩](char_success_fg)'
+error_symbol = '[](char_poobie_fg)'
+vimcmd_symbol = '[](time_fg)'
+vimcmd_replace_one_symbol = '[](time_fg)'
+vimcmd_replace_symbol = '[](char_poobie_fg)'
+vimcmd_visual_symbol = '[](user_fg)'
 
 [cmd_duration]
 format = '[\[󱎫 $duration\]](time_fg)'
 
 [directory]
 style = 'directory_fg'
-read_only = ' '
+read_only = ''
 read_only_style = 'char_poobie_fg'
-home_symbol = ' '
+home_symbol = ''
 
 [env_var.USER]
-format = '[$env_value@](user_fg)'
+format = '[$env_value.](user_fg)'
 
 [fill]
 symbol = ' '
 
 [git_branch]
 symbol = ' '
-format = '[ \[$symbol$branch\]](char_success_fg)'
+format = '[\[$symbol$branch\]](char_success_fg)'
 
 [git_commit]
-tag_symbol = ' '
+tag_symbol = ''
 
 [git_metrics]
 disabled = false
-format = '(([ \[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
+format = '(([\[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
 
 [git_status]
-conflicted = '󱃟 '
+conflicted = '󱃟'
 stashed = '󰘓'
 untracked = '󰡯'
 format = '([\[$all_status$ahead_behind\]](clock_fg))'
 
 [hostname]
 ssh_only = false
-ssh_symbol = '󰣀 '
-format = '[$hostname($ssh_symbol)󱝆 ](user_fg)'
+ssh_symbol = '󰣀'
+format = '[$hostname($ssh_symbol)@ ](user_fg)'
 
 [line_break]
 disabled = true
@@ -79,18 +79,18 @@ disabled = false
 format = '[  $ram( | $swap)](char_poobie_fg)'
 
 [os]
-disabled = false
+disabled = true
 format = '[$symbol](iced_out_os)'
 
 [os.symbols]
-Arch = ' '
+Arch = ''
 NixOS = ' '
 Ubuntu = ' '
 Windows = ' '
 
 [sudo]
 disabled = false
-format = '[󰒃 ](char_poobie_fg)'
+format = '[󰒃](char_poobie_fg)'
 
 [status]
 disabled = false
