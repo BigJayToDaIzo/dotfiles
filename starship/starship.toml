@@ -1,8 +1,8 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-$os$env_var$hostname$directory$all$cmd_duration$fill$time
-$sudo$status$character
+$sudo$os$env_var$hostname$directory$all$cmd_duration$fill$time
+$status$character
 """
 
 # Must add ALL the package possiblities by hand because $all is forcing a newline
@@ -38,9 +38,9 @@ format = '[\[󱎫 $duration\]](time_fg)'
 
 [directory]
 style = 'directory_fg'
-read_only = ''
+read_only = ' '
 read_only_style = 'char_poobie_fg'
-home_symbol = ''
+home_symbol = ' '
 
 [env_var.USER]
 format = '[$env_value.](user_fg)'
@@ -50,7 +50,7 @@ symbol = ' '
 
 [git_branch]
 symbol = ' '
-format = '[\[$symbol$branch\]](char_success_fg)'
+format = '[ \[$symbol$branch\]](char_success_fg)'
 
 [git_commit]
 tag_symbol = ''
@@ -67,8 +67,8 @@ format = '([\[$all_status$ahead_behind\]](clock_fg))'
 
 [hostname]
 ssh_only = false
-ssh_symbol = '󰣀'
-format = '[$hostname($ssh_symbol)@ ](user_fg)'
+ssh_symbol = '󰣀 '
+format = '[$hostname($ssh_symbol)@](user_fg)'
 
 [line_break]
 disabled = true
@@ -79,18 +79,18 @@ disabled = false
 format = '[  $ram( | $swap)](char_poobie_fg)'
 
 [os]
-disabled = true
+disabled = false
 format = '[$symbol](iced_out_os)'
 
 [os.symbols]
-Arch = ''
+Arch = ' '
 NixOS = ' '
 Ubuntu = ' '
 Windows = ' '
 
 [sudo]
 disabled = false
-format = '[󰒃](char_poobie_fg)'
+format = '[󰒃 ](char_poobie_fg)'
 
 [status]
 disabled = false

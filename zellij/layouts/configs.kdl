@@ -21,7 +21,7 @@ layout {
 
         mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
         mode_locked "#[bg=#CF142B]  LOCKED "
-        mode_session "#[fg=#333333,bg=green] 🖳 {name} "
+        mode_session "#[fg=#333333,bg=green] 󰹑 {name} "
         mode_resize "#[fg=#333333,bg=#FF6700]  {name} "
         mode_pane "#[fg=#333333,bg=green]  {name} "
         mode_tab "#[fg=#333333,bg=green] ⭾ {name} "
@@ -131,7 +131,7 @@ layout {
       pane 
     }
   }
-  tab name="Waybar" cwd="~/.config/waybar" {
+  tab name="Ags" cwd="~/.config/ags" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -139,7 +139,7 @@ layout {
         focus true
         borderless true
         command "nvim"
-        args "config"
+        args "config.js"
       }
       pane 
     }
