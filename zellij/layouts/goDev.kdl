@@ -13,8 +13,8 @@ layout {
         border_format   "#[fg=#6c7086]{char}"
         border_position "top"
         
-        notification_format_unread           "#[fg=#89b4fa,bg=#181825,blink]  #[fg=#89b4fa,bg=#181825] {message} "
-        notification_format_no_notifications "#[fg=#89b4fa,bg=#181825,dim]   "
+        notification_format_unread           "#[fg=#89b4fa,blink]  #[fg=#89b4fa] {message} "
+        notification_format_no_notifications "#[fg=#89b4fa,dim]   "
         notification_show_interval           "10"
 
         hide_frame_for_single_pane "true"
