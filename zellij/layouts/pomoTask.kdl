@@ -61,7 +61,7 @@ layout {
         pane {
           command "cbonsai"
           borderless true
-          args "-li" "-t 0.1" 
+          args "-li" "-t 0.5" 
         }
         pane size="30%"{
           command "peaclock"

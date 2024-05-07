@@ -188,7 +188,7 @@ plugins {
 //   - detach (Default)
 //   - quit
 //
-on_force_close "quit"
+// on_force_close "quit"
 
 //  Send a request for a simplified ui (without arrow fonts) to plugins
 //  Options:
@@ -309,7 +309,7 @@ default_mode "locked"
 // Examples:
 //
 // copy_command "xclip -selection clipboard" // x11
-// copy_command "wl-copy"                    // wayland
+copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
 
 // Choose the destination for copied text
@@ -350,4 +350,4 @@ default_mode "locked"
 // May need to be disabled for certain unsupported terminals
 // Default: true
 //
-styled_underlines false
+// styled_underlines false

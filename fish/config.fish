@@ -46,6 +46,31 @@ if status is-login
 end
 
 
+
+
+
+#
+# ALIAS / ABBREVIATIONS transition away from alias
+##################################################
+abbr -a cat bat
+function edg 
+    command exercism download --track=go --exercise=$argv[1]
+end
+# abbr -a edr exercism download --track=rust --exercise=
+abbr -a es exercism submit 
+abbr -a ls eza --long --header --icons --git
+abbr -a lsc eza --all --long --header --icons --git --git-ignore
+abbr -a peaclock peaclock --config-dir ~/.config/peaclock
+abbr -a skype snap run skype
+function sup
+    yay -Syu
+    rustup update
+    cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
+end
+abbr -a t 'clear && task'
+abbr -a ta task
+abbr -a vi nvim
+abbr -a yazi yy
 function yy
     set tmp (mktemp -t "yazi-cwd.XXXXX")
     yazi $argv --cwd-file="$tmp"
@@ -54,25 +79,6 @@ function yy
     end
     rm -f -- "$tmp"
 end
-
-function sup
-    yay -Syu
-    cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
-end
-
-
-#
-# ALIAS / ABBREVIATIONS transition away from alias
-##################################################
-abbr -a cat bat
-abbr -a ls eza --long --header --icons --git
-abbr -a lsc eza --all --long --header --icons --git --git-ignore
-abbr -a peaclock peaclock --config-dir ~/.config/peaclock
-abbr -a skype snap run skype
-abbr -a t 'clear && task'
-abbr -a ta task
-abbr -a vi nvim
-abbr -a yazi yy
 abbr -a za zellij a
 function zd
     command zellij delete-session $argv[1] --force

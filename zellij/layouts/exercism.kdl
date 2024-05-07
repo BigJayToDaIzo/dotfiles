@@ -55,8 +55,32 @@ layout {
       }
     }
   }
-  pane split_direction="horizontal" {
-    pane size="70%"
-    pane
-  }  
+  tab cwd="~/exercism/go" name="Go" focus=true {
+    pane split_direction="vertical" {
+      pane size="65%" {
+        focus true  
+        command "nvim"
+      }
+      pane name="Test"
+      
+    }  
+  }
+  tab cwd="~/exercism/rust" name="Rust"{
+    pane split_direction="vertical" {
+      pane size="65%" {
+        focus true  
+        command "nvim"
+      }
+      pane name="Test"
+    }  
+  }
+  tab cwd="~/exercism/lua" name="Lua"{
+    pane split_direction="vertical" {
+      pane size="65%" {
+        focus true  
+        command "nvim"
+      }
+      pane name="Test"
+    }  
+  }
 }
