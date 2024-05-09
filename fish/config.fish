@@ -44,17 +44,12 @@ if status is-login
     fundle init
 
 end
-
-
-
-
-
 #
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
 abbr -a cat bat
-function edg 
-    command exercism download --track=go --exercise=$argv[1]
+function ed 
+    command exercism download --track=$argv[1] --exercise=$argv[2]
 end
 # abbr -a edr exercism download --track=rust --exercise=
 abbr -a es exercism submit 
@@ -62,11 +57,7 @@ abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/peaclock
 abbr -a skype snap run skype
-function sup
-    yay -Syu
-    rustup update
-    cargo install $(cargo install --list | egrep '^[a-z0-9_-]+ v[0-9.]+:$' | cut -f1 -d' ')
-end
+abbr -a sup topgrade
 abbr -a t 'clear && task'
 abbr -a ta task
 abbr -a vi nvim

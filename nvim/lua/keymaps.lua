@@ -24,6 +24,8 @@ vim.keymap.set("n", "<leader>nt", "<cmd>Noice telescope<cr>", { desc = "[N]oice 
 vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]uffer" })
 vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]uffer" })
 vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "[P]revious [B]uffer" })
+vim.keymap.set("n", "<leader>br", "<cmd>BufferLineMoveNext<CR>", { desc = "[B]uffer Move [R]ight" })
+vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineMovePrev<CR>", { desc = "[B]uffer Move [L]eft" })
 vim.keymap.set("n", "H", "<cmd>BufferLineCyclePrev<cr>")
 vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
 vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
