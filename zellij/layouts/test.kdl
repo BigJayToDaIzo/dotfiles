@@ -1,0 +1,11 @@
+layout cwd="/tmp" {
+  tab name="Tab 1" cwd="/mnt" {
+    pane name="Pane 1" {
+
+    }
+    floating_panes {
+      pane name="Floating pane #1"
+    }
+  }
+}
+

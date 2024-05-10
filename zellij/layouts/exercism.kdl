@@ -83,4 +83,13 @@ layout {
       pane name="Test"
     }  
   }
+  tab cwd="~/exercism/awk" name="Awk"{
+    pane split_direction="vertical" {
+      pane size="65%" {
+        focus true  
+        command "nvim"
+      }
+      pane name="Test"
+    }  
+  }
 }
