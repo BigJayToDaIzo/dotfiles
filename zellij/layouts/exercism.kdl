@@ -92,4 +92,14 @@ layout {
       pane name="Test"
     }  
   }
+  tab cwd="~/exercism/gleam" name="Gleam"{
+    pane split_direction="vertical" {
+      pane size="65%" {
+        name "The Pristine Code"
+        focus true  
+        command "nvim"
+      }
+      pane name="Blinged Out Tests"
+    }  
+  }
 }
