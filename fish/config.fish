@@ -15,8 +15,12 @@ if status is-login
     set -xg CARGO_HOME $HOME/.cargo
     # Go shits
     set -xg GOPATH $HOME/go
+    # Lua shits
+    set -xg LUAPATH $HOME/.luarocks
+    # SuperSlicer
+    set -xg SUPERSLICERPATH $HOME/SuperSlicer
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LOCALSCRIPTS
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS $SUPERSLICERPATH/bin
 
     # PLUGIN CONFIG
     ###############
@@ -49,13 +53,26 @@ end
 ##################################################
 abbr -a cat bat
 function ed 
-    command exercism download --track=$argv[1] --exercise=$argv[2]
+    set track (pwd | rg '.*/exercism/(.+)?/' -or '$1')
+    command exercism download --track=$track --exercise=$argv[1]
 end
-# abbr -a edr exercism download --track=rust --exercise=
-abbr -a es exercism submit 
+function shipit
+    set track (pwd | rg '.*/exercism/(.+)/.*' -or '$1')
+    command $track test && exercism submit $argv[1]
+end
+function shipitc
+    cd build
+    command cmake -G "Unix Makefiles" .. 
+    cd ..
+    exercism submit $argv[1]
+end
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/peaclock
+function shipit
+    set track (pwd | rg '.*/exercism/(.+)?/' -or '$1')
+    command $track test && exercism submit $argv[1]
+end
 abbr -a skype snap run skype
 abbr -a sup topgrade
 abbr -a t 'clear && task'

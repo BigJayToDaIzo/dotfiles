@@ -58,6 +58,7 @@ layout {
   tab cwd="~/exercism/go" name="Go" focus=true {
     pane split_direction="vertical" {
       pane size="65%" {
+        name " 🐹"
         focus true  
         command "nvim"
       }
@@ -68,6 +69,7 @@ layout {
   tab cwd="~/exercism/rust" name="Rust"{
     pane split_direction="vertical" {
       pane size="65%" {
+        name "🦀"
         focus true  
         command "nvim"
       }
@@ -77,6 +79,7 @@ layout {
   tab cwd="~/exercism/lua" name="Lua"{
     pane split_direction="vertical" {
       pane size="65%" {
+        name "🌔"
         focus true  
         command "nvim"
       }
@@ -86,6 +89,7 @@ layout {
   tab cwd="~/exercism/awk" name="Awk"{
     pane split_direction="vertical" {
       pane size="65%" {
+        name " 🐧"
         focus true  
         command "nvim"
       }
@@ -102,4 +106,24 @@ layout {
       pane name="Blinged Out Tests"
     }  
   }
+  tab cwd="~/exercism/cpp" name="C++"{
+    pane split_direction="vertical" {
+      pane size="65%" {
+        name "The Old Magic"
+        focus true  
+        command "nvim"
+      }
+      pane name="Tests"
+    }  
+  }
+}
+keybinds {
+    normal {
+        bind "o" { SwitchToMode "Session"; }
+        bind "p" { SwitchToMode "Pane"; }
+        bind "n" { SwitchToMode "Resize"; }
+        bind "h" { SwitchToMode "Move"; }
+        bind "s" { SwitchToMode "Scroll"; }
+        bind "t" { SwitchToMode "Tab"; }
+    }
 }

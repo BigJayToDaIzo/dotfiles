@@ -8,7 +8,7 @@ config.keys = {}
 
 config.color_scheme = "Catppuccin Macchiato (Gogh)"
 config.font = wezterm.font_with_fallback({
-	"Liberation Mono",
+	"0xProto",
 	{ family = "Symbols Nerd Font Mono", scale = 0.8 },
 })
 config.font_size = 16
