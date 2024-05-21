@@ -17,11 +17,8 @@ if status is-login
     set -xg GOPATH $HOME/go
     # Lua shits
     set -xg LUAPATH $HOME/.luarocks
-    # SuperSlicer
-    set -xg SUPERSLICERPATH $HOME/SuperSlicer
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS $SUPERSLICERPATH/bin
-
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS 
     # PLUGIN CONFIG
     ###############
     # Tacklebox Plugin
