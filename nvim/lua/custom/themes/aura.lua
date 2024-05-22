@@ -10,7 +10,7 @@ return {
 			-- vim.cmd [[colorscheme aura-dark]]
 			-- vim.cmd [[colorscheme aura-dark-soft-text]]
 			-- vim.cmd [[colorscheme aura-soft-dark]]
-			-- vim.cmd [[colorscheme aura-dark-soft-text]]
+			vim.cmd([[colorscheme aura-soft-dark-soft-text]])
 		end,
 	},
 }
