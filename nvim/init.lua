@@ -37,12 +37,7 @@ require("lazy").setup({
 	-- Set the THEMES
 	{ event = "VimEnter", import = "custom.themes" },
 
-	-- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
-	-- NOTE: Plugins can also be added by using a table,
-	-- with the first argument being the link and the following
-	-- keys can be used to configure plugin behavior/loading/etc.
-	--
 	-- Use `opts = {}` to force a plugin to be loaded.
 	--  This is equivalent to:
 	--    require('Comment').setup({})
@@ -106,6 +101,7 @@ require("lazy").setup({
 				["<leader>i"] = { name = "[I]con Picker ⛏ ", _ = "which_key_ignore" },
 				["<leader>n"] = { name = "[N]oice  ", _ = "which_key_ignore" },
 				["<leader>o"] = { name = "T[o]do  ", _ = "which_key_ignore" },
+				["<leader>p"] = { name = "[P]recognition 👁️", _ = "which_key_ignore" },
 				["<leader>r"] = { name = "[R]ename  ", _ = "which_key_ignore" },
 				["<leader>s"] = { name = "[S]earch  ", _ = "which_key_ignore" },
 				["<leader>w"] = { name = "[W]orkspace 󱎃 ", _ = "which_key_ignore" },

@@ -10,6 +10,9 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 -- turn off Ctrl-Z quit cuz I hate it
 vim.keymap.set("n", "<C-z>", "<Nop>")
 
+-- Precognition binds
+vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
+
 -- Folke Noice keymaps <leader>n on which-key
 vim.keymap.set("n", "<leader>nh", "<cmd>Noice<cr>", { desc = "[N]oice [H]isory" })
 vim.keymap.set("n", "<leader>nl", "<cmd>Noice last<cr>", { desc = "[N]oice [L]ast" })

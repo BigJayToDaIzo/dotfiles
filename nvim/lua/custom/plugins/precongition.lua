@@ -1,4 +1,6 @@
 return {
 	"tris203/precognition.nvim",
-	config = {},
+	opts = {
+		showBlankVirtLine = false,
+	},
 }

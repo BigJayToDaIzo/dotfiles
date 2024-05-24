@@ -75,7 +75,7 @@ abbr -a sup topgrade
 abbr -a t 'clear && task'
 abbr -a ta task
 abbr -a vi nvim
-abbr -a yazi yy
+abbr -a y yy
 function yy
     set tmp (mktemp -t "yazi-cwd.XXXXX")
     yazi $argv --cwd-file="$tmp"
