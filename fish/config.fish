@@ -50,18 +50,21 @@ end
 ##################################################
 abbr -a cat bat
 function ed 
-    set track (pwd | rg '.*/exercism/(.+)?/' -or '$1')
+    set track (pwd | rg '.*/exercism/(.+)?/+*' -or '$1')
     command exercism download --track=$track --exercise=$argv[1]
+    cd $argv[1]
 end
 function shipit
     set track (pwd | rg '.*/exercism/(.+)/.*' -or '$1')
-    command $track test && exercism submit $argv[1]
+    command $track test && exercism submit 
+    cd ..
 end
 function shipitc
     cd build
     command cmake -G "Unix Makefiles" .. 
     cd ..
-    exercism submit $argv[1]
+    #update this to run test suite before submitting
+    exercism submit
 end
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
