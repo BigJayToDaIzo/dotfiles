@@ -278,7 +278,7 @@ themes {
 // Default: default
 // The name of the default layout to load on startup
 // Default: "default"
-theme "everforest-dark"
+theme "dracula"
 //
 default_layout "welcome"
 

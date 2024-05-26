@@ -95,7 +95,7 @@ require("lazy").setup({
 			-- Document existing key chains
 			require("which-key").register({
 				-- ['<leader>c'] = { name = '[C]ode, _ = 'which_key_ignore' },
-				["<leader>b"] = { name = "[B]uffers", _ = "which_key_ignore" },
+				["<leader>b"] = { name = "[B]buffers", _ = "which_key_ignore" },
 				["<leader>c"] = { name = "[C]opilot GTP-4  ", _ = "which_key_ignore" },
 				["<leader>d"] = { name = "[D]ocument 🗎 ", _ = "which_key_ignore" },
 				["<leader>i"] = { name = "[I]con Picker ⛏ ", _ = "which_key_ignore" },
@@ -294,7 +294,7 @@ require("lazy").setup({
 
 					-- Fuzzy find all the symbols in your current document.
 					--  Symbols are things like variables, functions, types, etc.
-					map("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]ymbols")
+					map("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]symbols")
 
 					-- Fuzzy find all the symbols in your current workspace
 					--  Similar to document symbols, except searches over your whole project.
@@ -513,21 +513,9 @@ require("lazy").setup({
 			-- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 			---@diagnostic disable-next-line: missing-fields
 			require("nvim-treesitter.configs").setup({
-				ensure_installed = {
-					"bash",
-					"c",
-					"html",
-					"lua",
-					"markdown",
-					"vim",
-					"vimdoc",
-					"javascript",
-					"typescript",
-					"go",
-					"rust",
-				},
+				ensure_installed = {},
 				-- Autoinstall languages that are not installed
-				auto_install = true,
+				auto_install = false,
 				highlight = { enable = true },
 				indent = { enable = true },
 				vim.filetype.add({ pattern = { [".*/hypr/.*%.conf"] = "hyprlang" } }),
