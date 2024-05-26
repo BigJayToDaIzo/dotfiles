@@ -58,7 +58,7 @@ layout {
   tab cwd="~/exercism/go" name="Go" focus=true {
     pane split_direction="vertical" {
       pane size="65%" {
-        name " 🐹"
+        name ""
         focus true  
         command "nvim"
       }

@@ -18,7 +18,7 @@ time_fg = '#fcf77c'
 char_success_fg = '#07be61'
 char_poobie_fg = '#be0c07'
 directory_fg = '#f089fc'
-package_fg = '#0000ff'
+package_fg = '#82eefd'
 package_bg = '#727f72'
 iced_out_os = '#09ecf8'
 
@@ -40,7 +40,7 @@ format = '[\[󱎫 $duration\]](time_fg)'
 style = 'directory_fg'
 read_only = ' '
 read_only_style = 'char_poobie_fg'
-home_symbol = ' '
+home_symbol = '󰋜 '
 
 [env_var.USER]
 format = '[$env_value.](user_fg)'
@@ -160,7 +160,7 @@ format = '[\[$symbol$branch\]](package_fg)'
 format = '[\[$symbol$account(@$domain)(\($region\))\]](package_fg)'
 
 [golang]
-symbol = ' '
+symbol = ' '
 format = '[\[$symbol($version)\]](fg:package_fg)'
 
 [gradle]

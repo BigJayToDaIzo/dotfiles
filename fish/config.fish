@@ -56,23 +56,12 @@ function ed
 end
 function shipit
     set track (pwd | rg '.*/exercism/(.+)/.*' -or '$1')
-    command $track test && exercism submit 
+    $track test && exercism submit 
     cd ..
-end
-function shipitc
-    cd build
-    command cmake -G "Unix Makefiles" .. 
-    cd ..
-    #update this to run test suite before submitting
-    exercism submit
 end
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/peaclock
-function shipit
-    set track (pwd | rg '.*/exercism/(.+)?/' -or '$1')
-    command $track test && exercism submit $argv[1]
-end
 abbr -a skype snap run skype
 abbr -a sup topgrade
 abbr -a t 'clear && task'
