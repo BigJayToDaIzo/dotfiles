@@ -245,32 +245,46 @@ scrollback_lines_to_serialize 10000
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
-themes {
-    dracula {
-        fg 248 248 242
-        bg 40 42 54
-        red 255 85 85
-        green 80 250 123
-        yellow 241 250 140
-        blue 98 114 164
-        magenta 255 121 198
-        orange 255 184 108
-        cyan 139 233 253
-        black 0 0 0
-        white 255 255 255
+theme "tokyo-night-storm"
+themes { 
+    nord {
+        fg "#D8DEE9"
+        bg "#2E3440"
+        black "#3B4252"
+        red "#BF616A"
+        green "#A3BE8C"
+        yellow "#EBCB8B"
+        blue "#81A1C1"
+        magenta "#B48EAD"
+        cyan "#88C0D0"
+        white "#E5E9F0"
+        orange "#D08770"
     }
-    everforest-dark {
-        bg "#2b3339"
-        fg "#d3c6aa"
-        black "#4b565c"
-        red "#e67e80"
-        green "#a7c080"
-        yellow "#dbbc7f"
-        blue "#7fbbb3"
-        magenta "#d699b6"
-        cyan "#83c092"
-        white "#d3c6aa"
-        orange "#FF9E64"
+    pencil-light {
+        fg "#005F87"
+        bg "#f1f1f1"
+        black "#f1f1f1"
+        red "#B6D6FD"
+        green "#10A778"
+        yellow "#A89C14"
+        blue "#008EC4"
+        magenta "#B6D6FD"
+        cyan "#20A5BA"
+        white "#424242"
+        orange "#D75F5F"
+    }
+    tokyo-night-storm {
+        fg 169 177 214
+        bg 36 40 59
+        black 56 62 90
+        red 249 51 87
+        green 158 206 106
+        yellow 224 175 104
+        blue 122 162 247
+        magenta 187 154 247
+        cyan 42 195 222
+        white 192 202 245
+        orange 255 158 100
     }
 }
 
@@ -278,7 +292,6 @@ themes {
 // Default: default
 // The name of the default layout to load on startup
 // Default: "default"
-theme "dracula"
 //
 default_layout "welcome"
 

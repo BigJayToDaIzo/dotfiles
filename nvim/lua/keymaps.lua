@@ -24,12 +24,12 @@ vim.keymap.set("n", "<leader>ns", "<cmd>Noice stats<cr>", { desc = "[N]oice [S]t
 vim.keymap.set("n", "<leader>nt", "<cmd>Noice telescope<cr>", { desc = "[N]oice [ ]" })
 
 -- Buffer based keymaps
-vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]uffer" })
-vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]uffer" })
-vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "[P]revious [B]uffer" })
-vim.keymap.set("n", "<leader>br", "<cmd>BufferLineMoveNext<CR>", { desc = "[B]uffer Move [R]ight" })
-vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineMovePrev<CR>", { desc = "[B]uffer Move [L]eft" })
-vim.keymap.set("n", "<leader>bo", "<cmd>BufferLineCloseOthers<CR>", { desc = "[B]uffer Close [O]thers" })
+vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]buffer" })
+vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]buffer" })
+vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "[P]revious [B]buffer" })
+vim.keymap.set("n", "<leader>br", "<cmd>BufferLineMoveNext<CR>", { desc = "[B]buffer Move [R]ight" })
+vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineMovePrev<CR>", { desc = "[B]buffer Move [L]eft" })
+vim.keymap.set("n", "<leader>bo", "<cmd>BufferLineCloseOthers<CR>", { desc = "[B]buffer Close [O]thers" })
 vim.keymap.set("n", "H", "<cmd>BufferLineCyclePrev<cr>")
 vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
 vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
@@ -67,7 +67,7 @@ end, { desc = "Toggle [T]rouble [R]eferences" })
 
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+-- vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("n", "<M-Space>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey menu" })
 --Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows

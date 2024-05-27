@@ -1,10 +1,19 @@
 return {
-	"DreamMaoMao/yazi.nvim",
+	"mikavilpas/yazi.nvim",
 	dependencies = {
-		"nvim-telescope/telescope.nvim",
 		"nvim-lua/plenary.nvim",
 	},
+	event = "VeryLazy",
 	keys = {
-		{ "<leader>e", "<cmd>Yazi<CR>", desc = "Toggle Yazi" },
+    {
+		"<leader>e",
+		function()
+			require("yazi").yazi()
+		end,
+		desc = "Open Yazi",
+    },
+	},
+	opts = {
+		open_for_directories = true,
 	},
 }

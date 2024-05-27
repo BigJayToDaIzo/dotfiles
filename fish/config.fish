@@ -72,6 +72,7 @@ abbr -a t 'clear && task'
 abbr -a ta task
 abbr -a vi nvim
 abbr -a y yy
+abbr -a yazi yy
 function yy
     set tmp (mktemp -t "yazi-cwd.XXXXX")
     yazi $argv --cwd-file="$tmp"

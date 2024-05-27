@@ -4,6 +4,10 @@
 
 [manager]
 
+[[manager.prepend_keymap]]
+on = ["<Right>"]
+run = "shell --block --confirm lazygit"
+
 keymap = [
   { on = [
     "<Esc>",
