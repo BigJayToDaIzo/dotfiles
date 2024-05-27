@@ -63,7 +63,11 @@ abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
 abbr -a peaclock peaclock --config-dir ~/.config/peaclock
 abbr -a skype snap run skype
-abbr -a sup topgrade
+function sup 
+    sudo pacman -Su && sudo powerpill -Su && yay -Su
+    topgrade
+
+end
 abbr -a t 'clear && task'
 abbr -a ta task
 abbr -a vi nvim
