@@ -37,7 +37,6 @@ if status is-login
     set -xg fzf_diff_highlighter delta --paging=never --width=40
     set -xg fzf_fd_opts --hidden --max-depth 3
 
-    # Fundle Plugin
     # Like Tacklebox, you must declare fundle plugins before you initalize
     fundle plugin edc/bass
     fundle plugin tuvistavie/oh-my-fish-core
@@ -66,7 +65,6 @@ abbr -a skype snap run skype
 function sup 
     sudo pacman -Su && sudo powerpill -Su && yay -Su
     topgrade
-
 end
 abbr -a t 'clear && task'
 abbr -a ta task
