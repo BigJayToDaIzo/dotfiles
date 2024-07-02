@@ -8,20 +8,23 @@ layout {
         format_right  "{command_git_branch} {datetime}{notifications}"
         format_space  ""
 
+        format_hide_on_overlength "true"
+        format_precedence "clr"
+
         border_enabled  "false"
         border_char     "─"
         border_format   "#[fg=#6c7086]{char}"
         border_position "top"
         
-        notification_format_unread           "#[fg=#89b4fa,blink]  #[fg=#89b4fa] {message} "
-        notification_format_no_notifications "#[fg=#89b4fa,dim]   "
+        notification_format_unread           "#[fg=#89b4fa,bg=#181825,blink]  #[fg=#89b4fa,bg=#181825] {message} "
+        notification_format_no_notifications "#[fg=#89b4fa,bg=#181825,dim]   "
         notification_show_interval           "10"
 
         hide_frame_for_single_pane "true"
 
         mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
         mode_locked "#[bg=#CF142B]  LOCKED "
-        mode_session "#[fg=#333333,bg=green] 󰹑 {name} "
+        mode_session "#[fg=#333333,bg=green] 🖳 {name} "
         mode_resize "#[fg=#333333,bg=#FF6700]  {name} "
         mode_pane "#[fg=#333333,bg=green]  {name} "
         mode_tab "#[fg=#333333,bg=green] ⭾ {name} "
