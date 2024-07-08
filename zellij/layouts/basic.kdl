@@ -2,7 +2,7 @@ layout {
   default_tab_template {
     children
     pane size=1 borderless=true {
-      plugin location="file:/home/jm/.config/zellij/plugins/zjstatus.wasm" {
+      plugin location="zjstatus" {
         format_left   "{mode} #[fg=#89b4fa,bold]{session}"
         format_center "{tabs}"
         format_right  "{command_git_branch} {datetime}{notifications}"
@@ -15,7 +15,18 @@ layout {
         border_char     "─"
         border_format   "#[fg=#6c7086]{char}"
         border_position "top"
-        
+
+        tab_normal   "#[fg=#6C7086] {index}::{name} "
+        tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
+        tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
+        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+        tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_separator "#[fg=#89B4FA]|"
+        tab_display_count "3"
+        tab_truncate_start_format "#[fg=#b4befe] ☾{count}.."
+        tab_truncate_end_format   "#[fg=#b4befe] ..{count}☽"
+
         notification_format_unread           "#[fg=#89b4fa,blink]  #[fg=#89b4fa] {message} "
         notification_format_no_notifications "#[fg=#89b4fa,dim]   "
         notification_show_interval           "10"
@@ -36,16 +47,6 @@ layout {
         mode_move "#[fg=#333333,bg=green]  {name} "
         mode_prompt "#[fg=#333333,bg=green]  {name} "
         mode_default_to_mode "locked"
-
-        tab_normal   "#[fg=#6C7086] {index}::{name} "
-        tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
-        tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
-
-        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
-        tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
-        tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
-
-        tab_separator "#[fg=#89B4FA]❯"
 
         command_git_branch_command     "git rev-parse --abbrev-ref head"
         command_git_branch_format      "#[fg=blue] {stdout} "

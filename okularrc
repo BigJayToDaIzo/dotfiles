@@ -1,0 +1,16 @@
+[Desktop Entry]
+FullScreen=false
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+
+[MainWindow]
+ToolBarsMovable=Disabled
+
+[Recent Files]
+File1[$e]=$HOME/Documents/ebooks/Go/goworkshop.pdf
+Name1[$e]=goworkshop.pdf
+
+[UiSettings]
+ColorScheme=

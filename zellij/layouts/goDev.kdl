@@ -1,0 +1,83 @@
+layout {
+  cwd "/home/jm/Projects/personal/learn/golang/go_tutorials" 
+  default_tab_template {
+    children
+    pane size=1 borderless=true {
+      plugin location="zjstatus" {
+        format_left   "{mode} #[fg=#89b4fa,bold]{session}"
+        format_center "{tabs}"
+        format_right  "{command_git_branch} {datetime}{notifications}"
+        format_space  ""
+        format_hide_on_overlength "true"
+        format_precedence "clr"
+
+        border_enabled  "false"
+        border_char     "─"
+        border_format   "#[fg=#6c7086]{char}"
+        border_position "top"
+        
+        notification_format_unread           "#[fg=#89b4fa,blink]  #[fg=#89b4fa] {message} "
+        notification_format_no_notifications "#[fg=#89b4fa,dim]   "
+        notification_show_interval           "10"
+
+        hide_frame_for_single_pane "true"
+
+        mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
+        mode_locked "#[bg=#CF142B]  LOCKED "
+        mode_session "#[fg=#333333,bg=green] 󰹑 {name} "
+        mode_resize "#[fg=#333333,bg=#FF6700]  {name} "
+        mode_pane "#[fg=#333333,bg=green]  {name} "
+        mode_tab "#[fg=#333333,bg=green] ⭾ {name} "
+        mode_scroll "#[fg=#333333,bg=green] 󰭜 {name} "
+        mode_enter_search "#[fg=#333333,bg=green]  {name} "
+        mode_search "#[fg=#333333,bg=green]  {name} "
+        mode_rename_tab "#[fg=#333333,bg=#FF6700] ⭾ {name} "
+        mode_rename_pane "#[fg=#333333,bg=#FF6700]  {name} "
+        mode_move "#[fg=#333333,bg=green]  {name} "
+        mode_prompt "#[fg=#333333,bg=green]  {name} "
+        mode_default_to_mode "locked"
+
+        tab_normal   "#[fg=#6C7086] {index}::{name} "
+        tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
+        tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
+        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+        tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
+        tab_separator "#[fg=#89B4FA]|"
+        tab_display_count "3"
+        tab_truncate_start_format "#[fg=#b4befe] ☾{count}.."
+        tab_truncate_end_format   "#[fg=#b4befe] ..{count}☽"
+
+        command_git_branch_command     "git rev-parse --abbrev-ref head"
+        command_git_branch_format      "#[fg=blue] {stdout} "
+        command_git_branch_interval    "10"
+        command_git_branch_rendermode  "static"
+
+        datetime        "#[fg=#89b4fa,bold] {format} "
+        datetime_format "%A, %d %b %Y %H:%M"
+        datetime_timezone "America/Chicago"
+      }
+    }
+  }
+  tab name="Stacked"{
+    pane {
+      split_direction "horizontal" 
+      stacked true 
+      pane {
+        expanded true
+        command "nvim"
+      }
+      pane 
+    }  
+  }
+  tab name="Not"{
+    pane {
+      split_direction "horizontal" 
+      pane {
+        size "75%"
+        command "nvim"
+      }
+      pane 
+    }  
+  }
+}

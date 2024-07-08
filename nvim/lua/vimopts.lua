@@ -83,5 +83,5 @@ vim.opt.foldlevel = 99
 
 --Custom autocommands
 --Unclear if this is working, I've yet to see undercurl
--- vim.cmd([[let &t_Cs = "\e[4:3m"]])
--- vim.cmd([[let &t_Ce = "\e[4:0m"]])
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])

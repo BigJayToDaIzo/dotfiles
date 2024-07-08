@@ -53,6 +53,13 @@ function ed
     command exercism download --track=$track --exercise=$argv[1]
     cd $argv[1]
 end
+function gbe
+    cd ..
+    mkdir $argv[1]
+    cd $argv[1]
+    go mod init example.com/$argv[1]
+    touch $argv[1].go
+end
 function shipit
     set track (pwd | rg '.*/exercism/(.+)/.*' -or '$1')
     $track test && exercism submit 

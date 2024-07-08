@@ -98,6 +98,7 @@ require("lazy").setup({
 				["<leader>b"] = { name = "[B]buffers", _ = "which_key_ignore" },
 				["<leader>c"] = { name = "[C]opilot GTP-4  ", _ = "which_key_ignore" },
 				["<leader>d"] = { name = "[D]ocument 🗎 ", _ = "which_key_ignore" },
+				["<leader>e"] = { name = "[E]xecute Yazi File Tree🗎 ", _ = "which_key_ignore" },
 				["<leader>i"] = { name = "[I]con Picker ⛏ ", _ = "which_key_ignore" },
 				["<leader>n"] = { name = "[N]oice  ", _ = "which_key_ignore" },
 				["<leader>o"] = { name = "T[o]do  ", _ = "which_key_ignore" },
@@ -515,7 +516,7 @@ require("lazy").setup({
 			require("nvim-treesitter.configs").setup({
 				ensure_installed = {},
 				-- Autoinstall languages that are not installed
-				auto_install = false,
+				auto_install = true,
 				highlight = { enable = true },
 				indent = { enable = true },
 				vim.filetype.add({ pattern = { [".*/hypr/.*%.conf"] = "hyprlang" } }),

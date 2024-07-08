@@ -3,8 +3,12 @@
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- Diagnostic keymaps
-vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
-vim.keymap.set("n", "]d", vim.diagnostic.goto_next, { desc = "Go to next [D]iagnostic message" })
+vim.keymap.set("n", "[d", function()
+	vim.diagnostic.jump({ count = 1 })
+end, { desc = "Go to previous [D]iagnostic message" })
+vim.keymap.set("n", "]d", function()
+	vim.diagnostic.jump({ count = -1 })
+end, { desc = "Go to next [D]iagnostic message" })
 -- vim.keymap.set('n', '<leader>x', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 -- turn off Ctrl-Z quit cuz I hate it
@@ -46,24 +50,10 @@ vim.keymap.set("n", "<leader>o]", function()
 end, { desc = "Go to next T[o]do" })
 
 -- folke/trouble.vim uses <leader>x* maps to operate
-vim.keymap.set("n", "<leader>xx", function()
-	require("trouble").toggle()
-end, { desc = "Toggle [T]rouble" })
-vim.keymap.set("n", "<leader>xw", function()
-	require("trouble").toggle("workspace_diagnostics")
-end, { desc = "Toggle [T]rouble [W]orkspace" })
-vim.keymap.set("n", "<leader>xd", function()
-	require("trouble").toggle("document_diagnostics")
-end, { desc = "Toggle [T]rouble [D]ocument" })
-vim.keymap.set("n", "<leader>xq", function()
-	require("trouble").toggle("quickfix")
-end, { desc = "Toggle [T]rouble [Q]uickfix" })
-vim.keymap.set("n", "<leader>xl", function()
-	require("trouble").toggle("loclist")
-end, { desc = "Toggle [T]rouble [L]oclist" })
-vim.keymap.set("n", "gR", function()
-	require("trouble").toggle("lsp_references")
-end, { desc = "Toggle [T]rouble [R]eferences" })
+vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Toggle [T]rouble" })
+vim.keymap.set("n", "<leader>xq", "<cmd>Trouble quickfix toggle<cr>", { desc = "Toggle [T]rouble [Q]uickfix" })
+vim.keymap.set("n", "<leader>xl", "<cmd>Trouble loclist toggle<cr>", { desc = "Toggle [T]rouble [L]oclist" })
+vim.keymap.set("n", "<leader>xR", "<cmd>Trouble lsp_references toggle<cr>", { desc = "Toggle [T]rouble [R]eferences" })
 
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
