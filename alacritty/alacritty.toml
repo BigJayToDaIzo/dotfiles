@@ -23,7 +23,7 @@ padding = { x = 5, y = 5 }
 #blur = true  <-- your compositor will most likely handle this too
 [font]
 normal = { family = "0xProto Nerd Font" }
-size = 16
+size = 14
 # builtin_box_drawing = true
 
 [bell]

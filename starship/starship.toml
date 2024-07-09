@@ -26,7 +26,7 @@ iced_out_os = '#09ecf8'
 [palettes.super_dank_mellow]
 
 [character]
-success_symbol = '[󱞩](char_success_fg)'
+success_symbol = '[](char_success_fg)'
 error_symbol = '[](char_poobie_fg)'
 vimcmd_symbol = '[](time_fg)'
 vimcmd_replace_one_symbol = '[](time_fg)'
@@ -38,9 +38,9 @@ format = '[\[󱎫 $duration\]](time_fg)'
 
 [directory]
 style = 'directory_fg'
-read_only = ' '
+read_only = ''
 read_only_style = 'char_poobie_fg'
-home_symbol = '󰋜 '
+home_symbol = '~'
 
 [env_var.USER]
 format = '[$env_value.](user_fg)'
@@ -50,14 +50,14 @@ symbol = ' '
 
 [git_branch]
 symbol = ' '
-format = '[ \[$symbol$branch\]](char_success_fg)'
+format = '[\[$symbol$branch\]](char_success_fg)'
 
 [git_commit]
 tag_symbol = ''
 
 [git_metrics]
 disabled = false
-format = '(([Δ\[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
+format = '(([𝚫\[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
 
 [git_status]
 conflicted = '󱃟'

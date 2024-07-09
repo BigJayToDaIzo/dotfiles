@@ -59,18 +59,7 @@ layout {
       }
     }
   }
-  tab name="Stacked"{
-    pane {
-      split_direction "horizontal" 
-      stacked true 
-      pane {
-        expanded true
-        command "nvim"
-      }
-      pane 
-    }  
-  }
-  tab name="Not"{
+  tab name=" Golang"{
     pane {
       split_direction "horizontal" 
       pane {

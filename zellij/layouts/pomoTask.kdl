@@ -60,8 +60,9 @@ layout {
   }
   tab name="Task Warrior" focus=true cwd="/home/jm" {
     pane split_direction="vertical" {
-      pane size="35%" {
+      pane size="32%" {
         pane {
+
           command "cbonsai"
           borderless true
           args "-li" "-t 0.5" 

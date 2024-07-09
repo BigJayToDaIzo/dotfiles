@@ -5,9 +5,8 @@ return {
 		{ "nvim-lua/plenary.nvim", lazy = true },
 	},
 	keys = {
-		-- 👇 in this section, choose your own keymappings!
 		{
-			"<leader>_",
+			"<leader>e",
 			function()
 				require("yazi").yazi()
 			end,
@@ -15,7 +14,7 @@ return {
 		},
 		{
 			-- Open in the current working directory
-			"<leader>e",
+			"<leader>_",
 			function()
 				require("yazi").yazi(nil, vim.fn.getcwd())
 			end,
