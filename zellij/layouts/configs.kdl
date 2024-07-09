@@ -134,4 +134,17 @@ layout {
       pane 
     }
   }
+  tab name="Starship" cwd="~/.config/starship" {
+    pane split_direction="horizontal" {
+      pane {
+        start_suspended true
+        size "75%"
+        focus true
+        borderless true
+        command "nvim"
+        args "starship.toml"
+      }
+      pane 
+    }
+  }
 }
