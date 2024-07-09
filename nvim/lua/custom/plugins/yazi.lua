@@ -25,7 +25,8 @@ return {
 	opts = {
 		-- if you want to open yazi instead of netrw, see below for more info
 		open_for_directories = true,
-		floating_window_scaling_factor = 0.8,
-		yazi_floating_window_winblend = 25,
+		floating_window_scaling_factor = 0.85,
+		-- Apparentlyl broken
+		-- yazi_floating_window_winblend = 20,
 	},
 }

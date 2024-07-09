@@ -1,5 +1,5 @@
 # ENVIRONMENT VARIABLE CONFIG
-#############################
+############################
 if status is-login
     # Env Setup
     set -xg ARCHFLAGS "-arch x86_64"

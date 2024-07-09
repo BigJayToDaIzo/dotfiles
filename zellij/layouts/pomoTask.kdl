@@ -32,8 +32,8 @@ layout {
 
         hide_frame_for_single_pane "true"
 
-        mode_normal  "#[fg=#cf142b,bg=green]  unlocked "
-        mode_locked "#[bg=#cf142b]  locked "
+        mode_normal  "#[fg=#cf142b,bg=green]  UNLOCKED "
+        mode_locked "#[bg=#cf142b]  LOCKED "
         mode_session "#[fg=#333333,bg=green] 󰹑 {name} "
         mode_resize "#[fg=#333333,bg=#ff6700]  {name} "
         mode_pane "#[fg=#333333,bg=green]  {name} "
@@ -53,8 +53,8 @@ layout {
         command_git_branch_rendermode  "static"
 
         datetime        "#[fg=#89b4fa,bold] {format} "
-        datetime_format "%a, %d %b %y %h:%m"
-        datetime_timezone "america/chicago"
+        datetime_format " %A, %d %b %Y  %H:%M"
+        datetime_timezone "America/Chicago"
       }
     }
   }

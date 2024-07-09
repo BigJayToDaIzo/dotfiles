@@ -50,14 +50,14 @@ symbol = ' '
 
 [git_branch]
 symbol = ' '
-format = '[ \[$symbol$branch\]](char_success_fg)'
+format = '[ \[$symbol$branch\]](char_success_fg)'
 
 [git_commit]
 tag_symbol = ''
 
 [git_metrics]
 disabled = false
-format = '(([\[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
+format = '(([Δ\[](time_fg)[+$added](char_success_fg))([-$deleted](time_fg))[\]](time_fg))'
 
 [git_status]
 conflicted = '󱃟'
