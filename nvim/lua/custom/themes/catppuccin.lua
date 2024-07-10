@@ -1,6 +1,7 @@
 return {
 	"catppuccin/nvim",
 	lazy = false,
+	enable = false,
 	name = "catppuccin",
 	priority = 1000,
 	config = function()

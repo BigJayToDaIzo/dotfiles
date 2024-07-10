@@ -1,6 +1,7 @@
 return {
 	"HoNamDuong/hybrid.nvim",
 	lazy = false,
+	enable = false,
 	priority = 1000,
 	opts = {
 		mode = "dark", -- dark, light, auto, or any theme name

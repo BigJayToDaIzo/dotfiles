@@ -108,7 +108,7 @@ layout {
       pane 
     }
   }
-  tab name="Alacritty" cwd="~/.config/alacritty" {
+  tab name="Foot" cwd="~/.config/foot" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -116,7 +116,7 @@ layout {
         focus true
         borderless true
         command "nvim"
-        args "alacritty.toml"
+        args "foot.ini"
       }
       pane 
     }
