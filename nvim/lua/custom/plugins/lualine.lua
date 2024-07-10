@@ -16,7 +16,7 @@ return {
 					{
 						"mode",
 						icons_enabled = true,
-						icon = " ",
+						icon = "",
 					},
 				},
 

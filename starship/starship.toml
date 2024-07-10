@@ -26,7 +26,7 @@ iced_out_os = '#09ecf8'
 [palettes.super_dank_mellow]
 
 [character]
-success_symbol = '[](char_success_fg)'
+success_symbol = '[󱞪](char_success_fg)'
 error_symbol = '[](char_poobie_fg)'
 vimcmd_symbol = '[](time_fg)'
 vimcmd_replace_one_symbol = '[](time_fg)'

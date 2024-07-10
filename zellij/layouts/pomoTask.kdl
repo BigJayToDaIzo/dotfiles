@@ -62,7 +62,6 @@ layout {
     pane split_direction="vertical" {
       pane size="40%" {
         pane {
-
           command "cbonsai"
           borderless true
           args "-li" "-t 0.5" 
@@ -97,7 +96,7 @@ layout {
 
     }
   }
-  tab name="Weather Station" hide_floating_panes=true {
+  tab name="Weather Station" {
     pane {
       focus true
       name "☔ or 🌞❓"
