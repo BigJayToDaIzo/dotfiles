@@ -16,15 +16,15 @@ _coherent GL_NVX_blend_equation_advanced_multi_draw_buffers GL_NV_blend_minmax_f
 pu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_program_multiview GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_attachment GL_NV_mesh_shader GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_primitive_shading_rate GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_representative_fragment_test GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_scissor_exclusive GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_float64 GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgrou
 p_partitioned GL_NV_shader_texture_footprint GL_NV_shading_rate_image GL_NV_stereo_view_rendering GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_dirty_tile_map GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_uniform_buffer_std430_layout GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced 
 GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 892231496
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 501991144
 Begin MonoManager ReloadAssembly
-- Completed reload, in  0.059 seconds
+- Completed reload, in  0.058 seconds
 Default vsync count 1
-requesting resize 2560 x 1440
+requesting resize 1920 x 1080
 Using native desktop resolution 1920 x 1080
 requesting fullscreen 1920 x 1080 at 0 Hz
 Desktop is 1920 x 1080 @ 60 Hz
-UnloadTime: 0.347000 ms
+UnloadTime: 0.449000 ms
 Pictopix - 1.6.0a
  
 (Filename: ./Runtime/Export/Debug.bindings.h Line: 45)
@@ -37,28 +37,26 @@ No joystick connected
  
 (Filename: ./Runtime/Export/Debug.bindings.h Line: 45)
 
+Changing real window size to 2560 x 1440
 Received stats and achievements from Steam
 
  
 (Filename: ./Runtime/Export/Debug.bindings.h Line: 45)
 
-Changing real window size to 2560 x 1440
 Game save path = /home/jm/.config/unity3d/Tomlab Games/Pictopix/76561198032524950/game.sav
  
 (Filename: ./Runtime/Export/Debug.bindings.h Line: 45)
 
-Changing real window size to 1920 x 1080
-Changing real window size to 2560 x 1440
 Setting up 12 worker threads for Enlighten.
-  Thread -> id: 77d75b4006c0 -> priority: 1 
-  Thread -> id: 77d7592006c0 -> priority: 1 
-  Thread -> id: 77d74fe006c0 -> priority: 1 
-  Thread -> id: 77d74f4006c0 -> priority: 1 
-  Thread -> id: 77d74ea006c0 -> priority: 1 
-  Thread -> id: 77d74e0006c0 -> priority: 1 
-  Thread -> id: 77d74d6006c0 -> priority: 1 
-  Thread -> id: 77d74cc006c0 -> priority: 1 
-  Thread -> id: 77d743e006c0 -> priority: 1 
-  Thread -> id: 77d7434006c0 -> priority: 1 
-  Thread -> id: 77d742a006c0 -> priority: 1 
-  Thread -> id: 77d7420006c0 -> priority: 1 
+  Thread -> id: 7b81f94006c0 -> priority: 1 
+  Thread -> id: 7b81ef6006c0 -> priority: 1 
+  Thread -> id: 7b81eec006c0 -> priority: 1 
+  Thread -> id: 7b81ee2006c0 -> priority: 1 
+  Thread -> id: 7b81ed8006c0 -> priority: 1 
+  Thread -> id: 7b81ece006c0 -> priority: 1 
+  Thread -> id: 7b81e3e006c0 -> priority: 1 
+  Thread -> id: 7b81e34006c0 -> priority: 1 
+  Thread -> id: 7b81e2a006c0 -> priority: 1 
+  Thread -> id: 7b81e20006c0 -> priority: 1 
+  Thread -> id: 7b81e16006c0 -> priority: 1 
+  Thread -> id: 7b81e0c006c0 -> priority: 1 

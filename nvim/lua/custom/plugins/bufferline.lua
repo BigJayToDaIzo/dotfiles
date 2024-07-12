@@ -29,18 +29,18 @@ return {
 					end
 					return s
 				end,
-				separator_style = "slant", --| "slope" | "thick" | "thin" | { 'any', 'any' },
-				offsets = {
-					{
-						filetype = "neo-tree",
-						text = "The Matrix is everywhere. -Morpheus",
-						highlight = "Directory",
-						separator = true,
-						text_align = "left",
-					},
-				},
+				separator_style = "slant", -- "slant" | "slope" | "thick" | "thin" | { 'any', 'any' },
+				-- offsets = {
+				-- 	{
+				-- 		filetype = "neo-tree",
+				-- 		text = "The Matrix is everywhere. -Morpheus",
+				-- 		highlight = "Directory",
+				-- 		separator = true,
+				-- 		text_align = "left",
+				-- 	},
+				-- },
+				color_icons = true,
 			},
-			--STOP trying to put config down here, it ALL goes up there in options
 		})
 	end,
 }

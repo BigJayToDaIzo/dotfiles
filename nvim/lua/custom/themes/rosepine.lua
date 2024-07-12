@@ -1,13 +1,17 @@
 return {
 	"rose-pine/neovim",
 	name = "rose-pine",
-	enable = false,
+	-- enable = false,
 
 	lazy = false,
 	config = function()
 		require("rose-pine").setup({
-			variant = "auto", -- auto | moon | dawn
-			dark_variant = "main", -- main | moon | dawn
+			-- vim.cmd("colorscheme rose-pine"),
+			-- vim.cmd("colorscheme rose-pine-main")
+			-- vim.cmd("colorscheme rose-pine-moon"),
+			-- vim.cmd("colorscheme rose-pine-dawn"),
+			variant = "moon", -- auto / main | moon | dawn
+			dark_variant = "auto", -- main | moon | dawn
 			dim_inactive_windows = false,
 			extend_background_behind_borders = true,
 			enable = {
@@ -69,10 +73,6 @@ return {
 				--     highlight.fg = palette.foam
 				-- end
 			end,
-			-- vim.cmd("colorscheme rose-pine"),
-			-- vim.cmd("colorscheme rose-pine-main")
-			-- vim.cmd("colorscheme rose-pine-moon")
-			-- vim.cmd("colorscheme rose-pine-dawn")
 		})
 	end,
 }

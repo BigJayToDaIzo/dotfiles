@@ -187,6 +187,8 @@ plugins {
     zjstatus location="file:~/.config/zellij/plugins/zjstatus.wasm"
     zjforgot location="file:~/.config/zellij/plugins/zellij_forgot.wasm"
 }
+
+attach_to_session true
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
 // Options:

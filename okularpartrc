@@ -1,5 +1,10 @@
 [Core General]
+ExternalEditor=Custom
+ExternalEditorCommand=nvim --line %l --column %c
 ObeyDRM=false
+
+[Dlg Performance]
+EnableCompositing=false
 
 [Document]
 ChangeColors=true

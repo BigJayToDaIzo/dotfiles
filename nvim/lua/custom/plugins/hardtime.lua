@@ -7,5 +7,6 @@ return {
 	opts = {
 		max_count = 5,
 		disable_mouse = false,
+		allow_different_key = true,
 	},
 }

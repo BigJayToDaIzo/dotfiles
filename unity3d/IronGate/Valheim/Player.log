@@ -1,0 +1,1936 @@
+Mono path[0] = '/home/jm/.local/share/Steam/steamapps/common/Valheim/valheim_Data/Managed'
+Mono config path = '/home/jm/.local/share/Steam/steamapps/common/Valheim/valheim_Data/MonoBleedingEdge/etc'
+Preloaded 'libDiskSpacePlugin.so'
+Preloaded 'libparty.so'
+Preloaded 'libsteam_api.so'
+Display 0 'HDMI-A-1 23"': 1920x1080 (primary device).
+Display 1 'DP-2 27"': 2560x1440 (secondary device).
+Display 2 'DP-3 27"': 2560x1440 (secondary device).
+[Physics::Module] Initialized MultithreadedJobDispatcher with 23 workers.
+Unable to load player prefs
+Desktop is 1920 x 1080 @ 60 Hz
+[Vulkan init] extensions: count=23
+[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+Vulkan detection: 2
+Initialize engine version: 2022.3.17f1 (4fc78088f837)
+[Subsystems] Discovering subsystems at path /home/jm/.local/share/Steam/steamapps/common/Valheim/valheim_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1; jobified=0
+[Vulkan init] extensions: count=23
+[Vulkan init] extensions: name=VK_EXT_acquire_drm_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_acquire_xlib_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_report [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_debug_utils [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_direct_mode_display [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_surface_counter [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_surface_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_colorspace [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group_creation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_display [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_capabilities [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_display_properties2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_physical_device_properties2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_surface_capabilities2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_portability_enumeration [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_surface_protected_capabilities [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_wayland_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_xcb_surface [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_xlib_surface [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_LUNARG_direct_driver_loading [enabled=0, external=0]
+[Vulkan init] SelectPhysicalDevice requestedDeviceIndex=-1 xrDevice=(nil)
+[Vulkan init] Physical Device 0x3a7dbff0 [0]: "NVIDIA GeForce RTX 3080" deviceType=2 vendorID=10de deviceID=2216
+[Vulkan init] Selected physical device 0x3a7dbff0
+[Vulkan init] Graphics queue count=1
+[Vulkan init] extensions: count=222
+[Vulkan init] extensions: name=VK_AMD_buffer_marker [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_4444_formats [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_attachment_feedback_loop_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_blend_operation_advanced [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_border_color_swizzle [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_buffer_device_address [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_color_write_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conditional_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_conservative_rasterization [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_custom_border_color [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_bias_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clamp_zero_one [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_clip_enable [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_depth_range_unrestricted [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_descriptor_indexing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_discard_rectangles [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_display_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_dynamic_rendering_unused_attachments [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_extended_dynamic_state3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_dma_buf [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_external_memory_host [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_fragment_shader_interlock [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_global_priority_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_graphics_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_image_copy [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_host_query_reset [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_2d_view_of_3d [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_drm_format_modifier [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_sliced_view_of_3d [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_image_view_min_lod [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_inline_uniform_block [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_load_store_op_none [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_map_memory_placed [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_budget [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_memory_priority [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_mesh_shader [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_multi_draw [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_mutable_descriptor_type [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_nested_command_buffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_non_seamless_cube_map [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_opacity_micromap [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pageable_device_local_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pci_bus_info [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_physical_device_drm [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_cache_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_creation_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_library_group_handles [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_pipeline_robustness [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_post_depth_coverage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitive_topology_list_restart [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_primitives_generated_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_private_data [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_provoking_vertex [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_queue_family_foreign [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_robustness2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sample_locations [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_sampler_filter_minmax [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_scalar_block_layout [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_separate_stencil_usage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_atomic_float [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_demote_to_helper_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_image_atomic_int64 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_module_identifier [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_object [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_ballot [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_subgroup_vote [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_shader_viewport_index_layer [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_EXT_subgroup_size_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_swapchain_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_texel_buffer_alignment [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_tooling_info [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_transform_feedback [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_vertex_input_dynamic_state [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_2plane_444_formats [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_EXT_ycbcr_image_arrays [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_16bit_storage [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_8bit_storage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_acceleration_structure [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_bind_memory2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_buffer_device_address [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_calibrated_timestamps [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_cooperative_matrix [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_copy_commands2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_create_renderpass2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dedicated_allocation [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_deferred_host_operations [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_depth_stencil_resolve [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_descriptor_update_template [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_device_group [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_draw_indirect_count [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_driver_properties [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_dynamic_rendering_local_read [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_fence_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_memory_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_external_semaphore_fd [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_format_feature_flags2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_fragment_shader_barycentric [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_fragment_shading_rate [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_get_memory_requirements2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_global_priority [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_image_format_list [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_imageless_framebuffer [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_index_type_uint8 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_line_rasterization [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_load_store_op_none [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance1 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance2 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance3 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance5 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_maintenance6 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_map_memory2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_multiview [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_executable_properties [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_pipeline_library [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_present_id [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_present_wait [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_push_descriptor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_query [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_tracing_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_tracing_pipeline [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_ray_tracing_position_fetch [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_relaxed_block_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_mirror_clamp_to_edge [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_sampler_ycbcr_conversion [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_separate_depth_stencil_layouts [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_atomic_int64 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_clock [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_draw_parameters [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_expect_assume [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float16_int8 [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_float_controls2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_integer_dot_product [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_maximal_reconvergence [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_non_semantic_info [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_quad_control [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_extended_types [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_rotate [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_subgroup_uniform_control_flow [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shader_terminate_invocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_shared_presentable_image [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_spirv_1_4 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_storage_buffer_storage_class [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_swapchain_mutable_format [enabled=1, external=0]
+[Vulkan init] extensions: name=VK_KHR_synchronization2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_timeline_semaphore [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_uniform_buffer_standard_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_variable_pointers [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vertex_attribute_divisor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_decode_av1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_decode_h264 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_decode_h265 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_decode_queue [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_encode_h264 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_encode_h265 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_encode_queue [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_maintenance1 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_video_queue [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_vulkan_memory_model [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_workgroup_memory_explicit_layout [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_KHR_zero_initialize_workgroup_memory [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NVX_binary_import [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NVX_image_view_handle [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NVX_multiview_per_view_attributes [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_clip_space_w_scaling [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_compute_shader_derivatives [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_cooperative_matrix [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_copy_memory_indirect [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_corner_sampled_image [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_coverage_reduction_mode [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_cuda_kernel_launch [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_dedicated_allocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_dedicated_allocation_image_aliasing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_descriptor_pool_overallocation [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_device_diagnostic_checkpoints [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_device_diagnostics_config [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_device_generated_commands [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_device_generated_commands_compute [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_fill_rectangle [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_fragment_coverage_to_color [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_fragment_shader_barycentric [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_fragment_shading_rate_enums [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_framebuffer_mixed_samples [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_geometry_shader_passthrough [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_inherited_viewport_scissor [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_linear_color_attachment [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_low_latency [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_low_latency2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_memory_decompression [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_mesh_shader [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_optical_flow [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_raw_access_chains [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_ray_tracing [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_ray_tracing_invocation_reorder [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_ray_tracing_motion_blur [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_representative_fragment_test [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_sample_mask_override_coverage [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_scissor_exclusive [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_shader_atomic_float16_vector [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_shader_image_footprint [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_shader_sm_builtins [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_shader_subgroup_partitioned [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_shading_rate_image [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_viewport_array2 [enabled=0, external=0]
+[Vulkan init] extensions: name=VK_NV_viewport_swizzle [enabled=0, external=0]
+Fossilize INFO: Overriding serialization path: "/home/jm/.local/share/Steam/steamapps/shadercache/892970/fozpipelinesv6/steamapprun_pipeline_cache".
+Vulkan API version 1.1.0 (1.3.278 supported by driver, 1.1.0 requested)
+Vulkan vendor=[NVIDIA] id=[10de]
+Vulkan renderer=[NVIDIA GeForce RTX 3080] id=[2216]
+Vulkan device type 2
+Vulkan driverversion=[0x8ace8000] uint=[-1966178304]
+Vulkan PSO: cache data not found [path=/tmp/IronGate/Valheim/vulkan_pso_cache.bin]
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.070 seconds
+- Finished resetting the current domain, in  0.001 seconds
+requesting resize 1366 x 768
+resizing window to 1366 x 768
+Desktop is 1920 x 1080 @ 60 Hz
+InitializeOrResetSwapChain 1366x768 hdr=0 samples=1
+UnloadTime: 0.569200 ms
+Privilege Multiplayer is not known on this platform. Privilege therefore is granted without check...
+Privilege UserGeneratedContent is not known on this platform. Privilege therefore is granted without check...
+Privilege CrossPlay is not known on this platform. Privilege therefore is granted without check...
+07/10/2024 19:03:41: Set background loading budget to Low
+Unloading 5 Unused Serialized files (Serialized files now loaded: 9)
+UnloadTime: 0.129520 ms
+07/10/2024 19:03:41: Fetching PlatformPrefs 'GuiScale' before loading defaults
+07/10/2024 19:03:41: Fetching PlatformPrefs 'GuiScale' before loading defaults
+Unloading 173 unused Assets to reduce memory usage. Loaded Objects now: 2180.
+Total: 1.547011 ms (FindLiveObjects: 0.092680 ms CreateObjectMapping: 0.035470 ms MarkObjects: 1.328741 ms  DeleteObjects: 0.089880 ms)
+
+07/10/2024 19:03:41: Starting to load scene:start.unity (169d7618616154c03be07e9ad3af5893)
+07/10/2024 19:03:41: Set background loading budget to Normal
+Desktop is 2560 x 1440 @ 144 Hz
+07/10/2024 19:03:45: Set background loading budget to High
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+Couldn't create a Convex Mesh from source mesh "default" within the maximum polygons limit (256). The partial hull will be used. Consider simplifying your mesh.
+Couldn't create a Convex Mesh from source mesh "default" within the maximum polygons limit (256). The partial hull will be used. Consider simplifying your mesh.
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+Unloading 2 Unused Serialized files (Serialized files now loaded: 1133)
+07/10/2024 19:03:58: Set background loading budget to Low
+UnloadTime: 5.954072 ms
+Only custom filters can be played. Please add a custom filter or an audioclip to the audiosource (Amb_MainMenu).
+07/10/2024 19:03:59: Missing audio clip in music respawn
+07/10/2024 19:03:59: Using environment steamid 892970
+07/10/2024 19:03:59: Using steam APPID:892970
+[S_API] SteamAPI_Init(): Loaded '/home/jm/.local/share/Steam/linux64/steamclient.so' OK.
+Setting breakpad minidump AppID = 892970
+SteamInternal_SetMinidumpSteamID:  Caching Steam ID:  76561198032524950 [API loaded no]
+07/10/2024 19:03:59: Authentication:k_ESteamNetworkingAvailability_Attempting
+07/10/2024 19:03:59: Steam initialized, persona:BigJayToDa
+07/10/2024 19:03:59: PlayFab custom ID set to "Steam_76561198032524950"
+07/10/2024 19:03:59: Using default prefs
+07/10/2024 19:03:59: Valheim version: l-0.218.19 (network version 27)
+Trying to set graphic mode to 'Custom'
+Graphic mode 'Custom' applied!
+07/10/2024 19:03:59: Worldgenerator version setup:2
+07/10/2024 19:03:59: Render threading mode:MultiThreaded
+07/10/2024 19:03:59: Set button "CamZoomIn" to None!
+07/10/2024 19:03:59: Set button "CamZoomOut" to None!
+07/10/2024 19:03:59: Set button "CamZoomIn" to None!
+07/10/2024 19:03:59: Set button "CamZoomOut" to None!
+07/10/2024 19:03:59: Checking for installed DLCs
+07/10/2024 19:03:59: DLC:beta installed:False
+07/10/2024 19:03:59: Builder started
+07/10/2024 19:03:59: Loaded localization file #0 - 'localization' language: 'English'
+07/10/2024 19:03:59: Loaded localization file #1 - 'localization_extra' language: 'English'
+07/10/2024 19:03:59: Loaded localization file #2 - 'heightmap_message' language: 'English'
+07/10/2024 19:03:59: Loaded localization file #3 - 'localization_hildir' language: 'English'
+07/10/2024 19:03:59: Loaded localization file #4 - 'localization_emotes' language: 'English'
+07/10/2024 19:03:59: Loaded localization file #5 - 'localization_ashlands' language: 'English'
+07/10/2024 19:03:59: Vis equip model set to 1
+07/10/2024 19:03:59: Sending PlayFab login request (attempt 1)
+07/10/2024 19:03:59: Starting music menu
+Unloading 86081 unused Assets to reduce memory usage. Loaded Objects now: 196904.
+Total: 104.918535 ms (FindLiveObjects: 12.598424 ms CreateObjectMapping: 15.543895 ms MarkObjects: 54.303358 ms  DeleteObjects: 22.472358 ms)
+
+07/10/2024 19:04:00: PlayFab logged in as "Steam_76561198032524950"
+07/10/2024 19:04:00: PlayFab local entity ID is 207B0C89EDD4248D
+InitializeOrResetSwapChain 2560x1440 hdr=0 samples=1
+2560 x 1440 @ 144Hz
+07/10/2024 19:04:16: Activating default element Left
+07/10/2024 19:04:49: Activating default element Left
+07/10/2024 19:04:49: Activating default element MouseSensitivity
+07/10/2024 19:04:50: Activating default element MouseSensitivity
+07/10/2024 19:04:51: Activating default element Left
+07/10/2024 19:04:52: Activating default element Left
+07/10/2024 19:04:52: Activating default element Resolution
+requesting resize 2560 x 1440
+Using native desktop resolution 2560 x 1440
+requesting fullscreen 2560 x 1440 at 144/1 Hz
+Desktop is 2560 x 1440 @ 144 Hz
+InitializeOrResetSwapChain 2560x1440 hdr=0 samples=1
+07/10/2024 19:04:59: Activating default element Resolution
+07/10/2024 19:05:25: Activating default element Resolution
+07/10/2024 19:05:25: Activating default element MasterVolume
+07/10/2024 19:05:28: Activating default element MasterVolume
+07/10/2024 19:05:28: Activating default element GuiScaling
+07/10/2024 19:05:35: Loaded localization file #0 - 'localization' language: 'English'
+07/10/2024 19:05:35: Loaded localization file #1 - 'localization_extra' language: 'English'
+07/10/2024 19:05:35: Loaded localization file #2 - 'heightmap_message' language: 'English'
+07/10/2024 19:05:35: Loaded localization file #3 - 'localization_hildir' language: 'English'
+07/10/2024 19:05:35: Loaded localization file #4 - 'localization_emotes' language: 'English'
+07/10/2024 19:05:35: Loaded localization file #5 - 'localization_ashlands' language: 'English'
+07/10/2024 19:05:35: Vis equip model set to 1
+Trying to set graphic mode to 'Balanced'
+Graphic mode 'Balanced' applied!
+07/10/2024 19:05:35: Activating default element GuiScaling
+07/10/2024 19:05:36: show character selection
+07/10/2024 19:05:41: Remove character
+07/10/2024 19:05:46: Remove character
+07/10/2024 19:05:48: Remove character
+07/10/2024 19:05:52: Vis equip model set to 1
+07/10/2024 19:05:55: Set hair 1
+07/10/2024 19:05:57: Set hair 2
+07/10/2024 19:05:57: Set hair 3
+07/10/2024 19:05:58: Set hair 4
+07/10/2024 19:06:22: Cloud Save: 790 bytes. /characters/thea.fch.new
+07/10/2024 19:06:22: Steam writing file chunks 1 / 1, (790 bytes)
+07/10/2024 19:06:22: Steam Cloud Move: 790 bytes. /characters/thea.fch.new -> /characters/thea.fch
+07/10/2024 19:06:22: Steam writing file chunks 1 / 1, (790 bytes)
+07/10/2024 19:06:22: Considering autobackup. World time: 0, short time: 7200, long time: 43200, backup count: 2
+07/10/2024 19:06:22: Creating first autobackup
+07/10/2024 19:06:22: Saving backup at: thea_backup_auto-20240710190622
+07/10/2024 19:06:22: Cloud Copy: 790 bytes. characters/thea.fch -> characters/thea_backup_auto-20240710190622.fch
+07/10/2024 19:06:22: Steam writing file chunks 1 / 1, (790 bytes)
+07/10/2024 19:06:22: Vis equip model set to 1
+07/10/2024 19:06:45: OnCharacterStart
+07/10/2024 19:07:09: Cloud Save: 55 bytes. /worlds/AshlandsReroll.fwl
+07/10/2024 19:07:09: Steam writing file chunks 1 / 1, (55 bytes)
+07/10/2024 19:07:09: Considering autobackup. World time: 0, short time: 7200, long time: 43200, backup count: 2
+07/10/2024 19:07:09: Creating first autobackup
+07/10/2024 19:07:09: Saving backup at: AshlandsReroll_backup_auto-20240710190709
+07/10/2024 19:07:09: Cloud Copy: 55 bytes. worlds/AshlandsReroll.fwl -> worlds/AshlandsReroll_backup_auto-20240710190709.fwl
+07/10/2024 19:07:09: Steam writing file chunks 1 / 1, (55 bytes)
+07/10/2024 19:08:09: Loading main scene
+The referenced script on this Behaviour (Game Object '<null>') is missing!
+Unloading 3 Unused Serialized files (Serialized files now loaded: 1135)
+UnloadTime: 11.870304 ms
+07/10/2024 19:08:09: Audioman already exist, destroying self
+07/10/2024 19:08:09: Steam initialized, persona:BigJayToDa
+07/10/2024 19:08:09: PlayFab custom ID set to "Steam_76561198032524950"
+07/10/2024 19:08:09: Using default prefs
+07/10/2024 19:08:09: Loading player profile thea
+07/10/2024 19:08:09: isModded: False
+07/10/2024 19:08:09: Zonesystem Awake 23231
+07/10/2024 19:08:09: DungeonDB Awake 23231
+07/10/2024 19:08:09: Steam initialized, persona:BigJayToDa
+07/10/2024 19:08:09: Worldgenerator version setup:2
+07/10/2024 19:08:12: Checking for installed DLCs
+07/10/2024 19:08:12: DLC:beta installed:False
+Unloading 392 unused Assets to reduce memory usage. Loaded Objects now: 195112.
+Total: 56.940569 ms (FindLiveObjects: 7.579413 ms CreateObjectMapping: 10.797193 ms MarkObjects: 38.040603 ms  DeleteObjects: 0.522870 ms)
+
+07/10/2024 19:08:12: Zonesystem Start 23231
+07/10/2024 19:08:12: Added 3 locations, 0 vegetations, 0 environments, 0 biome env-setups, 0 clutter  from main
+07/10/2024 19:08:12: Added 1 locations, 0 vegetations, 2 environments, 0 biome env-setups, 0 clutter  from main
+07/10/2024 19:08:12: Added 27 locations, 25 vegetations, 5 environments, 1 biome env-setups, 3 clutter  from main
+07/10/2024 19:08:12: Added 4 locations, 0 vegetations, 1 environments, 0 biome env-setups, 0 clutter  from main
+07/10/2024 19:08:12: Added 24 locations, 33 vegetations, 8 environments, 2 biome env-setups, 2 clutter  from main
+07/10/2024 19:08:12: DungeonDB Start 23231
+07/10/2024 19:08:12: ZRpc timeout set to 30s 
+07/10/2024 19:08:12: ZNET START
+07/10/2024 19:08:12: Load world: AshlandsReroll (AshlandsReroll)
+07/10/2024 19:08:12:   missing /worlds/AshlandsReroll.db
+07/10/2024 19:08:12: Generating locations
+07/10/2024 19:08:31: Failed to place all Grave1, placed 141 out of 200
+07/10/2024 19:08:34: Failed to place all SwampRuin2, placed 6 out of 30
+07/10/2024 19:08:35: Failed to place all FireHole, placed 30 out of 75
+07/10/2024 19:08:40: Failed to place all GoblinCamp2, placed 184 out of 200
+07/10/2024 19:08:45: Failed to place all TrollCave02, placed 190 out of 200
+07/10/2024 19:08:52: Failed to place all SwampHut3, placed 49 out of 50
+07/10/2024 19:08:59: Failed to place all ShipSetting01, placed 93 out of 100
+07/10/2024 19:09:09: Failed to place all TarPit1, placed 76 out of 100
+07/10/2024 19:09:11: Failed to place all TarPit2, placed 9 out of 100
+07/10/2024 19:09:13: Failed to place all TarPit3, placed 89 out of 100
+07/10/2024 19:09:16: Failed to place all MountainCave02, placed 121 out of 160
+07/10/2024 19:09:36: Failed to place all CharredTowerRuins3, placed 38 out of 40
+07/10/2024 19:09:42:  Done generating locations, duration:90002.014 ms
+Am I Host? True
+07/10/2024 19:09:42: Starting respawn
+07/10/2024 19:09:48: Generating new world minimap done [6190ms]
+07/10/2024 19:09:49: tip:$loadscreen_tip01
+07/10/2024 19:09:49: Force generating hmap (-256.00, 0.00, -64.00)
+07/10/2024 19:09:49: Placed locations in zone -4,-1  duration 15.324 ms
+07/10/2024 19:09:49: Missing stat for guardian power: 
+07/10/2024 19:09:49: Vis equip model set to 1
+07/10/2024 19:09:49: Setting up valkyrie 
+07/10/2024 19:09:49: Show intro 23250
+07/10/2024 19:09:49: Show text YOU DIED:Long ago, the Allfather Odin united the worlds. He threw down his foes and cast them into the tenth world, then split the boughs which held their prison to the World-Tree, and left it to drift unanchored, a place of exile…
+
+
+
+For centuries, this world slumbered uneasily. But it did not die... As glacial ages passed, kingdoms rose and fell out of sight of the Gods.
+
+
+
+When Odin heard his enemies were growing once again in strength, he looked to Midgard and sent his Valkyries to scour the battlefields for the greatest of their warriors. Dead to the world, they would be born again…
+
+
+
+…in VALHEIM!
+07/10/2024 19:09:49: World pos (184.55, 190.00, 594.56)   (184.82, 189.44, 594.44)
+07/10/2024 19:09:49: Skipping unloading unused assets
+07/10/2024 19:09:49: Starting music intro
+07/10/2024 19:09:49: Minimap: Adding unique location (-260.02, 39.05, -70.55)
+07/10/2024 19:09:52: Placed locations in zone 3,7  duration 18.751 ms
+07/10/2024 19:09:52: Force generating hmap (256.00, 0.00, 448.00)
+07/10/2024 19:09:52: Placed locations in zone 4,7  duration 5.268 ms
+07/10/2024 19:09:52: Placed locations in zone 5,7  duration 14.586 ms
+07/10/2024 19:09:52: Placed locations in zone 1,9  duration 0.772 ms
+07/10/2024 19:09:54: Placed locations in zone 4,9  duration 0.504 ms
+07/10/2024 19:09:55: Loading dungeon
+07/10/2024 19:09:55: Dungeon loaded with 0 rooms from old format in 0.64 ms.
+07/10/2024 19:09:55: Generating DG_ForestCrypt(Clone), Seed: -803879800, Bounds diff: (-40.52, -32.00, -43.18) / (23.48, 32.00, 20.82)
+07/10/2024 19:09:55: Available rooms:18
+07/10/2024 19:09:55: To place:40
+07/10/2024 19:09:55: Connections 4
+07/10/2024 19:09:55: placed 5 doors
+07/10/2024 19:09:55: Placed 18 rooms
+07/10/2024 19:09:55: Placed locations in zone 7,6  duration 43.503 ms
+07/10/2024 19:09:55: Placed locations in zone 4,5  duration 0.064 ms
+07/10/2024 19:09:55: Placed locations in zone 6,5  duration 27.971 ms
+07/10/2024 19:09:55: Placed locations in zone 7,5  duration 0.065 ms
+07/10/2024 19:09:56: Placed locations in zone 6,6  duration 7.465 ms
+07/10/2024 19:09:56: Placed locations in zone 6,7  duration 2.214 ms
+07/10/2024 19:09:56: Loading dungeon
+07/10/2024 19:09:56: Dungeon loaded with 0 rooms from old format in 0.03 ms.
+07/10/2024 19:09:56: Generating DG_ForestCrypt(Clone), Seed: -804043878, Bounds diff: (-36.54, -32.00, -39.97) / (27.46, 32.00, 24.03)
+07/10/2024 19:09:56: Available rooms:18
+07/10/2024 19:09:56: To place:40
+07/10/2024 19:09:56: Connections 4
+07/10/2024 19:09:56: cyclic detected and door types match, cool
+07/10/2024 19:09:56: cyclic detected and door types match, cool
+07/10/2024 19:09:56: placed 4 doors
+07/10/2024 19:09:56: Placed 20 rooms
+07/10/2024 19:09:56: Placed locations in zone 7,7  duration 21.911 ms
+07/10/2024 19:09:56: Placed locations in zone 7,8  duration 0.067 ms
+07/10/2024 19:09:56: Placed locations in zone 6,8  duration 3.79 ms
+07/10/2024 19:09:56: Loading dungeon
+07/10/2024 19:09:56: Dungeon loaded with 0 rooms from old format in 0.029 ms.
+07/10/2024 19:09:56: Generating DG_ForestCrypt(Clone), Seed: -804108727, Bounds diff: (-33.94, -32.00, -28.34) / (30.06, 32.00, 35.66)
+07/10/2024 19:09:56: Available rooms:18
+07/10/2024 19:09:56: To place:40
+07/10/2024 19:09:56: Connections 4
+07/10/2024 19:09:57: placed 9 doors
+07/10/2024 19:09:57: Placed 38 rooms
+07/10/2024 19:09:57: Placed locations in zone 6,9  duration 38.157 ms
+07/10/2024 19:09:57: Loading dungeon
+07/10/2024 19:09:57: Dungeon loaded with 0 rooms from old format in 0.031 ms.
+07/10/2024 19:09:57: Generating DG_ForestCrypt(Clone), Seed: -802297415, Bounds diff: (-25.79, -32.00, -30.01) / (38.21, 32.00, 33.99)
+07/10/2024 19:09:57: Available rooms:18
+07/10/2024 19:09:57: To place:40
+07/10/2024 19:09:57: Connections 4
+07/10/2024 19:09:57: placed 9 doors
+07/10/2024 19:09:57: Placed 31 rooms
+07/10/2024 19:09:57: Placed locations in zone -1,10  duration 30.538 ms
+07/10/2024 19:09:57: Placed locations in zone 7,9  duration 17.552 ms
+07/10/2024 19:09:58: Placed locations in zone -1,12  duration 0.734 ms
+07/10/2024 19:10:00: Spawned Deer x 2
+07/10/2024 19:10:00: Spawned Neck x 2
+07/10/2024 19:10:00: Spawned Seagal x 2
+07/10/2024 19:10:00: Spawned Seagal x 2
+07/10/2024 19:10:00: Spawned Fish1 x 4
+07/10/2024 19:10:00: Spawned Fish1 x 1
+07/10/2024 19:10:00: Spawned Fish2 x 4
+07/10/2024 19:10:00: Spawned Fish5 x 4
+07/10/2024 19:10:00: Spawned Fish5 x 3
+07/10/2024 19:10:00: Spawned Fish5 x 3
+07/10/2024 19:10:00: Spawned Greydwarf x 4
+07/10/2024 19:10:00: Spawned Greydwarf x 2
+07/10/2024 19:10:33: Placed locations in zone -2,9  duration 2.092 ms
+07/10/2024 19:10:34: Loading dungeon
+07/10/2024 19:10:34: Dungeon loaded with 0 rooms from old format in 0.033 ms.
+07/10/2024 19:10:34: Generating DG_MeadowsFarm(Clone), Seed: -847993236, Bounds diff: (-32.00, -32.00, -32.00) / (32.00, 32.00, 32.00)
+07/10/2024 19:10:34: Available rooms:13
+07/10/2024 19:10:34: To place:30
+07/10/2024 19:10:34: Placed 14 rooms
+07/10/2024 19:10:34: Placed locations in zone -2,10  duration 96.069 ms
+07/10/2024 19:10:34: Placed locations in zone -2,13  duration 3.964 ms
+07/10/2024 19:10:36: Spawned Deer x 1
+07/10/2024 19:10:36: Spawned Boar x 2
+07/10/2024 19:10:36: Spawned Neck x 2
+07/10/2024 19:10:36: Spawned Neck x 2
+07/10/2024 19:10:36: Spawned Fish1 x 1
+07/10/2024 19:10:37: Placed locations in zone -3,10  duration 11.392 ms
+07/10/2024 19:10:37: Loading dungeon
+07/10/2024 19:10:37: Dungeon loaded with 31 rooms in 0.473 ms.
+07/10/2024 19:10:37: Loading room prefabs asynchronously
+07/10/2024 19:10:37: Placed locations in zone -3,11  duration 34.067 ms
+07/10/2024 19:10:37: Spawning dungeon
+07/10/2024 19:10:38: Placed locations in zone -3,12  duration 0.499 ms
+07/10/2024 19:10:38: Spawned Neck x 3
+07/10/2024 19:10:38: Spawned Seagal x 1
+07/10/2024 19:10:38: Spawned Greydwarf x 3
+07/10/2024 19:10:41: Loading dungeon
+07/10/2024 19:10:41: Dungeon loaded with 0 rooms from old format in 0.035 ms.
+07/10/2024 19:10:41: Generating DG_ForestCrypt(Clone), Seed: -801282781, Bounds diff: (-27.82, -32.00, -22.05) / (36.18, 32.00, 41.95)
+07/10/2024 19:10:41: Available rooms:18
+07/10/2024 19:10:41: To place:40
+07/10/2024 19:10:41: Connections 4
+07/10/2024 19:10:42: placed 8 doors
+07/10/2024 19:10:42: Placed 22 rooms
+07/10/2024 19:10:42: Placed locations in zone -4,9  duration 99.357 ms
+07/10/2024 19:10:42: Placed locations in zone -4,7  duration 7.186 ms
+07/10/2024 19:10:42: Loading dungeon
+07/10/2024 19:10:42: Dungeon loaded with 14 rooms in 0.04 ms.
+07/10/2024 19:10:42: Loading room prefabs asynchronously
+07/10/2024 19:10:42: Spawning dungeon
+07/10/2024 19:10:42: Placed locations in zone -4,8  duration 5.426 ms
+07/10/2024 19:10:42: Placed locations in zone -4,11  duration 2.458 ms
+07/10/2024 19:10:42: Placed locations in zone -4,13  duration 4.943 ms
+07/10/2024 19:10:44: Spawned Seagal x 1
+07/10/2024 19:10:44: Spawned Fish5 x 5
+07/10/2024 19:10:46: Placed locations in zone -5,9  duration 0.497 ms
+07/10/2024 19:10:46: Placed locations in zone -5,7  duration 0.501 ms
+07/10/2024 19:10:46: Placed locations in zone -5,8  duration 14.059 ms
+07/10/2024 19:10:46: Placed locations in zone -5,11  duration 13.326 ms
+07/10/2024 19:10:47: Placed locations in zone -5,12  duration 7.927 ms
+07/10/2024 19:10:49: Spawned Seagal x 1
+07/10/2024 19:10:49: Spawned Seagal x 1
+07/10/2024 19:10:49: Spawned Seagal x 1
+07/10/2024 19:10:49: Spawned Fish1 x 3
+07/10/2024 19:10:49: Spawned Fish2 x 4
+07/10/2024 19:10:51: Loading dungeon
+07/10/2024 19:10:51: Dungeon loaded with 22 rooms in 0.047 ms.
+07/10/2024 19:10:51: Loading room prefabs asynchronously
+07/10/2024 19:10:51: Spawning dungeon
+07/10/2024 19:10:51: Placed locations in zone -6,7  duration 2.361 ms
+07/10/2024 19:10:51: Placed locations in zone -6,8  duration 0.741 ms
+07/10/2024 19:10:51: Loading dungeon
+07/10/2024 19:10:51: Dungeon loaded with 0 rooms from old format in 0.032 ms.
+07/10/2024 19:10:51: Generating DG_ForestCrypt(Clone), Seed: -800833463, Bounds diff: (-29.22, -32.00, -31.78) / (34.78, 32.00, 32.22)
+07/10/2024 19:10:51: Available rooms:18
+07/10/2024 19:10:51: To place:40
+07/10/2024 19:10:51: Connections 4
+07/10/2024 19:10:51: cyclic detected and door types match, cool
+07/10/2024 19:10:51: cyclic detected and door types match, cool
+07/10/2024 19:10:51: placed 11 doors
+07/10/2024 19:10:51: Placed 40 rooms
+07/10/2024 19:10:51: Placed locations in zone -6,10  duration 44.639 ms
+07/10/2024 19:10:51: Placed locations in zone -6,11  duration 11.192 ms
+07/10/2024 19:10:54: Spawned Seagal x 2
+07/10/2024 19:10:54: Spawned Fish3 x 2
+07/10/2024 19:10:54: Spawned Fish8 x 5
+07/10/2024 19:10:54: Spawned Fish8 x 4
+07/10/2024 19:10:54: Spawned Fish12 x 2
+07/10/2024 19:10:54: Spawned Fish12 x 5
+07/10/2024 19:10:55: Placed locations in zone -7,8  duration 0.398 ms
+07/10/2024 19:10:56: Placed locations in zone -7,9  duration 0.75 ms
+07/10/2024 19:10:58: Spawned Fish3 x 1
+07/10/2024 19:10:58: Spawned Fish8 x 1
+07/10/2024 19:10:58: Spawned Fish12 x 1
+07/10/2024 19:10:59: Placed locations in zone -8,1  duration 0.063 ms
+07/10/2024 19:11:00: Placed locations in zone -8,7  duration 0.585 ms
+07/10/2024 19:11:00: Update PlayFab entity token
+07/10/2024 19:11:00: Loading dungeon
+07/10/2024 19:11:00: Dungeon loaded with 0 rooms from old format in 0.031 ms.
+07/10/2024 19:11:00: Generating DG_ForestCrypt(Clone), Seed: -800171227, Bounds diff: (-28.77, -32.00, -25.06) / (35.23, 32.00, 38.94)
+07/10/2024 19:11:00: Available rooms:18
+07/10/2024 19:11:00: To place:40
+07/10/2024 19:11:00: Connections 4
+07/10/2024 19:11:00: All required rooms have been placed, stopping generation
+07/10/2024 19:11:00: placed 12 doors
+07/10/2024 19:11:00: Placed 33 rooms
+07/10/2024 19:11:00: Placed locations in zone -8,9  duration 40.509 ms
+07/10/2024 19:11:01: Starting descent
+07/10/2024 19:11:02: Placed locations in zone -6,0  duration 0.075 ms
+07/10/2024 19:11:06: Placed locations in zone -6,-1  duration 0.132 ms
+07/10/2024 19:11:06: Placed locations in zone -3,-1  duration 4.543 ms
+07/10/2024 19:11:07: Spawned Fish12 x 3
+07/10/2024 19:11:09: Placed locations in zone -8,-2  duration 0.062 ms
+07/10/2024 19:11:09: Placed locations in zone -7,-2  duration 2.379 ms
+07/10/2024 19:11:09: Placed locations in zone -2,-2  duration 0.067 ms
+07/10/2024 19:11:09: Placed locations in zone -4,-2  duration 2.097 ms
+07/10/2024 19:11:10: Placed locations in zone -3,-2  duration 6.727 ms
+07/10/2024 19:11:12: Placed locations in zone -7,-3  duration 0.067 ms
+07/10/2024 19:11:13: Placed locations in zone -3,-3  duration 5.488 ms
+07/10/2024 19:11:13: Placed locations in zone -1,-3  duration 2.558 ms
+07/10/2024 19:11:16: Placed locations in zone -8,-4  duration 1.962 ms
+07/10/2024 19:11:16: Placed locations in zone -7,-4  duration 2.935 ms
+07/10/2024 19:11:16: Placed locations in zone -2,-4  duration 0.065 ms
+07/10/2024 19:11:17: Placed locations in zone -1,-4  duration 0.075 ms
+07/10/2024 19:11:17: Placed locations in zone 0,-4  duration 10.524 ms
+07/10/2024 19:11:17: SpawnPrefab StoneSpawner_TheQueen SPAWNING BossStone_TheQueen
+07/10/2024 19:11:17: SpawnPrefab StoneSpawner_Fader SPAWNING BossStone_Fader
+07/10/2024 19:11:20: Placed locations in zone -6,-5  duration 0.257 ms
+07/10/2024 19:11:20: Placed locations in zone -4,-5  duration 0.103 ms
+07/10/2024 19:11:20: Placed locations in zone -3,-5  duration 2.029 ms
+07/10/2024 19:11:20: Placed locations in zone -2,-5  duration 0.562 ms
+07/10/2024 19:11:20: Placed locations in zone -1,-5  duration 0.579 ms
+07/10/2024 19:11:21: We are here
+07/10/2024 19:11:21: We are here
+07/10/2024 19:11:21: Starting music morning
+07/10/2024 19:11:24: Spawned Deer x 3
+07/10/2024 19:11:24: Spawned Boar x 3
+07/10/2024 19:11:24: Spawned Boar x 1
+07/10/2024 19:11:24: Spawned Seagal x 1
+07/10/2024 19:11:24: Spawned Fish1 x 3
+07/10/2024 19:11:24: Spawned Fish2 x 4
+07/10/2024 19:11:24: Spawned Greyling x 1
+07/10/2024 19:11:29: Destroying valkyrie
+07/10/2024 19:11:31: Activating default element Continue
+2560 x 1440 @ 144Hz
+07/10/2024 19:11:33: Activating default element Left
+07/10/2024 19:11:35: Activating default element Left
+07/10/2024 19:11:35: Activating default element MouseSensitivity
+Trying to set graphic mode to 'Balanced'
+Graphic mode 'Balanced' applied!
+07/10/2024 19:11:41: Activating default element MouseSensitivity
+07/10/2024 19:11:41: Activating default element Continue
+07/10/2024 19:11:55: Starting music meadows
+07/10/2024 19:11:55: Resumed music meadows at 0
+07/10/2024 19:11:57: DiscoverClosestLocation
+07/10/2024 19:11:57: Found location of type Eikthyrnir
+07/10/2024 19:12:08: Activating default element Continue
+2560 x 1440 @ 144Hz
+07/10/2024 19:12:12: Activating default element Left
+07/10/2024 19:12:13: Activating default element Left
+07/10/2024 19:12:14: Activating default element MouseSensitivity
+07/10/2024 19:12:29: Skipping unloading unused assets
+07/10/2024 19:12:35: Activating default element MouseSensitivity
+07/10/2024 19:12:44: Activating default element MouseSensitivity
+07/10/2024 19:12:44: Activating default element Continue
+07/10/2024 19:12:47: Activating default element Continue
+07/10/2024 19:12:49: Activating default element Continue
+Column: 1
+Lines: 3737
+Translation1: First of the Forest, King-in-the-Wood
+Lord over those who dwell at his feet
+His roots will grow where cities once stood
+Their blood his wine, their flesh his meat
+Translation2: First of the Forest, King-in-the-Wood
+Lord over those who dwell at his feet
+His roots will grow where cities once stood
+Their blood his wine, their flesh his meat
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: First of the Forest, King-in-the-Wood
+Lord over those who dwell at his feet
+His roots will grow where cities once stood
+Their blood his wine, their flesh his meat
+07/10/2024 19:13:24: Show text :First of the Forest, King-in-the-Wood
+Lord over those who dwell at his feet
+His roots will grow where cities once stood
+Their blood his wine, their flesh his meat
+Column: 1
+Lines: 3737
+Translation1: A father noble and proud
+He soared through skies of fire
+Then madness lowered its shroud
+And warped his heart's desire
+Translation2: A father noble and proud
+He soared through skies of fire
+Then madness lowered its shroud
+And warped his heart's desire
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: A father noble and proud
+He soared through skies of fire
+Then madness lowered its shroud
+And warped his heart's desire
+07/10/2024 19:13:35: Show text :A father noble and proud
+He soared through skies of fire
+Then madness lowered its shroud
+And warped his heart's desire
+Column: 1
+Lines: 3737
+Translation1: Born in armour
+Mother of many
+Queen without crown
+Ruler beneath
+Translation2: Born in armour
+Mother of many
+Queen without crown
+Ruler beneath
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: Born in armour
+Mother of many
+Queen without crown
+Ruler beneath
+07/10/2024 19:13:42: Show text :Born in armour
+Mother of many
+Queen without crown
+Ruler beneath
+Column: 1
+Lines: 3737
+Translation1: Long ages past, he wore a crown
+Beneath a blood-red sky
+Now naught is left of all he was
+But his spirit cannot die
+Translation2: Long ages past, he wore a crown
+Beneath a blood-red sky
+Now naught is left of all he was
+But his spirit cannot die
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: Long ages past, he wore a crown
+Beneath a blood-red sky
+Now naught is left of all he was
+But his spirit cannot die
+07/10/2024 19:13:48: Show text :Long ages past, he wore a crown
+Beneath a blood-red sky
+Now naught is left of all he was
+But his spirit cannot die
+Column: 1
+Lines: 3737
+Translation1: Black wings across the moon and sun
+Down from the mountain our mother comes
+Her weeping tears will fall like rain
+Her voice will call us home again
+Translation2: Black wings across the moon and sun
+Down from the mountain our mother comes
+Her weeping tears will fall like rain
+Her voice will call us home again
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: Black wings across the moon and sun
+Down from the mountain our mother comes
+Her weeping tears will fall like rain
+Her voice will call us home again
+07/10/2024 19:13:57: Show text :Black wings across the moon and sun
+Down from the mountain our mother comes
+Her weeping tears will fall like rain
+Her voice will call us home again
+Column: 1
+Lines: 3737
+Translation1: Wanderer, look to your feet
+That tread upon our tomb
+One thousand bones without their meat
+Will drag you to your doom
+Translation2: Wanderer, look to your feet
+That tread upon our tomb
+One thousand bones without their meat
+Will drag you to your doom
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: Wanderer, look to your feet
+That tread upon our tomb
+One thousand bones without their meat
+Will drag you to your doom
+07/10/2024 19:14:08: Show text :Wanderer, look to your feet
+That tread upon our tomb
+One thousand bones without their meat
+Will drag you to your doom
+Column: 1
+Lines: 3737
+Translation1: His antlers are branches of iron
+They crack the rocks and bring down mountains
+His hooves are the sound of thunder
+His voice a howling gale
+Translation2: His antlers are branches of iron
+They crack the rocks and bring down mountains
+His hooves are the sound of thunder
+His voice a howling gale
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: His antlers are branches of iron
+They crack the rocks and bring down mountains
+His hooves are the sound of thunder
+His voice a howling gale
+07/10/2024 19:14:17: Show text :His antlers are branches of iron
+They crack the rocks and bring down mountains
+His hooves are the sound of thunder
+His voice a howling gale
+07/10/2024 19:14:20: Spawned Fish1 x 2
+07/10/2024 19:14:50: Queue unlock msg:$msg_newitem:$item_torch
+07/10/2024 19:14:50: Queue unlock msg:$msg_newitem:$item_chest_rags
+07/10/2024 19:14:50: Queue unlock msg:$msg_newmaterial:$item_wood
+07/10/2024 19:14:50: Queue unlock msg:$msg_newrecipe:$item_club
+07/10/2024 19:14:50: Queue unlock msg:$msg_newmaterial:$item_resin
+07/10/2024 19:14:50: Queue unlock msg:$msg_newrecipe:$item_torch
+07/10/2024 19:14:58: Setting selected recipe 0
+07/10/2024 19:15:02: Setting selected recipe 1
+07/10/2024 19:15:41: Spawned Deer x 1
+07/10/2024 19:16:03: Placed locations in zone -9,-5  duration 0.056 ms
+07/10/2024 19:16:04: Placed locations in zone -9,-2  duration 1.748 ms
+07/10/2024 19:16:04: Loading dungeon
+07/10/2024 19:16:04: Dungeon loaded with 0 rooms from old format in 0.036 ms.
+07/10/2024 19:16:04: Generating DG_ForestCrypt(Clone), Seed: -798159864, Bounds diff: (-26.88, -32.00, -23.41) / (37.12, 32.00, 40.59)
+07/10/2024 19:16:04: Available rooms:18
+07/10/2024 19:16:04: To place:40
+07/10/2024 19:16:04: Connections 4
+07/10/2024 19:16:04: placed 8 doors
+07/10/2024 19:16:04: Placed 35 rooms
+07/10/2024 19:16:04: Placed locations in zone -9,-1  duration 39.871 ms
+07/10/2024 19:16:04: Placed locations in zone -9,1  duration 6.908 ms
+07/10/2024 19:16:15: Queue unlock msg:$msg_newmaterial:$item_flint
+07/10/2024 19:16:15: Spawned Greyling x 1
+07/10/2024 19:16:27: Queue unlock msg:$msg_newmaterial:$item_stone
+07/10/2024 19:16:27: Queue unlock msg:$msg_newrecipe:$item_axe_stone
+07/10/2024 19:16:27: Queue unlock msg:$msg_newrecipe:$item_hammer
+07/10/2024 19:16:34: Setting selected recipe 2
+07/10/2024 19:16:37: Setting selected recipe 1
+07/10/2024 19:17:02: Placed locations in zone -10,-3  duration 8.407 ms
+07/10/2024 19:17:02: Placed locations in zone -10,-1  duration 0.863 ms
+07/10/2024 19:17:02: Placed locations in zone -10,0  duration 7.071 ms
+07/10/2024 19:17:02: Placed locations in zone -10,1  duration 6.229 ms
+07/10/2024 19:17:02: Placed locations in zone -10,4  duration 4.429 ms
+07/10/2024 19:17:03: Loading dungeon
+07/10/2024 19:17:03: Dungeon loaded with 0 rooms from old format in 0.036 ms.
+07/10/2024 19:17:03: Generating DG_MeadowsFarm(Clone), Seed: -843720455, Bounds diff: (-32.00, -32.00, -32.00) / (32.00, 32.00, 32.00)
+07/10/2024 19:17:03: Available rooms:13
+07/10/2024 19:17:03: To place:30
+07/10/2024 19:17:03: Placed 8 rooms
+07/10/2024 19:17:03: Placed locations in zone -10,-2  duration 84.626 ms
+07/10/2024 19:17:03: Loading dungeon
+07/10/2024 19:17:03: Dungeon loaded with 0 rooms from old format in 0.031 ms.
+07/10/2024 19:17:03: Generating DG_ForestCrypt(Clone), Seed: -798845690, Bounds diff: (-37.54, -32.00, -25.19) / (26.46, 32.00, 38.81)
+07/10/2024 19:17:03: Available rooms:18
+07/10/2024 19:17:03: To place:40
+07/10/2024 19:17:03: Connections 4
+07/10/2024 19:17:03: placed 6 doors
+07/10/2024 19:17:03: Placed 26 rooms
+07/10/2024 19:17:03: Placed locations in zone -10,3  duration 32.755 ms
+07/10/2024 19:17:03: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:17:03: Force generating hmap (-640.00, 0.00, 192.00)
+07/10/2024 19:17:22: Setting selected recipe 1
+07/10/2024 19:17:35: Spawned Deer x 1
+07/10/2024 19:17:35: Spawned Seagal x 1
+07/10/2024 19:17:35: Spawned Seagal x 1
+07/10/2024 19:18:00: DiscoverClosestLocation
+07/10/2024 19:18:00: Found location of type Eikthyrnir
+Column: 1
+Lines: 3737
+Translation1: HUNT HIS KIN
+Translation2: HUNT HIS KIN
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: HUNT HIS KIN
+07/10/2024 19:18:00: Show text :HUNT HIS KIN
+07/10/2024 19:18:49: Setting selected recipe 0
+07/10/2024 19:18:51: Setting selected recipe 0
+07/10/2024 19:18:54: Queue unlock msg:$msg_newitem:$item_axe_stone
+07/10/2024 19:18:54: Setting selected recipe 0
+07/10/2024 19:18:56: Item is not in this container
+07/10/2024 19:18:56: Setting selected recipe 0
+07/10/2024 19:19:00: Activating default element Continue
+07/10/2024 19:19:49: Setting selected recipe 2
+07/10/2024 19:19:55: Setting selected recipe 2
+07/10/2024 19:20:04: Setting selected recipe 0
+07/10/2024 19:20:06: Setting selected recipe 2
+07/10/2024 19:20:09: Queue unlock msg:$msg_newitem:$item_hammer
+07/10/2024 19:20:09: Queue unlock msg:$msg_newpiece:$piece_repair
+07/10/2024 19:20:09: Queue unlock msg:$msg_newpiece:$piece_firepit
+07/10/2024 19:20:09: Queue unlock msg:$msg_newpiece:$piece_woodstack
+07/10/2024 19:20:09: Queue unlock msg:$msg_newpiece:$piece_stonepile
+07/10/2024 19:20:09: Queue unlock msg:$msg_newpiece:$piece_cookingstation
+07/10/2024 19:20:09: Queue unlock msg:$msg_newpiece:$piece_workbench
+07/10/2024 19:20:09: Setting selected recipe 1
+07/10/2024 19:20:13: Setting selected recipe 1
+07/10/2024 19:20:16: Spawned Deer x 0
+07/10/2024 19:20:16: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:21:11: Left click
+07/10/2024 19:21:13: Left click
+07/10/2024 19:21:18: Left click
+07/10/2024 19:21:18: Left click
+07/10/2024 19:21:20: Right click
+07/10/2024 19:21:21: Left click
+07/10/2024 19:21:22: Left click
+07/10/2024 19:21:29: Left click
+07/10/2024 19:21:32: Right click
+07/10/2024 19:21:32: Right click
+07/10/2024 19:21:33: Right click
+07/10/2024 19:21:33: Right click
+07/10/2024 19:21:34: Right click
+07/10/2024 19:21:34: Right click
+07/10/2024 19:21:35: Left click
+07/10/2024 19:21:35: Left click
+07/10/2024 19:21:36: Left click
+07/10/2024 19:21:37: Left click
+07/10/2024 19:21:38: Right click
+07/10/2024 19:21:38: Right click
+07/10/2024 19:21:38: Right click
+07/10/2024 19:21:39: Right click
+07/10/2024 19:21:40: Left click
+07/10/2024 19:21:42: Right click
+07/10/2024 19:21:44: Left click
+07/10/2024 19:21:51: Queue unlock msg:$msg_newitem:$item_raspberries
+07/10/2024 19:22:36: Spawned Deer x 1
+07/10/2024 19:22:36: Spawned Greyling x 1
+07/10/2024 19:22:36: Placed locations in zone -10,-6  duration 5.37 ms
+07/10/2024 19:22:36: Placed locations in zone -3,-6  duration 0.063 ms
+07/10/2024 19:22:37: Loading dungeon
+07/10/2024 19:22:37: Dungeon loaded with 0 rooms from old format in 0.033 ms.
+07/10/2024 19:22:37: Generating DG_MeadowsFarm(Clone), Seed: -844212508, Bounds diff: (-32.00, -32.00, -32.00) / (32.00, 32.00, 32.00)
+07/10/2024 19:22:37: Available rooms:13
+07/10/2024 19:22:37: To place:30
+07/10/2024 19:22:37: Placed 14 rooms
+07/10/2024 19:22:37: Placed locations in zone -6,-6  duration 87.103 ms
+07/10/2024 19:22:54: Activating default element Continue
+07/10/2024 19:22:59: Skipping unloading unused assets
+07/10/2024 19:23:46: Spawned Deer x 1
+07/10/2024 19:23:46: Spawned Boar x 1
+07/10/2024 19:23:46: Spawned Greyling x 1
+07/10/2024 19:23:48: Placed locations in zone -11,-1  duration 2.032 ms
+07/10/2024 19:23:48: Placed locations in zone -11,2  duration 0.752 ms
+07/10/2024 19:23:48: Placed locations in zone -11,1  duration 23.584 ms
+07/10/2024 19:23:48: Loading dungeon
+07/10/2024 19:23:48: Dungeon loaded with 0 rooms from old format in 0.031 ms.
+07/10/2024 19:23:48: Generating DG_ForestCrypt(Clone), Seed: -797723353, Bounds diff: (-29.65, -32.00, -37.15) / (34.35, 32.00, 26.85)
+07/10/2024 19:23:48: Available rooms:18
+07/10/2024 19:23:48: To place:40
+07/10/2024 19:23:48: Connections 4
+07/10/2024 19:23:48: placed 10 doors
+07/10/2024 19:23:48: Placed 30 rooms
+07/10/2024 19:23:48: Placed locations in zone -11,0  duration 30.934 ms
+07/10/2024 19:23:48: Loading dungeon
+07/10/2024 19:23:48: Dungeon loaded with 35 rooms in 0.046 ms.
+07/10/2024 19:23:48: Loading room prefabs asynchronously
+07/10/2024 19:23:48: Spawning dungeon
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im finally the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:54: Im still nto the owner
+07/10/2024 19:23:55: Im still nto the owner
+07/10/2024 19:23:55: Im finally the owner
+Column: 1
+Lines: 3737
+Translation1: Heed these words of Ulf, a poor settler in a strange land. You will find here good stone and wood, all you need to build a house. You will need to craft a roof to keep out the rain. Then you will need walls to stop the roof from falling down. Finally, you must have a door or it will be much harder to go in and out.
+
+These things Ulf has learned for himself. Now he writes them on this stone to help others. Pray to Odin for his soul.
+Translation2: Heed these words of Ulf, a poor settler in a strange land. You will find here good stone and wood, all you need to build a house. You will need to craft a roof to keep out the rain. Then you will need walls to stop the roof from falling down. Finally, you must have a door or it will be much harder to go in and out.
+
+These things Ulf has learned for himself. Now he writes them on this stone to help others. Pray to Odin for his soul.
+Column: 1
+Lines: 43
+Column: 1
+Lines: 3
+Column: 1
+Lines: 1
+Column: 1
+Lines: 20
+Column: 1
+Lines: 2
+Translation3: Heed these words of Ulf, a poor settler in a strange land. You will find here good stone and wood, all you need to build a house. You will need to craft a roof to keep out the rain. Then you will need walls to stop the roof from falling down. Finally, you must have a door or it will be much harder to go in and out.
+
+These things Ulf has learned for himself. Now he writes them on this stone to help others. Pray to Odin for his soul.
+07/10/2024 19:24:18: Show text :Heed these words of Ulf, a poor settler in a strange land. You will find here good stone and wood, all you need to build a house. You will need to craft a roof to keep out the rain. Then you will need walls to stop the roof from falling down. Finally, you must have a door or it will be much harder to go in and out.
+
+These things Ulf has learned for himself. Now he writes them on this stone to help others. Pray to Odin for his soul.
+07/10/2024 19:25:21: Update PlayFab entity token
+07/10/2024 19:25:21: Setting selected recipe 2
+07/10/2024 19:25:32: SIZE 0
+07/10/2024 19:25:47: Setting selected recipe 2
+07/10/2024 19:26:04: Spawned Seagal x 2
+07/10/2024 19:27:32: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:27:59: Disabling PlayerBase  character_trigger
+07/10/2024 19:28:22: Spawned Fish1 x 1
+07/10/2024 19:28:38: Spawned Greyling x 1
+07/10/2024 19:29:12: Queue unlock msg:$msg_newstation:$piece_workbench
+07/10/2024 19:29:12: Queue unlock msg:$msg_newrecipe:$item_arrow_wood
+07/10/2024 19:29:12: Queue unlock msg:$msg_newrecipe:$item_axe_flint
+07/10/2024 19:29:12: Queue unlock msg:$msg_newrecipe:$item_hoe
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_workbench_ext1
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodfloor1x1
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodfloor2x2
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodstair
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodstepladder
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallquarter
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallhalf
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwall
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallroof
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallroof_upsidedown
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallrooftop
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallroof45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallroof45_upsidedown
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodwallrooftop45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodroof26
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodrooftop
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodroofocorner
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodrooficorner
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodroof45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodrooftop45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodroofocorner45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodrooficorner45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodpole
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodpole2
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodbeam1
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodbeam2
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodbeam26
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodbeam45
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_wooddoor
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodgate
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_woodfence
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_stakewall
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_bed
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_chestwood
+07/10/2024 19:29:12: Queue unlock msg:$msg_newpiece:$piece_groundtorchwood
+07/10/2024 19:29:12: Disabling PlayerBase  character_trigger
+07/10/2024 19:29:12: Placed piece_workbench
+07/10/2024 19:29:12: Disabling PlayerBase  character_trigger
+07/10/2024 19:30:08: Activating default element Continue
+07/10/2024 19:30:13: Unloading unused assets
+Unloading 3 Unused Serialized files (Serialized files now loaded: 1152)
+Unloading 6241 unused Assets to reduce memory usage. Loaded Objects now: 314967.
+Total: 73.945795 ms (FindLiveObjects: 17.546326 ms CreateObjectMapping: 12.406004 ms MarkObjects: 35.303692 ms  DeleteObjects: 8.689173 ms)
+
+07/10/2024 19:31:54: Setting selected recipe 2
+07/10/2024 19:32:13: Disabling PlayerBase  character_trigger
+07/10/2024 19:32:28: Spawned Seagal x 1
+07/10/2024 19:32:28: Spawned Fish2 x 2
+07/10/2024 19:32:28: Placed locations in zone -1,-6  duration 1.944 ms
+07/10/2024 19:32:33: Setting selected recipe 2
+07/10/2024 19:33:16: Spawned Greyling x 1
+07/10/2024 19:33:43: Queue unlock msg:$msg_newmaterial:$item_beechseeds
+07/10/2024 19:33:57: Activating default element Continue
+07/10/2024 19:34:04: Skipping unloading unused assets
+07/10/2024 19:35:36: Starting music evening
+07/10/2024 19:35:37: Stopped music meadows at 4437228
+07/10/2024 19:36:00: Disabling PlayerBase  character_trigger
+07/10/2024 19:36:02: Disabling PlayerBase  character_trigger
+07/10/2024 19:36:14: Placed fire_pit
+07/10/2024 19:36:14: Disabling PlayerBase  character_trigger
+07/10/2024 19:36:14: Disabling PlayerBase  character_trigger
+07/10/2024 19:36:22: Activating default element Continue
+07/10/2024 19:37:09: Setting selected recipe 2
+07/10/2024 19:37:16: Setting selected recipe 0
+07/10/2024 19:37:24: Setting selected recipe 3
+Am I Host? True
+07/10/2024 19:38:07: Available space to current user: 218240270336. Saving is blocked if below: 209716780 bytes. Warnings are given if below: 419433560
+07/10/2024 19:38:07: Minimap: compressed mapData 8388688 => 8478 bytes
+07/10/2024 19:38:07: Cloud Save: 12538 bytes. /characters/thea.fch.new
+07/10/2024 19:38:07: Steam writing file chunks 1 / 1, (12538 bytes)
+07/10/2024 19:38:07: Steam Cloud Move: 790 bytes. /characters/thea.fch -> /characters/thea.fch.old
+07/10/2024 19:38:07: Steam writing file chunks 1 / 1, (790 bytes)
+07/10/2024 19:38:07: Steam Cloud Move: 12538 bytes. /characters/thea.fch.new -> /characters/thea.fch
+07/10/2024 19:38:07: Steam writing file chunks 1 / 1, (12538 bytes)
+07/10/2024 19:38:07: Considering autobackup. World time: 1441.82, short time: 7200, long time: 43200, backup count: 4
+07/10/2024 19:38:07: No autobackup needed yet...
+07/10/2024 19:38:07: Sending message to save player profiles
+07/10/2024 19:38:07: PrepareSave: clone done in 11ms
+07/10/2024 19:38:07: PrepareSave: ZDOExtraData.PrepareSave done in 18 ms
+07/10/2024 19:38:07: World save writing starting
+07/10/2024 19:38:07: World save writing started
+07/10/2024 19:38:07: Saved 29882 ZDOs
+07/10/2024 19:38:07: World save writing finishing
+07/10/2024 19:38:07: Cloud Save: 1591114 bytes. /worlds/AshlandsReroll.db
+07/10/2024 19:38:07: Steam writing file chunks 1 / 1, (1591114 bytes)
+07/10/2024 19:38:07: World save writing finished
+07/10/2024 19:38:07: Cloud Save: 55 bytes. /worlds/AshlandsReroll.fwl
+07/10/2024 19:38:07: Steam writing file chunks 1 / 1, (55 bytes)
+07/10/2024 19:38:07: World saved ( 144.182ms )
+07/10/2024 19:38:07: Considering autobackup. World time: 1442.16, short time: 7200, long time: 43200, backup count: 4
+07/10/2024 19:38:07: No autobackup needed yet...
+Am I Host? True
+07/10/2024 19:38:58: Setting selected recipe 3
+07/10/2024 19:39:25: Queue unlock msg:$msg_newmaterial:$item_feathers
+07/10/2024 19:41:01: Spawned Neck x 3
+07/10/2024 19:41:01: Spawned Greyling x 1
+07/10/2024 19:41:01: Spawned Greyling x 1
+07/10/2024 19:41:07: Disabling PlayerBase  character_trigger
+07/10/2024 19:41:11: Placed piece_workbench
+07/10/2024 19:41:11: Disabling PlayerBase  character_trigger
+07/10/2024 19:41:21: Placed wood_floor
+07/10/2024 19:41:29: Placed wood_floor
+07/10/2024 19:41:31: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:41:32: Placed wood_floor
+07/10/2024 19:41:37: Placed wood_floor
+07/10/2024 19:41:50: Disabling PlayerBase  character_trigger
+07/10/2024 19:41:59: Placed piece_workbench
+07/10/2024 19:41:59: Disabling PlayerBase  character_trigger
+07/10/2024 19:42:11: Placed woodwall
+07/10/2024 19:42:13: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:42:16: Placed woodwall
+07/10/2024 19:42:17: Placed woodwall
+07/10/2024 19:42:25: Placed woodwall
+07/10/2024 19:42:27: Placed woodwall
+07/10/2024 19:42:30: Placed woodwall
+07/10/2024 19:43:16: Disabling PlayerBase  character_trigger
+07/10/2024 19:43:20: Disabling PlayerBase  character_trigger
+07/10/2024 19:43:24: Disabling PlayerBase  character_trigger
+07/10/2024 19:44:26: Spawned Greyling x 1
+07/10/2024 19:44:38: Starting music morning
+07/10/2024 19:45:01: Disabling PlayerBase  character_trigger
+07/10/2024 19:45:03: Disabling PlayerBase  character_trigger
+07/10/2024 19:45:11: Starting music meadows
+07/10/2024 19:45:18: Update PlayFab entity token
+07/10/2024 19:45:21: Placed fire_pit
+07/10/2024 19:45:21: Disabling PlayerBase  character_trigger
+07/10/2024 19:45:21: Disabling PlayerBase  character_trigger
+07/10/2024 19:45:24: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:46:00: Disabling PlayerBase  character_trigger
+07/10/2024 19:46:02: Spawned Greyling x 1
+07/10/2024 19:46:17: Placed wood_wall_roof_45
+07/10/2024 19:46:23: Placed wood_wall_roof_45
+07/10/2024 19:46:49: Placed wood_roof_45
+07/10/2024 19:46:52: Placed wood_roof_45
+07/10/2024 19:46:58: Placed wood_roof_45
+07/10/2024 19:47:05: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:47:06: Setting selected recipe 1
+07/10/2024 19:47:09: Item is not in this container
+07/10/2024 19:47:09: Setting selected recipe 1
+07/10/2024 19:47:12: Setting selected recipe 1
+07/10/2024 19:47:13: Activating default element Continue
+07/10/2024 19:47:18: Skipping unloading unused assets
+07/10/2024 19:48:21: Placed wood_roof_45
+07/10/2024 19:48:40: Spawned Greyling x 1
+07/10/2024 19:48:40: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:48:43: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:49:00: Setting selected recipe 6
+07/10/2024 19:49:02: Setting selected recipe 6
+07/10/2024 19:49:10: Item is not in this container
+07/10/2024 19:49:10: Setting selected recipe 6
+07/10/2024 19:49:12: Setting selected recipe 6
+07/10/2024 19:49:18: Setting selected recipe 6
+07/10/2024 19:49:25: Setting selected recipe 0
+07/10/2024 19:49:28: Queue unlock msg:$msg_newitem:$item_axe_flint
+07/10/2024 19:49:28: Setting selected recipe 2
+07/10/2024 19:49:31: Item is not in this container
+07/10/2024 19:49:31: Setting selected recipe 2
+07/10/2024 19:49:33: Setting selected recipe 2
+07/10/2024 19:49:42: Setting selected recipe 6
+07/10/2024 19:50:04: Spawned Greyling x 1
+07/10/2024 19:50:19: Left click
+07/10/2024 19:50:46: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:51:48: Spawned Neck x 0
+07/10/2024 19:52:36: Queue unlock msg:$msg_newitem:$item_mushroomcommon
+07/10/2024 19:53:04: Disabling PlayerBase  character_trigger
+07/10/2024 19:53:28: Rel vel 6.773986
+07/10/2024 19:53:28: Vis equip model set to 1
+07/10/2024 19:53:28: Rel vel 1.052215
+07/10/2024 19:53:38: Starting respawn
+07/10/2024 19:53:38: Local player destroyed
+07/10/2024 19:53:38: tip:$loadscreen_tip14
+07/10/2024 19:53:38: Missing stat for guardian power: 
+07/10/2024 19:53:38: Vis equip model set to 1
+07/10/2024 19:53:38: Unloading unused assets
+Unloading 1 Unused Serialized files (Serialized files now loaded: 1147)
+Unloading 5273 unused Assets to reduce memory usage. Loaded Objects now: 311973.
+Total: 73.043245 ms (FindLiveObjects: 17.649296 ms CreateObjectMapping: 12.387984 ms MarkObjects: 35.357722 ms  DeleteObjects: 7.647553 ms)
+
+07/10/2024 19:53:42: Activating default element Continue
+07/10/2024 19:53:50: Skipping unloading unused assets
+07/10/2024 19:54:21: Stopped music meadows at 4820797
+07/10/2024 19:54:21: Starting music meadows
+07/10/2024 19:54:21: Resumed music meadows at 4820797
+07/10/2024 19:54:37: Grave should fit in inventory, loot all
+07/10/2024 19:54:37: Player 1924536170 wants to takeall from Player_tombstone(Clone)   im: 1924536170
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Component.get_gameObject(UnityEngine.Component)
+  at Player.AutoPickup (System.Single dt) [0x00092] in <edc69d7419b44b369a8dce8661f4df8c>:0 
+  at Player.FixedUpdate () [0x000b6] in <edc69d7419b44b369a8dce8661f4df8c>:0 
+
+07/10/2024 19:55:06: Setting selected recipe 0
+07/10/2024 19:55:15: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:16: Placed piece_workbench
+07/10/2024 19:55:16: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:20: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:21: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:21: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:24: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:25: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:27: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:28: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:28: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:29: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:29: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:30: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:32: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:33: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:33: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:37: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:37: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:39: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:41: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:46: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:46: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:47: Disabling PlayerBase  character_trigger
+07/10/2024 19:55:58: Setting location music as played
+07/10/2024 19:56:10: Disabling PlayerBase  character_trigger
+07/10/2024 19:57:21: Left click
+07/10/2024 19:57:37: Setting selected recipe 1
+07/10/2024 19:57:42: Setting selected recipe 1
+07/10/2024 19:57:46: Setting selected recipe 1
+07/10/2024 19:57:49: Setting selected recipe 6
+07/10/2024 19:57:51: Setting selected recipe 6
+07/10/2024 19:57:57: Setting selected recipe 6
+07/10/2024 19:58:21: Setting selected recipe 4
+07/10/2024 19:58:24: Queue unlock msg:$msg_newitem:$item_hoe
+07/10/2024 19:58:24: Queue unlock msg:$msg_newpiece:$piece_levelground
+07/10/2024 19:58:24: Queue unlock msg:$msg_newpiece:$piece_raise
+07/10/2024 19:58:24: Queue unlock msg:$msg_newpiece:$piece_path
+07/10/2024 19:58:24: Setting selected recipe 4
+07/10/2024 19:58:36: Placed mud_road_v2
+07/10/2024 19:58:37: Placed mud_road_v2
+07/10/2024 19:58:38: Placed mud_road_v2
+07/10/2024 19:58:39: Placed mud_road_v2
+07/10/2024 19:58:40: Placed mud_road_v2
+07/10/2024 19:58:42: Placed mud_road_v2
+07/10/2024 19:58:43: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:58:43: Placed mud_road_v2
+07/10/2024 19:58:44: Placed mud_road_v2
+07/10/2024 19:58:44: Placed mud_road_v2
+07/10/2024 19:58:45: Placed mud_road_v2
+07/10/2024 19:58:46: Placed mud_road_v2
+07/10/2024 19:58:49: Placed mud_road_v2
+07/10/2024 19:58:50: Placed mud_road_v2
+07/10/2024 19:58:51: Placed mud_road_v2
+07/10/2024 19:58:53: Placed mud_road_v2
+07/10/2024 19:58:53: Placed mud_road_v2
+07/10/2024 19:58:54: Placed mud_road_v2
+07/10/2024 19:58:55: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:58:59: Placed mud_road_v2
+07/10/2024 19:58:59: Placed mud_road_v2
+07/10/2024 19:59:00: Placed mud_road_v2
+07/10/2024 19:59:01: Placed mud_road_v2
+07/10/2024 19:59:02: Placed mud_road_v2
+07/10/2024 19:59:02: Placed mud_road_v2
+07/10/2024 19:59:10: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:59:15: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:59:35: Disabling PlayerBase  character_trigger
+07/10/2024 19:59:38: Placed mud_road_v2
+07/10/2024 19:59:39: Placed mud_road_v2
+07/10/2024 19:59:40: Placed mud_road_v2
+07/10/2024 19:59:41: Placed mud_road_v2
+07/10/2024 19:59:42: Placed mud_road_v2
+07/10/2024 19:59:43: Placed mud_road_v2
+07/10/2024 19:59:44: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 19:59:44: Placed mud_road_v2
+07/10/2024 19:59:49: Placed mud_road_v2
+07/10/2024 19:59:50: Placed mud_road_v2
+07/10/2024 19:59:51: Placed mud_road_v2
+07/10/2024 19:59:52: Placed mud_road_v2
+07/10/2024 19:59:52: Placed mud_road_v2
+07/10/2024 19:59:53: Placed mud_road_v2
+07/10/2024 19:59:56: Placed mud_road_v2
+07/10/2024 19:59:57: Placed mud_road_v2
+07/10/2024 19:59:58: Placed mud_road_v2
+07/10/2024 19:59:59: Placed mud_road_v2
+07/10/2024 20:00:00: Placed mud_road_v2
+07/10/2024 20:00:09: Update PlayFab entity token
+07/10/2024 20:00:14: Placed mud_road_v2
+07/10/2024 20:00:16: Placed mud_road_v2
+07/10/2024 20:00:17: Placed mud_road_v2
+07/10/2024 20:00:18: Placed mud_road_v2
+07/10/2024 20:00:19: Placed mud_road_v2
+07/10/2024 20:00:21: Placed mud_road_v2
+07/10/2024 20:00:22: Placed mud_road_v2
+07/10/2024 20:00:23: Placed mud_road_v2
+07/10/2024 20:00:24: Placed mud_road_v2
+07/10/2024 20:00:25: Placed mud_road_v2
+07/10/2024 20:00:26: Placed mud_road_v2
+07/10/2024 20:00:27: Placed mud_road_v2
+07/10/2024 20:00:28: Placed mud_road_v2
+07/10/2024 20:00:30: Placed mud_road_v2
+07/10/2024 20:00:34: Placed mud_road_v2
+07/10/2024 20:00:35: Placed mud_road_v2
+07/10/2024 20:00:38: Placed mud_road_v2
+07/10/2024 20:00:40: Placed mud_road_v2
+07/10/2024 20:00:44: Placed mud_road_v2
+07/10/2024 20:00:46: Placed mud_road_v2
+07/10/2024 20:00:49: Placed mud_road_v2
+07/10/2024 20:01:04: Setting selected recipe 4
+07/10/2024 20:01:07: Setting selected recipe 4
+07/10/2024 20:01:08: Setting selected recipe 4
+07/10/2024 20:01:10: Setting selected recipe 0
+07/10/2024 20:01:12: Setting selected recipe 0
+07/10/2024 20:01:31: Disabling PlayerBase  character_trigger
+07/10/2024 20:01:46: Placed wood_floor
+07/10/2024 20:01:47: Placed wood_floor
+07/10/2024 20:02:00: Placed wood_floor
+07/10/2024 20:02:05: Placed mud_road_v2
+07/10/2024 20:02:05: Placed mud_road_v2
+07/10/2024 20:02:06: Placed mud_road_v2
+07/10/2024 20:02:09: Placed mud_road_v2
+07/10/2024 20:02:10: Placed mud_road_v2
+07/10/2024 20:02:11: Spawned Greyling x 1
+07/10/2024 20:02:11: Placed mud_road_v2
+07/10/2024 20:02:13: Placed mud_road_v2
+07/10/2024 20:02:14: Placed mud_road_v2
+07/10/2024 20:02:15: Placed mud_road_v2
+07/10/2024 20:02:15: Placed mud_road_v2
+07/10/2024 20:02:16: Placed mud_road_v2
+07/10/2024 20:02:17: Placed mud_road_v2
+07/10/2024 20:02:18: Placed mud_road_v2
+07/10/2024 20:02:18: Placed mud_road_v2
+07/10/2024 20:02:19: Placed mud_road_v2
+07/10/2024 20:02:24: Placed wood_floor
+07/10/2024 20:02:25: Placed wood_floor
+07/10/2024 20:02:27: Placed wood_floor
+07/10/2024 20:02:28: Placed wood_floor
+07/10/2024 20:02:29: Placed wood_floor
+07/10/2024 20:02:31: Placed wood_floor
+07/10/2024 20:02:33: Placed mud_road_v2
+07/10/2024 20:02:34: Placed mud_road_v2
+07/10/2024 20:02:35: Placed mud_road_v2
+07/10/2024 20:02:37: Placed mud_road_v2
+07/10/2024 20:02:38: Placed mud_road_v2
+07/10/2024 20:02:39: Placed mud_road_v2
+07/10/2024 20:02:40: Placed mud_road_v2
+07/10/2024 20:02:45: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 20:02:45: Placed mud_road_v2
+07/10/2024 20:02:46: Placed mud_road_v2
+07/10/2024 20:02:47: Placed mud_road_v2
+07/10/2024 20:02:48: Placed mud_road_v2
+07/10/2024 20:02:48: Placed mud_road_v2
+07/10/2024 20:02:49: Placed mud_road_v2
+07/10/2024 20:02:49: Placed mud_road_v2
+07/10/2024 20:02:50: Placed mud_road_v2
+07/10/2024 20:02:52: Placed mud_road_v2
+07/10/2024 20:02:53: Placed mud_road_v2
+07/10/2024 20:02:54: Placed mud_road_v2
+07/10/2024 20:02:55: Placed mud_road_v2
+07/10/2024 20:02:59: Placed mud_road_v2
+07/10/2024 20:03:00: Placed mud_road_v2
+07/10/2024 20:03:01: Placed mud_road_v2
+07/10/2024 20:03:06: Placed mud_road_v2
+07/10/2024 20:03:07: Placed mud_road_v2
+07/10/2024 20:03:09: Placed mud_road_v2
+07/10/2024 20:03:10: Placed mud_road_v2
+07/10/2024 20:03:13: Placed mud_road_v2
+07/10/2024 20:03:14: Placed mud_road_v2
+07/10/2024 20:03:16: Placed mud_road_v2
+07/10/2024 20:03:17: Placed mud_road_v2
+07/10/2024 20:03:27: Placed mud_road_v2
+07/10/2024 20:03:28: Placed mud_road_v2
+07/10/2024 20:03:29: Placed mud_road_v2
+07/10/2024 20:03:29: Placed mud_road_v2
+07/10/2024 20:03:31: Placed mud_road_v2
+07/10/2024 20:03:32: Placed mud_road_v2
+07/10/2024 20:03:33: Placed mud_road_v2
+07/10/2024 20:03:33: Placed mud_road_v2
+07/10/2024 20:03:34: Placed mud_road_v2
+07/10/2024 20:03:35: Placed mud_road_v2
+07/10/2024 20:03:36: Placed mud_road_v2
+07/10/2024 20:03:36: Spawned Neck x 1
+07/10/2024 20:03:37: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 20:03:42: Placed mud_road_v2
+07/10/2024 20:03:42: Placed mud_road_v2
+07/10/2024 20:03:43: Placed mud_road_v2
+07/10/2024 20:03:44: Placed mud_road_v2
+07/10/2024 20:03:59: Placed woodwall
+07/10/2024 20:04:00: Placed woodwall
+07/10/2024 20:04:00: Placed woodwall
+07/10/2024 20:04:03: Placed woodwall
+07/10/2024 20:04:07: Placed woodwall
+07/10/2024 20:04:08: Placed woodwall
+07/10/2024 20:04:11: Placed woodwall
+07/10/2024 20:04:13: Placed woodwall
+07/10/2024 20:04:14: Placed woodwall
+07/10/2024 20:04:43: Placed wood_wall_roof_45
+07/10/2024 20:04:47: Placed wood_wall_roof_45
+07/10/2024 20:04:58: Placed woodwall
+07/10/2024 20:05:31: Placed wood_roof_45
+07/10/2024 20:05:34: Placed wood_roof_45
+07/10/2024 20:05:45: Force generating hmap (-512.00, 0.00, -128.00)
+07/10/2024 20:06:00: Placed wood_door
+07/10/2024 20:06:02: Setting selected recipe 0
+07/10/2024 20:06:16: Stopped music meadows at 7231334
+07/10/2024 20:06:16: Starting music meadows
+07/10/2024 20:06:16: Resumed music meadows at 7231334
+07/10/2024 20:06:18: Stopped music meadows at 7335762
+07/10/2024 20:06:18: Starting music meadows
+07/10/2024 20:06:18: Resumed music meadows at 7335762
+07/10/2024 20:06:24: Starting music evening
+07/10/2024 20:06:24: Stopped music meadows at 7596363
+07/10/2024 20:06:48: Setting selected recipe 0
+07/10/2024 20:06:49: Activating default element Continue
+Am I Host? True
+07/10/2024 20:06:52: Available space to current user: 218239213568. Saving is blocked if below: 3207304 bytes. Warnings are given if below: 6414608
+Am I Host? True
+07/10/2024 20:06:52: Game - OnApplicationQuit
+Am I Host? True
+07/10/2024 20:06:52: Available space to current user: 218239213568. Saving is blocked if below: 3207304 bytes. Warnings are given if below: 6414608
+07/10/2024 20:06:52: Shutting down
+07/10/2024 20:06:52: Minimap: compressed mapData 8388792 => 8572 bytes
+07/10/2024 20:06:52: Cloud Save: 13102 bytes. /characters/thea.fch.new
+07/10/2024 20:06:52: Steam writing file chunks 1 / 1, (13102 bytes)
+07/10/2024 20:06:52: Steam Cloud Move: 12538 bytes. /characters/thea.fch -> /characters/thea.fch.old
+07/10/2024 20:06:52: Steam writing file chunks 1 / 1, (12538 bytes)
+07/10/2024 20:06:52: Steam Cloud Move: 13102 bytes. /characters/thea.fch.new -> /characters/thea.fch
+07/10/2024 20:06:52: Steam writing file chunks 1 / 1, (13102 bytes)
+07/10/2024 20:06:52: Considering autobackup. World time: 3117.08, short time: 7200, long time: 43200, backup count: 4
+07/10/2024 20:06:52: No autobackup needed yet...
+07/10/2024 20:06:52: ZNet Shutdown
+07/10/2024 20:06:52: PrepareSave: clone done in 11ms
+07/10/2024 20:06:52: PrepareSave: ZDOExtraData.PrepareSave done in 8 ms
+07/10/2024 20:06:52: World save writing starting
+07/10/2024 20:06:52: World save writing started
+07/10/2024 20:06:52: Saved 30192 ZDOs
+07/10/2024 20:06:52: World save writing finishing
+07/10/2024 20:06:52: Cloud Save: 1608523 bytes. /worlds/AshlandsReroll.db
+07/10/2024 20:06:52: Steam writing file chunks 1 / 1, (1608523 bytes)
+07/10/2024 20:06:52: World save writing finished
+07/10/2024 20:06:52: Cloud Save: 55 bytes. /worlds/AshlandsReroll.fwl
+07/10/2024 20:06:52: Steam writing file chunks 1 / 1, (55 bytes)
+07/10/2024 20:06:52: World saved ( 120.353ms )
+07/10/2024 20:06:52: Considering autobackup. World time: 3117.08, short time: 7200, long time: 43200, backup count: 4
+07/10/2024 20:06:52: No autobackup needed yet...
+07/10/2024 20:06:52: Unloading unused assets
+Unloading 1 Unused Serialized files (Serialized files now loaded: 1154)
+07/10/2024 20:06:52: Sending disconnect msg
+ZPlayFabMatchmaking::UnregisterServer - unregistering server now. State: Uninitialized
+07/10/2024 20:06:52: Stopping build thread
+Unloading 6753 unused Assets to reduce memory usage. Loaded Objects now: 349452.
+Total: 75.670675 ms (FindLiveObjects: 19.677657 ms CreateObjectMapping: 13.050954 ms MarkObjects: 34.164751 ms  DeleteObjects: 8.776632 ms)
+
+Setting up 12 worker threads for Enlighten.
+07/10/2024 20:06:55: Local player destroyed
+07/10/2024 20:06:55: Steam manager on destroy
+07/10/2024 20:06:55: ZNet OnDestroy
+07/10/2024 20:06:55: Net scene destroyed
+Vulkan PSO: data extracted [new size=5721687, old size=0, incomplete=0]
+Vulkan PSO: Saved size[5721687] path[/tmp/IronGate/Valheim/vulkan_pso_cache.bin] success=1 headerChanged=1 sizeChanged=1
+Memory Statistics:
+[ALLOC_TEMP_TLS] TLS Allocator
+  StackAllocators : 
+    [ALLOC_TEMP_MAIN]
+      Peak usage frame count: [2.0 KB-4.0 KB]: 2407 frames, [4.0 KB-8.0 KB]: 22 frames, [8.0 KB-16.0 KB]: 26 frames, [16.0 KB-32.0 KB]: 11977 frames, [32.0 KB-64.0 KB]: 244983 frames, [64.0 KB-128.0 KB]: 798 frames, [128.0 KB-256.0 KB]: 33 frames, [256.0 KB-0.5 MB]: 977 frames, [0.5 MB-1.0 MB]: 80 frames, [1.0 MB-2.0 MB]: 58 frames, [2.0 MB-4.0 MB]: 31 frames, [4.0 MB-8.0 MB]: 5 frames
+      Initial Block Size 4.0 MB
+      Current Block Size 7.6 MB
+      Peak Allocated Bytes 7.6 MB
+      Overflow Count 120
+    [ALLOC_TEMP_Background Job.worker 4]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.PreloadManager]
+      Initial Block Size 256.0 KB
+      Current Block Size 0.5 MB
+      Peak Allocated Bytes 511.5 KB
+      Overflow Count 346779
+    [ALLOC_TEMP_Background Job.worker 3]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 11]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 16]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 7]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 6]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 19]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 12]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 2]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 10]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 15]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 5]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 20]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 222.9 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 8]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 13]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_NavMesh Builder.worker 0]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_AssetGarbageCollectorHelper] x 23
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 0]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 6]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 8]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 14]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_BatchDeleteObjects]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 11]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 15]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 9]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 0]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 153.5 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 4]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 14]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 13]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 1]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 1
+    [ALLOC_TEMP_EnlightenWorker] x 12
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 0 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 1]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 153.5 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 21]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 153.5 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 3]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Background Job.worker 5]
+      Initial Block Size 32.0 KB
+      Current Block Size 32.0 KB
+      Peak Allocated Bytes 168 B
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 12]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_UnityGfxDeviceWorker]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 99.4 KB
+      Overflow Count 2
+    [ALLOC_TEMP_Job.worker 22]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 153.5 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 2]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 10]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 7]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 17]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 9]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Job.worker 18]
+      Initial Block Size 256.0 KB
+      Current Block Size 256.0 KB
+      Peak Allocated Bytes 231.1 KB
+      Overflow Count 0
+    [ALLOC_TEMP_Loading.AsyncRead]
+      Initial Block Size 64.0 KB
+      Current Block Size 64.0 KB
+      Peak Allocated Bytes 256 B
+      Overflow Count 0
+[ALLOC_DEFAULT] Dual Thread Allocator
+  Peak main deferred allocation count 93675
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 6 Subsections = 6144 buckets. Failed count: 58807424
+        32B: 21 Subsections = 10752 buckets. Failed count: 1318647
+        48B: 25 Subsections = 8533 buckets. Failed count: 40878426
+        64B: 85 Subsections = 21760 buckets. Failed count: 5857025
+        80B: 55 Subsections = 11264 buckets. Failed count: 20260632
+        96B: 31 Subsections = 5290 buckets. Failed count: 4036630
+        112B: 14 Subsections = 2048 buckets. Failed count: 338337
+        128B: 19 Subsections = 2432 buckets. Failed count: 1779247
+    [ALLOC_DEFAULT_MAIN]
+      Peak usage frame count: [32.0 MB-64.0 MB]: 2334 frames, [64.0 MB-128.0 MB]: 131 frames, [128.0 MB-256.0 MB]: 70737 frames, [256.0 MB-0.50 GB]: 188195 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 16
+      Peak Allocated memory 323.2 MB
+      Peak Large allocation bytes 123.2 MB
+    [ALLOC_DEFAULT_THREAD]
+      Peak usage frame count: [4.0 MB-8.0 MB]: 2 frames, [8.0 MB-16.0 MB]: 15 frames, [16.0 MB-32.0 MB]: 1878 frames, [32.0 MB-64.0 MB]: 44 frames, [64.0 MB-128.0 MB]: 61 frames, [128.0 MB-256.0 MB]: 134 frames, [256.0 MB-0.50 GB]: 259263 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 22
+      Peak Allocated memory 338.0 MB
+      Peak Large allocation bytes 49.4 MB
+[ALLOC_TEMP_JOB_1_FRAME]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_2_FRAMES]
+  Initial Block Size 2.0 MB
+  Used Block Count 0
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_4_FRAMES (JobTemp)]
+  Initial Block Size 2.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 0
+  Overflow Count (full) 0
+[ALLOC_TEMP_JOB_ASYNC (Background)]
+  Initial Block Size 1.0 MB
+  Used Block Count 1
+  Overflow Count (too large) 4
+  Overflow Count (full) 0
+[ALLOC_GFX] Dual Thread Allocator
+  Peak main deferred allocation count 14
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 6 Subsections = 6144 buckets. Failed count: 58807424
+        32B: 21 Subsections = 10752 buckets. Failed count: 1318647
+        48B: 25 Subsections = 8533 buckets. Failed count: 40878426
+        64B: 85 Subsections = 21760 buckets. Failed count: 5857025
+        80B: 55 Subsections = 11264 buckets. Failed count: 20260632
+        96B: 31 Subsections = 5290 buckets. Failed count: 4036630
+        112B: 14 Subsections = 2048 buckets. Failed count: 338337
+        128B: 19 Subsections = 2432 buckets. Failed count: 1779247
+    [ALLOC_GFX_MAIN]
+      Peak usage frame count: [32.0 KB-64.0 KB]: 1926 frames, [64.0 KB-128.0 KB]: 17 frames, [128.0 KB-256.0 KB]: 10 frames, [0.5 MB-1.0 MB]: 115 frames, [1.0 MB-2.0 MB]: 203 frames, [2.0 MB-4.0 MB]: 6 frames, [4.0 MB-8.0 MB]: 13 frames, [8.0 MB-16.0 MB]: 20940 frames, [64.0 MB-128.0 MB]: 238167 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 3
+      Peak Allocated memory 111.0 MB
+      Peak Large allocation bytes 90.7 MB
+    [ALLOC_GFX_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 1 frames, [0.5 MB-1.0 MB]: 1907 frames, [2.0 MB-4.0 MB]: 2 frames, [4.0 MB-8.0 MB]: 2 frames, [8.0 MB-16.0 MB]: 6 frames, [16.0 MB-32.0 MB]: 53 frames, [32.0 MB-64.0 MB]: 71 frames, [64.0 MB-128.0 MB]: 259065 frames, [128.0 MB-256.0 MB]: 290 frames
+      Requested Block Size 16.0 MB
+      Peak Block count 9
+      Peak Allocated memory 137.3 MB
+      Peak Large allocation bytes 0 B
+[ALLOC_CACHEOBJECTS] Dual Thread Allocator
+  Peak main deferred allocation count 9695
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 6 Subsections = 6144 buckets. Failed count: 58807424
+        32B: 21 Subsections = 10752 buckets. Failed count: 1318647
+        48B: 25 Subsections = 8533 buckets. Failed count: 40878426
+        64B: 85 Subsections = 21760 buckets. Failed count: 5857025
+        80B: 55 Subsections = 11264 buckets. Failed count: 20260632
+        96B: 31 Subsections = 5290 buckets. Failed count: 4036630
+        112B: 14 Subsections = 2048 buckets. Failed count: 338337
+        128B: 19 Subsections = 2432 buckets. Failed count: 1779247
+    [ALLOC_CACHEOBJECTS_MAIN]
+      Peak usage frame count: [2.0 MB-4.0 MB]: 2318 frames, [4.0 MB-8.0 MB]: 7 frames, [8.0 MB-16.0 MB]: 140 frames, [32.0 MB-64.0 MB]: 258932 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 9
+      Peak Allocated memory 59.5 MB
+      Peak Large allocation bytes 31.6 MB
+    [ALLOC_CACHEOBJECTS_THREAD]
+      Peak usage frame count: [64.0 KB-128.0 KB]: 1 frames, [64.0 MB-128.0 MB]: 1899 frames, [128.0 MB-256.0 MB]: 76 frames, [256.0 MB-0.50 GB]: 259331 frames, [0.50 GB-1.00 GB]: 90 frames
+      Requested Block Size 4.0 MB
+      Peak Block count 101
+      Peak Allocated memory 0.51 GB
+      Peak Large allocation bytes 153.8 MB
+[ALLOC_TYPETREE] Dual Thread Allocator
+  Peak main deferred allocation count 1494
+    [ALLOC_BUCKET]
+      Large Block size 4.0 MB
+      Used Block count 1
+      Peak Allocated bytes 4.0 MB
+      Failed Allocations. Bucket layout:
+        16B: 6 Subsections = 6144 buckets. Failed count: 58807424
+        32B: 21 Subsections = 10752 buckets. Failed count: 1318647
+        48B: 25 Subsections = 8533 buckets. Failed count: 40878426
+        64B: 85 Subsections = 21760 buckets. Failed count: 5857025
+        80B: 55 Subsections = 11264 buckets. Failed count: 20260632
+        96B: 31 Subsections = 5290 buckets. Failed count: 4036630
+        112B: 14 Subsections = 2048 buckets. Failed count: 338337
+        128B: 19 Subsections = 2432 buckets. Failed count: 1779247
+    [ALLOC_TYPETREE_MAIN]
+      Peak usage frame count: [256.0 KB-0.5 MB]: 23229 frames, [1.0 MB-2.0 MB]: 238167 frames, [2.0 MB-4.0 MB]: 1 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 2
+      Peak Allocated memory 2.8 MB
+      Peak Large allocation bytes 0 B
+    [ALLOC_TYPETREE_THREAD]
+      Peak usage frame count: [0-1.0 KB]: 1 frames, [16.0 MB-32.0 MB]: 18 frames, [32.0 MB-64.0 MB]: 11 frames, [64.0 MB-128.0 MB]: 261367 frames
+      Requested Block Size 2.0 MB
+      Peak Block count 50
+      Peak Allocated memory 96.1 MB
+      Peak Large allocation bytes 0 B
