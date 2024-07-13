@@ -80,48 +80,6 @@ require("lazy").setup({
 	-- after the plugin has been loaded:
 	--  config = function() ... end
 
-	-- TODO: Abstract away the configuration of which-key into a separate file
-
-	{
-		"folke/which-key.nvim",
-		event = "VeryLazy",
-		-- NOTE: Plugins can specify dependencies.
-		--
-		-- The dependencies are proper plugin specifications as well - anything
-		-- you do for a plugin at the top level, you can do for a dependency.
-		-- Use the `dependencies` key to specify the dependencies of a particular plugin
-		dependencies = {
-			{ "echasnovski/mini.icons", version = false },
-		},
-		opts = {
-			spec = {},
-		},
-		init = function()
-			vim.o.timeout = true
-			vim.o.timeoutlen = 500
-		end,
-		config = function() -- This is the function that runs, AFTER loading
-			require("which-key").setup()
-
-			-- Document existing key chains
-			require("which-key").register({
-				-- ['<leader>c'] = { name = '[C]ode, _ = 'which_key_ignore' },
-				["<leader>b"] = { name = "[B]buffers", _ = "which_key_ignore" },
-				["<leader>c"] = { name = "[C]opilot GTP-4  ", _ = "which_key_ignore" },
-				["<leader>d"] = { name = "[D]ocument 🗎 ", _ = "which_key_ignore" },
-				["<leader>e"] = { name = "[E]xecute Yazi File Tree 🗎 ", _ = "which_key_ignore" },
-				["<leader>i"] = { name = "[I]con Picker ⛏ ", _ = "which_key_ignore" },
-				["<leader>n"] = { name = "[N]oice  ", _ = "which_key_ignore" },
-				["<leader>o"] = { name = "T[o]do  ", _ = "which_key_ignore" },
-				["<leader>p"] = { name = "[P]recognition 👁️", _ = "which_key_ignore" },
-				["<leader>r"] = { name = "[R]ename  ", _ = "which_key_ignore" },
-				["<leader>s"] = { name = "[S]earch  ", _ = "which_key_ignore" },
-				["<leader>w"] = { name = "[W]orkspace 󱎃 ", _ = "which_key_ignore" },
-				["<leader>x"] = { name = "Folke Tr[x]uble  ", _ = "which_key_ignore" },
-			})
-		end,
-	},
-
 	-- TODO: Abstract away the configuration of telescope into a separate file
 	{ -- Fuzzy Finder (files, lsp, etc)
 		"nvim-telescope/telescope.nvim",
@@ -285,32 +243,32 @@ require("lazy").setup({
 					-- Jump to the definition of the word under your cursor.
 					--  This is where a variable was first declared, or where a function is defined, etc.
 					--  To jump back, press <C-T>.
-					map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
-
-					-- Find references for the word under your cursor.
-					map("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
-
-					-- Jump to the implementation of the word under your cursor.
-					--  Useful when your language has ways of declaring types without an actual implementation.
-					map("gI", require("telescope.builtin").lsp_implementations, "[G]oto [I]mplementation")
-
-					-- Jump to the type of the word under your cursor.
-					--  Useful when you're not sure what type a variable is and you want to see
-					--  the definition of its *type*, not where it was *defined*.
-					map("<leader>D", require("telescope.builtin").lsp_type_definitions, "Type [D]efinition")
-
-					-- Fuzzy find all the symbols in your current document.
-					--  Symbols are things like variables, functions, types, etc.
-					map("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[D]ocument [S]symbols")
-
-					-- Fuzzy find all the symbols in your current workspace
-					--  Similar to document symbols, except searches over your whole project.
-					-- Had to take <leader>w back for neovim window functions
-					-- map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
-
-					-- Rename the variable under your cursor
-					--  Most Language Servers support renaming across files, etc.
-					map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
+					-- map("gd", require("telescope.builtin").lsp_definitions, "[G]oto [D]efinition")
+					--
+					-- -- Find references for the word under your cursor.
+					-- map("gr", require("telescope.builtin").lsp_references, "[G]oto [R]eferences")
+					--
+					-- -- Jump to the implementation of the word under your cursor.
+					-- --  Useful when your language has ways of declaring types without an actual implementation.
+					-- map("gI", require("telescope.builtin").lsp_implementations, "[G]oto [I]mplementation")
+					--
+					-- -- Jump to the type of the word under your cursor.
+					-- --  Useful when you're not sure what type a variable is and you want to see
+					-- --  the definition of its *type*, not where it was *defined*.
+					map("<leader>d", require("telescope.builtin").lsp_type_definitions, "Type [D]efinition")
+					--
+					-- -- Fuzzy find all the symbols in your current document.
+					-- --  Symbols are things like variables, functions, types, etc.
+					-- map("<leader>ds", require("telescope.builtin").lsp_document_symbols, "[Document Symbols")
+					--
+					-- -- Fuzzy find all the symbols in your current workspace
+					-- --  Similar to document symbols, except searches over your whole project.
+					-- -- Had to take <leader>w back for neovim window functions
+					-- -- map('<leader>ws', require('telescope.builtin').lsp_dynamic_workspace_symbols, '[W]orkspace [S]ymbols')
+					--
+					-- -- Rename the variable under your cursor
+					-- --  Most Language Servers support renaming across files, etc.
+					-- map("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
 
 					-- Execute a code action, usually your cursor needs to be on top of an error
 					-- or a suggestion from your LSP for this to activate.
@@ -323,7 +281,7 @@ require("lazy").setup({
 
 					-- WARN: This is not Goto Definition, this is Goto Declaration.
 					--  For example, in C this would take you to the header
-					map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+					-- map("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
 
 					-- The following two autocommands are used to highlight references of the
 					-- word under your cursor when your cursor rests there for a little while.

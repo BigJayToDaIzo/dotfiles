@@ -1,0 +1,35 @@
+return {
+	"folke/which-key.nvim",
+	event = "VeryLazy",
+	dependencies = {
+		{ "echasnovski/mini.icons", version = false },
+	},
+	opts = {
+		spec = {
+			{ "<leader>b", group = "Buffer" },
+			{ "<leader>bc", "<cmd>bd<CR>", desc = "Close Buffer" },
+			{ "<leader>bn", "<cmd>bn<CR>", desc = "Next Buffer" },
+			{ "<leader>bp", "<cmd>bp<CR>", desc = "Previous Buffer" },
+			{ "<leader>br", "<cmd>BufferLineMoveNext<CR>", desc = "Buffer Move Right" },
+			{ "<leader>bl", "<cmd>BufferLineMovePrev<CR>", desc = "Buffer Move Left" },
+			{ "<leader>bo", "<cmd>BufferLineCloseOthers<CR>", desc = "Close Other Buffers" },
+			{ "<leader>c", group = "Copilot GTP-4  " },
+			{ "<leader>d", group = "Document 🗎 " },
+			{ "<leader>ds", "" },
+		},
+		keys = {
+			scroll_down = "<c-j>",
+			scroll_up = "<c-k>",
+		},
+	},
+	-- ["<leader>d"] = { name = "[D]ocument 🗎 ", _ = "which_key_ignore" },
+	-- ["<leader>e"] = { name = "[E]xecute Yazi File Tree 🗎 ", _ = "which_key_ignore" },
+	-- ["<leader>i"] = { name = "[I]con Picker ⛏ ", _ = "which_key_ignore" },
+	-- ["<leader>n"] = { name = "[N]oice  ", _ = "which_key_ignore" },
+	-- ["<leader>o"] = { name = "T[o]do  ", _ = "which_key_ignore" },
+	-- ["<leader>p"] = { name = "[P]recognition 👁️", _ = "which_key_ignore" },
+	-- ["<leader>r"] = { name = "[R]ename  ", _ = "which_key_ignore" },
+	-- ["<leader>s"] = { name = "[S]earch  ", _ = "which_key_ignore" },
+	-- ["<leader>w"] = { name = "[W]orkspace 󱎃 ", _ = "which_key_ignore" },
+	-- ["<leader>x"] = { name = "Folke Tr[x]uble  ", _ = "which_key_ignore" },
+}
