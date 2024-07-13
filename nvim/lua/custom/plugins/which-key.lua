@@ -8,17 +8,17 @@ return {
 		spec = {
 			{ "<leader>b", group = "Buffer" },
 			{ "<leader>c", group = "Copilot GTP-4  " },
-			{ "<leader>i", group = "[I]con Picker ⛏ " },
 			{ "<leader>e", group = "Yazi 󰇥 " },
+			{ "<leader>i", group = "[I]con Picker ⛏ " },
 			{ "<leader>n", group = "Noice  " },
-			{ "<leader>t", group = "Todo  " },
 			{ "<leader>p", group = "Precognition 👁️" },
 			{ "<leader>s", group = "Search  " },
+			{ "<leader>t", group = "Todo  " },
 			{ "<leader>x", group = "Trouble  " },
 		},
 		keys = {
-			scroll_down = "<c-j>",
-			scroll_up = "<c-k>",
+			scroll_down = "<M-d>",
+			scroll_up = "<M-u>",
 		},
 	},
 	-- set up LSP keybinds below d

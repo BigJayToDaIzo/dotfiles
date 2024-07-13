@@ -16,6 +16,9 @@ vim.keymap.set("n", "<C-z>", "<Nop>")
 
 -- Precognition binds
 vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
+vim.keymap.set("n", "<leader>pp", "<cmd>lua require('precognition').peek()<cr>", { desc = "[P]recognition [P]eek" })
+vim.keymap.set("n", "<leader>ps", "<cmd>lua require('precognition').show()<cr>", { desc = "[P]recognition [S]how" })
+vim.keymap.set("n", "<leader>ph", "<cmd>lua require('precognition').hide()<cr>", { desc = "[P]recognition [H]ide" })
 
 -- Folke Noice keymaps <leader>n on which-key
 vim.keymap.set("n", "<leader>nh", "<cmd>Noice<cr>", { desc = "[N]oice [H]isory" })
@@ -39,13 +42,13 @@ vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
 vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
 vim.keymap.set("n", "<M-l>", "<cmd>BufferLineMoveNext<cr>")
 
--- folke/todo-comments.nvim uses <leader>o* maps to operate
-vim.keymap.set("n", "<leader>ox", "<cmd>TodoTrouble<CR>", { desc = "Toggle T[o]do Tr[x]uble" })
-vim.keymap.set("n", "<leader>ot", "<cmd>TodoTelescope<CR>", { desc = "Open T[o]do [T]elescope" })
-vim.keymap.set("n", "<leader>o[", function()
+-- folke/todo-comments.nvim uses <leader>t* maps to operate
+vim.keymap.set("n", "<leader>tx", "<cmd>TodoTrouble<CR>", { desc = "Toggle T[o]do Tr[x]uble" })
+vim.keymap.set("n", "<leader>tt", "<cmd>TodoTelescope<CR>", { desc = "Open T[o]do [T]elescope" })
+vim.keymap.set("n", "<leader>t[", function()
 	require("todo-comments").jump_prev()
 end, { desc = "Go to previous T[o]do" })
-vim.keymap.set("n", "<leader>o]", function()
+vim.keymap.set("n", "<leader>t]", function()
 	require("todo-comments").jump_next()
 end, { desc = "Go to next T[o]do" })
 
