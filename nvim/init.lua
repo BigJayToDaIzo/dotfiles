@@ -82,9 +82,20 @@ require("lazy").setup({
 
 	-- TODO: Abstract away the configuration of which-key into a separate file
 
-	{ -- Useful plugin to show you pending keybinds.
+	{
 		"folke/which-key.nvim",
-		event = "VimEnter", -- Sets the loading event to 'VimEnter'
+		event = "VeryLazy",
+		-- NOTE: Plugins can specify dependencies.
+		--
+		-- The dependencies are proper plugin specifications as well - anything
+		-- you do for a plugin at the top level, you can do for a dependency.
+		-- Use the `dependencies` key to specify the dependencies of a particular plugin
+		dependencies = {
+			{ "echasnovski/mini.icons", version = false },
+		},
+		opts = {
+			spec = {},
+		},
 		init = function()
 			vim.o.timeout = true
 			vim.o.timeoutlen = 500
@@ -98,7 +109,7 @@ require("lazy").setup({
 				["<leader>b"] = { name = "[B]buffers", _ = "which_key_ignore" },
 				["<leader>c"] = { name = "[C]opilot GTP-4  ", _ = "which_key_ignore" },
 				["<leader>d"] = { name = "[D]ocument 🗎 ", _ = "which_key_ignore" },
-				["<leader>e"] = { name = "[E]xecute Yazi File Tree🗎 ", _ = "which_key_ignore" },
+				["<leader>e"] = { name = "[E]xecute Yazi File Tree 🗎 ", _ = "which_key_ignore" },
 				["<leader>i"] = { name = "[I]con Picker ⛏ ", _ = "which_key_ignore" },
 				["<leader>n"] = { name = "[N]oice  ", _ = "which_key_ignore" },
 				["<leader>o"] = { name = "T[o]do  ", _ = "which_key_ignore" },
@@ -110,11 +121,6 @@ require("lazy").setup({
 			})
 		end,
 	},
-	-- NOTE: Plugins can specify dependencies.
-	--
-	-- The dependencies are proper plugin specifications as well - anything
-	-- you do for a plugin at the top level, you can do for a dependency.
-	-- Use the `dependencies` key to specify the dependencies of a particular plugin
 
 	-- TODO: Abstract away the configuration of telescope into a separate file
 	{ -- Fuzzy Finder (files, lsp, etc)
