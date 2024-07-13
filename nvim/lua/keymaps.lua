@@ -3,9 +3,9 @@
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- Diagnostic keymaps
-vim.keymap.set("n", "[d", function()
-	vim.diagnostic.jump({ count = 1 })
-end, { desc = "Go to previous [D]iagnostic message" })
+-- vim.keymap.set("n", "[d", function()
+-- 	vim.diagnostic.jump({ count = 1 })
+-- end, { desc = "Go to previous [D]iagnostic message" })
 vim.keymap.set("n", "]d", function()
 	vim.diagnostic.jump({ count = -1 })
 end, { desc = "Go to next [D]iagnostic message" })

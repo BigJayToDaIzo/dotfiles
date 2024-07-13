@@ -6,7 +6,7 @@ return {
 	},
 	keys = {
 		{
-			"<leader>e",
+			"<leader>ee",
 			function()
 				require("yazi").yazi()
 			end,
@@ -14,7 +14,7 @@ return {
 		},
 		{
 			-- Open in the current working directory
-			"<leader>_",
+			"<leader>e_",
 			function()
 				require("yazi").yazi(nil, vim.fn.getcwd())
 			end,
