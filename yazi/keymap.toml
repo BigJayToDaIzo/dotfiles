@@ -5,7 +5,8 @@
 [manager]
 
 [[manager.prepend_keymap]]
-on = ["<Right>"]
+on = ["_"]
+
 run = "shell --block --confirm lazygit"
 
 keymap = [

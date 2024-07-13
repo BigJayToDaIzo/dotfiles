@@ -60,10 +60,13 @@ function gbe
     go mod init example.com/$argv[1]
     touch $argv[1].go
 end
+function gtcr
+    go test -coverprofile coverage.out -v
+    go tool cover -html=coverage.out
+end
 function shipit
     set track (pwd | rg '.*/exercism/(.+)/.*' -or '$1')
     $track test && exercism submit 
-    cd ..
 end
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
