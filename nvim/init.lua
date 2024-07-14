@@ -16,7 +16,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- Install `lazy.nvim` plugin manager
--- See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
 	local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -26,39 +25,18 @@ vim.opt.rtp:prepend(lazypath)
 -- No need to modify anything in Install 'lazy.nvim' block. All configuration takes place below
 -- [[ Configure and install plugins ]]
 -- To check the current status of your plugins, run
---  :Lazy
---  You can press `?` in this menu for help. Use `:q` to close the window
---  To update plugins, you can run
---  :Lazy update
+-- :Lazy
+-- You can press `?` in this menu for help. Use `:q` to close the window
+-- To update plugins, you can run
+-- :Lazy update
 require("lazy").setup({
 	-- Set the THEMES
 	{ event = "VimEnter", import = "custom.themes" },
-
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 	-- Use `opts = {}` to force a plugin to be loaded.
 	-- This is equivalent to:
 	-- require('Comment').setup({})
-	-- Here is a more advanced example where we pass configuration
-	-- options to `gitsigns.nvim`. This is equivalent to the following lua:
-	--  require('gitsigns').setup({ ... })
-	--
 	-- See `:help gitsigns` to understand what the configuration keys do
-	{ -- Adds git related signs to the gutter, as well as utilities for managing changes
-		"lewis6991/gitsigns.nvim",
-		opts = {
-			signs = {
-				add = { text = "" },
-				change = { text = " " },
-				delete = { text = "󱂥" },
-				topdelete = { text = "‾" },
-				changedelete = { text = " " },
-				untracked = { text = "󰔧 " },
-			},
-			numhl = true,
-			word_diff = false,
-		},
-	},
-
 	-- TODO: Abstract away the configuration of LSP into a separate file
 	{ -- LSP Configuration & Plugins
 		"neovim/nvim-lspconfig",
