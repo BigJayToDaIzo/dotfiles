@@ -3,17 +3,15 @@
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 -- Diagnostic keymaps
--- vim.keymap.set("n", "[d", function()
--- 	vim.diagnostic.jump({ count = 1 })
--- end, { desc = "Go to previous [D]iagnostic message" })
-vim.keymap.set("n", "]d", function()
+vim.keymap.set("n", "<leader>d]", function()
+	vim.diagnostic.jump({ count = 1 })
+end, { desc = "Next Diagnostic message" })
+vim.keymap.set("n", "<leader>d[", function()
 	vim.diagnostic.jump({ count = -1 })
-end, { desc = "Go to next [D]iagnostic message" })
--- vim.keymap.set('n', '<leader>x', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
-vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+end, { desc = "Go to previous Diagnostic message" })
+vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 -- turn off Ctrl-Z quit cuz I hate it
 vim.keymap.set("n", "<C-z>", "<Nop>")
-
 -- Precognition binds
 vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
 vim.keymap.set("n", "<leader>pp", "<cmd>lua require('precognition').peek()<cr>", { desc = "[P]recognition [P]eek" })
@@ -60,7 +58,7 @@ vim.keymap.set("n", "<leader>xR", "<cmd>Trouble lsp_references toggle<cr>", { de
 
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
 -- or just use <C-\><C-n> to exit terminal mode
--- vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 vim.keymap.set("n", "<M-Space>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey menu" })
 --Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows

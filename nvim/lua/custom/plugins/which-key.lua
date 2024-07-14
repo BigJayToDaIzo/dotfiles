@@ -8,6 +8,7 @@ return {
 		spec = {
 			{ "<leader>b", group = "Buffer" },
 			{ "<leader>c", group = "Copilot GTP-4  " },
+			{ "<leader>d", group = "Diagnostics 	" },
 			{ "<leader>e", group = "Yazi 󰇥 " },
 			{ "<leader>i", group = "[I]con Picker ⛏ " },
 			{ "<leader>n", group = "Noice  " },

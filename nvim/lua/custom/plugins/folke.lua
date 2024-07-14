@@ -101,4 +101,19 @@ return {
 			},
 		},
 	},
+	{
+		"folke/todo-comments.nvim",
+		lazy = true,
+		event = "VimEnter",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = {
+			signs = true,
+		},
+		vim.keymap.set("n", "]t", function()
+			require("todo-comments").jump_next()
+		end, { desc = "Next [T]odo" }),
+		vim.keymap.set("n", "[t", function()
+			require("todo-comments").jump_prev()
+		end, { desc = "Previous [T]odo" }),
+	},
 }
