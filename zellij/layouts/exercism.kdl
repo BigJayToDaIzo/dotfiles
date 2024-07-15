@@ -58,10 +58,10 @@ layout {
       }
     }
   }
-  tab cwd="~/exercism/go" name="Go" focus=true {
+  tab cwd="~/exercism/go" name="" focus=true {
     pane split_direction="vertical" {
       pane size="65%" {
-        name ""
+        name "Go"
         focus true  
         command "nvim"
       }
@@ -69,37 +69,37 @@ layout {
       
     }  
   }
-  tab cwd="~/exercism/rust" name="Rust"{
+  tab cwd="~/exercism/rust" name=""{
     pane split_direction="vertical" {
       pane size="65%" {
-        name "🦀"
+        name "Rust"
         focus true  
         command "nvim"
       }
       pane name="Test"
     }  
   }
-  tab cwd="~/exercism/lua" name="Lua"{
+  tab cwd="~/exercism/lua" name=""{
     pane split_direction="vertical" {
       pane size="65%" {
-        name "🌔"
+        name "Lua"
         focus true  
         command "nvim"
       }
       pane name="Test"
     }  
   }
-  tab cwd="~/exercism/awk" name="Awk"{
+  tab cwd="~/exercism/awk" name="󰻀"{
     pane split_direction="vertical" {
       pane size="65%" {
-        name " 🐧"
+        name "Awk"
         focus true  
         command "nvim"
       }
       pane name="Test"
     }  
   }
-  tab cwd="~/exercism/gleam" name="Gleam"{
+  tab cwd="~/exercism/gleam" name="󰦥"{
     pane split_direction="vertical" {
       pane size="65%" {
         name "The Pristine Code"
@@ -109,10 +109,20 @@ layout {
       pane name="Blinged Out Tests"
     }  
   }
-  tab cwd="~/exercism/cpp" name="C++"{
+  tab cwd="~/exercism/cpp" name=""{
     pane split_direction="vertical" {
       pane size="65%" {
         name "The Old Magic"
+        focus true  
+        command "nvim"
+      }
+      pane name="Tests"
+    }  
+  }
+  tab cwd="~/exercism/python" name=""{
+    pane split_direction="vertical" {
+      pane size="65%" {
+        name "Sneaky 🐍"
         focus true  
         command "nvim"
       }
