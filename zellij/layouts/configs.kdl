@@ -58,9 +58,10 @@ layout {
       }
     }
   }
-  tab name="Overview" focus=true cwd="~/.config/" {
+  tab name="Overview" cwd="~/.config/" {
     pane split_direction="horizontal" {
       pane {
+        start_suspended true
         size "75%"
         focus true
         borderless true
@@ -69,10 +70,9 @@ layout {
       pane 
     }
   }
-  tab name="Neovim" cwd="~/.config/nvim" {
+  tab name="Neovim" focus=true cwd="~/.config/nvim" {
     pane split_direction="horizontal" {
       pane {
-        start_suspended true
         size "75%"
         focus true
         borderless true

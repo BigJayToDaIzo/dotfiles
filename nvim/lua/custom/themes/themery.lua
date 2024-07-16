@@ -25,6 +25,7 @@ return {
 			"kat.nvim",
 			"kat.nwim",
 			"lavi",
+			"lunaperche",
 			"nightfox",
 			"night-owl",
 			"nordfox",

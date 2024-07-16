@@ -26,6 +26,6 @@ return {
 		open_for_directories = true,
 		floating_window_scaling_factor = 0.85,
 		-- Apparentlyl broken
-		yazi_floating_window_winblend = 20,
+		yazi_floating_window_winblend = 5,
 	},
 }

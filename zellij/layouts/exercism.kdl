@@ -61,6 +61,7 @@ layout {
   tab cwd="~/exercism/go" name="" focus=true {
     pane split_direction="vertical" {
       pane size="65%" {
+        start_suspended true
         name "Go"
         focus true  
         command "nvim"
@@ -72,6 +73,7 @@ layout {
   tab cwd="~/exercism/rust" name=""{
     pane split_direction="vertical" {
       pane size="65%" {
+        start_suspended true
         name "Rust"
         focus true  
         command "nvim"
@@ -82,6 +84,7 @@ layout {
   tab cwd="~/exercism/lua" name=""{
     pane split_direction="vertical" {
       pane size="65%" {
+        start_suspended true
         name "Lua"
         focus true  
         command "nvim"
@@ -92,6 +95,7 @@ layout {
   tab cwd="~/exercism/awk" name="󰻀"{
     pane split_direction="vertical" {
       pane size="65%" {
+        start_suspended true
         name "Awk"
         focus true  
         command "nvim"
@@ -102,6 +106,7 @@ layout {
   tab cwd="~/exercism/gleam" name="󰦥"{
     pane split_direction="vertical" {
       pane size="65%" {
+        start_suspended true
         name "The Pristine Code"
         focus true  
         command "nvim"
@@ -113,6 +118,7 @@ layout {
     pane split_direction="vertical" {
       pane size="65%" {
         name "The Old Magic"
+        start_suspended true
         focus true  
         command "nvim"
       }
@@ -122,6 +128,7 @@ layout {
   tab cwd="~/exercism/python" name=""{
     pane split_direction="vertical" {
       pane size="65%" {
+        start_suspended true
         name "Sneaky 🐍"
         focus true  
         command "nvim"
