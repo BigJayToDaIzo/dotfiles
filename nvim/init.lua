@@ -34,7 +34,7 @@ require("lazy").setup({
 	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
 	-- Use `opts = {}` to force a plugin to be loaded.
 	-- This is equivalent to:
-	-- require('Comment').setup({})
+	-- require('plugin').setup({})
 	require("kickstart.plugins.debug"),
 	require("kickstart.plugins.indent_line"),
 	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`

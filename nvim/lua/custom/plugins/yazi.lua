@@ -25,7 +25,5 @@ return {
 		-- if you want to open yazi instead of netrw, see below for more info
 		open_for_directories = true,
 		floating_window_scaling_factor = 0.85,
-		-- Apparentlyl broken
-		yazi_floating_window_winblend = 5,
 	},
 }

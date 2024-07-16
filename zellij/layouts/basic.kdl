@@ -3,36 +3,62 @@ layout {
     children
     pane size=1 borderless=true {
       plugin location="zjstatus" {
-        format_left   "{mode} #[fg=#89b4fa,bold]{session}"
+        color_section_fg "#6FE7AE"
+        color_section_bg "#3C4841"
+        color_tab_norm_fg "#6FE7AE"
+        color_tab_norm_bg "#3C4841"
+        color_tab_norm_fs "#6C7086"
+
+        color_tab_norm_sync "#B4BEFE"
+        color_tab_active_fg "#000000" 
+        color_tab_active_bg "#83C092" 
+        color_tab_active_fs "#333333"
+        color_tab_active_sync "#aaaaaa"
+        color_tab_sep "#89B4FA"
+        color_tab_trunc_start "#6FE7AE"
+        color_tab_trunc_end "#6FE7AE"
+
+        color_mode_norm "#6C7086"
+        color_mode_locked "#CF142B"
+        color_mode_session "#333333"
+        color_mode_resize "#FF6700"
+        color_mode_pane "#333333"
+        color_mode_tab "#333333"
+        color_mode_scroll "#333333"
+        color_mode_enter_search "#333333"
+        color_mode_search "#333333"
+        color_mode_rename_tab "#FF6700"
+        color_mode_rename_pane "#FF6700"
+        color_mode_move "#333333"
+        color_mode_prompt "#333333"
+
+        format_left   "{mode} #[fg=$section_fg,bold,$bg=section_bg]{session}"
         format_center "{tabs}"
         format_right  "{command_git_branch} {datetime}{notifications}"
         format_space  ""
 
-        format_hide_on_overlength "true"
-        format_precedence "clr"
 
         border_enabled  "false"
         border_char     "─"
-        border_format   "#[fg=#6c7086]{char}"
         border_position "top"
+        border_format   "#[fg=#6c7086]{char}"
 
-        tab_normal   "#[fg=#6C7086] {index}::{name} "
+        tab_display_count "3"
+        tab_normal   "#[fg=$tab_norm_fg,bg=$tab_norm_bg] {index}::{name} "
         tab_normal_fullscreen "#[fg=#6C7086] {index}::{name}  "
         tab_normal_sync "#[fg=#6C7086] {index}::{name}  "
-        tab_active   "#[fg=#89B4FA,bold,italic] {name} "
+        tab_active   "#[fg=$tab_active_fg,italic,bg=$tab_active_bg] {name} "
         tab_active_fullscreen "#[fg=#89B4FA,bold,italic] {name}  "
         tab_active_sync "#[fg=#89B4FA,bold,italic] {name}  "
-        tab_separator "#[fg=#89B4FA]|"
-        tab_display_count "3"
+        tab_separator "#[fg=$tab_norm_fg,bold,bg=$tab_norm_bg]󰩮"
         tab_truncate_start_format "#[fg=#b4befe] ☾{count}.."
         tab_truncate_end_format   "#[fg=#b4befe] ..{count}☽"
 
+        notification_show_interval           "10"
         notification_format_unread           "#[fg=#89b4fa,blink]  #[fg=#89b4fa] {message} "
         notification_format_no_notifications "#[fg=#89b4fa,dim]   "
-        notification_show_interval           "10"
 
-        hide_frame_for_single_pane "true"
-
+        mode_default_to_mode "locked"
         mode_normal  "#[fg=#CF142B,bg=green]  UNLOCKED "
         mode_locked "#[bg=#CF142B]  LOCKED "
         mode_session "#[fg=#333333,bg=green] 󰹑 {name} "
@@ -46,16 +72,20 @@ layout {
         mode_rename_pane "#[fg=#333333,bg=#FF6700]  {name} "
         mode_move "#[fg=#333333,bg=green]  {name} "
         mode_prompt "#[fg=#333333,bg=green]  {name} "
-        mode_default_to_mode "locked"
+
+        hide_frame_for_single_pane "true"
+        format_hide_on_overlength "true"
+        format_precedence "clr"
+
 
         command_git_branch_command     "git rev-parse --abbrev-ref head"
-        command_git_branch_format      "#[fg=blue] {stdout} "
         command_git_branch_interval    "10"
         command_git_branch_rendermode  "static"
+        command_git_branch_format      "#[fg=blue] {stdout} "
 
-        datetime        "#[fg=#89b4fa,bold] {format} "
         datetime_format " %A, %d %b %Y  %H:%M"
         datetime_timezone "America/Chicago"
+        datetime        "#[fg=#89b4fa,bold] {format} "
       }
     }
   }
