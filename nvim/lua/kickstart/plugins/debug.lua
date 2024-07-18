@@ -16,6 +16,7 @@ return {
 
 		-- Add your own debuggers here
 		"leoluz/nvim-dap-go",
+		"mfussenegger/nvim-dap-python",
 	},
 	config = function()
 		local dap = require("dap")
@@ -36,6 +37,7 @@ return {
 			ensure_installed = {
 				-- Update this to ensure that you have the debuggers for the langs you want
 				"delve",
+				"debugpy",
 				"stylua",
 			},
 		})

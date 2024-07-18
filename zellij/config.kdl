@@ -211,7 +211,7 @@ attach_to_session true
 
 // Choose the path to override cwd that zellij will use for opening new panes
 //
-default_cwd "/home/jm/.config"
+default_cwd "/home/jm/"
 
 // Toggle between having pane frames around the panes
 // Options:
@@ -232,64 +232,39 @@ default_cwd "/home/jm/.config"
 //   - true (default)
 //   - false
 //
-// session_serialization false
+session_serialization false
+
 
 // Whether pane viewports are serialized along with the session, default is false
 // Options:
 //   - true
 //   - false (default)
-serialize_pane_viewport true
+// serialize_pane_viewport true
 
 // Scrollback lines to serialize along with the pane viewport when serializing sessions, 0
 // defaults to the scrollback size. If this number is higher than the scrollback size, it will
 // also default to the scrollback size. This does nothing if `serialize_pane_viewport` is not true.
 //
-scrollback_lines_to_serialize 10000
+// scrollback_lines_to_serialize 10000
 
 // Define color themes for Zellij
 // For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
-theme "tokyo-night-storm"
+theme "DankSunrise"
 themes { 
-    nord {
+    DankSunrise {
         fg "#D8DEE9"
-        bg "#2E3440"
+        bg "#3C4841"
         black "#3B4252"
         red "#BF616A"
-        green "#A3BE8C"
-        yellow "#EBCB8B"
+        green "#6FE7AE"
+        yellow "#fcf77c"
         blue "#81A1C1"
         magenta "#B48EAD"
         cyan "#88C0D0"
         white "#E5E9F0"
-        orange "#D08770"
-    }
-    pencil-light {
-        fg "#005F87"
-        bg "#f1f1f1"
-        black "#f1f1f1"
-        red "#B6D6FD"
-        green "#10A778"
-        yellow "#A89C14"
-        blue "#008EC4"
-        magenta "#B6D6FD"
-        cyan "#20A5BA"
-        white "#424242"
-        orange "#D75F5F"
-    }
-    tokyo-night-storm {
-        fg 169 177 214
-        bg 36 40 59
-        black 56 62 90
-        red 249 51 87
-        green 158 206 106
-        yellow 224 175 104
-        blue 122 162 247
-        magenta 187 154 247
-        cyan 42 195 222
-        white 192 202 245
-        orange 255 158 100
+        orange "#E69875"
     }
 }
 
@@ -298,7 +273,7 @@ themes {
 // The name of the default layout to load on startup
 // Default: "default"
 //
-default_layout "welcome"
+default_layout "basic"
 
 // Choose the mode that zellij uses when starting up.
 // Default: normal

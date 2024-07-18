@@ -19,6 +19,6 @@
 	<pref name="ThickLine" type="int">1</pref>
 	<pref name="UnitySelectMonitor" type="int">0</pref>
 	<pref name="unity.cloud_userid" type="string">NTU1NDZhN2RkM2JiN2ZlZTk5ZDY1NzhjYTYxMDE3YzE=</pref>
-	<pref name="unity.player_session_count" type="string">OQ==</pref>
-	<pref name="unity.player_sessionid" type="string">MTI5NzU0NjM0NTI3ODMwMjgxMA==</pref>
+	<pref name="unity.player_session_count" type="string">MTA=</pref>
+	<pref name="unity.player_sessionid" type="string">NTQyNzI0MjcyNDM2NDYzNTI5Mg==</pref>
 </unity_prefs>

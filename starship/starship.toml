@@ -12,14 +12,14 @@ add_newline = false
 palette = 'super_dank_af'
 
 [palettes.super_dank_af]
-user_fg = '#bc33d8'
+user_fg = '#6FE7AE'
 clock_fg = '#ffa75d'
 time_fg = '#fcf77c'
-char_success_fg = '#07be61'
+char_success_fg = '#6FE7AE'
 char_poobie_fg = '#be0c07'
-directory_fg = '#f089fc'
-package_fg = '#82eefd'
-package_bg = '#727f72'
+directory_fg = '#E69875'
+package_fg = '#D699B6'
+package_bg = '#3C4841'
 iced_out_os = '#09ecf8'
 
 # Less neon color palette
