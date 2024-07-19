@@ -6,7 +6,6 @@ return {
 	},
 	opts = {
 		spec = {
-			{ "<leader>a", mode = "x", group = "CodeSnap" },
 			{ "<leader>b", group = "Buffer" },
 			{ "<leader>c", mode = { "x", "n" }, group = "Copilot GTP-4  " },
 			{ "<leader>d", group = "Diagnostics 	" },
