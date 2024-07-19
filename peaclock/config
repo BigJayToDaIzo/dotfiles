@@ -19,7 +19,7 @@ margin 1 1
 # set the x y ratio size, auto adjust the clock to conform to a specific
 # aspect ratio, keep in mind that a square ratio would be '2 1' due to a
 # terminal character cell having a height around twice the size of its width
-ratio 10 1
+ratio 13 1
 # ratio-x 2
 # ratio-y 1
 
@@ -30,7 +30,7 @@ date-padding 1
 # the clock, an empty string clears the value
 # fill ''
 fill-active '󱑍 '
-fill-inactive '-'
+fill-inactive '󱡣 '
 fill-colon ':'
 
 # set the locale, for example 'en_CA.utf8', an empty string clears the value
@@ -72,10 +72,10 @@ timer 10m:0s
 timer-exec 'notify-send -a peaclock "timer complete"'
 
 # set the duration in milliseconds between reading user input
-rate-input 50
+rate-input 250
 
 # set the duration in milliseconds between redrawing the output
-rate-refresh 500
+rate-refresh 1000
 
 # set the duration in milliseconds to display status messages
 rate-status 5000

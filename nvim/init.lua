@@ -22,21 +22,19 @@ if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
 end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
--- No need to modify anything in Install 'lazy.nvim' block. All configuration takes place below
--- [[ Configure and install plugins ]]
+require("lazy").setup({
+	{ event = "VimEnter", import = "custom.themes" },
+	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
+	require("kickstart.plugins.debug"),
+	require("kickstart.plugins.indent_line"),
+	-- The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
+	{ import = "custom.plugins" },
+})
+-- Use `opts = {}` to force a plugin to be loaded.
+-- This is equivalent to:
+-- require('plugin').setup({})
 -- To check the current status of your plugins, run
 -- :Lazy
 -- You can press `?` in this menu for help. Use `:q` to close the window
 -- To update plugins, you can run
 -- :Lazy update
-require("lazy").setup({
-	{ event = "VimEnter", import = "custom.themes" },
-	"tpope/vim-sleuth", -- Detect tabstop and shiftwidth automatically
-	-- Use `opts = {}` to force a plugin to be loaded.
-	-- This is equivalent to:
-	-- require('plugin').setup({})
-	require("kickstart.plugins.debug"),
-	require("kickstart.plugins.indent_line"),
-	-- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
-	{ import = "custom.plugins" },
-})
