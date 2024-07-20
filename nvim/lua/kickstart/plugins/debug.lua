@@ -61,5 +61,6 @@ return {
 			dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
 		end, { desc = "Debug: Set Breakpoint" })
 		vim.keymap.set("n", "<leader>dr", dap.repl.open, { desc = "Debug: Repl Open" })
+		vim.keymap.set("n", "<leader>dC", dap.clear_breakpoints, { desc = "Debug: Clear All Breakpoints." })
 	end,
 }
