@@ -5,64 +5,67 @@
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- [[ Setting options ]]
--- See `:help vim.opt`
---  NOTE: You can change these options as you wish!
---  For more options, you can see `:help option-list`
---  HOLY SHIB THERE ARE SO MANY OPTIONS HERE 👆
--- Custom settings
+-- [[ setting options ]]
+-- see `:help vim.opt`
+--  note: you can change these options as you wish!
+--  for more options, you can see `:help option-list`
+--  holy shib there are so many options here 👆
+-- custom settings
 
--- Make line numbers default
+-- make line numbers default
 vim.opt.number = true
--- You can also add relative line numbers, for help with jumping.
---  Experiment for yourself to see if you like it!
+-- you can also add relative line numbers, for help with jumping.
+--  experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
--- Enable termguicolors for lualine
+-- enable termguicolors for lualine
 vim.opt.termguicolors = true
--- Enable mouse mode, can be useful for resizing splits for example!
+-- enable mouse mode, can be useful for resizing splits for example!
 vim.opt.mouse = "a"
 
--- Don't show the mode, since it's already in status line
+-- don't show the mode, since it's already in status line
 vim.opt.showmode = false
 
--- Turn on cursor rulers
+-- turn on cursor rulers
 vim.opt.cursorline = true
 vim.opt.cursorcolumn = true
 
--- Sync clipboard between OS and Neovim.
---  Remove this option if you want your OS clipboard to remain independent.
---  See `:help 'clipboard'`
+--Set nvim cwd to last file opened (breaks debugger otherwise)
+vim.opt.acd = true
+
+-- sync clipboard between os and neovim.
+--  remove this option if you want your os clipboard to remain independent.
+--  see `:help 'clipboard'`
 vim.opt.clipboard = "unnamedplus"
 
--- Enable break indent
+-- enable break indent
 vim.opt.breakindent = true
 
--- Customize tab stuffs
+-- customize tab stuffs
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 -- vim.bo.softabstop = 2
 
--- Save undo history
+-- save undo history
 vim.opt.undofile = true
 
--- Case-insensitive searching UNLESS \C or capital in search
+-- case-insensitive searching unless \c or capital in search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- Keep signcolumn on by default
+-- keep signcolumn on by default
 vim.opt.signcolumn = "yes"
 
--- Decrease update time
+-- decrease update time
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 
--- Configure how new splits should be opened
+-- configure how new splits should be opened
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 
--- Sets how neovim will display certain whitespace in the editor.
---  See `:help 'list'`
+-- sets how neovim will display certain whitespace in the editor.
+--  see `:help 'list'`
 --  and `:help 'listchars'`
 -- vim.opt.list = true
 -- vim.opt.listchars = { tab = "󰌒 ", trail = "·", nbsp = "␣" }
