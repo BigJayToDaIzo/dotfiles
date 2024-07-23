@@ -89,7 +89,6 @@ layout {
     pane split_direction="horizontal" {
       pane size="70%"
       pane
-  }  
-
+    }  
   }
 }

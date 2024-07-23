@@ -87,7 +87,7 @@ layout {
   }
   tab cwd="~/exercism/go" name="" focus=true {
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         start_suspended true
         name "Go"
         focus true  
@@ -99,7 +99,7 @@ layout {
   }
   tab cwd="~/exercism/rust" name=""{
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         start_suspended true
         name "Rust"
         focus true  
@@ -110,7 +110,7 @@ layout {
   }
   tab cwd="~/exercism/lua" name=""{
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         start_suspended true
         name "Lua"
         focus true  
@@ -121,7 +121,7 @@ layout {
   }
   tab cwd="~/exercism/awk" name="󰻀"{
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         start_suspended true
         name "Awk"
         focus true  
@@ -132,7 +132,7 @@ layout {
   }
   tab cwd="~/exercism/gleam" name="󰦥"{
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         start_suspended true
         name "The Pristine Code"
         focus true  
@@ -143,7 +143,7 @@ layout {
   }
   tab cwd="~/exercism/cpp" name=""{
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         name "The Old Magic"
         start_suspended true
         focus true  
@@ -154,7 +154,7 @@ layout {
   }
   tab cwd="~/exercism/python" name=""{
     pane split_direction="vertical" {
-      pane size="65%" {
+      pane size="50%" {
         start_suspended true
         name "Sneaky 🐍"
         focus true  
