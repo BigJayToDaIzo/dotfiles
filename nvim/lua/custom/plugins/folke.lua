@@ -4,15 +4,16 @@ return {
 		event = "VeryLazy",
 		dependencies = {
 			"MunifTanjim/nui.nvim",
-			{
-				"rcarriga/nvim-notify",
-				config = function()
-					require("notify").setup({
-						timeout = 2500,
-						render = "compact",
-					})
-				end,
-			},
+			-- {
+			-- 	"rcarriga/nvim-notify",
+			-- 	config = function()
+			-- 		require("notify").setup({
+			-- 			timeout = 2500,
+			-- 			render = "default",
+			-- 			animate = "static",
+			-- 		})
+			-- 	end,
+			-- },
 			"hrsh7th/nvim-cmp",
 		},
 		config = function()
@@ -27,12 +28,12 @@ return {
 				presets = {
 					bottom_search = true,
 					command_palette = true,
-					long_message_to_split = true,
-					lsp_doc_border = false,
+					long_message_to_split = false,
+					lsp_doc_border = true,
 				},
 				cmdline = {
 					enabled = true,
-					-- view = "cmdline",
+					view = "cmdline",
 					-- view = "cmdline_popup", -- default
 					opts = {},
 				},
@@ -51,22 +52,22 @@ return {
 			},
 		},
 		keys = {
-			{
-				"s",
-				mode = { "n", "x", "o" },
-				function()
-					require("flash").jump()
-				end,
-				desc = "Flash",
-			},
-			{
-				"S",
-				mode = { "n", "x", "o" },
-				function()
-					require("flash").treesitter()
-				end,
-				desc = "Flash Treesitter",
-			},
+			-- {
+			-- 	"s",
+			-- 	mode = { "n", "x", "o" },
+			-- 	function()
+			-- 		require("flash").jump()
+			-- 	end,
+			-- 	desc = "Flash",
+			-- },
+			-- {
+			-- 	"S",
+			-- 	mode = { "n", "x", "o" },
+			-- 	function()
+			-- 		require("flash").treesitter()
+			-- 	end,
+			-- 	desc = "Flash Treesitter",
+			-- },
 			{
 				"r",
 				mode = "o", -- Only in operator-pending mode
@@ -109,10 +110,10 @@ return {
 		opts = {
 			signs = true,
 		},
-		vim.keymap.set("n", "t]", function()
+		vim.keymap.set("n", "o]", function()
 			require("todo-comments").jump_next()
 		end, { desc = "Next [T]odo" }),
-		vim.keymap.set("n", "t[", function()
+		vim.keymap.set("n", "o[", function()
 			require("todo-comments").jump_prev()
 		end, { desc = "Previous [T]odo" }),
 	},

@@ -10,8 +10,8 @@ vim.g.maplocalleader = " "
 --  note: you can change these options as you wish!
 --  for more options, you can see `:help option-list`
 --  holy shib there are so many options here 👆
--- custom settings
 
+-- custom settings
 -- make line numbers default
 vim.opt.number = true
 -- you can also add relative line numbers, for help with jumping.

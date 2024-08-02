@@ -14,6 +14,13 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+vim.api.nvim_create_autocmd("ColorScheme", {
+	pattern = "*",
+	callback = function()
+		vim.api.nvim_set_hl(0, "CursorLine", { bg = "#20705e" })
+		vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#20705e" })
+	end,
+})
 
 -- Install `lazy.nvim` plugin manager
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"

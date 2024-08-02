@@ -139,7 +139,8 @@ format = '[\[$symbol($version)\]](package_fg)'
 format = '[\[$symbol$context\]](package_fg)'
 
 [dotnet]
-format = '[\[$symbol($version)(🎯 $tfm)\]](package_fg)'
+symbol = '𝗖󰐣 '
+format = '[\[$symbol($version)( / $tfm)\]](package_fg)'
 
 [elixir]
 format = '[\[$symbol($version \(OTP $otp_version\))\]](package_fg)'

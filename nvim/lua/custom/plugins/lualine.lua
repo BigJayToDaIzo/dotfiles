@@ -86,7 +86,6 @@ return {
 				"fzf",
 				"lazy",
 				"mason",
-				"neo-tree",
 				"nvim-dap-ui",
 				"symbols-outline",
 				"trouble",

@@ -101,9 +101,9 @@ layout {
         pane size=4 { // pomotimer
           name "🍅 Pomo F'SHOmo 🍅"
           command "tomatoshell"
-          args "-n" "12" "-p" "p"
+          args "-n" "6" "-t" "58" "-d" "2" "-p" "p"
           start_suspended true
-        } 
+        } // 6 sessions of 58m 2m break pause with p key
       }
       // stacked panes go here
       pane {

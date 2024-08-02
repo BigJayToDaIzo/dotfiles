@@ -72,7 +72,7 @@ timer 10m:0s
 timer-exec 'notify-send -a peaclock "timer complete"'
 
 # set the duration in milliseconds between reading user input
-rate-input 250
+rate-input 500
 
 # set the duration in milliseconds between redrawing the output
 rate-refresh 1000
@@ -134,7 +134,7 @@ style inactive-fg #1a525a
 
 # set the style of the text set by the command 'fill-colon' used to draw colon
 # blocks in the clock
-style colon-fg clear
+style colon-fg #1a525a
 
 # set the style of the background used to draw active blocks in the clock
 style active-bg clear

@@ -68,9 +68,9 @@ keybinds clear-defaults=true {
         bind "p" { MovePaneBackwards; }
     }
     scroll {
-        bind "e" { EditScrollback; SwitchToMode "Normal"; }
+        bind "e" { EditScrollback; SwitchToMode "Locked"; }
         bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
-        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
+        bind "Ctrl c" { ScrollToBottom; }
         bind "j" "Down" { ScrollDown; }
         bind "k" "Up" { ScrollUp; }
         bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }
@@ -211,7 +211,7 @@ attach_to_session true
 
 // Choose the path to override cwd that zellij will use for opening new panes
 //
-default_cwd "/home/jm/"
+// default_cwd "/home/jm/"
 
 // Toggle between having pane frames around the panes
 // Options:

@@ -5,7 +5,7 @@ return {
 		"nvim-lua/plenary.nvim",
 	},
 	opts = {
-		max_count = 5,
+		max_count = 8,
 		disable_mouse = false,
 		allow_different_key = true,
 	},
