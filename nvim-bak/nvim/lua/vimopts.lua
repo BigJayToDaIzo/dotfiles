@@ -84,6 +84,9 @@ vim.opt.hlsearch = true
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
 
+-- One single status line at bottom of screen
+vim.opt.laststatus = 3
+
 --Custom autocommands
 --Unclear if this is working, I've yet to see undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m"]])

@@ -720,7 +720,7 @@ visual_bell_duration 0.2
 
 #: The visual bell duration (in seconds). Flash the screen when a bell
 #: occurs for the specified number of seconds. Set to zero to disable.
-# visual_bell_color #242424
+visual_bell_color #242424
 
 #k: The color used by visual bell. Set to none will fall back to
 #: selection background color. If you feel that the visual bell is too
@@ -1586,7 +1586,8 @@ shell_integration enabled
 #: }}}
 
 #: OS specific tweaks {{{
-# wayland_titlebar_color system
+
+wayland_titlebar_color system
 
 #: The color of the kitty window's titlebar on Wayland systems with
 #: client side window decorations such as GNOME. A value of system
@@ -2365,6 +2366,6 @@ shell_integration enabled
 
 
 # BEGIN_KITTY_THEME
-# Everforest Dark Hard
+# Chalkboard
 include current-theme.conf
 # END_KITTY_THEME

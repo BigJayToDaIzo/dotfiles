@@ -85,7 +85,7 @@ layout {
       }
     }
   }
-  tab name="Overview" cwd="~/.config/" {
+  tab name="All" cwd="~/.config/" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -97,7 +97,7 @@ layout {
       pane 
     }
   }
-  tab name="Neovim" focus=true cwd="~/.config/nvim" {
+  tab name="Nvim" focus=true cwd="~/.config/nvim" {
     pane split_direction="horizontal" {
       pane {
         size "75%"
@@ -109,7 +109,7 @@ layout {
       pane 
     }
   }
-  tab name="Fish Shell" cwd="~/.config/fish" {
+  tab name="Fish" cwd="~/.config/fish" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -135,7 +135,7 @@ layout {
       pane 
     }
   }
-  tab name="Foot" cwd="~/.config/foot" {
+  tab name="Kitty" cwd="~/.config/kitty" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -143,12 +143,12 @@ layout {
         focus true
         borderless true
         command "nvim"
-        args "foot.ini"
+        args "kitty.conf"
       }
       pane 
     }
   }
-  tab name="Yazi" cwd="~/.config/yazi" {
+  tab name="󰇥 " cwd="~/.config/yazi" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
