@@ -1,7 +1,7 @@
 -- FZF URR THNG MFR FLFR
 return {
   -- :h telescope || :Telescope <C-d> will take you far! The or condition is a secret!
-  -- :h telescope.defaults.mappings
+  -- kh telescope.defaults.mappings
   -- <C-/> brings up keybinds!
 	"nvim-telescope/telescope.nvim",
 	event = "VimEnter",
@@ -72,7 +72,6 @@ return {
     pcall(require("telescope").load_extension, "dap")
     local builtin = require("telescope.builtin")
 
-    -- Tweak out those perfect keybinds!
     -- TODO: Add those sweet telescope dap extension binds!
     vim.keymap.set("n", "<leader><leader>", function()
 			builtin.buffers(require("telescope.themes").get_dropdown({

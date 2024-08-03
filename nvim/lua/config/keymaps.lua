@@ -1,4 +1,3 @@
--- TODO: abstract all plugin specific binds into plugin modules.
 -- [[ Basic Keymaps ]]
 -- See `:help vim.keymap.set()`
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
@@ -13,6 +12,10 @@ end, { desc = "Go to previous Diagnostic message" })
 vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 -- turn off Ctrl-Z quit cuz I hate it
 vim.keymap.set("n", "<C-z>", "<Nop>")
+-- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
+-- or just use <C-\><C-n> to exit terminal mode
+vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
+vim.keymap.set({ "n", "x" }, "<M-Space>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey menu" })
 --Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
 --  See `:help wincmd` for a list of all window commands
@@ -20,6 +23,14 @@ vim.keymap.set("n", "<C-h>", "<C-w><C-h>", { desc = "Move focus to the left wind
 vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right window" })
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
+
+-- NOTE: Global notes on which plugins control which keychord sets aka <leader>C 
+-- where C is the chord the subcommands will dictate
+-- NOTE: Yazi unchorded using <leader>e (may need to reclaim to chord something)
+-- NOTE: Debug/Diagnostic chorded under <leader>d
+-- NOTE: Telescope chorded under <leader>s (may need to be broadened to <leader>t remains available?
+-- NOTE: Todo chorded under <leader>
+-- Chords claimed thus far <leader>[e, d, s] (update array as we add things)
 
 -- -- Precognition binds
 -- vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
@@ -65,7 +76,3 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<leader>xl", "<cmd>Trouble loclist toggle<cr>", { desc = "Toggle [T]rouble [L]oclist" })
 -- vim.keymap.set("n", "<leader>xR", "<cmd>Trouble lsp_references toggle<cr>", { desc = "Toggle [T]rouble [R]eferences" })
 --
--- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping
--- or just use <C-\><C-n> to exit terminal mode
-vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
-vim.keymap.set({ "n", "x" }, "<M-Space>", "<cmd>WhichKey<CR>", { desc = "Open WhichKey menu" })

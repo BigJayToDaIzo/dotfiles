@@ -23,7 +23,7 @@ return {
 		"jay-babu/mason-nvim-dap.nvim",
     -- Inline virtual debug info
     -- Will not work well without treesitter
-    -- TODO: configure treesitter.lua
+    -- [ ] (config treesitter): 
 		"theHamsta/nvim-dap-virtual-text",
 
 		-- Add your own debuggers here
