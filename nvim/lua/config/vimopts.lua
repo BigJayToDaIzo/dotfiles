@@ -14,6 +14,9 @@ vim.g.maplocalleader = " "
 -- custom settings
 -- make line numbers default
 vim.opt.number = true
+-- disable timeout on leader/keybind chords
+vim.opt.timeout = false
+vim.opt.ttimeout = true
 -- you can also add relative line numbers, for help with jumping.
 --  experiment for yourself to see if you like it!
 vim.opt.relativenumber = true
