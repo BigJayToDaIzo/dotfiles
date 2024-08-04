@@ -117,7 +117,7 @@ return {
 				{ name = "buffer" },
 			},
 		})
-		-- '/' cmdline setup
+		-- '/ & ?' cmdline setup
 		cmp.setup.cmdline({ "/", "?" }, {
 			mapping = cmp.mapping.preset.cmdline(),
 			sources = {
