@@ -1,29 +1,34 @@
 return {
-  -- :h dap.txt
+	-- :h dap.txt
 	"mfussenegger/nvim-dap",
-  -- :h dap-adapter dap-configuration dap-widgets dap-mapping dap-api
-  -- https://github.com/mfussenegger/nvim-dap/wiki/Extensions
+	-- :h dap-adapter dap-configuration dap-widgets dap-mapping dap-api
+	-- https://github.com/mfussenegger/nvim-dap/wiki/Extensions
 	event = "VeryLazy",
 	dependencies = {
 		{
-      -- Our first extension from wiki above
-      -- Recommends lazydev.nvim? Ponnder and revisit. 
-      -- It is highly recommended to use lazydev.nvim to enable type checking for nvim-dap-ui to get type checking, documentation and autocompletion for all API functions.
-      -- :h dapui.setup()
+			-- :h nvim-lint
+			-- TODO Lint some Lua and beyond plz
+			"mfussenegger/nvim-lint",
+		},
+		{
+			-- Our first extension from wiki above
+			-- Recommends lazydev.nvim? Ponnder and revisit.
+			-- It is highly recommended to use lazydev.nvim to
+			-- enable type checking for nvim-dap-ui to get type checking,
+			-- documentation and autocompletion for all API functions.
+			-- :h dapui.setup()
 			"rcarriga/nvim-dap-ui",
 			dependencies = "nvim-neotest/nvim-nio",
-      -- neotest module in lua/plugins/neotest.lua ASAP
-  },
+			-- neotest module in lua/plugins/neotest.lua ASAP
+		},
 		-- Installs the debug adapters for you
-    -- Mason has very reasonable defaults and I don't see a need to abstract it's coniguration yet
-    -- :h mason-quickstart
+		-- Mason has very reasonable defaults and I don't see a need to abstract it's configuration yet
+		-- :h mason-quickstart
 		"williamboman/mason.nvim",
-    -- Mason 🤝 nvim-dap! 👊
-    -- :h DapInstall
+		-- Mason 🤝 nvim-dap! 👊
+		-- :h DapInstall
 		"jay-babu/mason-nvim-dap.nvim",
-    -- Inline virtual debug info
-    -- Will not work well without treesitter
-    -- [ ] (config treesitter): 
+		-- Inline virtual debug info
 		"theHamsta/nvim-dap-virtual-text",
 
 		-- Add your own debuggers here
@@ -31,11 +36,30 @@ return {
 	},
 
 	config = function()
+		-- DAP config!
 		local dap = require("dap")
 		local dapui = require("dapui")
 		dapui.setup()
-
 		require("nvim-dap-virtual-text").setup({})
+
+		-- LINT config!
+		require("lint").linters_by_ft = {
+			lua = { "luacheck" },
+		}
+
+		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
+			callback = function()
+				-- try_lint without arguments runs the linters defined in `linters_by_ft`
+				-- for the current filetype
+				require("lint").try_lint()
+
+				-- You can call `try_lint` with a linter name or a list of names to always
+				-- run specific linters, independent of the `linters_by_ft` configuration
+				-- require("lint").try_lint("cspell")
+			end,
+		})
+		-- DUNLINT
+
 		require("mason").setup()
 		require("mason-nvim-dap").setup({
 			-- Makes a best effort to setup the various debuggers with
@@ -45,12 +69,12 @@ return {
 
 			-- You can provide additional configuration to the handlers,
 			-- :h mason-nvim-dap very simple setup, essentially only need adapter name
-      -- and the rest is fetched smartly with git with magix!
-      -- Available Dap Adapters https://github.com/jay-babu/mason-nvim-dap.nvim/blob/main/lua/mason-nvim-dap/mappings/source.lua
+			-- and the rest is fetched smartly with git with magix!
+			-- Available Dap Adapters https://github.com/jay-babu/mason-nvim-dap.nvim/blob/main/lua/mason-nvim-dap/mappings/source.lua
 			handlers = {},
 
 			-- You'll need to check that you have the required things installed
-      -- Update this to ensure that you have the debuggers for the langs you want
+			-- Update this to ensure that you have the debuggers for the langs you want
 			ensure_installed = {
 				"delve",
 				"debugpy",

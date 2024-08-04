@@ -8,8 +8,8 @@ layout {
         color_tab_norm_fg "#6FE7AE"
         color_tab_norm_bg "#3C4841"
         color_tab_norm_sync "#AAAAAA"
-        color_tab_active_fg "#000000" 
-        color_tab_active_bg "#6FE7AE" 
+        color_tab_active_fg "#000000"
+        color_tab_active_bg "#6FE7AE"
         color_tab_active_fs "#E69875"
         color_tab_active_sync "#AAAAAA"
         color_tab_trunc "#E69875"
@@ -85,7 +85,7 @@ layout {
       }
     }
   }
-  tab name="All" cwd="~/.config/" {
+  tab name="All" cwd="~/.config/nvim/lua/plugins/" {
     pane split_direction="horizontal" {
       pane {
         start_suspended true
@@ -94,10 +94,10 @@ layout {
         borderless true
         command "nvim"
       }
-      pane 
+      pane
     }
   }
-  tab name="Nvim" focus=true cwd="~/.config/nvim" {
+  tab name="Nvim" focus=true cwd="~/.config/nvim/lua/plugins/" {
     pane split_direction="horizontal" {
       pane {
         size "75%"
@@ -106,7 +106,7 @@ layout {
         command "nvim"
         args "init.lua"
       }
-      pane 
+      pane
     }
   }
   tab name="Fish" cwd="~/.config/fish" {
@@ -119,7 +119,7 @@ layout {
         command "nvim"
         args "config.fish"
       }
-      pane 
+      pane
     }
   }
   tab name="Hyprland" cwd="~/.config/hypr" {
@@ -132,7 +132,7 @@ layout {
         command "nvim"
         args "hyprland.conf"
       }
-      pane 
+      pane
     }
   }
   tab name="Kitty" cwd="~/.config/kitty" {
@@ -145,7 +145,7 @@ layout {
         command "nvim"
         args "kitty.conf"
       }
-      pane 
+      pane
     }
   }
   tab name="󰇥 " cwd="~/.config/yazi" {
@@ -158,7 +158,7 @@ layout {
         command "nvim"
         args "yazi.toml"
       }
-      pane 
+      pane
     }
   }
   tab name="Starship" cwd="~/.config/starship" {
@@ -171,7 +171,7 @@ layout {
         command "nvim"
         args "starship.toml"
       }
-      pane 
+      pane
     }
   }
 }

@@ -24,16 +24,16 @@ vim.keymap.set("n", "<C-l>", "<C-w><C-l>", { desc = "Move focus to the right win
 vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower window" })
 vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper window" })
 
--- NOTE: Global notes on which plugins control which keychord sets aka <leader>C 
+-- NOTE: Global notes on which plugins control which keychord sets aka <leader>C
 -- where C is the chord the subcommands will dictate
 -- NOTE: Yazi unchorded using <leader>e (may need to reclaim to chord something)
 -- NOTE: Debug/Diagnostic chorded under <leader>d
 -- NOTE: Telescope chorded under <leader>s (may need to be broadened to <leader>t remains available?
 -- NOTE: Todo chorded under <leader> --ok with :Todo<C-d> for now!
--- NOTE: Completion chorded under <leader>? --More like just check colissions and readiness in
+-- NOTE: Completion chorded under <leader>? --More like just check collisions and readiness in
 -- <leader>sk (search keybind is your command palette!)
--- CHECK IT after you install plugins with default bindings! (or want to tweak your own without collisions)
--- Chords claimed thus far <leader>[e, d, s] (update array as we add things)
+-- UPDATE IT after you install plugins with default bindings! (or want to tweak your own without collisions)
+-- FIX Chords claimed thus far <leader>[e, d, s] (update array as we add things)
 
 -- -- Precognition binds
 -- vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
