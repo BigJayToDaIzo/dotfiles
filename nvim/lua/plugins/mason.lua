@@ -41,10 +41,14 @@ return {
 		local dapui = require("dapui")
 		dapui.setup()
 		require("nvim-dap-virtual-text").setup({})
+		-- DUNDAP config!
 
 		-- LINT config!
 		require("lint").linters_by_ft = {
+			-- Dont forget to install them with Mason!
 			lua = { "luacheck" },
+			-- go = { "golangci-lint", "gospel", "semgrep", },
+			-- python = { "pylint", "mypy", "ruff", },
 		}
 
 		vim.api.nvim_create_autocmd({ "BufWritePost" }, {
@@ -54,12 +58,14 @@ return {
 				require("lint").try_lint()
 
 				-- You can call `try_lint` with a linter name or a list of names to always
+				-- Default configs work well for me!
 				-- run specific linters, independent of the `linters_by_ft` configuration
 				-- require("lint").try_lint("cspell")
 			end,
 		})
-		-- DUNLINT
+		-- DUNLINT config!
 
+		-- MASON config!
 		require("mason").setup()
 		require("mason-nvim-dap").setup({
 			-- Makes a best effort to setup the various debuggers with
@@ -81,11 +87,15 @@ return {
 				"stylua",
 			},
 		})
+		-- DUNMASON config!
+
 		-- Dap UI setup
 		-- :h nvim-dap-ui
 		dap.listeners.after.event_initialized["dapui_config"] = dapui.open
 		dap.listeners.before.event_terminated["dapui_config"] = dapui.close
 		dap.listeners.before.event_exited["dapui_config"] = dapui.close
+		-- DUNDap UI setup!
+
 		-- Basic debugging keymaps, feel free to change to your liking!
 		vim.keymap.set("n", "<F1>", dap.step_into, { desc = "Debug: Step Into" })
 		vim.keymap.set("n", "<F2>", dap.step_over, { desc = "Debug: Step Over" })

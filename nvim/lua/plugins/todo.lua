@@ -2,31 +2,31 @@ return {
 	"folke/todo-comments.nvim",
 	dependencies = { "nvim-lua/plenary.nvim" },
 
-	--TODO Add those sweet Todo Keybinds!
+	-- TODO: Add those sweet Todo Keybinds!
 	--
-	-- NOTE :To<C-d> should cover it for now!
+	-- NOTE: To<C-d> should cover it for now!
 	--
-	-- NOTE :TodoTelescope only recursively parses cwd!
+	-- NOTE: TodoTelescope only recursively parses cwd!
 	--
 	-- all options
 	--
-	-- FIX fix me plz
+	-- FIX: fix me plz
 	--
-	-- FIXME fixme plz
+	-- FIXME: fixme plz
 	--
-	-- BUG bug noplz
+	-- BUG: bug noplz
 	--
-	-- TODO todo plz
+	-- TODO: todo plz
 	--
-	-- HACK hack plz
+	-- HACK: hack plz
 	--
-	-- WARN warm plz
+	-- WARN: warm plz
 	--
-	-- PERF perf plz
+	-- PERF: perf plz
 	--
-	-- NOTE note plz
+	-- NOTE: note plz
 	--
-	-- TEST test plz
+	-- TEST: test plz
 
 	opts = {
 		keywords = {
