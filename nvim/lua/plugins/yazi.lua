@@ -5,10 +5,6 @@ return {
   -- to use Neo-tree or Netrw or whatever your heart desires here.
   -- I found it a soft place to land as a new learner.
 	"mikavilpas/yazi.nvim",
-	event = "VeryLazy",
-	dependencies = {
-		{ "nvim-lua/plenary.nvim", lazy = true },
-	},
 	keys = {
 		{
 			"<leader>e",
@@ -22,5 +18,12 @@ return {
 		-- if you want to open yazi instead of netrw, see below for more info
 		open_for_directories = true,
 		floating_window_scaling_factor = 0.85,
+    -- bugged for me, does weird things with icons
+    -- This seems to be deeply nested in a popular tui library
+    -- outside of the control of the plugin author, neovim
+    -- or any muxer you may be using (tmux, zellij, etc)
+    -- yazi_floating_window_winblend = 15,
+    use_ya_for_events_reading = true,
+    use_yazi_client_id_flag = true,
 	},
 }

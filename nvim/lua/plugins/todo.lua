@@ -4,5 +4,10 @@ return {
   -- TODO: Add those sweet Todo Keybinds!
   -- NOTE :TodoTelescope only recursively parses cwd!
   -- NOTE :TodoTelescope cwd=~/.config/nvim keywords=TODO,FIX
-  opts = {}
+  -- FIX: dn! dunno why FIX looks so weird in line above
+  opts = {
+    keywords = {
+      FIX = { icon = "", color = "#770b59", },
+    },
+  }
 }

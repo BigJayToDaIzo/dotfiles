@@ -13,6 +13,7 @@ return {
       -- Meet also the dopest in the game at snippetnannigans
       {
         "L3MON4d3/LuaSnip",
+        build = "make install_jsregexp",
         dependencies = {
           "saadparwaiz1/cmp_luasnip",
         },
@@ -65,6 +66,16 @@ return {
               fallback()
             end
           end),
+          ["<C-l>"] = cmp.mapping(function()
+            if luasnip.expand_or_locally_jumpable() then
+              luasnip.expand_or_jump()
+            end
+          end, { "i", "s" }),
+          ["<C-h>"] = cmp.mapping(function()
+            if luasnip.locally_jumpable(-1) then
+              luasnip.jump(-1)
+            end
+          end, { "i", "s" }),
         }),
         -- Source trackin' time!
         -- Where moar completion sources?
@@ -73,9 +84,13 @@ return {
         -- TODO: Pick one or two at a time and link them in!
         -- TODO: Probably Copilot or Codeium
         sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
+          { name = 'nvim_lsp', group_index = 2},
           { name = 'luasnip' },
+          { name = 'path', group_index = 2},
           -- { name = 'vsniip' }, -- for that gang
+          -- AI helper bro.  Careful things can start getting hearvy down this...
+          -- :WARN 󱩢🕳
+          -- { name = 'copilot', group_index 1 },
           -- and so on
         }, {
           -- WARN: Insert rabbit hole here 🕳󱩢
