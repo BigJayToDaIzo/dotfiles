@@ -29,7 +29,10 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- NOTE: Yazi unchorded using <leader>e (may need to reclaim to chord something)
 -- NOTE: Debug/Diagnostic chorded under <leader>d
 -- NOTE: Telescope chorded under <leader>s (may need to be broadened to <leader>t remains available?
--- NOTE: Todo chorded under <leader>
+-- NOTE: Todo chorded under <leader> --ok with :Todo<C-d> for now!
+-- NOTE: Completion chorded under <leader>? --More like just check colissions and readiness in
+-- <leader>sk (search keybind is your command palette!)
+-- CHECK IT after you install plugins with default bindings! (or want to tweak your own without collisions)
 -- Chords claimed thus far <leader>[e, d, s] (update array as we add things)
 
 -- -- Precognition binds
