@@ -5,6 +5,7 @@ return {
   -- to use Neo-tree or Netrw or whatever your heart desires here.
   -- I found it a soft place to land as a new learner.
 	"mikavilpas/yazi.nvim",
+  event = "VeryLazy",
 	keys = {
 		{
 			"<leader>e",
