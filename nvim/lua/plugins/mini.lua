@@ -3,6 +3,8 @@
 -- through THAT mess for a week.
 -- I'm starting to think mini plugins hate my box
 return {
+	-- NOTE: Keybind hints
+	-- FIX: Breaking when opening new files and other odd buffer transitions
 	{
 		"echasnovski/mini.clue",
 		version = false,
