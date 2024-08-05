@@ -24,7 +24,7 @@ return {
 			-- This seems to be deeply nested in a popular tui library
 			-- outside of the control of the plugin author, neovim
 			-- or any muxer you may be using (tmux, zellij, etc)
-			yazi_floating_window_winblend = 15,
+			-- yazi_floating_window_winblend = 15,
 			use_ya_for_events_reading = true,
 			use_yazi_client_id_flag = true,
 		},
