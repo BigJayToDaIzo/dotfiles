@@ -17,6 +17,7 @@ return {
 			--   desc = "Format buffer",
 			-- }
 		},
+
 		opts = {
 			-- Define formatters
 			formatters_by_ft = {

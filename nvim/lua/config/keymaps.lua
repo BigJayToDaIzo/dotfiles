@@ -26,34 +26,27 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 
 -- NOTE: Global notes on which plugins control which keychord sets aka <leader>C
 -- where C is the chord the subcommands will dictate
+
 -- NOTE: Yazi unchorded using <leader>e (may need to reclaim to chord something)
+-- NOTE: Which-key unchorded using <leader>?
 -- NOTE: Debug/Diagnostic chorded under <leader>d*
 -- NOTE: Telescope chorded under <leader>s* (may need to be broadened to <leader>t remains available?
--- NOTE: Todo chorded under <leader> --ok with :Todo<C-d> for now!
+-- NOTE: Todo need to be chorded? --ok with :Todo<C-d> for now!
 -- Starting to feel like a need for a chord for
 -- :lua require'todo-comments'.jump_next/prev()
 -- NOTE: Completion chorded under <leader>? --More like just check collisions and readiness in
 -- <leader>sk (search keybind is your command palette!)
 -- NOTE: Gitsigns probably going to need a chord. <leader>g*
 -- UPDATE IT after you install plugins with default bindings! (or want to tweak your own without collisions)
--- FIX Chords claimed thus far <leader>[d, e, g, s] (update array as we add things)
+-- FIX: Chords claimed thus far <leader>[d, e, g, s] (update array as we add things)
+-- NOTE: We now have which-key hints, so groups in <leader> array
+-- will need to be added to the clues table there
 
 -- -- Precognition binds
 -- vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
 -- vim.keymap.set("n", "<leader>pp", "<cmd>lua require('precognition').peek()<cr>", { desc = "[P]recognition [P]eek" })
 -- vim.keymap.set("n", "<leader>ps", "<cmd>lua require('precognition').show()<cr>", { desc = "[P]recognition [S]how" })
 -- vim.keymap.set("n", "<leader>ph", "<cmd>lua require('precognition').hide()<cr>", { desc = "[P]recognition [H]ide" })
---
--- -- Folke Noice keymaps <leader>n on which-key
--- vim.keymap.set("n", "<leader>nh", "<cmd>Noice<cr>", { desc = "[N]oice [H]isory" })
--- vim.keymap.set("n", "<leader>nl", "<cmd>Noice last<cr>", { desc = "[N]oice [L]ast" })
--- vim.keymap.set("n", "<leader>nx", "<cmd>Noice dismiss<cr>", { desc = "[N]oice Di[x]miss" })
--- vim.keymap.set("n", "<leader>nr", "<cmd>Noice errors<cr>", { desc = "[N]oice [E]rrors" })
--- vim.keymap.set("n", "<leader>nd", "<cmd>Noice disable<cr>", { desc = "[N]oice [D]isable" })
--- vim.keymap.set("n", "<leader>ne", "<cmd>Noice enable<cr>", { desc = "[N]oice [E]nable" })
--- vim.keymap.set("n", "<leader>ns", "<cmd>Noice stats<cr>", { desc = "[N]oice [S]tats" })
--- vim.keymap.set("n", "<leader>nt", "<cmd>Noice telescope<cr>", { desc = "[N]oice [ ]" })
---
 -- -- Buffer based keymaps
 -- vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]buffer" })
 -- vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]buffer" })
@@ -65,9 +58,3 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
 -- vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
 -- vim.keymap.set("n", "<M-l>", "<cmd>BufferLineMoveNext<cr>")
--- -- folke/trouble.vim uses <leader>x* maps to operate
--- vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Toggle [T]rouble" })
--- vim.keymap.set("n", "<leader>xq", "<cmd>Trouble quickfix toggle<cr>", { desc = "Toggle [T]rouble [Q]uickfix" })
--- vim.keymap.set("n", "<leader>xl", "<cmd>Trouble loclist toggle<cr>", { desc = "Toggle [T]rouble [L]oclist" })
--- vim.keymap.set("n", "<leader>xR", "<cmd>Trouble lsp_references toggle<cr>", { desc = "Toggle [T]rouble [R]eferences" })
---

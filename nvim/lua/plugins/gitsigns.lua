@@ -57,7 +57,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
 				map("n", "<leader>gp", gitsigns.preview_hunk, { desc = "n_[G]it [P]review Hunk" })
 				map("n", "<leader>gb", function()
 					gitsigns.blame_line({ full = true })
-				end, { desc = "n_[G]it [B]lame Line" })
+				end, { desc = "n_[G]gt [B]lame Line" })
 				map(
 					"n",
 					"<leader>gtc",
@@ -71,7 +71,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
 				map("n", "<leader>gtd", gitsigns.toggle_deleted, { desc = "n_[G]it [T]oggle [D]eleted" })
 
 				-- Text object
-				map({ "o", "x" }, "<leader>gh", ":<C-U>Gitsigns select_hunk<CR>", { desc = "ox_[G]it Select [H]unk" })
+				map({ "o", "x" }, "<leader>gR", ":<C-U>Gitsigns select_hunk<CR>", { desc = "ox_[G]it Select [H]unk" })
 			end,
 		})
 	end,
