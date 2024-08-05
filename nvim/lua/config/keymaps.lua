@@ -27,7 +27,7 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- NOTE: Global notes on which plugins control which keychord sets aka <leader>C
 -- where C is the chord the subcommands will dictate
 
--- NOTE: Yazi unchorded using <leader>e (may need to reclaim to chord something)
+-- NOTE: Oil unchorded using <leader>e (may need to reclaim to chord something)
 -- NOTE: Which-key unchorded using <leader>?
 -- NOTE: Debug/Diagnostic chorded under <leader>d*
 -- NOTE: Telescope chorded under <leader>s* (may need to be broadened to <leader>t remains available?
