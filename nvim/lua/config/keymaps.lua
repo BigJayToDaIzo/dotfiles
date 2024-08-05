@@ -27,14 +27,14 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- NOTE: Global notes on which plugins control which keychord sets aka <leader>C
 -- where C is the chord the subcommands will dictate
 -- NOTE: Yazi unchorded using <leader>e (may need to reclaim to chord something)
--- NOTE: Debug/Diagnostic chorded under <leader>d
--- NOTE: Telescope chorded under <leader>s (may need to be broadened to <leader>t remains available?
+-- NOTE: Debug/Diagnostic chorded under <leader>d*
+-- NOTE: Telescope chorded under <leader>s* (may need to be broadened to <leader>t remains available?
 -- NOTE: Todo chorded under <leader> --ok with :Todo<C-d> for now!
 -- Starting to feel like a need for a chord for
 -- :lua require'todo-comments'.jump_next/prev()
 -- NOTE: Completion chorded under <leader>? --More like just check collisions and readiness in
 -- <leader>sk (search keybind is your command palette!)
--- NOTE: Gitsigns probably going to need a chord. <leader>g
+-- NOTE: Gitsigns probably going to need a chord. <leader>g*
 -- UPDATE IT after you install plugins with default bindings! (or want to tweak your own without collisions)
 -- FIX Chords claimed thus far <leader>[d, e, g, s] (update array as we add things)
 
@@ -65,14 +65,6 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
 -- vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
 -- vim.keymap.set("n", "<M-l>", "<cmd>BufferLineMoveNext<cr>")
---
--- vim.keymap.set("n", "<leader>o[", function()
--- 	require("todo-comments").jump_prev()
--- end, { desc = "Go to previous T[o]do" })
--- vim.keymap.set("n", "<leader>o]", function()
--- 	require("todo-comments").jump_next()
--- end, { desc = "Go to next T[o]do" })
---
 -- -- folke/trouble.vim uses <leader>x* maps to operate
 -- vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Toggle [T]rouble" })
 -- vim.keymap.set("n", "<leader>xq", "<cmd>Trouble quickfix toggle<cr>", { desc = "Toggle [T]rouble [Q]uickfix" })
