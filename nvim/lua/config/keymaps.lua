@@ -30,10 +30,13 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- NOTE: Debug/Diagnostic chorded under <leader>d
 -- NOTE: Telescope chorded under <leader>s (may need to be broadened to <leader>t remains available?
 -- NOTE: Todo chorded under <leader> --ok with :Todo<C-d> for now!
+-- Starting to feel like a need for a chord for
+-- :lua require'todo-comments'.jump_next/prev()
 -- NOTE: Completion chorded under <leader>? --More like just check collisions and readiness in
 -- <leader>sk (search keybind is your command palette!)
+-- NOTE: Gitsigns probably going to need a chord. <leader>g
 -- UPDATE IT after you install plugins with default bindings! (or want to tweak your own without collisions)
--- FIX Chords claimed thus far <leader>[e, d, s] (update array as we add things)
+-- FIX Chords claimed thus far <leader>[d, e, g, s] (update array as we add things)
 
 -- -- Precognition binds
 -- vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
@@ -63,9 +66,6 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
 -- vim.keymap.set("n", "<M-l>", "<cmd>BufferLineMoveNext<cr>")
 --
--- -- folke/todo-comments.nvim uses <leader>t* maps to operate
--- vim.keymap.set("n", "<leader>ox", "<cmd>TodoTrouble<CR>", { desc = "Toggle T[o]do Tr[x]uble" })
--- vim.keymap.set("n", "<leader>ot", "<cmd>TodoTelescope<CR>", { desc = "Open T[o]do [T]elescope" })
 -- vim.keymap.set("n", "<leader>o[", function()
 -- 	require("todo-comments").jump_prev()
 -- end, { desc = "Go to previous T[o]do" })
