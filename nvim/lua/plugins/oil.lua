@@ -12,6 +12,16 @@ return {
 			view_options = {
 				show_hidden = true,
 			},
+			float = {
+				padding = 5,
+				max_width = 0,
+				max_height = 0,
+				border = "rounded",
+				-- Bugged in yazi/yazi.nvim as well
+				-- win_options = {
+				-- 	winblend = 20,
+				-- },
+			},
 		})
 	end,
 	vim.keymap.set("n", "<leader>e", "<CMD>Oil --float<CR>", { desc = "Open Oil FileTree" }),

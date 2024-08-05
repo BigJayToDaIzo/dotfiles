@@ -7,10 +7,8 @@ return {
 	enabled = true,
 	config = function()
 		require("bufferline").setup({
-			-- highlights = require('catppuccin.groups.integrations.bufferline').get(),
 			options = {
 				-- ALL configuration takes place inside this options table
-				-- Where helper functions are written remains unclear
 				themable = true,
 				indicator = {
 					style = "underline",
@@ -43,5 +41,7 @@ return {
 				color_icons = true,
 			},
 		})
+		-- TODO: Keybinds ASAP! <leader>b?
+		--
 	end,
 }
