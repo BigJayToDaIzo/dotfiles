@@ -55,8 +55,8 @@ return {
 					miniclue.gen_clues.z(),
 					-- Enhance this by adding descriptions for <Leader> mapping groups
 					{ mode = "n", keys = "<Leader>d", desc = "+n_Debug" },
-					{ mode = "n", keys = "<Leader>g", desc = "+n_Gitsigns" },
-					{ mode = "n", keys = "<Leader>s", desc = "+Search" },
+					{ mode = "n", keys = "<Leader>s", desc = "+n_Search" },
+					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffer" },
 				},
 
 				-- Clue window settings

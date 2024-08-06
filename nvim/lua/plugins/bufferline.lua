@@ -42,6 +42,16 @@ return {
 			},
 		})
 		-- TODO: Keybinds ASAP! <leader>b?
-		--
+		-- -- Buffer based keymaps
+		vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]buffer" })
+		vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]buffer" })
+		vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "[P]revious [B]buffer" })
+		vim.keymap.set("n", "<leader>br", "<cmd>BufferLineMoveNext<CR>", { desc = "[B]buffer Move [R]ight" })
+		vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineMovePrev<CR>", { desc = "[B]buffer Move [L]eft" })
+		vim.keymap.set("n", "<leader>bo", "<cmd>BufferLineCloseOthers<CR>", { desc = "[B]buffer Close [O]thers" })
+		vim.keymap.set("n", "H", "<cmd>BufferLineCyclePrev<cr>")
+		vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
+		vim.keymap.set("n", "<M-h>", "<cmd>BufferLineMovePrev<cr>")
+		vim.keymap.set("n", "<M-l>", "<cmd>BufferLineMoveNext<cr>")
 	end,
 }
