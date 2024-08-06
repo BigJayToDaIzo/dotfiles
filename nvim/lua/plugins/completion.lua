@@ -1,6 +1,7 @@
 return {
 	{
 		-- COMPLETION!  It makes IDES feel nice, no matter the lang
+		-- TODO: fill out with better notes, this is a LOT
 		-- Meet the dopest in the game at it,
 		"hrsh7th/nvim-cmp",
 		dependencies = {

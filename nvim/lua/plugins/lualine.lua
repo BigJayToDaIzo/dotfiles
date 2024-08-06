@@ -1,6 +1,6 @@
 return {
 	-- NOTE: Lualine is a classic.
-	-- Let's attempt an abstraction here
+	-- :h lualine<C-d>
 	"nvim-lualine/lualine.nvim",
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",

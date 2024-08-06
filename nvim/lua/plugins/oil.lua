@@ -24,5 +24,9 @@ return {
 			},
 		})
 	end,
+	-- Keymap that thang!
+	-- change command to function that pulls cwd from vim
+	-- So Oil stays caught up with the last place it interacted
+	-- with the fs. Default is cwd of current buffer
 	vim.keymap.set("n", "<leader>e", "<CMD>Oil --float<CR>", { desc = "Open Oil FileTree" }),
 }

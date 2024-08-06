@@ -41,7 +41,8 @@ vim.keymap.set("n", "<leader>g", function() end, { desc = "+Gitsigns" })
 -- <leader>sk (search keybind is your command palette!)
 -- NOTE: Bufferline claims <leader>b*
 -- UPDATE IT after you install plugins with default bindings! (or want to tweak your own without collisions)
--- FIX: Chords claimed thus far <leader>[b, d, e, g, s] (update array as we add things)
+-- NOTE: Notifications Dismiss takex <leader>x (for now)
+-- FIX: Chords claimed thus far <leader>[b, d, e, g, s, x] (update array as we add things)
 -- NOTE: We now have which-key hints, so groups in <leader> array
 -- will need to be added to the clues table there or here if that doesnt work correctly
 

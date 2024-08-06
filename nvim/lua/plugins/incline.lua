@@ -1,7 +1,7 @@
 return {
-	-- This feels more vimlike that giving 'tabs' to buffers
-	-- This is not the way vim tabs were meant to be used
 	-- Tabs are a layouts for buffers
+	-- I like this very much, especially when tabs get busy with windows
+	-- :h incline
 	"b0o/incline.nvim",
 	event = "VeryLazy",
 	dependencies = {
@@ -10,6 +10,8 @@ return {
 	},
 	config = function()
 		-- Recipe copy/pasted right out of the README
+		-- There's another with all kinds of lsp info
+		-- but I have that on my lualine
 		local helpers = require("incline.helpers")
 		local devicons = require("nvim-web-devicons")
 		require("incline").setup({
