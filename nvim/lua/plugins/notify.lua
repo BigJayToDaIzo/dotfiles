@@ -1,5 +1,7 @@
 return {
 	-- Notifications
+	-- WARN: This tool causes a lot of cursor flicker for me
+	-- I sadly cannot seem to find a decent replacement so I endure I blame nvidia
 	-- :h nvim-notify.txt
 	-- VERY sensible defaults
 	"rcarriga/nvim-notify",

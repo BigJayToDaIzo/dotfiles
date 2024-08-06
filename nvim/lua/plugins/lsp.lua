@@ -1,6 +1,8 @@
 return {
 	-- Language Server Protocols IMPORTANT
 	-- Available Linters: https://github.com/mfussenegger/nvim-lint?tab=readme-ov-file#available-linters
+	-- NOTE: This one is a DOOSIE, largely copied from MUH BOI @tjdevries kickstart distro
+	-- It's bomb as heck and another great place to get started!
 	"neovim/nvim-lspconfig",
 	dependencies = {
 		"williamboman/mason.nvim",
