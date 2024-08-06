@@ -8,7 +8,10 @@ return {
 		end,
 	},
 	{
-		-- Add another color based plugin here, or abstract and name it.
-		-- You choose!
+		-- Colorizer allows you to see exactly what color codes look like!
+		"NvChad/nvim-colorizer.lua",
+		config = function()
+			require("colorizer").setup({})
+		end,
 	},
 }
