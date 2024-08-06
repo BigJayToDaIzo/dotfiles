@@ -57,6 +57,7 @@ return {
 					{ mode = "n", keys = "<Leader>d", desc = "+n_Debug" },
 					{ mode = "n", keys = "<Leader>s", desc = "+n_Search" },
 					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffer" },
+					{ mode = "n", keys = "<Leader>l", desc = "+n_LSP" },
 				},
 
 				-- Clue window settings

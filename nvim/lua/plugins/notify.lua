@@ -4,9 +4,12 @@ return {
 	-- VERY sensible defaults
 	"rcarriga/nvim-notify",
 	config = function()
+		require("notify").setup({
+			fps = 90,
+		})
 		-- point vims notification engine at plugin
 		vim.notify = require("notify")
-		-- Keybind
+		-- Keybinds!
 		vim.keymap.set("n", "<leader>x", function()
 			vim.notify.dismiss()
 		end, { desc = "Dismiss Notifications" })
