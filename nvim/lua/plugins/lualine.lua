@@ -8,11 +8,8 @@ return {
 	config = function()
 		-- TODO: Ok now this is a LOT.
 		-- Look into abstraction into a folder for themes perhaps?
-		-- Eviline config for lualine
-		-- Author: shadmansaleh
-		-- Credit: glepnir
+		-- Eviline config for lualine Author: shadmansaleh Credit: glepnir
 		local lualine = require("lualine")
-
     -- Color table for highlights
     -- stylua: ignore
     local colors = {
