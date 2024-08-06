@@ -1,4 +1,5 @@
 return {
+	-- Tries to help you improve your motion efficiency!
 	"m4xshen/hardtime.nvim",
 	dependencies = {
 		"MunifTanjim/nui.nvim",

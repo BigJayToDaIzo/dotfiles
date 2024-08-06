@@ -2,7 +2,7 @@
 return {
 	-- :h telescope || :Telescope <C-d> will take you far! The or condition is a secret!
 	-- kh telescope.defaults.mappings
-	-- <C-/> brings up keybinds!
+	-- <C-/> brings up keybinds inside telescope!
 	"nvim-telescope/telescope.nvim",
 	event = "VimEnter",
 	branch = "0.1.x",
@@ -100,6 +100,7 @@ return {
 		vim.keymap.set("n", "<leader>sn", function()
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "[S]earch [N]eovim files" })
+		vim.keymap.set("n", "<leader>so", "<CMD>Telescope notify<CR>", { desc = "[S]earch N[o]tifications" })
 		vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "[S]earch [S]elect Telescope" })
 		vim.keymap.set("n", "<leader>st", "<CMD>TodoTelescope<CR>", { desc = "[S]earch [T]odo  " })
 		vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "[S]earch current [W]ord" })

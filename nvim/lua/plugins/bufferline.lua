@@ -41,8 +41,7 @@ return {
 				color_icons = true,
 			},
 		})
-		-- TODO: Keybinds ASAP! <leader>b?
-		-- -- Buffer based keymaps
+		-- Bufferline keymaps
 		vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "[C]lose [B]buffer" })
 		vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "[N]ext [B]buffer" })
 		vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "[P]revious [B]buffer" })
