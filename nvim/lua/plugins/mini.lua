@@ -60,6 +60,7 @@ return {
 					{ mode = "n", keys = "<Leader>gt", desc = "+Gitsign Toggles" },
 					{ mode = "x", keys = "<Leader>c", desc = "+x_Copilot" },
 					{ mode = "n", keys = "<Leader>d", desc = "+n_Debug" },
+					{ mode = "n", keys = "<Leader>o", desc = "+n_Obsidian" },
 					{ mode = "n", keys = "<Leader>s", desc = "+n_Search" },
 					{ mode = "n", keys = "<Leader>t", desc = "+n_Test" },
 					{ mode = "n", keys = "<Leader>l", desc = "+n_LSP" },

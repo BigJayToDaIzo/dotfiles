@@ -1,1 +1,1 @@
-require("starship"):setup()
+-- require("starship"):setup()

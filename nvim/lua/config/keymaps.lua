@@ -44,6 +44,9 @@ vim.keymap.set("n", "<leader>g", function() end, { desc = "+Gitsigns" })
 -- NOTE: Notifications Dismiss takex <leader>x (for now)
 -- NOTE: LSP binds get their own <leader>l
 -- NOTE: Copilot takes <leader>c
--- FIX: Chords claimed thus far <leader>[b, c, d, e, g, l, s, x] (update array as we add things)
+-- NOTE: Obsidian coming in hot at <leader>o
+-- FIX: o was in fact taken by the undocumented show symbols window <leader>o keybind
+-- -Move to <leader>ty
+-- FIX: Chords claimed thus far <leader>[b, c, d, e, g, l, o, s, x] (update array as we add things)
 -- NOTE: We now have which-key hints, so groups in <leader> array
 -- will need to be added to the clues table there or here if that doesnt work correctly
