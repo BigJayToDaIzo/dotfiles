@@ -57,6 +57,7 @@ return {
 					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffer" },
 					{ mode = "n", keys = "<Leader>c", desc = "+n_Copilot" },
 					{ mode = "x", keys = "<Leader>g", desc = "+x_Git" },
+					{ mode = "n", keys = "<Leader>gt", desc = "+Gitsign Toggles" },
 					{ mode = "x", keys = "<Leader>c", desc = "+x_Copilot" },
 					{ mode = "n", keys = "<Leader>d", desc = "+n_Debug" },
 					{ mode = "n", keys = "<Leader>s", desc = "+n_Search" },

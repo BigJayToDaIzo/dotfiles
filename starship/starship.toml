@@ -5,7 +5,7 @@ $sudo$os$env_var$hostname$directory$all$cmd_duration$fill$time
 $status$character
 """
 
-# Must add ALL the package possiblities by hand because $all is forcing a newline
+# Must add ALL the package possibilities by hand because $all is forcing a newline
 
 add_newline = false
 
@@ -34,13 +34,15 @@ vimcmd_replace_symbol = '[](char_poobie_fg)'
 vimcmd_visual_symbol = '[](user_fg)'
 
 [cmd_duration]
-format = '[\[󱎫 $duration\]](time_fg)'
+format = '[\[ $duration\]](time_fg)'
 
 [directory]
 style = 'directory_fg'
 read_only = ''
 read_only_style = 'char_poobie_fg'
 home_symbol = '~'
+truncation_length = 2
+fish_style_pwd_dir_length = 1
 
 [env_var.USER]
 format = '[$env_value.](user_fg)'
@@ -98,7 +100,8 @@ format = '[\[$status\]](char_poobie_fg)'
 
 [time]
 disabled = false
-format = '[[󰥔 ](clock_fg)$time ](time_fg)'
+format = '[[ ](clock_fg)$time ](time_fg)'
+
 
 [aws]
 format = '[\[$symbol($profile)(\($region\))(\[$duration\])\]](package_fg)'

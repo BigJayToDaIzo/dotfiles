@@ -104,7 +104,6 @@ layout {
         focus true
         borderless true
         command "nvim"
-        args "init.lua"
       }
       pane
     }
