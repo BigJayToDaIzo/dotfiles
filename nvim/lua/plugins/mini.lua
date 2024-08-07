@@ -54,9 +54,13 @@ return {
 					miniclue.gen_clues.windows(),
 					miniclue.gen_clues.z(),
 					-- Enhance this by adding descriptions for <Leader> mapping groups
+					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffer" },
+					{ mode = "n", keys = "<Leader>c", desc = "+n_Copilot" },
+					{ mode = "x", keys = "<Leader>g", desc = "+x_Git" },
+					{ mode = "x", keys = "<Leader>c", desc = "+x_Copilot" },
 					{ mode = "n", keys = "<Leader>d", desc = "+n_Debug" },
 					{ mode = "n", keys = "<Leader>s", desc = "+n_Search" },
-					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffer" },
+					{ mode = "n", keys = "<Leader>t", desc = "+n_Test" },
 					{ mode = "n", keys = "<Leader>l", desc = "+n_LSP" },
 				},
 
