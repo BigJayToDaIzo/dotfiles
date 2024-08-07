@@ -9,9 +9,16 @@ vim.g.maplocalleader = " "
 -- see `:help vim.opt`
 --  note: you can change these options as you wish!
 --  for more options, you can see `:help option-list`
---  holy shib there are so many options here 👆
 
 -- custom settings
+-- set my rulers a little brighter
+vim.api.nvim_create_autocmd("ColorScheme", {
+	pattern = "*",
+	callback = function()
+		vim.api.nvim_set_hl(0, "CursorLine", { bg = "#20705e" })
+		vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#20705e" })
+	end,
+})
 -- make line numbers default
 vim.opt.number = true
 -- disable timeout on leader/keybind chords

@@ -35,10 +35,28 @@ return {
 					-- Post config func pics up here
 				end,
 			},
+			{
+				"zbirenbaum/copilot-cmp",
+				lazy = true,
+				dependencies = "zbirenbaum/copilot.lua",
+				config = function()
+					require("copilot_cmp").setup({})
+				end,
+			},
 		},
 		-- TODO: Setup begins with configuration
 		config = function()
+			local luasnip = require("luasnip")
+			require("luasnip").setup({})
 			local cmp = require("cmp")
+			local has_words_before = function()
+				if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then
+					return false
+				end
+				local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+				return col ~= 0
+					and vim.api.nvim_buf_get_text(0, line - 1, 0, line - 1, col, {})[1]:match("^%s*$") == nil
+			end
 			cmp.setup({
 				-- REQUIRED - MUST specify snippet engine
 				snippet = {
@@ -49,17 +67,26 @@ return {
 						-- vim.snippet.expand(args.body) -- On their giant shoulders we stand
 					end,
 				},
-				window = {
-					-- completion = cmp.config.window.bordered(),
-					-- documentation = cmp.config.window.bordered(),
-				},
+				completion = { completeopt = "menu,menuone,noinsert" },
 				-- Keybind/keymap trackin' time!
 				mapping = cmp.mapping.preset.insert({
 					["<C-b>"] = cmp.mapping.scroll_docs(-4),
-					["<C-f>"] = cmp.mapping.scroll_docs(4),
-					["<C-y>"] = cmp.mapping.complete(),
 					["<C-e>"] = cmp.mapping.abort(),
-					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+					["<C-f>"] = cmp.mapping.scroll_docs(4),
+					["<C-h>"] = cmp.mapping(function()
+						if luasnip.locally_jumpable(-1) then
+							luasnip.jump(-1)
+						end
+					end, { "i", "s" }),
+					["<C-l>"] = cmp.mapping(function()
+						if luasnip.expand_or_locally_jumpable() then
+							luasnip.expand_or_jump()
+						end
+					end, { "i", "s" }),
+					["<C-n>"] = cmp.mapping.select_next_item(),
+					["<C-p>"] = cmp.mapping.select_prev_item(),
+					["<C-y>"] = cmp.mapping.confirm({ select = true }),
+					["<CR>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 					["<Tab>"] = vim.schedule_wrap(function(fallback)
 						if cmp.visible() and has_words_before() then
 							cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
@@ -67,16 +94,6 @@ return {
 							fallback()
 						end
 					end),
-					["<C-l>"] = cmp.mapping(function()
-						if luasnip.expand_or_locally_jumpable() then
-							luasnip.expand_or_jump()
-						end
-					end, { "i", "s" }),
-					["<C-h>"] = cmp.mapping(function()
-						if luasnip.locally_jumpable(-1) then
-							luasnip.jump(-1)
-						end
-					end, { "i", "s" }),
 				}),
 				-- Source trackin' time!
 				-- Where moar completion sources?
@@ -85,13 +102,13 @@ return {
 				-- TODO: Pick one or two at a time and link them in!
 				-- TODO: Probably Copilot or Codeium
 				sources = cmp.config.sources({
+					-- AI helper bro.  Careful things can start getting hearvy down this...
+					-- :WARN 󱩢🕳
+					{ name = "copilot", group_index = 2 },
 					{ name = "nvim_lsp", group_index = 2 },
 					{ name = "luasnip" },
 					{ name = "path", group_index = 2 },
 					-- { name = 'vsniip' }, -- for that gang
-					-- AI helper bro.  Careful things can start getting hearvy down this...
-					-- :WARN 󱩢🕳
-					-- { name = 'copilot', group_index 1 },
 					-- and so on
 				}, {
 					-- WARN: Insert rabbit hole here 🕳󱩢
@@ -113,25 +130,24 @@ return {
          require("cmp_git").setup() ]]
 				--
 
-				-- TODO Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
-				-- cmp.setup.cmdline({ '/', '?' }, {
-				--   mapping = cmp.mapping.preset.cmdline(),
-				--   sources = {
-				--     { name = 'buffer' }
-				--   }
-				-- })
-				--
+				-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
+				cmp.setup.cmdline({ "/", "?" }, {
+					mapping = cmp.mapping.preset.cmdline(),
+					sources = {
+						{ name = "buffer" },
+					},
+				}),
 
-				-- TODO: Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-				-- cmp.setup.cmdline(':', {
-				--   mapping = cmp.mapping.preset.cmdline(),
-				--   sources = cmp.config.sources({
-				--     { name = 'path' }
-				--   }, {
-				--     { name = 'cmdline' }
-				--   }),
-				--   matching = { disallow_symbol_nonprefix_matching = false }
-				-- })
+				-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+				cmp.setup.cmdline(":", {
+					mapping = cmp.mapping.preset.cmdline(),
+					sources = cmp.config.sources({
+						{ name = "path" },
+					}, {
+						{ name = "cmdline" },
+					}),
+					matching = { disallow_symbol_nonprefix_matching = false },
+				}),
 
 				-- TODO: Set up lspconfig.
 				-- local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -141,8 +157,7 @@ return {
 				-- }
 			})
 		end,
-		--Post config shenannigans here if necessary
 	},
-	-- Another completion plugin here?
-	-- {},
 }
+
+--

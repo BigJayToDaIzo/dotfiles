@@ -43,12 +43,7 @@ vim.keymap.set("n", "<leader>g", function() end, { desc = "+Gitsigns" })
 -- UPDATE IT after you install plugins with default bindings! (or want to tweak your own without collisions)
 -- NOTE: Notifications Dismiss takex <leader>x (for now)
 -- NOTE: LSP binds get their own <leader>l
--- FIX: Chords claimed thus far <leader>[b, d, e, g, l, s, x] (update array as we add things)
+-- NOTE: Copilot takes <leader>c
+-- FIX: Chords claimed thus far <leader>[b, c, d, e, g, l, s, x] (update array as we add things)
 -- NOTE: We now have which-key hints, so groups in <leader> array
 -- will need to be added to the clues table there or here if that doesnt work correctly
-
--- -- Precognition binds
--- vim.keymap.set("n", "<leader>pt", "<cmd>lua require('precognition').toggle()<cr>", { desc = "[P]recognition [T]oggle" })
--- vim.keymap.set("n", "<leader>pp", "<cmd>lua require('precognition').peek()<cr>", { desc = "[P]recognition [P]eek" })
--- vim.keymap.set("n", "<leader>ps", "<cmd>lua require('precognition').show()<cr>", { desc = "[P]recognition [S]how" })
--- vim.keymap.set("n", "<leader>ph", "<cmd>lua require('precognition').hide()<cr>", { desc = "[P]recognition [H]ide" })
