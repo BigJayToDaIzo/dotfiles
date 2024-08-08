@@ -10,6 +10,9 @@ vim.g.maplocalleader = " "
 --  note: you can change these options as you wish!
 --  for more options, you can see `:help option-list`
 
+-- Obsidian wants conceallevel not at 0 or 3
+vim.opt.conceallevel = 2
+
 -- custom settings
 -- set my rulers a little brighter
 vim.api.nvim_create_autocmd("ColorScheme", {
