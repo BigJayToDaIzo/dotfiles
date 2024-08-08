@@ -28,7 +28,7 @@ return {
 				FIX = { icon = "", color = "#f00b1b" },
 			},
 			-- Keybind goodness
-			vim.keymap.set("n", "<leader>st", "<CMD>TodoTelescope<CR>", { desc = "[S]earch [T]odo  " }),
+			vim.keymap.set("n", "<leader>st", "<CMD>TodoTelescope<CR>", { desc = "Search Todo  " }),
 		})
 	end,
 }
