@@ -23,9 +23,19 @@ return {
 				-- 	overrides = {},
 				-- },
 				{
+					name = "Personal Neovim Config",
+					path = "~/.config/nvim/.obsidian/",
+					-- overrides = {},
+				},
+				{
 					name = "nvim-lightLGPL",
 					path = "~/.config/nvim-lightLGP/.obsidian",
 				},
+			},
+			templates = {
+				folder = "~/obsidian/templates",
+				date_format = "%y-%m-%d-%a",
+				time_format = "%H:%M",
 			},
 			-- More OPTS go here 🖣
 			notes_subdir = ".obsidian/notes",
