@@ -31,7 +31,7 @@ return {
 					" ",
 					{ filename, gui = modified and "bod,italic" or "bold" },
 					" ",
-					guibg = "#44406e",
+					guibg = "#146517",
 				}
 			end,
 		})

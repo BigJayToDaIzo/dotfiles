@@ -17,10 +17,6 @@ return {
 				max_width = 0,
 				max_height = 0,
 				border = "rounded",
-				-- Bugged in yazi/yazi.nvim as well
-				-- win_options = {
-				-- 	winblend = 20,
-				-- },
 			},
 		})
 	end,

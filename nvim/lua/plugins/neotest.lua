@@ -10,7 +10,11 @@ return {
 		"nvim-neotest/neotest-vim-test",
 		{
 			"fredrikaverpil/neotest-golang",
-			dependencies = "leoluz/nvim-dap-go",
+			dependencies = {
+				"mfussenegger/nvim-dap",
+				"rcarriga/nvim-dap-ui",
+				"leoluz/nvim-dap-go",
+			},
 		},
 	},
 

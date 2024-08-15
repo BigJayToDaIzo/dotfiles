@@ -8,8 +8,8 @@ layout {
         color_tab_norm_fg "#6FE7AE"
         color_tab_norm_bg "#3C4841"
         color_tab_norm_sync "#AAAAAA"
-        color_tab_active_fg "#000000" 
-        color_tab_active_bg "#6FE7AE" 
+        color_tab_active_fg "#000000"
+        color_tab_active_bg "#6FE7AE"
         color_tab_active_fs "#E69875"
         color_tab_active_sync "#AAAAAA"
         color_tab_trunc "#E69875"
@@ -91,7 +91,7 @@ layout {
         pane {
           command "cbonsai"
           borderless true
-          args "-li" "-t 0.5" 
+          args "-li" "-t 0.5"
         }
         pane size="30%"{
           command "peaclock"
@@ -101,7 +101,7 @@ layout {
         pane size=4 { // pomotimer
           name "🍅 Pomo F'SHOmo 🍅"
           command "tomatoshell"
-          args "-n" "6" "-t" "58" "-d" "2" "-p" "p"
+          args "-n" "12" "-t" "28" "-d" "2" "-p" "p"
           start_suspended true
         } // 6 sessions of 58m 2m break pause with p key
       }
