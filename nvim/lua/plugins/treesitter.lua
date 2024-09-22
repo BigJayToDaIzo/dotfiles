@@ -14,7 +14,6 @@ return {
 					"c_sharp",
 					"cmake",
 					"comment",
-					"cpp",
 					"diff",
 					"fish",
 					"gitcommit",
