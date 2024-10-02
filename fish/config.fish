@@ -9,6 +9,8 @@ if status is-login
     set -xg MANROFFOPT "-c"
     set -xg ELECTRON_OZONE_PLATFORM "wayland"
     set -xg LOCALSCRIPTS ~/.local/scripts/
+    set -xg CARGO_MOMMYS_MOODS "chill/ominous/thirsty/yikes"
+    set -xg CARGO_MOMMYS_PARTS "delicious booty/juicy peach"
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
     # Cargo packages
@@ -18,7 +20,7 @@ if status is-login
     # Lua shits
     set -xg LUAPATH $HOME/.luarocks
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS 
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS
     # PLUGIN CONFIG
     ###############
     # Tacklebox Plugin
@@ -48,7 +50,7 @@ end
 # ALIAS / ABBREVIATIONS transition away from alias
 ##################################################
 abbr -a cat bat
-function ed 
+function ed
     set track (pwd | rg '.*/exercism/(.+)?/' -or '$1')
     command exercism download --track=$track --exercise=$argv[1]
     cd .. && cd $argv[1]
@@ -66,7 +68,7 @@ function gtcr
 end
 function shipit
     set track (pwd | rg '.*/exercism/(.+)/.*' -or '$1')
-    $track test && exercism submit 
+    $track test && exercism submit
 end
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
