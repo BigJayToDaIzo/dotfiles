@@ -19,6 +19,7 @@ if status is-login
     set -xg GOPATH $HOME/go
     # Lua shits
     set -xg LUAPATH $HOME/.luarocks
+    source /opt/asdf-vm/asdf.fish
     # Append path
     set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS
     # PLUGIN CONFIG
@@ -32,7 +33,6 @@ if status is-login
     set -xg tacklebox_plugins extract grc pip python up
     set -xg tacklebox_theme entropy
     # NO mo tackle setup after this shipit dot gif
-    source ~/.config/fish/.tacklebox/tacklebox.fish
 
     #FZF tweaks go here
     set -xg fzf_preview_dir_cmd eza --all --color=always
@@ -101,6 +101,9 @@ function zs
     command zellij -l $argv[1] -s $argv[1]
 end
 
+
+
 # PROMPT CONTROL
 ################
 starship init fish | source
+source ~/.config/fish/.tacklebox/tacklebox.fish

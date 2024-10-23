@@ -46,11 +46,12 @@ return {
 		vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "Next Buffer" })
 		vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "Previous Buffer" })
 		vim.keymap.set("n", "<leader>br", "<cmd>BufferLineMoveNext<CR>", { desc = "Buffer Move Right" })
+		vim.keymap.set("n", "<leader>bR", "<cmd>BufferLineCloseRight<CR>", { desc = "Close Others to Right" })
 		vim.keymap.set("n", "<leader>bl", "<cmd>BufferLineMovePrev<CR>", { desc = "Buffer Move Left" })
+		vim.keymap.set("n", "<leader>bL", "<cmd>BufferLineCloseLeft<CR>", { desc = "Close Others to Left" })
 		vim.keymap.set("n", "<leader>bo", "<cmd>BufferLineCloseOthers<CR>", { desc = "Buffer Close Others" })
 		vim.keymap.set("n", "H", "<cmd>BufferLineCyclePrev<cr>")
 		vim.keymap.set("n", "L", "<cmd>BufferLineCycleNext<cr>")
-		-- FIX: broken keybinds
 		vim.keymap.set("n", "<M-H>", "<cmd>BufferLineMovePrev<cr>")
 		vim.keymap.set("n", "<M-L>", "<cmd>BufferLineMoveNext<cr>")
 	end,
