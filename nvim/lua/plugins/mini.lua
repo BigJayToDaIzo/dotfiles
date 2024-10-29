@@ -24,6 +24,7 @@ return {
 					-- `g` key
 					{ mode = "n", keys = "g" },
 					{ mode = "x", keys = "g" },
+					{ mode = "t", keys = "g" },
 
 					-- Marks
 					{ mode = "n", keys = "'" },
