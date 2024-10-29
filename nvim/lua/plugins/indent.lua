@@ -1,4 +1,5 @@
 return {
+	tag = "v3.8.2", -- Check again afetr 3.8.3 which broke everything
 	-- Indentation guides make code flow a little nicer in my eyes
 	-- :h ibl<C-d>
 	"lukas-reineke/indent-blankline.nvim",

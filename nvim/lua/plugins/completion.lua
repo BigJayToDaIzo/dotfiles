@@ -86,7 +86,7 @@ return {
 					["<C-n>"] = cmp.mapping.select_next_item(),
 					["<C-p>"] = cmp.mapping.select_prev_item(),
 					["<C-y>"] = cmp.mapping.confirm({ select = true }),
-					["<CR>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+					["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 					["<Tab>"] = vim.schedule_wrap(function(fallback)
 						if cmp.visible() and has_words_before() then
 							cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
@@ -105,7 +105,7 @@ return {
 					-- AI helper bro.  Careful things can start getting hearvy down this...
 					-- :WARN 󱩢🕳
 					{ name = "copilot", group_index = 2 },
-					{ name = "nvim_lsp", group_index = 2 },
+					{ name = "nvim_lsp", group_index = 1 },
 					{ name = "luasnip" },
 					{ name = "path", group_index = 2 },
 					-- { name = 'vsniip' }, -- for that gang

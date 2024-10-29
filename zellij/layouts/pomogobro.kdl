@@ -1,6 +1,7 @@
+
 layout {
-  cwd "/home/jm/Projects/personal/learn/golang/go_tutorials"
   default_tab_template {
+
     children
     pane size=1 borderless=true {
       plugin location="zjstatus" {
@@ -86,14 +87,56 @@ layout {
       }
     }
   }
-  tab name=" Golang"{
-    pane {
-      split_direction "horizontal"
-      pane {
-        size "75%"
+  cwd "/home/jm/Projects/personal"
+  tab name="Pomogobro" focus=true cwd="pomogobro"{
+    pane stacked=true{
+      pane expanded=true {
+        start_suspended true
+        command "nvim"
+        args "main.go"
+      }
+      pane
+    }
+  }
+  tab name=" Refs" cwd="learn/golang/go_tutorials"{
+    pane stacked=true{
+      pane expanded=true {
+        start_suspended true
         command "nvim"
       }
       pane
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
