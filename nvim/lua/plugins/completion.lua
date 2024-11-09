@@ -104,8 +104,8 @@ return {
 				sources = cmp.config.sources({
 					-- AI helper bro.  Careful things can start getting hearvy down this...
 					-- :WARN 󱩢🕳
-					{ name = "copilot", group_index = 2 },
-					{ name = "nvim_lsp", group_index = 1 },
+					{ name = "copilot", group_index = 1 },
+					{ name = "nvim_lsp", group_index = 2 },
 					{ name = "luasnip" },
 					{ name = "path", group_index = 2 },
 					-- { name = 'vsniip' }, -- for that gang

@@ -117,13 +117,29 @@ keybinds clear-defaults=true {
     shared_except "locked" {
         bind "Enter" "Esc" "Ctrl Space" { SwitchToMode "Locked"; }
         bind "q" { Quit; }
+        bind "c" {
+            LaunchOrFocusPlugin "configuration" {
+                floating true
+                move_to_focused_tab true
+            };
+            SwitchToMode "Normal"
+        }
+        bind "l" {
+            LaunchOrFocusPlugin "plugin-manager" {
+                floating true
+                move_to_focused_tab true
+            };
+            SwitchToMode "Normal"
+        }
         bind "k" {
             SwitchToMode "Locked";
             LaunchOrFocusPlugin "zjforgot" {
                 floating true
                 "LOAD_ZELLIJ_BINDINGS" "false"
+                "config zellij"         "c"
                 "session mgr"           "o + w"
                 "detatch session"       "o + d"
+                "config plugins"        "l"
                 "change panes"          "p + hjkl"
                 "new pane down"         "p + d"
                 "new pane right"        "p + r"
@@ -188,6 +204,7 @@ plugins {
     zjforgot location="file:~/.config/zellij/plugins/zellij_forgot.wasm"
 }
 
+support_kitty_keyboard_protocol false
 attach_to_session true
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
@@ -252,7 +269,7 @@ session_serialization false
 // Once these themes are defined, one of them should to be selected in the "theme" section of this file
 //
 theme "DankSunrise"
-themes { 
+themes {
     DankSunrise {
         fg "#D8DEE9"
         bg "#3C4841"
@@ -324,7 +341,7 @@ copy_command "wl-copy"                    // wayland
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-// scrollback_editor "/usr/bin/vim"
+scrollback_editor "/usr/local/bin/nvim"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -346,3 +363,4 @@ copy_command "wl-copy"                    // wayland
 // Default: true
 //
 // styled_underlines false
+support_kitty_keyboard_protocol false
