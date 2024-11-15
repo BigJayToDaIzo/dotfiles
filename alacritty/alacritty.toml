@@ -1,11 +1,3 @@
-# Root level configurations
-#import = [
-#   "~/.config/alacritty/banginkeybinds.toml",
-#   "~/.config/alacritty/dopeazztheme.toml"
-#]
-#
-shell = { program = '/usr/bin/fish' }
-live_config_reload = true
 #
 # ENV Table Settings
 # All key-value pars in this section will be added as environment vars
@@ -37,3 +29,15 @@ save_to_clipboard = true
 
 [mouse]
 hide_when_typing = true #TODO: Can I have awesomeWM handle this?
+
+[general]
+live_config_reload = true
+
+[terminal]
+# Root level configurations
+#import = [
+#   "~/.config/alacritty/banginkeybinds.toml",
+#   "~/.config/alacritty/dopeazztheme.toml"
+#]
+#
+shell = { program = '/usr/bin/fish' }

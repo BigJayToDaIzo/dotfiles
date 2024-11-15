@@ -55,16 +55,19 @@ return {
 					miniclue.gen_clues.windows(),
 					miniclue.gen_clues.z(),
 					-- Enhance this by adding descriptions for <Leader> mapping groups
-					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffer" },
+					{ mode = "n", keys = "<Leader>b", desc = "+n_Buffers" },
 					{ mode = "n", keys = "<Leader>c", desc = "+n_Copilot" },
-					{ mode = "x", keys = "<Leader>g", desc = "+x_Git" },
-					{ mode = "n", keys = "<Leader>gt", desc = "+Gitsign Toggles" },
 					{ mode = "x", keys = "<Leader>c", desc = "+x_Copilot" },
 					{ mode = "n", keys = "<Leader>d", desc = "+n_Debug" },
-					{ mode = "n", keys = "<Leader>o", desc = "+n_Obsidian" },
+					{ mode = "n", keys = "<Leader>f", desc = "+n_Focus" },
+					{ mode = "n", keys = "<Leader>fb", desc = "+n_FocusBuffer" },
+					{ mode = "n", keys = "<Leader>fw", desc = "+n_FocusWindow" },
+					{ mode = "n", keys = "<Leader>fs", desc = "+N_FocusSplit" },
+					{ mode = "x", keys = "<Leader>g", desc = "+x_Git" },
+					{ mode = "n", keys = "<Leader>gt", desc = "+Gitsign Toggles" },
+					{ mode = "n", keys = "<Leader>l", desc = "+n_LSP" },
 					{ mode = "n", keys = "<Leader>s", desc = "+n_Search" },
 					{ mode = "n", keys = "<Leader>t", desc = "+n_Test" },
-					{ mode = "n", keys = "<Leader>l", desc = "+n_LSP" },
 				},
 
 				-- Clue window settings
@@ -90,7 +93,8 @@ return {
 
 		config = function()
 			require("mini.files").setup({
-				vim.keymap.set("n", "<leader>e", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open NvimTree" }),
+				enable = false,
+				-- vim.keymap.set("n", "<leader>e", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open MineFiles" }),
 				windows = {
 					max_number = 3,
 					preview = true,
