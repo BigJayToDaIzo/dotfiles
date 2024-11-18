@@ -40,7 +40,9 @@ return {
 		local dap = require("dap")
 		local dapui = require("dapui")
 		dapui.setup()
-		require("nvim-dap-virtual-text").setup({})
+		require("nvim-dap-virtual-text").setup({
+			virt_text_pos = "inline",
+		})
 		-- DUNDAP config!
 
 		-- LINT config!

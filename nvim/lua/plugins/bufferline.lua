@@ -42,7 +42,7 @@ return {
 			},
 		})
 		-- Bufferline keymaps
-		vim.keymap.set("n", "<leader>bc", "<cmd>bd<CR>", { desc = "Close Buffer" })
+		vim.keymap.set("n", "<leader>bd", "<cmd>bd!<CR>", { desc = "Delete! Buffer" })
 		vim.keymap.set("n", "<leader>bn", "<cmd>bn<CR>", { desc = "Next Buffer" })
 		vim.keymap.set("n", "<leader>bp", "<cmd>bp<CR>", { desc = "Previous Buffer" })
 		vim.keymap.set("n", "<leader>br", "<cmd>BufferLineMoveNext<CR>", { desc = "Buffer Move Right" })
