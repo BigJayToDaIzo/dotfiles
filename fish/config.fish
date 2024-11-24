@@ -5,7 +5,8 @@ if status is-login
     set -xg ARCHFLAGS "-arch x86_64"
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR nvim
-    set -xg MANPAGER "less -R --use-color -Dd+c -Du+b"
+    # set -xg MANPAGER "less -R --use-color -Dd+c -Du+b"
+    set -xg MANPAGER "nvim +Man!"
     set -xg MANROFFOPT "-c"
     set -xg ELECTRON_OZONE_PLATFORM "wayland"
     set -xg LOCALSCRIPTS ~/.local/scripts/
