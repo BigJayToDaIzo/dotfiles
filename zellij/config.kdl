@@ -28,6 +28,7 @@ keybinds clear-defaults=true {
         bind "h" { SwitchToMode "Move"; }
         bind "s" { SwitchToMode "Scroll"; }
         bind "t" { SwitchToMode "Tab"; }
+        bind "y" { Run "lazygit.sh"; }
     }
     session {
 

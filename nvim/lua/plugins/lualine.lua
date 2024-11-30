@@ -20,7 +20,7 @@ return {
 					"diff",
 					{
 						"diagnostics",
-						sources = { "nvim_diagnostic" },
+						sources = { "coc", "nvim_workspace_diagnostic" },
 						symbols = { error = " ", warn = " ", info = " ", hint = " " },
 					},
 				},
