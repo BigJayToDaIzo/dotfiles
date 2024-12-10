@@ -12,7 +12,6 @@ return {
         'nvim-telescope/telescope-fzf-native.nvim',
         build = 'make',
       },
-
     },
     opts = {
       extensions = {
@@ -29,7 +28,7 @@ return {
     },
     config = function(opts)
       require('telescope').setup(opts)
-      pcall(require('telescope').load_extension, 'fzf')
+      require('telescope').load_extension('fzf')
       local builtin = require('telescope.builtin')
       -- TODO Telescope keybinds here!
 		vim.keymap.set("n", "<leader><leader>", function()
@@ -60,10 +59,16 @@ return {
 			builtin.find_files({ cwd = vim.fn.stdpath("config") })
 		end, { desc = "Search Neovim Files" })
 		vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "Search Select Telescope" })
+    vim.keymap.set("n", "<leader>st", builtin.treesitter, { desc = "Search Treesitter" })
 		vim.keymap.set("n", "<leader>su", "<cmd>Telescope undo<cr>", { desc = "Search Undo History" })
 		vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "Search Current Word" })
 		-- Shortcut for searching your neovim configuration files
 		vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "Resume Last Search" })
     end,
+    -- TODO map git functions in git.lua group <leader>g
+    -- TODO map treesitter functions in treesitter.lua group <leader>s
+    -- TODO map lsp functions in mason.lua <leader>d
+    -- TODO replace quickfix bind with Telescope and add qf history bind
+    -- TODO PREVIEWERS? Give qflist a try
   },
 }

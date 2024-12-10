@@ -7,7 +7,7 @@ config.font = wezterm.font_with_fallback({
 	"Maple Mono NF",
 	"Segoe UI Emoji",
 })
-config.font_size = 18.0
+config.font_size = 17.0
 config.window_padding = {
 	left = "2px",
 	right = "2px",

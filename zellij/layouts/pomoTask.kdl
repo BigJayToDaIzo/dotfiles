@@ -87,13 +87,13 @@ layout {
   }
   tab name="Task Warrior" focus=true cwd="/home/jm" {
     pane split_direction="vertical" {
-      pane size="45%" {
+      pane size="50%" {
         pane {
           command "cbonsai"
           borderless true
           args "-li" "-t 0.5"
         }
-        pane size="35%"{
+        pane size=7{
           command "peaclock"
           args "--config-dir" "/home/jm/.config/peaclock"
           name ""

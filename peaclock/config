@@ -6,25 +6,24 @@ block 1 1
 
 # set the x y padding size, the width and height of the space between each
 # individual block composing the clock
-padding 1 1
+padding 6 0
 # padding-x 0
 # padding-y 0
 
 # set the x y margin size, the space around the outside of the clock from the
 # edge of the terminal
-margin 1 1
 # margin-x 0
 # margin-y 0
 
 # set the x y ratio size, auto adjust the clock to conform to a specific
 # aspect ratio, keep in mind that a square ratio would be '2 1' due to a
 # terminal character cell having a height around twice the size of its width
-ratio 13 1
+ratio 14 1
 # ratio-x 2
 # ratio-y 1
 
 # set the padding size between the date and the clock
-date-padding 1
+date-padding 0
 
 # set the string value used to fill the active, inactive, and colon blocks of
 # the clock, an empty string clears the value
@@ -72,7 +71,7 @@ timer 10m:0s
 timer-exec 'notify-send -a peaclock "timer complete"'
 
 # set the duration in milliseconds between reading user input
-rate-input 500
+rate-input 200
 
 # set the duration in milliseconds between redrawing the output
 rate-refresh 1000
