@@ -1,3 +1,4 @@
+
 layout {
   default_tab_template {
     children
@@ -85,53 +86,15 @@ layout {
       }
     }
   }
-  tab name="Task Warrior" focus=true cwd="/home/jm" {
+  tab cwd="~/exercism/rust" name=""{
     pane split_direction="vertical" {
-      pane size="45%" {
-        pane {
-          command "cbonsai"
-          borderless true
-          args "-li" "-t 0.5"
-        }
-        pane size="35%"{
-          command "peaclock"
-          args "--config-dir" "/home/jm/.config/peaclock"
-          name ""
-        }
-        pane size=4 { // pomotimer
-          name "🍅 Pomo F'SHOmo 🍅"
-          command "tomatoshell"
-          args "-n" "12" "-t" "28" "-d" "2" "-p" "p"
-          start_suspended true
-        } // 6 sessions of 58m 2m break pause with p key
+      pane size="50%" {
+        start_suspended true
+        name "Rust"
+        focus true
+        command "nvim"
       }
-      // stacked panes go here
-      pane {
-        pane stacked=true {
-          pane borderless=true { // watch sync
-            size 1
-            command "watch"
-            args "-c" "-d" "-n" "600" "task" "sync"
-          }
-          pane expanded=true { // task warrior
-            name "Git'r Dun!"
-            focus true
-            command "task"
-          }
-        }
-      }
-
+      pane name="Test"
     }
-  }
-  tab name="Weather Station" {
-    pane {
-      focus true
-      name "☔ or 🌞❓"
-      command "sh"
-      args "/home/jm/.local/scripts/wttrIn.sh"
-    }
-  }
-  tab name="Aquarium" {
-    pane command="asciiquarium"
   }
 }

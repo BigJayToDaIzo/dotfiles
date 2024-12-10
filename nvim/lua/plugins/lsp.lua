@@ -10,6 +10,17 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 		-- Fidget is useful for this purpose
 		{ "j-hui/fidget.nvim", opts = {} },
+		{
+			"folke/lazydev.nvim",
+			ft = "lua", -- only load on lua files
+			opts = {
+				library = {
+					-- See the configuration section for more details
+					-- Load luvit types when the `vim.uv` word is found
+					{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
+				},
+			},
+		},
 	},
 	config = function()
 		vim.api.nvim_create_autocmd("LspAttach", {
@@ -89,7 +100,6 @@ return {
 			},
 			gopls = { "ast-grep", "golangci-lint-langserver", "gopls", "templ" },
 			-- pyright = {},
-			rust_analyzer = {},
 			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 			-- Some languages (like typescript) have entire language plugins that can be useful:
 			-- https://github.com/pmizio/typescript-tools.nvim

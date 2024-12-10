@@ -5,7 +5,6 @@ if status is-login
     set -xg ARCHFLAGS "-arch x86_64"
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR nvim
-    # set -xg MANPAGER "less -R --use-color -Dd+c -Du+b"
     set -xg MANPAGER "nvim +Man!"
     set -xg MANROFFOPT "-c"
     set -xg ELECTRON_OZONE_PLATFORM "wayland"
@@ -20,9 +19,10 @@ if status is-login
     set -xg GOPATH $HOME/go
     # Lua shits
     set -xg LUAPATH $HOME/.luarocks
+    set -xg RUBYPATH $HOME/.local/share/gem/ruby/3.3.0/bin
     source /opt/asdf-vm/asdf.fish
     # Append path
-    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $LOCALSCRIPTS
+    set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $RUBYPATH $LOCALSCRIPTS
     # PLUGIN CONFIG
     ###############
     # Tacklebox Plugin
@@ -45,7 +45,6 @@ if status is-login
     fundle plugin tuvistavie/oh-my-fish-core
     # stage all plugins BEFORE init
     fundle init
-
 end
 #
 # ALIAS / ABBREVIATIONS transition away from alias

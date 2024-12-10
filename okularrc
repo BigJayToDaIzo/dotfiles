@@ -3,14 +3,20 @@ FullScreen=false
 
 [General]
 LockSidebar=true
-ShowSidebar=true
+ShowSidebar=false
 
 [MainWindow]
 ToolBarsMovable=Disabled
 
 [Recent Files]
-File1[$e]=$HOME/Documents/ebooks/Go/goworkshop.pdf
-Name1[$e]=goworkshop.pdf
+File1[$e]=$HOME/Downloads/DandD 5E/0 Core books-20170418T114925Z-001/0 Core books/Character Sheets/Character Sheet (Official).pdf
+File2[$e]=$HOME/Downloads/buildingmoderncliapplicationsingo.pdf
+File3[$e]=$HOME/Documents/ebooks/Go/goworkshop.pdf
+File4[$e]=$HOME/Documents/ebooks/Go/buildingmoderncliapplicationsingo.pdf
+Name1[$e]=Character Sheet (Official).pdf
+Name2[$e]=buildingmoderncliapplicationsingo.pdf
+Name3[$e]=goworkshop.pdf
+Name4[$e]=buildingmoderncliapplicationsingo.pdf
 
 [UiSettings]
-ColorScheme=
+ColorScheme=Breeze Dark

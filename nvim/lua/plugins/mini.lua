@@ -87,22 +87,22 @@ return {
 			})
 		end,
 	},
-	{
-		"echasnovski/mini.files",
-		version = "*",
-
-		config = function()
-			require("mini.files").setup({
-				enable = false,
-				-- vim.keymap.set("n", "<leader>e", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open MineFiles" }),
-				windows = {
-					max_number = 3,
-					preview = true,
-					width_focus = 25,
-					width_nofocus = 15,
-					width_preview = 40,
-				},
-			})
-		end,
-	},
+	-- {
+	-- 	"echasnovski/mini.files",
+	-- 	version = "*",
+	--
+	-- 	config = function()
+	-- 		require("mini.files").setup({
+	-- 			enable = false,
+	-- 			-- vim.keymap.set("n", "<leader>e", "<CMD>lua MiniFiles.open()<CR>", { desc = "Open MineFiles" }),
+	-- 			windows = {
+	-- 				max_number = 3,
+	-- 				preview = true,
+	-- 				width_focus = 25,
+	-- 				width_nofocus = 15,
+	-- 				width_preview = 40,
+	-- 			},
+	-- 		})
+	-- 	end,
+	-- },
 }
