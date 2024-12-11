@@ -24,14 +24,14 @@ Notifications
 ~~IndentBlankline~~
 Git:
     ~~Oil-Git-Status~~
-    LazyGit
+    ~~LazyGit~~
     ~~Gitsigns~~
 StatusLine
 Bufferline
-Dressing?
 NeoCodium?? (Bench Copilot)
 Fidget
 Flash?
 Yazi?
-Precognition/Hardtime
+Precognition
 GoQoL
+Hardtime

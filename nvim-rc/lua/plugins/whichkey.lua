@@ -4,6 +4,8 @@ return {
 	opts = {
 		spec = {
 			{ "<leader>d", group = "🗠Diagnostics" },
+			{ "<leader>g", group = " GitStuffs" },
+			{ "<leader>gt", group = " Git Toggle" },
 			{ "<leader>s", group = " SearchAScope" },
 			{ "<leader>t", group = "󱉃 Testing" },
 		},
