@@ -6,8 +6,7 @@
     ~~LINT:nvim-lint & mason-nvim-lint~~
     DAP:~~nvim-dap & nvim-dap-ui &~~ ~~nvim-neotest/nvim-nio~~ & nvim-dap-virtual-text & ~~mason-nvim-dap.nvim~~
 ~~NEOTEST~~
-Trouble
-Bufferline
+~~Trouble~~
 NeoCodium?? (Bench Copilot)
 GoQoL
 ~~Notifications~~
