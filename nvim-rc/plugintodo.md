@@ -1,3 +1,19 @@
+Mason
+
+    ~~Neodev.nvim~~
+        ~~nvim-cmp section post nvim-cmp install~~
+    ~~LSP:lspconfig & mason-lspconfig.nvim~~
+    ~~FORMAT: conform & mason-conform~~
+    ~~LINT:nvim-lint & mason-nvim-lint~~
+    DAP:nvim-dap & nvim-dap-ui & nvim-neotest/nvim-nio & nvim-dap-virtual-text & mason-nvim-dap.nvim
+NEOTEST
+Trouble
+Notifications
+~~StatusLine~~
+Bufferline
+NeoCodium?? (Bench Copilot)
+GoQoL
+~~Flash~~
 ~~Treesitter
     Treesitter related modules like:
     Highlight, Incremental selection, Indentation, Folding
@@ -7,31 +23,15 @@
 ~~Telescope
     Telescope Plugins?~~
 ~~Greeter~~
-Mason
-    ~~Neodev.nvim~~
-        ~~nvim-cmp section post nvim-cmp install~~
-    ~~LSP:lspconfig & mason-lspconfig.nvim~~
-    ~~FORMAT: conform & mason-conform~~
-    ~~LINT:nvim-lint & mason-nvim-lint~~
-    DAP:nvim-dap & nvim-dap-ui & nvim-neotest/nvim-nio & nvim-dap-virtual-text & mason-nvim-dap.nvim
-NEOTEST
 ~~Copilot~~
 ~~Completion:
     Snippets
     implement lazydev source~~
-Trouble
-Notifications
 ~~IndentBlankline~~
-Git:
-    ~~Oil-Git-Status~~
-    ~~LazyGit~~
-    ~~Gitsigns~~
-StatusLine
-Bufferline
-NeoCodium?? (Bench Copilot)
-Fidget
-Flash?
-Yazi?
-Precognition
-GoQoL
-Hardtime
+~~Git:
+    Oil-Git-Status
+    LazyGit
+    Gitsigns~~
+~~Fidget~~
+~~Precognition~~
+~~Hardtime~~
