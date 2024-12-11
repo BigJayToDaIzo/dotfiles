@@ -8,7 +8,7 @@ return {
 	"rcarriga/nvim-notify",
 	config = function()
 		require("notify").setup({
-			fps = 60,
+			fps = 20,
 		})
 		-- point vims notification engine at plugin
 		vim.notify = require("notify")

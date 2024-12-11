@@ -19,11 +19,8 @@ return {
 	},
 
 	config = function()
-		---@diagnostic disable-next-line
 		require("neotest").setup({
 			adapters = {
-				require("neotest-vim-test"),
-				require("neotest-plenary"),
 				require("neotest-golang"),
 				require("rustaceanvim.neotest"),
 			},

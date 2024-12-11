@@ -82,13 +82,13 @@ format = '[  $ram( | $swap)](char_poobie_fg)'
 
 [os]
 disabled = false
-format = '[$symbol ](iced_out_os)'
+format = '[$symbol](iced_out_os)'
 
 [os.symbols]
-Arch = ' '
-NixOS = ' '
-Ubuntu = ' '
-Windows = ' '
+Arch = ''
+NixOS = ''
+Ubuntu = ''
+Windows = ''
 
 [sudo]
 disabled = false

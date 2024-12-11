@@ -1,16 +1,48 @@
 return {
-	-- VERY cool plugin to help you get exactly where you want to go
-	-- :h flash<C-d>
-	--
 	"folke/flash.nvim",
 	event = "VeryLazy",
+	---@type Flash.Config
 	opts = {},
-	config = function(opts)
-		require("flash").setup({
-			modes = {
-				-- NOTE: Upgrades vanilla search to have flashpoints
-				search = { enabled = true },
-			},
-		})
-	end,
+	keys = {
+		{
+			"s",
+			mode = { "n", "x", "o" },
+			function()
+				require("flash").jump()
+			end,
+			desc = "Flash",
+		},
+		{
+			"S",
+			mode = { "n", "x", "o" },
+			function()
+				require("flash").treesitter()
+			end,
+			desc = "Flash Treesitter",
+		},
+		{
+			"r",
+			mode = "o",
+			function()
+				require("flash").remote()
+			end,
+			desc = "Remote Flash",
+		},
+		{
+			"R",
+			mode = { "o", "x" },
+			function()
+				require("flash").treesitter_search()
+			end,
+			desc = "Treesitter Search",
+		},
+		{
+			"<c-s>",
+			mode = { "c" },
+			function()
+				require("flash").toggle()
+			end,
+			desc = "Toggle Flash Search",
+		},
+	},
 }

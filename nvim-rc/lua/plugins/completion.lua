@@ -6,10 +6,11 @@ return {
 		"neovim/nvim-lspconfig",
 		"hrsh7th/cmp-nvim-lsp",
 		"hrsh7th/cmp-buffer",
-		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-cmdline",
+		"hrsh7th/cmp-path",
 		"hrsh7th/cmp-vsnip",
 		"hrsh7th/vim-vsnip",
+		"rcarriga/cmp-dap",
 		{
 			"petertriho/cmp-git",
 			dependencies = { "hrsh7th/nvim-cmp" },
@@ -22,6 +23,10 @@ return {
 	config = function()
 		local cmp = require("cmp")
 		cmp.setup({
+			enabled = function()
+				---@diagnostic disable-next-line: deprecated
+				return vim.api.nvim_buf_get_option(0, "buftype") ~= "prompt" or require("cmp_dap").is_dap_buffer()
+			end,
 			sorting = {
 				priority_weight = 2,
 				comparators = {
@@ -55,6 +60,9 @@ return {
 				{ name = "buffer" },
 			}),
 		})
+		cmp.setup.filetype({ "dap-repl", "dapui_watches", "dapui_hover" }, {
+			sources = { { name = "dap" } },
+		})
 		cmp.setup.filetype("gitcommit", {
 			sources = cmp.config.sources({
 				{ name = "git" },
@@ -81,12 +89,5 @@ return {
 			}),
 			matching = { disallow_symbol_nonprefix_matching = false },
 		})
-
-		-- Set up lspconfig.
-		-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
-		-- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-		-- require("lspconfig")["<YOUR_LSP_SERVER>"].setup({
-		-- 	capabilities = capabilities,
-		-- })
 	end,
 }

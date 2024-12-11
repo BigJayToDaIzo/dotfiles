@@ -4,6 +4,7 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+vim.o["mouse"] = "a"
 
 -- [[ setting options ]]
 -- see `:help vim.opt`
@@ -33,7 +34,6 @@ vim.opt.relativenumber = true
 -- enable termguicolors for lualine
 vim.opt.termguicolors = true
 -- enable mouse mode, can be useful for resizing splits for example!
-vim.opt.mouse = "a"
 
 -- don't show the mode, since it's already in status line
 vim.opt.showmode = true
