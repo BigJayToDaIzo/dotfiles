@@ -25,7 +25,7 @@ Notifications
 Git:
     ~~Oil-Git-Status~~
     LazyGit
-    Gitsigns
+    ~~Gitsigns~~
 StatusLine
 Bufferline
 Dressing?
