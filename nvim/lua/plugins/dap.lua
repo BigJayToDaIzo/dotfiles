@@ -3,6 +3,12 @@ return {
 		"mfussenegger/nvim-dap",
 	},
 	{
+		"rachartier/tiny-inline-diagnostic.nvim",
+		event = "LspAttach",
+		priority = 1000,
+		opts = {},
+	},
+	{
 		"theHamsta/nvim-dap-virtual-text",
 		dependencies = {
 			{

@@ -5,6 +5,7 @@ return { -- Adds git related signs to the gutter, as well as utilities for manag
 		-- TODO: Set up keybinds for this one under <leader>g*
 		-- TODO: Get statsbar git integration going
 		"lewis6991/gitsigns.nvim",
+		event = "VeryLazy",
 		config = function()
 			require("gitsigns").setup({
 				-- Options tweaked here!
