@@ -1,23 +1,9 @@
 return {
 	"folke/trouble.nvim",
+	event = "VeryLazy",
 	opts = {}, -- for default options, refer to the configuration section for custom setup.
 	cmd = "Trouble",
 	keys = {
-		{
-			"<leader>dx",
-			"<cmd>Trouble diagnostics toggle<cr>",
-			desc = "Diagnostics (Trouble)",
-		},
-		{
-			"<leader>dX",
-			"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
-			desc = "Buffer Diagnostics (Trouble)",
-		},
-		{
-			"<leader>ds",
-			"<cmd>Trouble symbols toggle focus=false<cr>",
-			desc = "Symbols (Trouble)",
-		},
 		{
 			"<leader>dl",
 			"<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
@@ -32,6 +18,26 @@ return {
 			"<leader>dQ",
 			"<cmd>Trouble qflist toggle<cr>",
 			desc = "Quickfix List (Trouble)",
+		},
+		{
+			"<leader>ds",
+			"<cmd>Trouble symbols toggle focus=false<cr>",
+			desc = "Symbols (Trouble)",
+		},
+		{
+			"<leader>dt",
+			"<cmd>TodoTrouble<cr>",
+			desc = "Todo Trouble",
+		},
+		{
+			"<leader>dx",
+			"<cmd>Trouble diagnostics toggle<cr>",
+			desc = "Diagnostics (Trouble)",
+		},
+		{
+			"<leader>dX",
+			"<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+			desc = "Buffer Diagnostics (Trouble)",
 		},
 	},
 }

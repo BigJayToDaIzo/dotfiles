@@ -1,6 +1,7 @@
 return {
 	{
 		"folke/lazydev.nvim",
+		event = "VeryLazy",
 		ft = "lua", -- only load on lua files
 		opts = {
 			library = {

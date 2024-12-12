@@ -8,6 +8,7 @@ return {
 			{ "<leader>gt", group = " Git Toggle" },
 			{ "<leader>s", group = " SearchAScope" },
 			{ "<leader>t", group = "󱉃 Testing" },
+			{ "<leader>i", group = "󰢷 Icon Picker" },
 		},
 	},
 	keys = {

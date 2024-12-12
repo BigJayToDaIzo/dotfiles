@@ -1,6 +1,7 @@
 return {
 	-- FIX, TODO, HACK, NOTE, WARN, PERF, TEST
 	"folke/todo-comments.nvim",
+	event = "VeryLazy",
 	-- FIX:
 	-- TODO:
 	-- HACK:
@@ -16,4 +17,5 @@ return {
 			TEST = { icon = "󱈬" },
 		},
 	},
+	keys = {},
 }

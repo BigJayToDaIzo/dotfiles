@@ -3,6 +3,7 @@ return {
 	-- :h hardtime
 	-- :Hardtime <C-d>
 	"m4xshen/hardtime.nvim",
+	event = "VeryLazy",
 	-- You can temp disable in the cmdline with :Hardtime toggle/disable
 	-- :Hardtime <C-d>
 	-- enable = false,

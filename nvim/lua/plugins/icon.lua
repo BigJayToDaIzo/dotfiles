@@ -1,5 +1,6 @@
 return {
 	"ziontee113/icon-picker.nvim",
+	event = "VeryLazy",
 	dependencies = {
 		"stevearc/dressing.nvim",
 		opts = {},

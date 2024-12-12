@@ -60,6 +60,7 @@ return {
 			end, { desc = "Search Neovim Files" })
 			vim.keymap.set("n", "<leader>ss", builtin.builtin, { desc = "Search Select Telescope" })
 			vim.keymap.set("n", "<leader>st", builtin.treesitter, { desc = "Search Treesitter" })
+			vim.keymap.set("n", "<leader>sT", "<cmd>TodoTelescope<cr>", { desc = "Search TODOS " })
 			vim.keymap.set("n", "<leader>su", "<cmd>Telescope undo<cr>", { desc = "Search Undo History" })
 			vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "Search Current Word" })
 			-- Shortcut for searching your neovim configuration files
