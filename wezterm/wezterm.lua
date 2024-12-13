@@ -3,6 +3,7 @@ local config = wezterm.config_builder()
 -- apply configs
 config.color_scheme = "Everforest Dark Soft (Gogh)"
 config.enable_tab_bar = false
+config.disable_default_key_bindings = true
 config.font = wezterm.font_with_fallback({
 	"Maple Mono NF",
 	"Segoe UI Emoji",

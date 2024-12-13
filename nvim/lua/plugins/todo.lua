@@ -17,5 +17,4 @@ return {
 			TEST = { icon = "󱈬" },
 		},
 	},
-	keys = {},
 }

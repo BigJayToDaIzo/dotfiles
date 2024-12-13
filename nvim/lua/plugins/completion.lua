@@ -11,7 +11,9 @@ return {
 		"rcarriga/cmp-dap",
 		{
 			"L3MON4D3/LuaSnip",
-			event = "InsertEnter",
+			dependencies = {
+				"saadparwaiz1/cmp_luasnip",
+			},
 			build = "make install_jsregexp",
 		},
 		{
@@ -26,6 +28,14 @@ return {
 	config = function()
 		local cmp = require("cmp")
 		local luasnip = require("luasnip")
+		local has_words_before = function()
+			if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then
+				return false
+			end
+			local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+			return col ~= 0 and vim.api.nvim_buf_get_text(0, line - 1, 0, line - 1, col, {})[1]:match("^%s*$") == nil
+		end
+		require("luasnip").setup({})
 		cmp.setup({
 			enabled = function()
 				---@diagnostic disable-next-line: deprecated
@@ -46,54 +56,37 @@ return {
 				completion = cmp.config.window.bordered(),
 				documentation = cmp.config.window.bordered(),
 			},
-			mapping = {
+			mapping = cmp.mapping.preset.insert({
+				["<C-b>"] = cmp.mapping.scroll_docs(-4),
 				["<C-e>"] = cmp.mapping.abort(),
-				["<CR>"] = cmp.mapping(function(fallback)
-					if cmp.visible() then
-						if luasnip.expandable() then
-							luasnip.expand()
-						else
-							cmp.confirm({
-								select = true,
-							})
-						end
+				["<C-f>"] = cmp.mapping.scroll_docs(4),
+				["<C-h>"] = cmp.mapping(function()
+					if luasnip.locally_jumpable(-1) then
+						luasnip.jump(-1)
+					end
+				end, { "i", "s" }),
+				["<C-l>"] = cmp.mapping(function()
+					if luasnip.expand_or_locally_jumpable() then
+						luasnip.expand_or_jump()
+					end
+				end, { "i", "s" }),
+				["<C-n>"] = cmp.mapping.select_next_item(),
+				["<C-p>"] = cmp.mapping.select_prev_item(),
+				["<C-y>"] = cmp.mapping.confirm({ select = true }),
+				["<CR>"] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+				["<Tab>"] = vim.schedule_wrap(function(fallback)
+					if cmp.visible() and has_words_before() then
+						cmp.select_next_item({ behavior = cmp.SelectBehavior.Select })
 					else
 						fallback()
 					end
 				end),
-
-				["<Tab>"] = cmp.mapping(function(fallback)
-					if cmp.visible() then
-						cmp.select_next_item()
-					elseif luasnip.locally_jumpable(1) then
-						luasnip.jump(1)
-					else
-						fallback()
-					end
-				end, { "i", "s" }),
-
-				["<S-Tab>"] = cmp.mapping(function(fallback)
-					if cmp.visible() then
-						cmp.select_prev_item()
-					elseif luasnip.locally_jumpable(-1) then
-						luasnip.jump(-1)
-					else
-						fallback()
-					end
-				end, { "i", "s" }),
-			},
-			-- mapping = {
-			-- 	["<C-b>"] = cmp.mapping.scroll_docs(-4),
-			-- 	["<C-f>"] = cmp.mapping.scroll_docs(4),
-			-- 	["<C-y>"] = cmp.mapping.complete(),
-			-- 	["<C-e>"] = cmp.mapping.abort(),
-			-- 	["<CR>"] = cmp.mapping.confirm({ select = true }),
-			-- },
+			}),
 			sources = cmp.config.sources({
 				{ name = "copilot", group_index = 2 },
+				{ name = "luasnip", option = { show_autosnippets = true } },
 				{ name = "nvim_lsp" },
 				{ name = "path" },
-				{ name = "vsnip" },
 				{ name = "git" },
 				{ name = "lazydev" },
 			}, {
@@ -127,6 +120,7 @@ return {
 			}, {
 				{ name = "cmdline" },
 			}),
+			---@diagnostic disable-next-line
 			matching = { disallow_symbol_nonprefix_matching = false },
 		})
 	end,
