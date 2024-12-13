@@ -5,15 +5,15 @@ return {
 		event = { "BufWritePre" },
 		cmd = { "ConformInfo" },
 		keys = {
-			{
-				-- Customize or remove this keymap to your liking
-				"<leader>f",
-				function()
-					require("conform").format({ async = true })
-				end,
-				mode = "",
-				desc = "Format buffer",
-			},
+			-- {
+			-- 	-- Customize or remove this keymap to your liking
+			-- 	"<leader>f",
+			-- 	function()
+			-- 		require("conform").format({ async = true })
+			-- 	end,
+			-- 	mode = "",
+			-- 	desc = "Format buffer",
+			-- },
 		},
 		-- This will provide type hinting with LuaLS
 		---@module "conform"
