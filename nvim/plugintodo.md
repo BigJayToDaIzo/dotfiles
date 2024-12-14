@@ -26,6 +26,6 @@ Gitsigns
 Fidget 
 Precognition 
 Hardtime
-Windline
+~~Windline~~
 ~~Oil File-Tree~~
 ~~Oil-Git-Status~~
