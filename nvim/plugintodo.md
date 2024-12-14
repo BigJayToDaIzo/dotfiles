@@ -17,9 +17,9 @@ Copilot
 Completion: Snippets implement 
 lazydev 
 IndentBlankline 
-Git: 
-LazyGit 
-Gitsigns 
+~~Git:~~
+~~LazyGit~~
+~~Gitsigns ~~
 Fidget 
 Precognition 
 Hardtime
