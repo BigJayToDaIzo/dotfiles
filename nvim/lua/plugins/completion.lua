@@ -8,19 +8,20 @@ return {
 			"hrsh7th/cmp-buffer",
 			-- "hrsh7th/cmp-path",
 			-- "hrsh7th/cmp-cmdline",
-			-- "L3MON4D3/LuaSnip",
-			-- "saadparwziz1/cmp_luasnip",
+			"L3MON4D3/LuaSnip",
+			"saadparwziz1/cmp_luasnip",
 		},
 		-- opts table y u no werk 4 me? :despair:
 		config = function()
 			local cmp = require("cmp")
 			require("cmp").setup({
 				snippet = {
-					expand = function(args)
-						vim.snippet.expand(args.body) -- native for the waybacks
-					end,
 					--REQUIRED YO - its the heart of the operation!
-					-- require("luasnip").lsp_expand(args.body)
+					expand = function(args)
+						require("luasnip").lsp_expand(args.body)
+						-- vim.snippet.expand(args.body) -- native for the waybacks
+						-- benched for luasnip
+					end,
 				},
 				window = {},
 				mapping = cmp.mapping.preset.insert({}),
@@ -37,8 +38,13 @@ return {
 	-- Teej recommends :h ins-completion before caving to tabs!
 	{
 		"L3MON4D3/LuaSnip",
-		"saadparwaiz1/cmp_luasnip",
+		version = "v2.*",
+		build = "make install_jsregexp",
+		dependencies = {
+			"saadparwaiz1/cmp_luasnip",
+		},
 	},
+	-- LSP shids ABSTRACT?
 	-- SOURCES UP NEXT
 	-- keyword len 5 on buffer to slow it way down
 	-- max_item_count for busy completion sources
