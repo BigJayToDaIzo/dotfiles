@@ -30,7 +30,7 @@ vim.keymap.set("n", "<C-k>", "<C-w><C-k>", { desc = "Move focus to the upper win
 -- NOTE: Gitsigns probably going to need a chord. <leader>g*
 -- mini.choice is NOT playing well with gitsigns binds NOR my space leader
 -- this hack is necessary for it to group <leader>g binds to Gitsigns
--- vim.keymap.set("n", "<leader>g", function() end, { desc = "+Gitsigns" })
+vim.keymap.set("n", "<leader>g", function() end, { desc = "+Gitsigns" })
 -- NOTE: Oil unchorded using <leader>e (may need to reclaim to chord something)
 -- NOTE: Debug/Diagnostic chorded under <leader>d*
 -- NOTE: Telescope chorded under <leader>s* (may need to be broadened to <leader>t)
