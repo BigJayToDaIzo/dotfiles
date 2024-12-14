@@ -2,10 +2,12 @@
 ~~Lazydev.nvim~~ 
 ~~FORMAT: conform & mason-conform~~
 ~~Mason~~
-COMPLETION:nvim-cmp and beyond
+COMPLETION:~~nvim-cmp~~
+    ~~completions for lsp~~
+    completions for git, ?, copilot
 Telescope 
-    Telescope Plugins? 
-LSP:lspconfig & mason-lspconfig.nvim 
+    Telescope Plugins bolt ons
+LSP:~~lspconfig & mason-lspconfig.nvim~~
 LINT:nvim-lint & mason-nvim-lint 
 DAP:nvim-dap & nvim-dap-ui & nvim-neotest/nvim-nio & nvim-dap-virtual-text & mason-nvim-dap.nvim 
 NEOTEST 
@@ -13,11 +15,9 @@ Trouble
 NeoCodium?? (Bench Copilot) 
 GoQoL 
 Notifications 
-StatusLine 
+~~StatusLine~~
 Flash 
 Copilot 
-Completion: Snippets implement 
-lazydev 
 IndentBlankline 
 ~~Git:~~
 ~~LazyGit~~

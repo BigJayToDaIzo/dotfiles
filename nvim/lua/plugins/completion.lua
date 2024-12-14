@@ -29,7 +29,6 @@ return {
 					end,
 				},
 				window = {},
-
 				mapping = cmp.mapping.preset.insert({
 					["<C-d>"] = cmp.mapping.scroll_docs(-4),
 					["<C-f>"] = cmp.mapping.scroll_docs(4),
@@ -75,6 +74,21 @@ return {
 					native_menu = false,
 					ghost_text = true,
 				},
+				cmp.setup.cmdline({ "/", "?" }, {
+					mapping = cmp.mapping.preset.cmdline(),
+					sources = {
+						{ name = "buffer" },
+					},
+				}),
+				cmp.setup.cmdline(":", {
+					mapping = cmp.mapping.preset.cmdline(),
+					sources = cmp.config.sources({
+						{ name = "path" },
+					}, {
+						{ name = "cmdline" },
+					}),
+					matching = { disallow_symbol_nonprefix_matching = false },
+				}),
 			})
 		end,
 	},
@@ -87,8 +101,4 @@ return {
 			"saadparwaiz1/cmp_luasnip",
 		},
 	},
-	-- LSP shids ABSTRACT?
-	-- keyword len 5 on buffer to slow it way down
-	-- FORMATTING ? LSPKIND? <<LOW>> priority
-	-- EXPERIMENTAL ghost text play
 }
