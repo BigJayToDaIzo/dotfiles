@@ -3,19 +3,24 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
-			-- "neovim/nvim-lspconfig",
-			-- "hrsh7th/cmp-nvim-lsp",
+			"neovim/nvim-lspconfig",
+			"hrsh7th/cmp-nvim-lsp",
+			"hrsh7th/cmp-nvim-lua",
 			"hrsh7th/cmp-buffer",
-			-- "hrsh7th/cmp-path",
-			-- "hrsh7th/cmp-cmdline",
+			"hrsh7th/cmp-path",
+			"hrsh7th/cmp-cmdline",
 			"L3MON4D3/LuaSnip",
 			"saadparwziz1/cmp_luasnip",
+			"onsails/lspkind.nvim",
 		},
 		-- opts table y u no werk 4 me? :despair:
 		config = function()
 			local cmp = require("cmp")
+			local lspkind = require("lspkind")
 			require("cmp").setup({
 				snippet = {
+					-- completion engine choice time
+					-- luasnips? see docs for other options
 					--REQUIRED YO - its the heart of the operation!
 					expand = function(args)
 						require("luasnip").lsp_expand(args.body)
@@ -24,17 +29,51 @@ return {
 					end,
 				},
 				window = {},
-				mapping = cmp.mapping.preset.insert({}),
+
+				mapping = cmp.mapping.preset.insert({
+					["<C-d>"] = cmp.mapping.scroll_docs(-4),
+					["<C-f>"] = cmp.mapping.scroll_docs(4),
+					["<C-e>"] = cmp.mapping.close(),
+					["<C-y>"] = cmp.mapping.confirm({
+						behavior = cmp.ConfirmBehavior.Insert,
+						select = true,
+					}),
+				}),
+				-- config points for sources begin at keyword_length
+				-- priority = 100
+				-- max_item_count = 2
+				-- keyword_length = 5 --for buffer
+				-- cuz probably the LAST one you'd be using amirite?
+				-- SOURCES UP NEXT
 				-- why are there TWO sources tables here?
-				sources = cmp.config.sources({}, {
-					{ name = "buffer" },
+				sources = cmp.config.sources({
+					-- TODO: confirm works
+					{ name = "nvim_lua" },
+					{ name = "nvim_lsp" },
+					{ name = "luasnip" },
+					-- TODO: confirm works
+					{ name = "path" },
+					{ name = "cmdline" },
+				}, {
+					{ name = "buffer", keyword_length = 5 },
 				}),
 				--git source "petertriho/cmp-git" opts = {},
+				formatting = {
+					format = lspkind.cmp_format({
+						with_text = true,
+						menu = {
+							buffer = "[buf]",
+							nvim_lsp = "[LSP]",
+							nvim_lua = "[api]",
+							path = "[path]",
+							luasnip = "[snip]",
+							-- gh_issues = "[shu]",
+						},
+					}),
+				},
 			})
 		end,
 	},
-	-- completion engine choice time
-	-- luasnips? see docs for other options
 	-- Teej recommends :h ins-completion before caving to tabs!
 	{
 		"L3MON4D3/LuaSnip",
@@ -45,9 +84,7 @@ return {
 		},
 	},
 	-- LSP shids ABSTRACT?
-	-- SOURCES UP NEXT
 	-- keyword len 5 on buffer to slow it way down
-	-- max_item_count for busy completion sources
 	-- FORMATTING ? LSPKIND? <<LOW>> priority
 	-- EXPERIMENTAL ghost text play
 }
