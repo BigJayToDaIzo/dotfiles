@@ -1,8 +1,10 @@
-FORMAT: conform & mason-conform 
+~~LazyPlugin~~
+~~Lazydev.nvim~~ 
+~~FORMAT: conform & mason-conform~~
+~~Mason~~
+COMPLETION:nvim-cmp and beyond
 Telescope 
     Telescope Plugins? 
-Mason
-    Neodev.nvim nvim-cmp section post nvim-cmp install 
 LSP:lspconfig & mason-lspconfig.nvim 
 LINT:nvim-lint & mason-nvim-lint 
 DAP:nvim-dap & nvim-dap-ui & nvim-neotest/nvim-nio & nvim-dap-virtual-text & mason-nvim-dap.nvim 
