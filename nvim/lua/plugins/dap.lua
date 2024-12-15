@@ -3,13 +3,29 @@ return {
 		"mfussenegger/nvim-dap",
 		dependencies = {},
 		config = function()
+			local dap = require("dap")
 			-- require("dap").setup({})
 			-- local _ = require("dap")
 			-- dap.adapters.lua = {
 			-- 	type = "executable",
 			-- }
+			-- TODO: keymaps for dap module, convert to keys = {}, ?
+			vim.keymap.set("n", "<leader>db", dap.toggle_breakpoint, { desc = "Debug: Toggle Breakpoint" })
+			vim.keymap.set("n", "<leader>dB", function()
+				dap.set_breakpoint(vim.fn.input("Breakpoint condition: "))
+			end, { desc = "Debug: Set Breakpoint" })
+			vim.keymap.set("n", "<leader>dr", dap.repl.open, { desc = "Debug: Repl Open" })
+			vim.keymap.set("n", "<leader>dC", dap.clear_breakpoints, { desc = "Debug: Clear All Breakpoints." })
+			vim.keymap.set("n", "<F1>", dap.step_into, { desc = "Debug: Step Into" })
+			vim.keymap.set("n", "<F2>", dap.step_over, { desc = "Debug: Step Over" })
+			vim.keymap.set("n", "<F3>", dap.step_out, { desc = "Debug: Step Out" })
+			vim.keymap.set("n", "<F5>", dap.continue, { desc = "Debug: Start/Continue" })
+			-- we haven't decided if we're using dap-ui yet
+			-- vim.keymap.set("n", "<F7>", dapui.toggle, { desc = "Debug: See last session result." })
+			vim.keymap.set("n", "<F10>", dap.terminate, { desc = "Debug: Terminate Session." })
 		end,
-		-- TODO: keymaps for <leader>d group
+		-- TODO: keymaps for telescope module <leader>d group
+
 		-- d is for debug and dap is for debug adapter protocol yo!
 		vim.keymap.set("n", "<leader>dc", function()
 			require("telescope").extensions.dap.commands()

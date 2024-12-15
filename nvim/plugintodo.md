@@ -5,9 +5,12 @@
     colored~~
 ~~FORMAT: conform & mason-conform~~
 ~~Mason~~
-COMPLETION:~~nvim-cmp~~
-    ~~completions for lsp~~
-    ?, copilot
+Copilot 
+    Mastering GH copilot for paired programming
+~~COMPLETION:~~nvim-cmp~~
+    completions for lsp
+    copilot
+    completions for git~~
 LINT:~~nvim-lint & mason-nvim-lint~~
     bolt on rust next
 ~~Telescope~~
@@ -16,12 +19,10 @@ LINT:~~nvim-lint & mason-nvim-lint~~
 LSP:~~lspconfig & mason-lspconfig.nvim~~
 DAP:
     & ?~~nvim-neotest/nvim-ni~~(try with telescope alone) 
-    ~~nvim-dap~~ & ?nvim-dap-ui 
-    ~~& ?tiny-inline-diagnostic better!~~ 
     & ~~mason-nvim-dap.nvim~~ ~~telescope-dap~~
+    ~~diagnostic keybinds~~
 ~~Git:~~
-    completions for git,
-    keybinds for gitsigns
+    ~~keybinds for gitsigns~~
 ~~WhichKey~~
 Trouble 
 NeoCodium?? (Bench Copilot) 
@@ -30,7 +31,6 @@ Flash
 Fidget 
 Precognition 
 Hardtime
-Copilot 
 GoQoL 
 ~~StatusLine~~
 ~~LazyGit~~
