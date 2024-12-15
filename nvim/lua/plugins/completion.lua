@@ -61,15 +61,15 @@ return {
 				sources = cmp.config.sources({
 					-- TODO: confirm works
 					{ name = "copilot" },
-					{ name = "nvim_lua" },
+					{ name = "nvim_lua", max_item_count = 2 },
 					{ name = "nvim_lsp" },
 					{ name = "git" },
-					{ name = "luasnip" },
+					{ name = "luasnip", max_item_count = 2 },
 					-- TODO: confirm works
-					{ name = "path" },
-					{ name = "cmdline" },
+					{ name = "path", max_item_count = 5 },
+					{ name = "cmdline", max_item_count = 2 },
 				}, {
-					{ name = "buffer", keyword_length = 5 },
+					{ name = "buffer", keyword_length = 5, max_item_count = 2 },
 				}),
 				formatting = {
 					format = lspkind.cmp_format({
