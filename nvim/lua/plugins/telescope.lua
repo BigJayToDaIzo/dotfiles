@@ -105,6 +105,7 @@ return {
 			-- once setup, load the extension!
 			require("telescope").load_extension("fzf")
 			require("telescope").load_extension("dap")
+			require("telescope").load_extension("notify")
 			-- :h telescope.builtin
 			local builtin = require("telescope.builtin")
 			-- KEYBINDS YO

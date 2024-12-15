@@ -31,7 +31,7 @@ LSP:~~lspconfig & mason-lspconfig.nvim~~
 ~~WhichKey~~
 ~~Autopair~~
 ~~Fidget~~
-Notifications 
+~~Notifications~~
 Trouble 
 Flash 
 Precognition 
