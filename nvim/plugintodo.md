@@ -10,8 +10,9 @@ COMPLETION:~~nvim-cmp~~
     completions for git, ?, copilot
 LINT:~~nvim-lint & mason-nvim-lint~~
     bolt on rust next
-Telescope 
+~~Telescope~~
     Telescope Plugins bolt ons
+    ~~Telescope keybinds~~
 LSP:~~lspconfig & mason-lspconfig.nvim~~
 DAP:nvim-dap & nvim-dap-ui & nvim-neotest/nvim-nio & nvim-dap-virtual-text & mason-nvim-dap.nvim 
 NEOTEST?
