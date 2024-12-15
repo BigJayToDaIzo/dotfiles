@@ -13,13 +13,24 @@ return {
 			-- Use the cmdline :LspInstall <C-d> for the ezmode
 			-- Fire the setup function for each module, rust_analyzer on deck!
 			lspconfig.lua_ls.setup({}) -- tweak the settings here if you wanna!
+			lspconfig.bacon_ls.setup({
+				init_options = {
+					spawnBacon = true,
+					spawnBaconCommand = "bacon clippy -- --all-features",
+					updateOnSave = true,
+				},
+				cmd = { "bacon-ls" },
+				filetypes = { "rust" },
+				root_dir = require("lspconfig.util").root_pattern("Cargo.toml"),
+			})
+			-- lspconfig.harper_ls.setup({})
 		end,
 	},
 	-- completion module for lsp aka cmp-nvim-lsp
 	{
 		"hrsh7th/cmp-nvim-lsp",
 		config = function()
-			local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			local _ = require("cmp_nvim_lsp").default_capabilities()
 			-- An example for configuring `clangd` LSP to use nvim-cmp as a completion engine
 			-- require("lspconfig").clangd.setup({
 			-- 	capabilities = capabilities,
@@ -40,7 +51,9 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls" }, -- "rust_analyzer" on deck
+				-- "rust_analyzer" on deck
+				-- rust analyzer badckup to rustaceanvim
+				ensure_installed = { "lua_ls", "rust_analyzer" },
 				automatic_installation = true,
 			})
 		end,

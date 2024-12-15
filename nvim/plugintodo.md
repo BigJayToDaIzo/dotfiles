@@ -4,6 +4,7 @@
     autoindent
     colored~~
 ~~FORMAT: conform & mason-conform~~
+    ~~rust formatter (deprecated)~~
 ~~Mason~~
 Copilot 
     Mastering GH copilot for paired programming
@@ -12,15 +13,17 @@ Copilot
     copilot
     completions for git~~
 LINT:~~nvim-lint & mason-nvim-lint~~
-    bolt on rust next
+    ~~bolt on rust next~~
 ~~Telescope~~
     ~~Telescope Plugins bolt ons~~
     ~~Telescope keybinds~~
 LSP:~~lspconfig & mason-lspconfig.nvim~~
+    rust lsp 
 DAP:
     & ?~~nvim-neotest/nvim-ni~~(try with telescope alone) 
     & ~~mason-nvim-dap.nvim~~ ~~telescope-dap~~
     ~~diagnostic keybinds~~
+    rust dap adapter
 ~~Git:~~
     ~~keybinds for gitsigns~~
 ~~WhichKey~~

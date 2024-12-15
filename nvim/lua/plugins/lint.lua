@@ -30,7 +30,7 @@ return {
 				-- ensure installed here
 				-- customize installs (and mason will grab binaries)
 				-- up at the top in nvim-lint
-				ensure_installed = { "luacheck", "selene" },
+				ensure_installed = { "luacheck", "selene", "ast-grep", "bacon", "snyk", "trivy" },
 				automatic_installation = true,
 				quiet_mode = false,
 				ignore_install = {},
