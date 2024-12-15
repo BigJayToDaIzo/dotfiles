@@ -1,34 +1,36 @@
 ~~LazyPlugin~~
 ~~Lazydev.nvim~~ 
+~~IndentBlankline 
+    autoindent
+    colored~~
 ~~FORMAT: conform & mason-conform~~
 ~~Mason~~
 COMPLETION:~~nvim-cmp~~
     ~~completions for lsp~~
     completions for git, ?, copilot
+LINT:~~nvim-lint & mason-nvim-lint~~
+    bolt on rust next
 Telescope 
     Telescope Plugins bolt ons
 LSP:~~lspconfig & mason-lspconfig.nvim~~
-LINT:nvim-lint & mason-nvim-lint 
 DAP:nvim-dap & nvim-dap-ui & nvim-neotest/nvim-nio & nvim-dap-virtual-text & mason-nvim-dap.nvim 
-NEOTEST 
+NEOTEST?
 Trouble 
 NeoCodium?? (Bench Copilot) 
-GoQoL 
 Notifications 
-~~StatusLine~~
 Flash 
-Copilot 
-IndentBlankline 
-    autoindent
-    colored
-~~Git:~~
-~~LazyGit~~
-~~Gitsigns ~~
 Fidget 
 Precognition 
 Hardtime
+Copilot 
+GoQoL 
+~~StatusLine~~
+~~Git:~~
+~~LazyGit~~
+~~Gitsigns ~~
 ~~Windline~~
 ~~Oil File-Tree~~
 ~~Oil-Git-Status~~
 ~~Treesitter~~
-~~Treesitter-context~~
+
+a
