@@ -104,6 +104,7 @@ return {
 			})
 			-- once setup, load the extension!
 			require("telescope").load_extension("fzf")
+			require("telescope").load_extension("dap")
 			-- :h telescope.builtin
 			local builtin = require("telescope.builtin")
 			-- KEYBINDS YO
@@ -134,6 +135,7 @@ return {
 			vim.keymap.set("n", "<leader>sw", builtin.grep_string, { desc = "Search Current Word" })
 			-- Shortcut for searching your neovim configuration files
 			vim.keymap.set("n", "<leader>sr", builtin.resume, { desc = "Resume Last Search" })
+			-- TODO: Telescope DAP keybinds (do under <leader>d group!
 		end,
 	},
 	{},

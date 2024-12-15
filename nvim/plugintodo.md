@@ -15,10 +15,10 @@ LINT:~~nvim-lint & mason-nvim-lint~~
     ~~Telescope keybinds~~
 LSP:~~lspconfig & mason-lspconfig.nvim~~
 DAP:
-    nvim-dap & nvim-dap-ui 
     & ?~~nvim-neotest/nvim-ni~~(try with telescope alone) 
-    & ?mini version better! ?nvim-dap-virtual-text 
-    & mason-nvim-dap.nvim telescope-dap
+    ~~nvim-dap~~ & ?nvim-dap-ui 
+    ~~& ?tiny-inline-diagnostic better!~~ 
+    & ~~mason-nvim-dap.nvim~~ telescope-dap
 Trouble 
 NeoCodium?? (Bench Copilot) 
 Notifications 
