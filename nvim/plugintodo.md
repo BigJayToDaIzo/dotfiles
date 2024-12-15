@@ -19,6 +19,8 @@ Notifications
 Flash 
 Copilot 
 IndentBlankline 
+    autoindent
+    colored
 ~~Git:~~
 ~~LazyGit~~
 ~~Gitsigns ~~
