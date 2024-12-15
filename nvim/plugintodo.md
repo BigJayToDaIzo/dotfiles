@@ -32,11 +32,11 @@ LSP:~~lspconfig & mason-lspconfig.nvim~~
 ~~Autopair~~
 ~~Fidget~~
 ~~Notifications~~
-Trouble 
-Flash 
-Precognition 
+~~Flash~~
+Trouble
+Precognition
 Hardtime
-GoQoL 
+GoQoL
 NeoCodium?? (Bench Copilot) 
 ~~StatusLine~~
 ~~LazyGit~~
