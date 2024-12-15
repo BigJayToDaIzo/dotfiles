@@ -9,7 +9,8 @@ end, { desc = "Next Diagnostic message" })
 vim.keymap.set("n", "<leader>d[", function()
 	vim.diagnostic.jump({ count = -1 })
 end, { desc = "Go to previous Diagnostic message" })
-vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
+-- this got benched by Trouble
+-- vim.keymap.set("n", "<leader>dq", vim.diagnostic.setloclist, { desc = "Open diagnostic [Q]uickfix list" })
 -- turn off Ctrl-Z quit cuz I hate it
 vim.keymap.set("n", "<C-z>", "<Nop>")
 -- NOTE: This won't work in all terminal emulators/tmux/etc. Try your own mapping

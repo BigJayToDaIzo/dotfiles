@@ -21,7 +21,8 @@ LINT:~~nvim-lint & mason-nvim-lint~~
 ~~Telescope~~
     ~~Telescope Plugins bolt ons~~
     ~~Telescope keybinds~~
-LSP:~~lspconfig & mason-lspconfig.nvim~~
+~~LSP:~~ 
+    ~~lspconfig & mason-lspconfig.nvim~~
     ~~rust lsp~~
 ~~DAP:~~
     ~~nvim-neotest/nvim-nio~~
@@ -37,7 +38,7 @@ LSP:~~lspconfig & mason-lspconfig.nvim~~
 ~~Fidget~~
 ~~Notifications~~
 ~~Flash~~
-Trouble
+~~Trouble~~
 Precognition
 Hardtime
 GoQoL

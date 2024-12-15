@@ -11,6 +11,7 @@ return {
 			{ "<leader>gt", group = " Git Toggle" },
 			{ "<leader>s", group = " SearchAScope" },
 			{ "<leader>t", group = "󱉃 Testing" },
+			{ "<leader>T", group = "󰯪 Trouble" },
 			-- { "<leader>i", group = "󰢷 Icon Picker" },
 		},
 	},
