@@ -22,7 +22,7 @@ DAP:
 ~~Git:~~
     completions for git,
     keybinds for gitsigns
-WhichKey
+~~WhichKey~~
 Trouble 
 NeoCodium?? (Bench Copilot) 
 Notifications 
