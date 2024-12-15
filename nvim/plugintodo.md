@@ -19,22 +19,22 @@ LINT:~~nvim-lint & mason-nvim-lint~~
     ~~Telescope keybinds~~
 LSP:~~lspconfig & mason-lspconfig.nvim~~
     ~~rust lsp~~
-DAP:
-    & ?~~nvim-neotest/nvim-ni~~(try with telescope alone) 
-    & ~~mason-nvim-dap.nvim~~ ~~telescope-dap~~
+~~DAP:~~
+    ~~nvim-neotest/nvim-nio~~
+    ~~mason-nvim-dap.nvim~~ ~~telescope-dap~~
     ~~diagnostic keybinds~~
     ~~rust dap adapter~~
-    neotest 
-        & stuffs
+    ~~neotest~~
+        ~~nvim-dap-ui stuffs~~
 ~~Git:~~
     ~~keybinds for gitsigns~~
 ~~WhichKey~~
-Autopair
+~~Autopair~~
+Fidget 
 Trouble 
 NeoCodium?? (Bench Copilot) 
 Notifications 
 Flash 
-Fidget 
 Precognition 
 Hardtime
 GoQoL 
