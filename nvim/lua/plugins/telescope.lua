@@ -64,6 +64,7 @@ return {
 						previewer = true,
 					},
 					find_files = {
+						-- prompt_prefix = "!shid!",
 						theme = "ivy",
 						winblend = 10,
 						previewer = true,
@@ -91,6 +92,8 @@ return {
 				},
 				extensions = {
 					-- exetension config all up in this bih
+					-- possible bolt ons telescope-emoji, yanky, telescope-undo
+					-- telescope-dap(PRIORITY!),
 					fzf = {
 						fuzzy = true,
 						override_generic_sorter = true,
