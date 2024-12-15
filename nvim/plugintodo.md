@@ -39,6 +39,9 @@ LINT:~~nvim-lint & mason-nvim-lint~~
 ~~Notifications~~
 ~~Flash~~
 ~~Trouble~~
+~~TODOs~~
+    telescope todo search
+:IMPORTANT: ONE OF THE FOLLOWING 2 MFERS MESS UP MY MOUSE
 Precognition
 Hardtime
 GoQoL
