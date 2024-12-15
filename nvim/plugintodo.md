@@ -30,14 +30,14 @@ LSP:~~lspconfig & mason-lspconfig.nvim~~
     ~~keybinds for gitsigns~~
 ~~WhichKey~~
 ~~Autopair~~
-Fidget 
-Trouble 
-NeoCodium?? (Bench Copilot) 
+~~Fidget~~
 Notifications 
+Trouble 
 Flash 
 Precognition 
 Hardtime
 GoQoL 
+NeoCodium?? (Bench Copilot) 
 ~~StatusLine~~
 ~~LazyGit~~
 ~~Gitsigns ~~

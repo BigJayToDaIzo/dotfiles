@@ -68,6 +68,11 @@ return {
 			end
 		end,
 	},
+	-- fidget
+	{
+		"j-hui/fidget.nvim",
+		opts = {},
+	},
 	-- diagnostics meet debugger adapter protocol!
 	{
 		"rachartier/tiny-inline-diagnostic.nvim",
