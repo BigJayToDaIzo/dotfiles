@@ -1,4 +1,5 @@
 return {
+	-- nvim-dap
 	{
 		"mfussenegger/nvim-dap",
 		dependencies = {},

@@ -18,15 +18,18 @@ LINT:~~nvim-lint & mason-nvim-lint~~
     ~~Telescope Plugins bolt ons~~
     ~~Telescope keybinds~~
 LSP:~~lspconfig & mason-lspconfig.nvim~~
-    rust lsp 
+    ~~rust lsp~~
 DAP:
     & ?~~nvim-neotest/nvim-ni~~(try with telescope alone) 
     & ~~mason-nvim-dap.nvim~~ ~~telescope-dap~~
     ~~diagnostic keybinds~~
-    rust dap adapter
+    ~~rust dap adapter~~
+    neotest 
+        & stuffs
 ~~Git:~~
     ~~keybinds for gitsigns~~
 ~~WhichKey~~
+Autopair
 Trouble 
 NeoCodium?? (Bench Copilot) 
 Notifications 
