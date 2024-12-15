@@ -93,6 +93,14 @@ return {
 				}),
 				matching = { disallow_symbol_nonprefix_matching = false },
 			})
+
+			-- set up lspconfig?
+			-- this seems to be working out of the box presently
+			-- local capabilities = require("cmp_nvim_lsp").default_capabilities()
+			-- -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
+			-- require("lspconfig")["<YOUR_LSP_SERVER>"].setup({
+			-- 	capabilities = capabilities,
+			-- })
 		end,
 	},
 	-- Teej recommends :h ins-completion before caving to tabs!
