@@ -1,6 +1,7 @@
 return {
 	-- neotest dawg
 	-- HIGHLY experimental, may wipe
+	-- TODO: implement watch binds?
 	{
 		"nvim-neotest/neotest",
 		dependencies = {
