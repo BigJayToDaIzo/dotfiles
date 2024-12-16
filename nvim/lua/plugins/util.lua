@@ -2,6 +2,15 @@
 --
 
 return {
+	-- nerdy font glyph picker
+	{
+		"2KAbhishek/nerdy.nvim",
+		dependencies = {
+			"stevearc/dressing.nvim",
+			"nvim-telescope/telescope.nvim",
+		},
+		cmd = "Nerdy",
+	},
 	-- Notify
 	{
 		"rcarriga/nvim-notify",
@@ -74,6 +83,7 @@ return {
 		-- NOTE:
 		-- TEST:
 		-- FIX:
+
 		"folke/todo-comments.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = {

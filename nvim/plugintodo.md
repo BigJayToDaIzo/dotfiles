@@ -48,8 +48,9 @@ GoQoL
 NeoCodium?? (Bench Copilot) 
 ~~StatusLine~~
 ~~LazyGit~~
-~~Gitsigns ~~
+~~Gitsigns~~
 ~~Windline~~
 ~~Oil File-Tree~~
 ~~Oil-Git-Status~~
 ~~Treesitter~~
+~~Nerdy~~
