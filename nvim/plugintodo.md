@@ -41,9 +41,10 @@ LINT:~~nvim-lint & mason-nvim-lint~~
 ~~Trouble~~
 ~~TODOs~~
     telescope todo search
-:IMPORTANT: ONE OF THE FOLLOWING 2 MFERS MESS UP MY MOUSE
-Precognition
-Hardtime
+~~Precognition~~
+~~:IMPORTANT: Hardtime MESSES UP MY MOUSE~~
+ ~~it was hardtime,~~ on purpose like it says it does in the docs. 
+~~Hardtime~~
 GoQoL
 NeoCodium?? (Bench Copilot) 
 ~~StatusLine~~
