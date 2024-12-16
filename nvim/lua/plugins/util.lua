@@ -2,6 +2,11 @@
 --
 
 return {
+	{
+		"tris203/precognition.nvim",
+		event = "VeryLazy",
+		opts = {},
+	},
 	-- nerdy font glyph picker
 	{
 		"2KAbhishek/nerdy.nvim",
