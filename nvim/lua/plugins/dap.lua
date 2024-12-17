@@ -132,15 +132,4 @@ return {
 			"nvim-treesitter/nvim-treesitter",
 		},
 	},
-	-- rustaceanvim
-	{
-		"mrcjkb/rustaceanvim",
-		version = "^5",
-		default_settings = {
-			["rust-analyzer"] = {
-				diagnostics = { enable = false },
-				checkOnSave = { enable = false },
-			},
-		},
-	},
 }

@@ -1,5 +1,4 @@
 layout {
-  cwd "/home/jm/Projects/personal/learn/golang/go_tutorials"
   default_tab_template {
     children
     pane size=1 borderless=true {

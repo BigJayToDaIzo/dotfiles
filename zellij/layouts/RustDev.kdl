@@ -86,19 +86,21 @@ layout {
       }
     }
   }
-  tab name=" Rust"{
-
+  // set cwd of current project on tab 
+  tab name=" Dev"{
+    // tweak these splits
     pane split_direction="vertical" size="60%" {
       pane {
         command "nvim"
       }
       pane {
+        // Cargo.TOML
         start_suspended true
         command "nvim"
-
       }
     }
     pane split_direction="vertical" size="40%" {
+      // watch
       pane command="cargo" {
         start_suspended true
         args "run"
@@ -107,6 +109,47 @@ layout {
         start_suspended true
         args "test"
       }
+    }
+  }
+  tab name=" Book" cwd="/home/jm/Projects/personal/learn/rust/book/"{
+    pane {
+      split_direction "horizontal"
+      pane {
+        size "75%"
+        command "nvim"
+      }
+      pane
+    }
+  }
+  tab name=" lings" cwd="/home/jm/Projects/personal/learn/rust/rustlings/"{
+    pane {
+      split_direction "vertical"
+      pane {
+        size "75%"
+        command "nvim"
+      }
+      pane command="rustlings"
+    }
+  }
+  tab name="YAR " cwd="/home/jm/Projects/personal/learn/rust/yarr/"{
+    pane {
+      split_direction "horizontal"
+      pane {
+        size "75%"
+        command "nvim"
+      }
+      pane
+    }
+  }
+  tab name=" ercism" cwd="~/exercism/rust" {
+    pane split_direction="vertical" {
+      pane size="50%" {
+        start_suspended true
+        name "Rust"
+        focus true
+        command "nvim"
+      }
+      pane name="Test"
     }
   }
 }

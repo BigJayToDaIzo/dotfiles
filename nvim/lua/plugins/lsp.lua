@@ -13,16 +13,17 @@ return {
 			-- Use the cmdline :LspInstall <C-d> for the ezmode
 			-- Fire the setup function for each module, rust_analyzer on deck!
 			lspconfig.lua_ls.setup({}) -- tweak the settings here if you wanna!
-			lspconfig.bacon_ls.setup({
-				init_options = {
-					spawnBacon = true,
-					spawnBaconCommand = "bacon clippy -- --all-features",
-					updateOnSave = true,
-				},
-				cmd = { "bacon-ls" },
-				filetypes = { "rust" },
-				root_dir = require("lspconfig.util").root_pattern("Cargo.toml"),
-			})
+			lspconfig.rust_analyzer.setup({})
+			-- lspconfig.bacon_ls.setup({
+			-- 	init_options = {
+			-- 		spawnbacon = true,
+			-- 		spawnbaconcommand = "bacon clippy -- --all-features",
+			-- 		updateonsave = true,
+			-- 	},
+			-- 	cmd = { "bacon-ls" },
+			-- 	filetypes = { "rust" },
+			-- 	root_dir = require("lspconfig.util").root_pattern("cargo.toml"),
+			-- })
 			-- lspconfig.harper_ls.setup({})
 		end,
 	},
@@ -51,8 +52,7 @@ return {
 		},
 		config = function()
 			require("mason-lspconfig").setup({
-				-- "rust_analyzer" on deck
-				-- rust analyzer badckup to rustaceanvim
+				-- rust analyzer backup to rustaceanvim
 				ensure_installed = { "lua_ls", "rust_analyzer" },
 				automatic_installation = true,
 			})
