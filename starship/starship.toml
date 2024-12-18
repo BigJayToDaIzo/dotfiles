@@ -85,7 +85,7 @@ disabled = false
 format = '[$symbol](iced_out_os)'
 
 [os.symbols]
-Arch = ''
+Arch = ' '
 NixOS = ''
 Ubuntu = ''
 Windows = ''

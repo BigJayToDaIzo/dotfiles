@@ -15,21 +15,23 @@ vim.opt.conceallevel = 2
 
 -- custom settings
 -- set my rulers a little brighter
-vim.api.nvim_create_autocmd("ColorScheme", {
-	pattern = "*",
-	callback = function()
-		vim.api.nvim_set_hl(0, "CursorLine", { bg = "#20705e" })
-		vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#20705e" })
-	end,
-})
+-- vim.api.nvim_create_autocmd("ColorScheme", {
+-- 	pattern = "*",
+-- 	callback = function()
+-- 		vim.api.nvim_set_hl(0, "CursorLine", { bg = scheme.comment })
+-- 		vim.api.nvim_set_hl(0, "CursorLine", { bg = "#20705e" })
+-- 		-- vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#20705e" })
+-- 		-- vim.api.nvim_set_hl(0, "CursorColumn", { bg = "#20705e" })
+-- 	end,
+-- })
 -- make line numbers default
 vim.opt.number = true
+vim.opt.relativenumber = true
 -- disable timeout on leader/keybind chords
 vim.opt.timeout = false
 vim.opt.ttimeout = true
 -- you can also add relative line numbers, for help with jumping.
 --  experiment for yourself to see if you like it!
-vim.opt.relativenumber = true
 -- enable termguicolors for lualine
 vim.opt.termguicolors = true
 -- enable mouse mode, can be useful for resizing splits for example!

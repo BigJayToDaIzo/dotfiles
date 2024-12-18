@@ -17,7 +17,11 @@ return {
 	{
 		"tris203/precognition.nvim",
 		event = "VeryLazy",
-		opts = {},
+		enabled = false,
+		opts = {
+			showBlankVirtLine = false,
+			disable_fts = {},
+		},
 	},
 	-- nerdy font glyph picker
 	{
