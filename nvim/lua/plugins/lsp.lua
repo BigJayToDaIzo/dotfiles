@@ -6,14 +6,16 @@ return {
 			"hrsh7th/cmp-nvim-lsp",
 		},
 		config = function()
+			-- local capabilities = require("blink.cmp").get_lsp_capabilities()
 			local lspconfig = require("lspconfig")
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			-- lua on deck!
 			require("mason").setup()
 			require("mason-lspconfig").setup()
 			-- Use the cmdline :LspInstall <C-d> for the ezmode
-			-- Fire the setup function for each module, rust_analyzer on deck!
-			lspconfig.lua_ls.setup({}) -- tweak the settings here if you wanna!
-			lspconfig.rust_analyzer.setup({})
+			-- Fire the setup function for each module
+			lspconfig.lua_ls.setup({ capabilities = capabilities }) -- tweak the settings here if you wanna!
+			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			-- lspconfig.bacon_ls.setup({
 			-- 	init_options = {
 			-- 		spawnbacon = true,
@@ -31,7 +33,7 @@ return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
 		config = function()
-			local _ = require("cmp_nvim_lsp").default_capabilities()
+			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			-- An example for configuring `clangd` LSP to use nvim-cmp as a completion engine
 			-- require("lspconfig").clangd.setup({
 			-- 	capabilities = capabilities,

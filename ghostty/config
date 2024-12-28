@@ -1,0 +1,9 @@
+font-family = "Maple Mono"
+font-size = 16
+
+theme = Everforest Dark - Hard
+
+window-inherit-working-directory = true
+window-decoration = false
+
+shell-integration = fish
