@@ -5,5 +5,6 @@ theme = Dracula+
 
 window-inherit-working-directory = true
 window-decoration = false
+window-padding-balance = true
 
 shell-integration = fish
