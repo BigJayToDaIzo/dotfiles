@@ -1,7 +1,7 @@
 font-family = "Maple Mono"
 font-size = 16
 
-theme = Everforest Dark - Hard
+theme = Dracula+
 
 window-inherit-working-directory = true
 window-decoration = false

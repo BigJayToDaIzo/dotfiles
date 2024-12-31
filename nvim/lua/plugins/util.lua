@@ -160,4 +160,10 @@ return {
 		config = true,
 		opts = {},
 	},
+	-- Colorizer
+	{
+		"catgoose/nvim-colorizer.lua",
+		event = "BufReadPre",
+		opts = {},
+	},
 }
