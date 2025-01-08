@@ -125,7 +125,7 @@ layout {
     pane {
       split_direction "vertical"
       pane {
-        size "75%"
+        size "50%"
         start_suspended true
         command "nvim"
       }

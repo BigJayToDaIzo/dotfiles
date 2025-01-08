@@ -61,7 +61,7 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 -- TABLINE plugin addition
-vim.o.showtabline = 2
+vim.o.showtabline = 0
 -- vim.bo.softabstop = 2
 
 -- save undo history
