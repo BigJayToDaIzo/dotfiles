@@ -112,6 +112,15 @@ layout {
       }
     }
   }
+  tab name=" AoC '18" cwd="/home/jm/Projects/personal/aoc/rust/2018"{
+    pane stacked=true {
+      pane {
+        start_suspended true
+        command "nvim"
+      }
+      pane
+    }
+  }
   tab name=" Book" cwd="/home/jm/Projects/personal/learn/rust/book/"{
     pane stacked=true {
       pane {

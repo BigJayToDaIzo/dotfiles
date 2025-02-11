@@ -2,6 +2,17 @@
 --
 
 return {
+	--Codeium
+	{
+		"Exafunction/codeium.nvim",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"hrsh7th/nvim-cmp",
+		},
+		config = function()
+			require("codeium").setup({})
+		end,
+	},
 	-- hardtime
 	{
 		"m4xshen/hardtime.nvim",
@@ -71,34 +82,34 @@ return {
 	-- 	config = function() end,
 	-- },
 	-- Copilot
-	{
-		"zbirenbaum/copilot.lua",
-		event = "InsertEnter",
-		config = function()
-			require("copilot").setup({
-				suggestion = { enabled = false },
-				panel = { enabled = false },
-				-- defaults below, but you can see how configs
-				-- can be further modified
-				-- filetypes = {
-				-- 	yaml = false,
-				-- 	markdown = false,
-				-- 	help = false,
-				-- },
-				-- copilot_node_command = "node",
-				-- see docs for more info
-				-- server_opts_overrides = {},
-			})
-		end,
-	},
-	-- Copilot completion source
-	{
-		"zbirenbaum/copilot-cmp",
-		dependencies = {
-			"zbirenbaum/copilot.lua",
-		},
-		opts = {},
-	},
+	-- {
+	-- 	"zbirenbaum/copilot.lua",
+	-- 	event = "InsertEnter",
+	-- 	config = function()
+	-- 		require("copilot").setup({
+	-- 			suggestion = { enabled = false },
+	-- 			panel = { enabled = false },
+	-- 			-- defaults below, but you can see how configs
+	-- 			-- can be further modified
+	-- 			-- filetypes = {
+	-- 			-- 	yaml = false,
+	-- 			-- 	markdown = false,
+	-- 			-- 	help = false,
+	-- 			-- },
+	-- 			-- copilot_node_command = "node",
+	-- 			-- see docs for more info
+	-- 			-- server_opts_overrides = {},
+	-- 		})
+	-- 	end,
+	-- },
+	-- -- Copilot completion source
+	-- {
+	-- 	"zbirenbaum/copilot-cmp",
+	-- 	dependencies = {
+	-- 		"zbirenbaum/copilot.lua",
+	-- 	},
+	-- 	opts = {},
+	-- },
 	-- TODO
 	{
 		-- TODO:

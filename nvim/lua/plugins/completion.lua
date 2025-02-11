@@ -12,16 +12,16 @@ return {
 			"L3MON4D3/LuaSnip",
 			"saadparwziz1/cmp_luasnip",
 			"onsails/lspkind.nvim",
-			{
-				"petertriho/cmp-git",
-				dependencies = {
-					"hrsh7th/nvim-cmp",
-				},
-				opts = {},
-				init = function()
-					table.insert(require("cmp").get_config().sources, { name = "git" })
-				end,
-			},
+			-- {
+			-- 	"petertriho/cmp-git",
+			-- 	dependencies = {
+			-- 		"hrsh7th/nvim-cmp",
+			-- 	},
+			-- 	opts = {},
+			-- 	init = function()
+			-- 		table.insert(require("cmp").get_config().sources, { name = "git" })
+			-- 	end,
+			-- },
 		},
 		-- opts table y u no werk 4 me? :despair:
 		config = function()
@@ -59,13 +59,10 @@ return {
 				-- SOURCES UP NEXT
 				-- why are there TWO sources tables here?
 				sources = cmp.config.sources({
-					-- TODO: confirm works
-					{ name = "copilot" },
+					{ name = "codeium" },
 					{ name = "nvim_lua", max_item_count = 2 },
 					{ name = "nvim_lsp" },
-					{ name = "git" },
 					{ name = "luasnip", max_item_count = 2 },
-					-- TODO: confirm works
 					{ name = "path", max_item_count = 5 },
 					{ name = "cmdline", max_item_count = 2 },
 				}, {
@@ -75,14 +72,12 @@ return {
 					format = lspkind.cmp_format({
 						with_text = true,
 						menu = {
-							copilot = "[]",
+							codeium = "[]",
 							buffer = "[buf]",
 							nvim_lsp = "[LSP]",
 							nvim_lua = "[api]",
 							path = "[path]",
 							luasnip = "[snip]",
-							git = "[git]",
-							-- gh_issues = "[shu]",
 						},
 					}),
 				},
@@ -92,14 +87,14 @@ return {
 				},
 			})
 			-- GIT TIEM
-			cmp.setup.filetype("gitcommit", {
-				sources = cmp.config.sources({
-					{ name = "git" },
-				}, {
-					{ name = "buffer" },
-				}),
-			})
-			require("cmp_git").setup()
+			-- cmp.setup.filetype("gitcommit", {
+			-- 	sources = cmp.config.sources({
+			-- 		{ name = "git" },
+			-- 	}, {
+			-- 		{ name = "buffer" },
+			-- 	}),
+			-- })
+			-- require("cmp_git").setup({})
 			-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 			cmp.setup.cmdline({ "/", "?" }, {
 				mapping = cmp.mapping.preset.cmdline(),

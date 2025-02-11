@@ -15,7 +15,7 @@ return {
 			-- Use the cmdline :LspInstall <C-d> for the ezmode
 			-- Fire the setup function for each module
 			lspconfig.lua_ls.setup({ capabilities = capabilities }) -- tweak the settings here if you wanna!
-			lspconfig.rust_analyzer.setup({ capabilities = capabilities })
+			-- lspconfig.rust_analyzer.setup({ capabilities = capabilities })
 			-- lspconfig.bacon_ls.setup({
 			-- 	init_options = {
 			-- 		spawnbacon = true,

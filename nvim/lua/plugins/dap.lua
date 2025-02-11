@@ -81,12 +81,12 @@ return {
 		config = function()
 			vim.diagnostic.config({ virtual_text = false })
 			require("tiny-inline-diagnostic").setup({
-				preset = "simple",
-				options = {
-					show_source = true,
-					add_messages = true,
-					multilines = true,
-				},
+				preset = "modern",
+				-- options = {
+				-- 	show_source = true,
+				-- 	add_messages = true,
+				-- 	multilines = true,
+				-- },
 			})
 		end,
 	},

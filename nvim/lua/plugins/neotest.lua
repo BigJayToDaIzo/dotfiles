@@ -9,23 +9,26 @@ return {
 			"nvim-lua/plenary.nvim",
 			"antoinemadec/FixCursorHold.nvim",
 			"nvim-treesitter/nvim-treesitter",
-			-- -- rustaceanvim
+			-- neotest-rust
 			-- {
-			--   "mrcjkb/rustaceanvim",
-			--   version = "^5",
-			--    This seems very important
-			--   default_settings = {
-			--     ["rust-analyzer"] = {
-			--       diagnostics = { enable = false },
-			--       checkOnSave = { enable = false },
-			--     },
-			--   },
+			-- 	"rouge8/neotest-rust",
 			-- },
+			-- rustaceanvim
+			{
+				"mrcjkb/rustaceanvim",
+				version = "^5",
+				lazy = false,
+				["rust-analyzer"] = {
+					cargo = {
+						allFeatures = true,
+					},
+				},
+			},
 		},
 		config = function()
 			require("neotest").setup({
 				adapters = {
-					-- require("rustaceanvim.neotest"),
+					require("rustaceanvim.neotest"),
 				},
 			})
 		end,

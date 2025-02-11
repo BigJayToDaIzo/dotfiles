@@ -13,4 +13,17 @@ return {
 			require("dressing").setup(opts)
 		end,
 	},
+	-- colorful winsep
+	{
+		"nvim-zh/colorful-winsep.nvim",
+		event = { "WinLeave" },
+		config = function()
+			require("colorful-winsep").setup({
+				hi = {
+					bg = "#16161e",
+					fg = "#1f3442",
+				},
+			})
+		end,
+	},
 }
