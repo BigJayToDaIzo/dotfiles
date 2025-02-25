@@ -112,7 +112,7 @@ layout {
       }
     }
   }
-  tab name=" AoC '18" cwd="/home/jm/Projects/personal/aoc/rust/2018"{
+  tab name=" AoC '23" cwd="/home/jm/Projects/personal/aoc/rust/2023"{
     pane stacked=true {
       pane {
         start_suspended true

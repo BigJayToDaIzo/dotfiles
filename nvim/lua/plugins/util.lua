@@ -76,40 +76,6 @@ return {
       { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
 	},
-	-- {
-	-- 	"Exafunction/codeium.vim",
-	-- 	event = "BufEnter",
-	-- 	config = function() end,
-	-- },
-	-- Copilot
-	-- {
-	-- 	"zbirenbaum/copilot.lua",
-	-- 	event = "InsertEnter",
-	-- 	config = function()
-	-- 		require("copilot").setup({
-	-- 			suggestion = { enabled = false },
-	-- 			panel = { enabled = false },
-	-- 			-- defaults below, but you can see how configs
-	-- 			-- can be further modified
-	-- 			-- filetypes = {
-	-- 			-- 	yaml = false,
-	-- 			-- 	markdown = false,
-	-- 			-- 	help = false,
-	-- 			-- },
-	-- 			-- copilot_node_command = "node",
-	-- 			-- see docs for more info
-	-- 			-- server_opts_overrides = {},
-	-- 		})
-	-- 	end,
-	-- },
-	-- -- Copilot completion source
-	-- {
-	-- 	"zbirenbaum/copilot-cmp",
-	-- 	dependencies = {
-	-- 		"zbirenbaum/copilot.lua",
-	-- 	},
-	-- 	opts = {},
-	-- },
 	-- TODO
 	{
 		-- TODO:
@@ -242,5 +208,9 @@ return {
 			})
 		end,
 		event = "VeryLazy",
+	},
+	{
+		"mcauley-penney/visual-whitespace.nvim",
+		config = true,
 	},
 }

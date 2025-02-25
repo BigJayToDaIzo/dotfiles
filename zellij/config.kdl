@@ -218,11 +218,12 @@ plugins {
         cwd "/"
     }
     zj-smart-sessions location="https://github.com/dj95/zj-smart-sessions/releases/latest/download/zj-smart-sessions.wasm"
+    // zjstatus location="file:/home/jm/.config/zellij/plugins/zjstatus.wasm"
     zjstatus location="https://github.com/dj95/zjstatus/releases/latest/download/zjstatus.wasm"
     zjforgot location="file:~/.config/zellij/plugins/zellij_forgot.wasm"
 }
 
-support_kitty_keyboard_protocol true
+support_kitty_keyboard_protocol false
 attach_to_session true
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed

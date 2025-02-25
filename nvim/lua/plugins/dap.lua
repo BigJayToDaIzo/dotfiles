@@ -83,9 +83,15 @@ return {
 			require("tiny-inline-diagnostic").setup({
 				preset = "modern",
 				-- options = {
-				-- 	show_source = true,
-				-- 	add_messages = true,
-				-- 	multilines = true,
+				-- 	throttle = 250,
+				-- 	overflow = {
+				-- 		mode = "wrap",
+				-- 		padding = 2,
+				-- 	},
+				-- 	break_line = {
+				-- 		enabled = true,
+				-- 		after = 20,
+				-- 	},
 				-- },
 			})
 		end,
