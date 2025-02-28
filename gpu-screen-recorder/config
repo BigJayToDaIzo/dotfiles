@@ -28,7 +28,7 @@ main.use_new_ui false
 main.video_bitrate 15000
 main.video_height 1080
 main.video_width 1920
-record.container matroska
+record.container mp4
 record.pause_unpause_recording_hotkey 0 0
 record.save_directory /home/jm/Videos
 record.start_stop_recording_hotkey 0 0

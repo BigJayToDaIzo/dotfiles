@@ -223,7 +223,7 @@ plugins {
     zjforgot location="file:~/.config/zellij/plugins/zellij_forgot.wasm"
 }
 
-support_kitty_keyboard_protocol false
+support_kitty_keyboard_protocol true
 attach_to_session true
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
 // eg. when terminal window with an active zellij session is closed
