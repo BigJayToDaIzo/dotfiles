@@ -42,6 +42,7 @@ return {
 			"nvim-telescope/telescope.nvim",
 		},
 		cmd = "Nerdy",
+		keys = { { "<leader>i", "<cmd>Nerdy<cr>", desc = "Nerdy Icons 󰱵" } },
 	},
 	-- Notify
 	{

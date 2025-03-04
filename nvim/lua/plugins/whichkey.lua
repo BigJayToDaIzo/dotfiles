@@ -5,6 +5,9 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	opts = {
+		win = {
+			border = "single",
+		},
 		spec = {
 			{ "<leader>d", group = "🗠Diagnostics" },
 			{ "<leader>g", group = " GitStuffs" },
