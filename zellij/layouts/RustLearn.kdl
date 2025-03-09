@@ -87,25 +87,52 @@ layout {
     }
   }
   // set cwd of current project on tab 
-  tab name=" Dev" cwd="/home/jm/Projects/personal/rust/d20"{
-    // tweak these splits
-    pane split_direction="vertical" size="50%" {
-      pane command="nvim" {
-        focus true
+  tab name=" AoC '23" cwd="/home/jm/Projects/personal/aoc/rust/2023"{
+    pane stacked=true {
+      pane {
         start_suspended true
-        args "src/lib.rs"
+        command "nvim"
       }
-      // watch
-      pane stacked=true {
-        pane command="bacon" {
-          start_suspended true
-
-        }
-        pane
-      }
+      pane
     }
   }
-  tab name="Lazy " {
-    pane command="lazygit"
+  tab name=" Book" cwd="/home/jm/Projects/personal/learn/rust/book/"{
+    pane stacked=true {
+      pane {
+        start_suspended true
+        command "nvim"
+      }
+      pane
+    }
+  }
+  tab name=" lings" cwd="/home/jm/Projects/personal/learn/rust/rustlings/"{
+    pane {
+      split_direction "vertical"
+      pane {
+        size "50%"
+        start_suspended true
+        command "nvim"
+      }
+      pane command="rustlings"
+    }
+  }
+  tab name="YAR " cwd="/home/jm/Projects/personal/learn/rust/yarr/"{
+    pane stacked=true {
+      pane {
+        start_suspended true
+        command "nvim"
+      }
+      pane
+    }
+  }
+  tab name=" ercism" cwd="~/exercism/rust" {
+    pane split_direction="vertical" {
+      pane size="50%" {
+        start_suspended true
+        name "Rust"
+        command "nvim"
+      }
+      pane name="Test"
+    }
   }
 }
