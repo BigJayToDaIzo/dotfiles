@@ -98,7 +98,7 @@ end
 abbr -a zda zellij delete-all-sessions --force
 abbr -a zls zellij ls
 function zs
-    command zellij attach --create $argv[1] options --default-layout $argv[1]
+    command zellij attach --create $argv[1] options --default-layout $argv[2]
 end
 
 

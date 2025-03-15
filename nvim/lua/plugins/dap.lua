@@ -79,21 +79,8 @@ return {
 		event = "VeryLazy",
 		priority = 1000,
 		config = function()
-			vim.diagnostic.config({ virtual_text = false })
-			require("tiny-inline-diagnostic").setup({
-				preset = "modern",
-				-- options = {
-				-- 	throttle = 250,
-				-- 	overflow = {
-				-- 		mode = "wrap",
-				-- 		padding = 2,
-				-- 	},
-				-- 	break_line = {
-				-- 		enabled = true,
-				-- 		after = 20,
-				-- 	},
-				-- },
-			})
+			require("tiny-inline-diagnostic").setup()
+			vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
 		end,
 	},
 	-- mason interface to dap
