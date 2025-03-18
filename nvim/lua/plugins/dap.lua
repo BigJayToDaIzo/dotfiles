@@ -79,8 +79,17 @@ return {
 		event = "VeryLazy",
 		priority = 1000,
 		config = function()
-			require("tiny-inline-diagnostic").setup()
+			require("tiny-inline-diagnostic").setup({
+				options = {
+					show_source = true,
+					use_icons_from_diagnostic = true,
+					set_arrow_to_diag_color = true,
+				},
+			})
 			vim.diagnostic.config({ virtual_text = false }) -- Only if needed in your configuration, if you already have native LSP diagnostics
+			vim.keymap.set("n", "<leader>v", function()
+				require("tiny-inline-diagnostic").toggle()
+			end, { desc = "Toggle Inline Diagnostics" })
 		end,
 	},
 	-- mason interface to dap

@@ -1,5 +1,4 @@
 layout {
-  cwd "/home/jm/Projects/learn/rust/rustlings"
   default_tab_template {
     children
     pane size=1 borderless=true {
@@ -87,13 +86,13 @@ layout {
     }
   }
   // set cwd of current project on tab 
-  tab name=" Dev" cwd="/home/jm/Projects/personal/rust/d20"{
+  tab name=" Dev" cwd="."{
     // tweak these splits
     pane split_direction="vertical" size="50%" {
       pane command="nvim" {
         focus true
         start_suspended true
-        args "src/lib.rs"
+        args "src/"
       }
       // watch
       pane stacked=true {
@@ -106,6 +105,8 @@ layout {
     }
   }
   tab name="Lazy " {
-    pane command="lazygit"
+    pane command="lazygit" {
+      start_suspended true
+    }
   }
 }
