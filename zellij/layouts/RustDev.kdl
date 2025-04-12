@@ -74,12 +74,12 @@ layout {
         format_precedence "clr"
 
 
-        command_git_branch_command     "git rev-parse --abbrev-ref head"
+        command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
         command_git_branch_interval    "10"
         command_git_branch_rendermode  "static"
         command_git_branch_format      "#[fg=$section_fg] {stdout} "
 
-        datetime_format "  %A, %d %b %Y  %H:%M"
+        datetime_format "  %a, %d %b '%y  %H:%M"
         datetime_timezone "America/Chicago"
         datetime        "#[fg=$section_fg,bold,bg=$tab_norm_bg]{format} "
       }

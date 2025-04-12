@@ -72,6 +72,8 @@ function shipit
 end
 abbr -a ls eza --long --header --icons --git
 abbr -a lsc eza --all --long --header --icons --git --git-ignore
+# below doesn't work
+abbr -a pnl systemd-run --on-active=\"$argv[1]\" systemctl suspend
 abbr -a peaclock peaclock --config-dir ~/.config/peaclock
 function pt
     python -m pytest -o markers=task -x --ff $argv[1]

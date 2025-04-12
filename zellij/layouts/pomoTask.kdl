@@ -74,7 +74,7 @@ layout {
         format_precedence "clr"
 
 
-        command_git_branch_command     "git rev-parse --abbrev-ref head"
+        command_git_branch_command     "git rev-parse --abbrev-ref HEAD"
         command_git_branch_interval    "10"
         command_git_branch_rendermode  "static"
         command_git_branch_format      "#[fg=$section_fg] {stdout} "
@@ -103,7 +103,7 @@ layout {
           command "tomatoshell"
           args "-n" "12" "-t" "28" "-d" "2" "-p" "p"
           start_suspended true
-        } // 6 sessions of 58m 2m break pause with p key
+        } // 12 sessions of 28m 2m break pause with p key
       }
       // stacked panes go here
       pane {
