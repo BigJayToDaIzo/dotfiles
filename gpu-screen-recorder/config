@@ -1,4 +1,4 @@
-main.advanced_view true
+main.advanced_view false
 main.audio_codec aac
 main.audio_input device:Default output
 main.av1_amd_bug_warning_shown false
