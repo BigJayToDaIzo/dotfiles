@@ -19,23 +19,23 @@ return {
 		end,
 	},
 	-- mason adapter for nvim-lint
-	{
-		"rshkarin/mason-nvim-lint",
-		dependencies = {
-			"williamboman/mason.nvim",
-			"mfussenegger/nvim-lint",
-		},
-		config = function()
-			require("mason-nvim-lint").setup({
-				-- ensure installed here
-				-- customize installs (and mason will grab binaries)
-				-- up at the top in nvim-lint
-				ensure_installed = { "luacheck", "selene", "ast-grep", "snyk", "trivy" },
-				automatic_installation = true,
-				quiet_mode = false,
-				ignore_install = {},
-			})
-		end,
-	},
+	-- {
+	-- 	"rshkarin/mason-nvim-lint",
+	-- 	dependencies = {
+	-- 		"williamboman/mason.nvim",
+	-- 		"mfussenegger/nvim-lint",
+	-- 	},
+	-- 	config = function()
+	-- 		require("mason-nvim-lint").setup({
+	-- 			-- ensure installed here
+	-- 			-- customize installs (and mason will grab binaries)
+	-- 			-- up at the top in nvim-lint
+	-- 			ensure_installed = { "luacheck", "selene", "ast-grep", "snyk", "trivy" },
+	-- 			automatic_installation = true,
+	-- 			quiet_mode = false,
+	-- 			ignore_install = {},
+	-- 		})
+	-- 	end,
+	-- },
 	-- next adapter for lintness
 }

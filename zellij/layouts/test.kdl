@@ -1,0 +1,7 @@
+layout {
+  pane {
+    cwd "/home/jm"
+    command "lnav"
+    args "-e" "journalctl -f"
+  }
+}

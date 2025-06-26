@@ -2,17 +2,17 @@
 -- MASON HANDLES IT FROM HERE!
 -- conform
 return {
-	{
-		"zapling/mason-conform.nvim",
-		dependencies = {
-			"williamboman/mason.nvim",
-			"stevearc/conform.nvim",
-		},
-		opts = {},
-		config = function(opts)
-			require("mason-conform").setup(opts)
-		end,
-	},
+	-- {
+	-- 	"zapling/mason-conform.nvim",
+	-- 	dependencies = {
+	-- 		"williamboman/mason.nvim",
+	-- 		"stevearc/conform.nvim",
+	-- 	},
+	-- 	opts = {},
+	-- 	config = function(opts)
+	-- 		require("mason-conform").setup(opts)
+	-- 	end,
+	-- },
 	{
 		"stevearc/conform.nvim",
 		cmd = { "ConformInfo" },
