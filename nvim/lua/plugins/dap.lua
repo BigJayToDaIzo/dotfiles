@@ -2,6 +2,7 @@ return {
 	-- nvim-dap
 	{
 		"mfussenegger/nvim-dap",
+    lazy = true,
 		dependencies = {},
 		config = function()
 			local dap = require("dap")

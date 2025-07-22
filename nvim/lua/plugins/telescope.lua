@@ -94,16 +94,16 @@ return {
 					-- exetension config all up in this bih
 					-- possible bolt ons telescope-emoji, yanky, telescope-undo
 					-- telescope-dap(PRIORITY!),
-					fzf = {
-						fuzzy = true,
-						override_generic_sorter = true,
-						override_file_sorter = true,
-						case_mode = "smart_case",
-					},
+					-- fzf = {
+					-- 	fuzzy = true,
+					-- 	override_generic_sorter = true,
+					-- 	override_file_sorter = true,
+					-- 	case_mode = "smart_case",
+					-- },
 				},
 			})
 			-- once setup, load the extension!
-			require("telescope").load_extension("fzf")
+			-- require("telescope").load_extension("fzf")
 			require("telescope").load_extension("dap")
 			require("telescope").load_extension("notify")
 			-- :h telescope.builtin

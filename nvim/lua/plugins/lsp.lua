@@ -16,8 +16,8 @@ return {
 			-- require("mason-lspconfig").setup()
 			-- Use the cmdline :LspInstall <C-d> for the ezmode
 			-- Fire the setup function for each module
-			lspconfig.lua_ls.setup({ capabilities = capabilities }) -- tweak the settings here if you wanna!
-			lspconfig.gleam.setup({ capabilities = capabilities }) -- tweak the settings here if you wanna!
+			lspconfig.lua_ls.setup({ capabilities = capabilities })
+			lspconfig.gleam.setup({ capabilities = capabilities })
 		end,
 	},
 	-- completion module for lsp aka cmp-nvim-lsp

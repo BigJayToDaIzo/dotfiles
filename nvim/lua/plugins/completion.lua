@@ -12,16 +12,6 @@ return {
 			"L3MON4D3/LuaSnip",
 			"saadparwziz1/cmp_luasnip",
 			"onsails/lspkind.nvim",
-			-- {
-			-- 	"petertriho/cmp-git",
-			-- 	dependencies = {
-			-- 		"hrsh7th/nvim-cmp",
-			-- 	},
-			-- 	opts = {},
-			-- 	init = function()
-			-- 		table.insert(require("cmp").get_config().sources, { name = "git" })
-			-- 	end,
-			-- },
 		},
 		-- opts table y u no werk 4 me? :despair:
 		config = function()

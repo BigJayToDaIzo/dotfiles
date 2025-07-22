@@ -51,9 +51,8 @@ end
 ##################################################
 abbr -a cat bat
 function ed
-    set track (pwd | rg '.*/exercism/(.+)?/' -or '$1')
-    command exercism download --track=$track --exercise=$argv[1]
-    cd .. && cd $argv[1]
+    command exercism download --track=$argv[1] --exercise=$argv[2]
+    cd $argv[2]
 end
 function gbe
     cd ..

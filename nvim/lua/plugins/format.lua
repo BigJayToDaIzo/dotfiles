@@ -22,6 +22,7 @@ return {
 					lua = { "stylua" },
 					rust = { "rustfmt", lsp_format = "fallback" },
 					javascript = { "prettierd", "prettier", stop_after_first = true },
+          gleam = { "gleam" },
 				},
 				format_on_save = {
 					timeout_ms = 500,
