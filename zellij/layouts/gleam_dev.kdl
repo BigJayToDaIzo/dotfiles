@@ -85,13 +85,19 @@ layout {
       }
     }
   }
-  tab {
+  tab name="Dev"{
     pane split_direction="horizontal" {
-      pane size="70%" {
-        pane stacked=true {
-          pane
-        }
+      pane size="70%" focus=true
+      pane stacked=true {
+        pane expanded=true
+        pane
       }
-    }  
+    }
+  }  
+  tab name="Git" {
+    pane split_direction="horizontal" {
+      pane size="60%" command="lazygit"
+      pane
+    }
   }
 }

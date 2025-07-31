@@ -2,14 +2,17 @@
 ############################
 if status is-login
     # Env Setup
+    # asdf annoyance
+    set --export ASDF_DATA_DIR $HOME/.asdf
+    fish_add_path --move $ASDF_DATA_DIR/shims
     set -xg ARCHFLAGS "-arch x86_64"
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
-    set -xg EDITOR nvim
-    set -xg MANPAGER "nvim +Man!"
-    set -xg MANROFFOPT "-c"
-    set -xg ELECTRON_OZONE_PLATFORM "wayland"
+    set -xg EDITOR hx
+    set -xg MANPAGER "hx +Man!"
+    set -xg MANROFFOPT -c
+    set -xg ELECTRON_OZONE_PLATFORM wayland
     set -xg LOCALSCRIPTS ~/.local/scripts/
-    set -xg CARGO_MOMMYS_MOODS "chill/ominous/thirsty/yikes"
+    set -xg CARGO_MOMMYS_MOODS chill/ominous/thirsty/yikes
     set -xg CARGO_MOMMYS_PARTS "delicious booty/juicy peach"
     # Bun
     set -xg BUN_INSTALL $HOME/.bun
@@ -101,8 +104,6 @@ abbr -a zls zellij ls
 function zs
     command zellij attach --create $argv[1] options --default-layout $argv[2]
 end
-
-
 
 # PROMPT CONTROL
 ################

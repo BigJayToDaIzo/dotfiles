@@ -1,0 +1,12 @@
+ls
+cd configs
+ls
+cd terminal_emulators
+ls
+cd alacritty
+ls
+vi alacritty.toml
+nvim alacritty.toml
+exit
+~/.config/yazelix/nushell/scripts/core/start_yazelix.nu
+exit

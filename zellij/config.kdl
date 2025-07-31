@@ -1,5 +1,7 @@
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds clear-defaults=true {
+    unbind "Alt )"
+    unbind "Alt ("
     locked {
         bind "Ctrl Space" { SwitchToMode "Normal"; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
@@ -19,7 +21,6 @@ keybinds clear-defaults=true {
         bind "Alt 6" { GoToTab 6; }
         bind "Alt 7" { GoToTab 7; }
         bind "Alt 8" { GoToTab 8; }
-        bind "Alt 9" { GoToTab 9; }
     }
     normal {
         bind "o" { SwitchToMode "Session"; }
@@ -386,7 +387,7 @@ copy_command "wl-copy"                    // wayland
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "nvim"
+scrollback_editor "hx"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
