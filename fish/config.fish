@@ -3,11 +3,13 @@
 if status is-login
     # Env Setup
     # asdf annoyance
-    set --export ASDF_DATA_DIR $HOME/.asdf
-    fish_add_path --move $ASDF_DATA_DIR/shims
+    # set --export ASDF_DATA_DIR $HOME/.asdf
+    # fish_add_path --move $ASDF_DATA_DIR/shims
+    set --universal nvm_default_version 22
     set -xg ARCHFLAGS "-arch x86_64"
     set -xg STARSHIP_CONFIG ~/.config/starship/starship.toml
     set -xg EDITOR hx
+    set -xg NVM_DIR $HOME/.nvm
     set -xg MANPAGER "hx +Man!"
     set -xg MANROFFOPT -c
     set -xg ELECTRON_OZONE_PLATFORM wayland
@@ -23,7 +25,7 @@ if status is-login
     # Lua shits
     set -xg LUAPATH $HOME/.luarocks
     set -xg RUBYPATH $HOME/.local/share/gem/ruby/3.3.0/bin
-    source /opt/asdf-vm/asdf.fish
+    # source /opt/asdf-vm/asdf.fish
     # Append path
     set -xg PATH $PATH $CARGO_HOME/bin $BUN_INSTALL/bin $GOPATH/bin $LUAPATH/bin $RUBYPATH $LOCALSCRIPTS
     # PLUGIN CONFIG

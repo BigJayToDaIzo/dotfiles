@@ -10,3 +10,22 @@ nvim alacritty.toml
 exit
 ~/.config/yazelix/nushell/scripts/core/start_yazelix.nu
 exit
+which hx
+z yazelix
+cat yazelix.nix | grep helix
+ls /sbin/hx
+zls
+exit
+which hx
+which helix
+nu nushell/scripts/utils/version_info.nu
+z yazelix
+echo $HELIX_RUNTIME
+echo $env.HELIX_RUNTIME
+ls /nix/store/j3lzmzlrjdvmyn1y3wddwh8aynsd2x2d-helix-25.07.1/lib/runtime
+echo $env.SHELL
+exit
+cp ~/.config/zellij/config.kdl ~/.config/yazelix/configs/zellij/personal/user_config.kdl
+oexit
+exit
+yxz doctor

@@ -85,17 +85,23 @@ layout {
       }
     }
   }
-  tab name="Dev"{
-    pane split_direction="vertical" {
-      pane split_direction="horizontal" {
-        pane size="70%" focus=true command="hx"
-        pane stacked=true {
-          pane expanded=true
+  // end default tab template
+  swap_tiled_layout name="hide_claude" {
+    tab name="Dev" max_panes=2 {
+      pane split_direction="horizontal" stacked=true {
+        pane focus=true command="hx"
+        pane
+      }
+    }
+    tab name="Dev"{
+      pane split_direction="vertical" {
+        pane split_direction="horizontal" stacked=true size="70%" {
+          pane focus=true command="hx"
           pane
         }
-      }
-      pane size="30%" {
-        command "claude"
+        pane size="30%" {
+          command "claude"
+        }
       }
     }
   }
@@ -104,8 +110,5 @@ layout {
       pane size="60%" command="lazygit" start_suspended=true
       pane
     }
-  }
-  tab name="Config"{
-    pane cwd="/home/jm/.config" command="hx" start_suspended=true
   }
 }

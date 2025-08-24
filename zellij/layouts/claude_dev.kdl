@@ -87,12 +87,9 @@ layout {
   }
   tab name="Dev"{
     pane split_direction="vertical" {
-      pane split_direction="horizontal" {
+      pane split_direction="horizontal" stacked=true {
         pane size="70%" focus=true command="hx"
-        pane stacked=true {
-          pane expanded=true
-          pane
-        }
+        pane
       }
       pane size="30%" {
         command "claude"
@@ -104,8 +101,5 @@ layout {
       pane size="60%" command="lazygit" start_suspended=true
       pane
     }
-  }
-  tab name="Config"{
-    pane cwd="/home/jm/.config" command="hx" start_suspended=true
   }
 }
