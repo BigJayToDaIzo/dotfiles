@@ -4,4 +4,6 @@ local config = {}
 config.font_size = 14.0
 config.enable_tab_bar = false
 config.font = wezterm.font 'Maple Mono'
+config.use_dead_keys = false
+config.disable_default_key_bindings = true
 return config
