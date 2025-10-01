@@ -29,3 +29,4 @@ cp ~/.config/zellij/config.kdl ~/.config/yazelix/configs/zellij/personal/user_co
 oexit
 exit
 yxz doctor
+gleam --version
